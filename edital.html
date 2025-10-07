@@ -1,0 +1,27 @@
+<!doctype html><html lang="pt-br"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Detalhe do edital</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="container">
+  <div class="header"><h1 id="titulo">Edital</h1><a class="btn" href="./">← Voltar</a></div>
+  <table class="table" id="tabela"></table>
+  <div id="linkOficial" class="link-oficial"></div>
+</div>
+<script>
+async function main(){
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug');
+  const data = await (await fetch('data/editais.json',{cache:'no-store'})).json();
+  const item = data.find(x=>x.slug===slug) || data[0];
+  document.getElementById('titulo').textContent = `Edital: ${item.nome}`;
+  const tbody = document.getElementById('tabela');
+  tbody.innerHTML = item.dados.map(r=>`<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`).join('');
+  if(item.link_banca){
+    document.getElementById('linkOficial').innerHTML =
+      `🔗 <strong>Link para o site oficial:</strong> <a href="${item.link_banca}" target="_blank" rel="noopener">acessar</a>`;
+  }
+}
+main().catch(console.error);
+</script>
+</body></html>
