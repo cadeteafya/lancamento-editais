@@ -1,181 +1,134 @@
-# scraper.py
-# Atualiza data/editais.json com os últimos "SAIU O EDITAL!" da 1ª página do Estratégia MED
-# Requisitos: requests, beautifulsoup4, lxml
-
 import re, json, time, hashlib
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-HOME = "https://med.estrategia.com/portal/"
+LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
-USER_AGENT = "ResidMedBot/1.0 (+contato: cadete.afya@gmail.com)"
+UA = "ResidMedBot/1.1 (+contato: cadete.afya@gmail.com)"
 
-SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "pt-BR,pt;q=0.9"})
+S = requests.Session()
+S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
 
-def norm_space(s):
-    return re.sub(r"\s+", " ", (s or "").strip())
+def norm(s): return re.sub(r"\s+", " ", (s or "").strip())
+def slug(s):
+    t = re.sub(r"[^a-z0-9]+", "-", norm(s).lower()).strip("-")
+    return t[:80] or hashlib.md5(s.encode()).hexdigest()[:10]
 
-def make_slug(name: str) -> str:
-    s = norm_space(name).lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s)
-    s = re.sub(r"-{2,}", "-", s).strip("-")
-    return s[:80] or hashlib.md5(name.encode()).hexdigest()[:10]
-
-def get_soup(url: str) -> BeautifulSoup:
-    r = SESSION.get(url, timeout=30)
+def soup_of(url):
+    r = S.get(url, timeout=30)
     r.raise_for_status()
     return BeautifulSoup(r.text, "lxml")
 
-def find_cards_with_saiu_o_edital(soup: BeautifulSoup):
-    """Heurística ampla: procura cards/links/imagens que contenham 'SAIU O EDITAL'."""
-    cards = []
-    # 1) Qualquer nó com texto "SAIU O EDITAL"
-    for el in soup.find_all(string=re.compile(r"saiu\s*o\s*edital", re.I)):
-        # tentar subir até um <a> que leve ao post
-        a = el.find_parent("a")
-        if not a:
-            # às vezes está dentro de div; procurar <a> próximo
-            a = el.find_parent().find("a", href=True) if el.find_parent() else None
-        if a and a.get("href"):
-            href = urljoin(HOME, a["href"])
-            cards.append((a, href))
-    # 2) Imagens com alt/src com "saiu-o-edital"
-    for img in soup.find_all("img"):
-        alt = " ".join([img.get("alt",""), img.get("aria-label","")])
-        src = img.get("src","")
-        if re.search(r"saiu[\s\-]?o[\s\-]?edital", f"{alt} {src}", re.I):
-            a = img.find_parent("a")
-            if a and a.get("href"):
-                href = urljoin(HOME, a["href"])
-                cards.append((a, href))
-    # normalizar e deduplicar pela URL
-    seen = set()
+def list_article_urls():
+    print(f"[i] Lendo lista: {LIST_URL}")
+    soup = soup_of(LIST_URL)
     urls = []
-    for _, href in cards:
-        u = href.split("?")[0].split("#")[0]
-        if u not in seen and urlparse(u).scheme in ("http","https"):
-            seen.add(u)
-            urls.append(u)
-    return urls
+    # pega todos links de posts dentro da listagem
+    for a in soup.select("a[href]"):
+        href = a.get("href", "")
+        if "/portal/noticias/" in href:
+            u = urljoin(LIST_URL, href.split("?")[0].split("#")[0])
+            if urlparse(u).scheme in ("http", "https"):
+                urls.append(u)
+    # manter somente os 20 mais recentes e sem duplicatas
+    seen, out = set(), []
+    for u in urls:
+        if u not in seen:
+            seen.add(u); out.append(u)
+    print(f"[i] Encontrados {len(out)} links na listagem (vou checar os 20 primeiros).")
+    return out[:20]
 
-def extract_post(url: str):
-    soup = get_soup(url)
+def parse_post(url):
+    soup = soup_of(url)
 
-    # título: preferir <meta property="og:title">, senão <h1>
-    title = soup.find("meta", attrs={"property":"og:title"})
-    if title: title = title.get("content","")
+    # título
+    title = soup.find("meta", {"property": "og:title"})
+    title = title.get("content","") if title else ""
     if not title:
         h1 = soup.find(["h1","h2"])
         title = h1.get_text(" ", strip=True) if h1 else url
+    title = norm(title)
 
-    # imagem principal: og:image ou primeira <img>
-    img = soup.find("meta", attrs={"property":"og:image"})
-    image = img.get("content","") if img else ""
+    # imagem principal
+    ogimg = soup.find("meta", {"property":"og:image"})
+    image = ogimg.get("content","") if ogimg else ""
     if not image:
         imgel = soup.find("img")
         if imgel and imgel.get("src"): image = urljoin(url, imgel["src"])
 
-    # tabela de resumo: buscar por tabela com 2 colunas e cabeçalhos tipo "Etapa" / "Data"
+    # TABELA DE RESUMO (duas colunas)
     dados = []
-    tables = soup.find_all("table")
-    for tb in tables:
-        # conferir se parece 2 colunas
-        rows = tb.find_all("tr")
-        cands = []
-        for tr in rows:
+    for tb in soup.find_all("table"):
+        rows = []
+        for tr in tb.find_all("tr"):
             tds = tr.find_all(["td","th"])
             if len(tds) >= 2:
-                etapa = norm_space(tds[0].get_text(" "))
-                data = norm_space(tds[1].get_text(" "))
-                if etapa and data:
-                    cands.append({"etapa": etapa, "data": data})
-        # heurística: boa se pelo menos 3 linhas
-        if len(cands) >= 3:
-            dados = cands
-            # se a primeira linha contém 'Etapa' e 'Data', remova header da lista
-            if re.search(r"\betapa\b", cands[0]["etapa"], re.I) and re.search(r"\bdata\b", cands[0]["data"], re.I):
-                dados = cands[1:]
-            break
+                etapa = norm(tds[0].get_text(" "))
+                data  = norm(tds[1].get_text(" "))
+                if etapa and data: rows.append({"etapa":etapa,"data":data})
+        if len(rows) >= 3:
+            # remove cabeçalho "Etapa | Data" se existir
+            if re.search(r"\betapa\b", rows[0]["etapa"], re.I) and re.search(r"\bdata\b", rows[0]["data"], re.I):
+                rows = rows[1:]
+            if len(rows) >= 2:
+                dados = rows
+                break
 
-    # link da banca: procurar texto "Página oficial da banca organizadora"
+    # LINK DA BANCA (texto "página oficial da banca organizadora")
     link_banca = ""
-    # buscar o texto e capturar o <a> mais próximo
-    txt_nodes = soup.find_all(string=re.compile(r"página oficial da banca organizadora", re.I))
-    for t in txt_nodes:
-        # 1) link irmão
-        sib_a = t.parent.find("a", href=True)
-        if sib_a:
-            link_banca = urljoin(url, sib_a["href"])
-            break
-        # 2) link seguinte
-        next_a = t.find_next("a", href=True)
-        if next_a:
-            link_banca = urljoin(url, next_a["href"])
-            break
+    for t in soup.find_all(string=re.compile(r"página oficial da banca organizadora", re.I)):
+        a = (t.parent.find("a", href=True) or t.find_next("a", href=True))
+        if a:
+            link_banca = urljoin(url, a["href"]); break
 
-    nome = norm_space(title)
-    item = {
-        "slug": make_slug(nome),
-        "nome": nome,
+    # Só considera post válido se achou a tabela de resumo
+    valido = len(dados) > 0
+    print(f"  {'✓' if valido else '×'} {title} | tabela={len(dados)} linhas | banca={'sim' if link_banca else 'não'}")
+    if not valido: return None
+
+    return {
+        "slug": slug(title),
+        "nome": title,
         "link": url,
         "imagem": image,
         "dados": dados,
         "link_banca": link_banca or None
     }
-    return item
-
-def merge_into(existing: list, new_items: list):
-    by_url = {x.get("link"): x for x in existing}
-    for it in new_items:
-        by_url[it["link"]] = it  # atualiza/insere
-    # ordena por inserção recente (simples: tempo agora primeiro)
-    merged = list(by_url.values())
-    # limitar para não crescer demais (mantém 30)
-    return merged[:30]
 
 def main():
-    # carregar existente
-    if OUT_PATH.exists():
-        try:
-            existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
-            if not isinstance(existing, list): existing = []
-        except Exception:
-            existing = []
-    else:
+    # carrega existente
+    try:
+        existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
+        if not isinstance(existing, list): existing = []
+    except Exception:
         existing = []
 
-    print("[i] Buscando homepage…")
-    soup = get_soup(HOME)
+    urls = list_article_urls()
+    items = []
+    for u in urls:
+        try:
+            item = parse_post(u)
+            if item: items.append(item)
+            time.sleep(0.6)
+        except Exception as e:
+            print(f"  ! erro em {u}: {e}")
 
-    urls = find_cards_with_saiu_o_edital(soup)
-    if not urls:
-        print("[!] Nenhum card 'SAIU O EDITAL!' encontrado na homepage.")
-        # ainda assim gravar existing para garantir arquivo
+    if not items:
+        print("[!] Nenhum post válido encontrado (sem tabela). Vou manter o arquivo atual.")
         OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         OUT_PATH.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
         return
 
-    print(f"[i] Encontrados {len(urls)} posts. Extraindo páginas individuais…")
-    new_items = []
-    for u in urls:
-        try:
-            item = extract_post(u)
-            # se não achar tabela, ainda mantém com dados=[]
-            new_items.append(item)
-            time.sleep(0.8)  # gentileza
-            print(f"  ✓ {item['nome']}")
-        except Exception as e:
-            print(f"  x Erro em {u}: {e}")
+    # merge por URL (recente primeiro, limita 30)
+    by = {x["link"]: x for x in existing}
+    for it in items: by[it["link"]] = it
+    merged = list(by.values())[:30]
 
-    merged = merge_into(existing, new_items)
-
-    # gravar
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[i] Atualizado {OUT_PATH} com {len(merged)} registros.")
+    print(f"[i] Gravado {OUT_PATH} com {len(merged)} registros.")
 
 if __name__ == "__main__":
     main()
