@@ -1,4 +1,4 @@
-name: Scrape editais (Estratégia MED)
+name: Scrape & Deploy (Estratégia MED)
 
 on:
   schedule:
@@ -11,9 +11,11 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  scrape:
+  scrape_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,19 +29,16 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml
+          pip install requests beautifulsoup4 "lxml==5.3.0"
 
       - name: Run scraper
         run: python scraper.py
 
-      - name: Commit & push if changed
-        run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A
-            git commit -m "chore: update data/editais.json [skip ci]"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+      # Publica o site independentemente de ter commitado algo
+      - name: Upload artifact (site)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
