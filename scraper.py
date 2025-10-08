@@ -6,10 +6,18 @@ from bs4 import BeautifulSoup
 
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
-UA = "ResidMedBot/1.1 (+contato: cadete.afya@gmail.com)"
+UA = "ResidMedBot/1.2 (+contato: seu-email)"
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
+
+PHRASE_RE = re.compile(
+    r"p[aá]gina oficial da banca organizadora", re.I
+)
+ATENCAO_BLOCK_RE = re.compile(
+    r"Aten[cç][aã]o!\s*É essencial que o candidato.*p[aá]gina oficial da banca organizadora",
+    re.I | re.S
+)
 
 def norm(s): return re.sub(r"\s+", " ", (s or "").strip())
 def slug(s):
@@ -22,44 +30,21 @@ def soup_of(url):
     return BeautifulSoup(r.text, "lxml")
 
 def list_article_urls():
-    print(f"[i] Lendo lista: {LIST_URL}")
     soup = soup_of(LIST_URL)
-    urls = []
-    # pega todos links de posts dentro da listagem
+    urls, seen = [], set()
+    # pega os links dos cards da listagem /portal/noticias/
     for a in soup.select("a[href]"):
         href = a.get("href", "")
         if "/portal/noticias/" in href:
             u = urljoin(LIST_URL, href.split("?")[0].split("#")[0])
-            if urlparse(u).scheme in ("http", "https"):
-                urls.append(u)
-    # manter somente os 20 mais recentes e sem duplicatas
-    seen, out = set(), []
-    for u in urls:
-        if u not in seen:
-            seen.add(u); out.append(u)
-    print(f"[i] Encontrados {len(out)} links na listagem (vou checar os 20 primeiros).")
-    return out[:20]
+            if urlparse(u).scheme in ("http", "https") and u not in seen:
+                seen.add(u); urls.append(u)
+    return urls[:30]  # checa só os mais recentes
 
-def parse_post(url):
-    soup = soup_of(url)
-
-    # título
-    title = soup.find("meta", {"property": "og:title"})
-    title = title.get("content","") if title else ""
-    if not title:
-        h1 = soup.find(["h1","h2"])
-        title = h1.get_text(" ", strip=True) if h1 else url
-    title = norm(title)
-
-    # imagem principal
-    ogimg = soup.find("meta", {"property":"og:image"})
-    image = ogimg.get("content","") if ogimg else ""
-    if not image:
-        imgel = soup.find("img")
-        if imgel and imgel.get("src"): image = urljoin(url, imgel["src"])
-
-    # TABELA DE RESUMO (duas colunas)
-    dados = []
+def extract_table(soup):
+    """Encontra a tabela 'Resumo edital …' (2 colunas) e retorna linhas [{etapa,data}]."""
+    # ajuda: muitos posts têm subtítulo 'Resumo edital ...'
+    # mas confiamos na forma (tabela 2 colunas com >=3 linhas)
     for tb in soup.find_all("table"):
         rows = []
         for tr in tb.find_all("tr"):
@@ -67,38 +52,83 @@ def parse_post(url):
             if len(tds) >= 2:
                 etapa = norm(tds[0].get_text(" "))
                 data  = norm(tds[1].get_text(" "))
-                if etapa and data: rows.append({"etapa":etapa,"data":data})
+                if etapa and data:
+                    rows.append({"etapa": etapa, "data": data})
         if len(rows) >= 3:
-            # remove cabeçalho "Etapa | Data" se existir
+            # remove header "Etapa | Data"
             if re.search(r"\betapa\b", rows[0]["etapa"], re.I) and re.search(r"\bdata\b", rows[0]["data"], re.I):
                 rows = rows[1:]
             if len(rows) >= 2:
-                dados = rows
-                break
+                return rows
+    return []
 
-    # LINK DA BANCA (texto "página oficial da banca organizadora")
-    link_banca = ""
-    for t in soup.find_all(string=re.compile(r"página oficial da banca organizadora", re.I)):
-        a = (t.parent.find("a", href=True) or t.find_next("a", href=True))
+def extract_official_link(soup, base_url):
+    """
+    Procura o parágrafo com a frase exata do aviso ('Atenção! É essencial... página oficial da banca organizadora')
+    e captura o <a> DENTRO desse parágrafo. Garante que o domínio não é med.estrategia.com.
+    """
+    # Primeiro tente achar o parágrafo inteiro com a frase completa
+    for p in soup.find_all(["p", "div", "section"]):
+        text = norm(p.get_text(" "))
+        if ATENCAO_BLOCK_RE.search(text):
+            a = p.find("a", href=True)
+            if a:
+                href = urljoin(base_url, a["href"])
+                host = urlparse(href).hostname or ""
+                if "med.estrategia.com" not in host:
+                    return href
+    # Fallback (mais estrito): busque pelo termo 'página oficial da banca organizadora' e pegue <a> irmão
+    for t in soup.find_all(string=PHRASE_RE):
+        # precisa estar exatamente no bloco do aviso
+        container = t.parent
+        text = norm(container.get_text(" "))
+        if not ATENCAO_BLOCK_RE.search(text):
+            continue
+        a = container.find("a", href=True) or t.find_next("a", href=True)
         if a:
-            link_banca = urljoin(url, a["href"]); break
+            href = urljoin(base_url, a["href"])
+            host = urlparse(href).hostname or ""
+            if "med.estrategia.com" not in host:
+                return href
+    return None
 
-    # Só considera post válido se achou a tabela de resumo
-    valido = len(dados) > 0
-    print(f"  {'✓' if valido else '×'} {title} | tabela={len(dados)} linhas | banca={'sim' if link_banca else 'não'}")
-    if not valido: return None
+def parse_post(url):
+    soup = soup_of(url)
 
+    # título e imagem
+    title = soup.find("meta", {"property": "og:title"})
+    title = title.get("content","") if title else ""
+    if not title:
+        h1 = soup.find(["h1","h2"])
+        title = h1.get_text(" ", strip=True) if h1 else url
+    title = norm(title)
+
+    ogimg = soup.find("meta", {"property":"og:image"})
+    image = ogimg.get("content","") if ogimg else ""
+    if not image:
+        imgel = soup.find("img")
+        if imgel and imgel.get("src"):
+            image = urljoin(url, imgel["src"])
+
+    dados = extract_table(soup)
+    link_banca = extract_official_link(soup, url)
+
+    # Critério de "card SAIU O EDITAL": precisa ter TABELA + FRASE EXATA + LINK EXTERNO
+    if not dados or not link_banca:
+        print(f"  × DESCARTADO: {title} | tabela={len(dados)} | link_banca={'ok' if link_banca else 'none'}")
+        return None
+
+    print(f"  ✓ {title} | linhas={len(dados)} | banca={link_banca}")
     return {
         "slug": slug(title),
         "nome": title,
         "link": url,
         "imagem": image,
         "dados": dados,
-        "link_banca": link_banca or None
+        "link_banca": link_banca
     }
 
 def main():
-    # carrega existente
     try:
         existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
         if not isinstance(existing, list): existing = []
@@ -109,14 +139,14 @@ def main():
     items = []
     for u in urls:
         try:
-            item = parse_post(u)
-            if item: items.append(item)
-            time.sleep(0.6)
+            it = parse_post(u)
+            if it: items.append(it)
+            time.sleep(0.5)
         except Exception as e:
             print(f"  ! erro em {u}: {e}")
 
     if not items:
-        print("[!] Nenhum post válido encontrado (sem tabela). Vou manter o arquivo atual.")
+        print("[!] Nenhum post válido encontrado. Mantendo arquivo atual.")
         OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         OUT_PATH.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
         return
