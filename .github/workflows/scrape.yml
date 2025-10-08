@@ -20,6 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Show JSON head
+        run: |
+          echo "----- data/editais.json (first 1200 chars) -----"
+          head -c 1200 data/editais.json || true
+          echo
+
       - name: Install deps (requests, bs4, lxml, OCR stack)
         run: |
           sudo apt-get update
@@ -52,5 +58,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
 
 
