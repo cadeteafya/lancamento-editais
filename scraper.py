@@ -191,9 +191,14 @@ def parse_post(url):
     }
 
     # Critério de "card SAIU O EDITAL": precisa ter TABELA + FRASE EXATA + LINK EXTERNO
-    if not dados or not link_banca:
-        print(f"  × DESCARTADO: {title} | tabela={len(dados)} | link_banca={'ok' if link_banca else 'none'}")
+    # Só descartamos se NÃO houver tabela de resumo (isso indica que não é lançamento).
+    if not dados:
+        print(f"  × DESCARTADO (sem tabela): {title}")
         return None
+    
+    # Mantém o item mesmo sem link_banca; quando existir, incluímos.
+    print(f"  ✓ {title} | linhas={len(dados)} | banca={'OK' if link_banca else '—'}")
+
 
     print(f"  ✓ {title} | linhas={len(dados)} | banca={link_banca}")
     return {
@@ -239,6 +244,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
