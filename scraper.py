@@ -17,6 +17,7 @@ Scraper de lançamentos de edital (Estratégia MED)
 import io, json, re, time, hashlib
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+from datetime import datetime, timezone
 
 import requests
 from bs4 import BeautifulSoup
@@ -164,6 +165,8 @@ def parse_post(url:str):
     instituicao = ocr_instituicao_from_image(image) if image else None
     print(f"  ✓ {title} | linhas={len(dados)} | banca=OK")
 
+    captured_at = datetime.now(timezone.utc).isoformat()
+
     return {
         "slug": slugify(title),
         "nome": title,
@@ -172,13 +175,22 @@ def parse_post(url:str):
         "imagem": image,              # guardo para debug; não usamos no card
         "dados": dados,
         "link_banca": link_banca
+        "captured_at": captured_at
     }
 
-def merge(existing:list, new_items:list, limit:int=30):
+def merge(existing: list, new_items: list):
+    """
+    Mantém histórico completo (sem truncar).
+    - Deduplica por URL (link).
+    - Atualiza o registro se o link já existir (ex.: melhora OCR, link_banca).
+    """
     by = {x.get("link"): x for x in existing if isinstance(x, dict) and x.get("link")}
     for it in new_items:
-        by[it["link"]] = it
-    return list(by.values())[:limit]
+        by[it["link"]] = {**by.get(it["link"], {}), **it}
+    # ordena por captured_at desc, se disponível; fallback para ordem de inserção
+    def sort_key(x):
+        return x.get("captured_at", "")
+    return sorted(by.values(), key=sort_key, reverse=True)
 
 def main():
     try:
@@ -203,10 +215,11 @@ def main():
         print("[!] Nenhum item válido; gravado JSON vazio.")
         return
 
-    final = merge(existing, items, 30)
+    final = merge(existing, items)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(final, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[i] Gravado {OUT_PATH} com {len(final)} registros.")
 
 if __name__ == "__main__":
     main()
+
