@@ -64,32 +64,32 @@ def extract_table(soup):
 
 def extract_official_link(soup, base_url):
     """
-    Procura o parágrafo com a frase exata do aviso ('Atenção! É essencial... página oficial da banca organizadora')
-    e captura o <a> DENTRO desse parágrafo. Garante que o domínio não é med.estrategia.com.
+    Captura SOMENTE o <a> que está DENTRO do parágrafo do aviso:
+    'Atenção! É essencial que o candidato... página oficial da banca organizadora ...'
+    e valida que é domínio externo (não med.estrategia.com) e não rede social.
     """
-    # Primeiro tente achar o parágrafo inteiro com a frase completa
-    for p in soup.find_all(["p", "div", "section"]):
-        text = norm(p.get_text(" "))
+    SOCIAL = ("facebook.com", "twitter.com", "t.me", "linkedin.com", "instagram.com", "wa.me", "tiktok.com")
+    def is_valid(href):
+        host = (urlparse(href).hostname or "").lower()
+        if not host:  # âncora relativa
+            return False
+        if "med.estrategia.com" in host:
+            return False
+        if any(s in host for s in SOCIAL):
+            return False
+        return True
+
+    # procure blocos (p/div/section) cujo texto contenha a frase completa do aviso
+    for block in soup.find_all(["p", "div", "section"]):
+        text = norm(block.get_text(" "))
         if ATENCAO_BLOCK_RE.search(text):
-            a = p.find("a", href=True)
-            if a:
+            # pegue SOMENTE <a> DENTRO do bloco
+            for a in block.find_all("a", href=True):
                 href = urljoin(base_url, a["href"])
-                host = urlparse(href).hostname or ""
-                if "med.estrategia.com" not in host:
+                if is_valid(href):
                     return href
-    # Fallback (mais estrito): busque pelo termo 'página oficial da banca organizadora' e pegue <a> irmão
-    for t in soup.find_all(string=PHRASE_RE):
-        # precisa estar exatamente no bloco do aviso
-        container = t.parent
-        text = norm(container.get_text(" "))
-        if not ATENCAO_BLOCK_RE.search(text):
-            continue
-        a = container.find("a", href=True) or t.find_next("a", href=True)
-        if a:
-            href = urljoin(base_url, a["href"])
-            host = urlparse(href).hostname or ""
-            if "med.estrategia.com" not in host:
-                return href
+
+    # nada encontrado no bloco correto → não retorna link
     return None
 
 def parse_post(url):
@@ -162,3 +162,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
