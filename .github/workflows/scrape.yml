@@ -49,6 +49,11 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
+      - name: Show JSON head
+        run: |
+          echo "----- data/editais.json (first 1200 chars) -----"
+          head -c 1200 data/editais.json || true
+          echo
 
       # Publica o site independentemente de ter commitado algo
       - name: Upload artifact (site)
@@ -58,6 +63,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
 
 
 
