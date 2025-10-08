@@ -127,14 +127,16 @@ def extract_table(soup):
     return []
 
 def extract_official_link(soup, base_url):
-    """
-    Retorna o href da âncora cujo TEXTO contém exatamente
-    'página oficial da banca organizadora'. Ignora links do próprio
-    med.estrategia.com e redes sociais. Não usa find_next fora da âncora.
-    """
     PHRASE = re.compile(r"p[aá]gina oficial da banca organizadora", re.I)
-    SOCIAL = ("facebook.com", "twitter.com", "t.me", "linkedin.com",
-              "instagram.com", "wa.me", "tiktok.com", "x.com")
+    SOCIAL = ("facebook.com","twitter.com","t.me","linkedin.com","instagram.com","wa.me","tiktok.com","x.com")
+    for a in soup.find_all("a", href=True):
+        text = re.sub(r"\s+"," ",a.get_text(" ").strip())
+        if PHRASE.search(text):
+            href = urljoin(base_url, a["href"])
+            host = (urlparse(href).hostname or "").lower()
+            if host and "med.estrategia.com" not in host and not any(s in host for s in SOCIAL):
+                return href
+    return None
 
     def is_valid(href):
         host = (urlparse(href).hostname or "").lower()
@@ -244,6 +246,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
