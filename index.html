@@ -12,15 +12,27 @@ async function main(){
   const res = await fetch('data/editais.json',{cache:'no-store'});
   const data = await res.json();
 
-  const items = data.slice(0,6);
-  const grid = document.getElementById('grid');
+  const pageSize = 9;
+  const params = new URLSearchParams(location.search);
+  let page = parseInt(params.get('page') || '1', 10);
+  if (isNaN(page) || page < 1) page = 1;
 
-  if(!items.length){
-    grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado agora.</div>`;
+  const total = data.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  if (page > totalPages) page = totalPages;
+
+  const start = (page - 1) * pageSize;
+  const end = start + pageSize;
+  const slice = data.slice(start, end);
+
+  const grid = document.getElementById('grid');
+  if (!slice.length) {
+    grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado.</div>`;
+    renderPager(totalPages, page);
     return;
   }
 
-  grid.innerHTML = items.map(x=>{
+  grid.innerHTML = slice.map(x=>{
     const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
     return `
       <div class="card">
@@ -31,11 +43,48 @@ async function main(){
         </div>
       </div>`;
   }).join('');
+
+  renderPager(totalPages, page);
 }
+
+function renderPager(totalPages, current){
+  const containerId = 'pager';
+  let pager = document.getElementById(containerId);
+  if (!pager) {
+    pager = document.createElement('div');
+    pager.id = containerId;
+    pager.className = 'pager';
+    document.querySelector('.container').appendChild(pager);
+  }
+  const mkLink = (p, label=String(p), disabled=false, active=false) => {
+    if (disabled) return `<span class="pg disabled">${label}</span>`;
+    if (active)   return `<span class="pg active">${label}</span>`;
+    const url = new URL(location.href);
+    url.searchParams.set('page', p);
+    return `<a class="pg" href="${url.pathname}${url.search}">${label}</a>`;
+  };
+
+  const parts = [];
+  parts.push(mkLink(Math.max(1, current-1), '‹', current===1));
+  // números (máx 7 visíveis)
+  const span = 3;
+  let start = Math.max(1, current - span);
+  let end = Math.min(totalPages, current + span);
+  if (current <= span) end = Math.min(totalPages, 1 + 2*span);
+  if (current + span > totalPages) start = Math.max(1, totalPages - 2*span);
+  for (let p=start; p<=end; p++){
+    parts.push(mkLink(p, String(p), false, p===current));
+  }
+  parts.push(mkLink(Math.min(totalPages, current+1), '›', current===totalPages));
+
+  pager.innerHTML = parts.join('');
+}
+
 main().catch(err=>{
   console.error(err);
   document.getElementById('grid').innerHTML = `<div class="meta">Erro ao carregar dados.</div>`;
 });
 </script>
 </body></html>
+
 
