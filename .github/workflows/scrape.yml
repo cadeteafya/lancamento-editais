@@ -20,18 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Show JSON head
+      - name: Install deps (mínimo)
         run: |
-          echo "----- data/editais.json (first 1200 chars) -----"
-          head -c 1200 data/editais.json || true
-          echo
-
-      - name: Install deps (requests, bs4, lxml, OCR stack)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y tesseract-ocr tesseract-ocr-por
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 "lxml==5.3.0" pillow pytesseract opencv-python-headless
+          pip install requests beautifulsoup4 "lxml==5.3.0"
     
       - name: Checkout
         uses: actions/checkout@v4
@@ -63,6 +55,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
 
 
 
