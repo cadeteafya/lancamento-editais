@@ -64,14 +64,17 @@ def extract_table(soup):
 
 def extract_official_link(soup, base_url):
     """
-    Captura SOMENTE o <a> que está DENTRO do parágrafo do aviso:
-    'Atenção! É essencial que o candidato... página oficial da banca organizadora ...'
-    e valida que é domínio externo (não med.estrategia.com) e não rede social.
+    Retorna o href da âncora cujo TEXTO contém exatamente
+    'página oficial da banca organizadora'. Ignora links do próprio
+    med.estrategia.com e redes sociais. Não usa find_next fora da âncora.
     """
-    SOCIAL = ("facebook.com", "twitter.com", "t.me", "linkedin.com", "instagram.com", "wa.me", "tiktok.com")
+    PHRASE = re.compile(r"p[aá]gina oficial da banca organizadora", re.I)
+    SOCIAL = ("facebook.com", "twitter.com", "t.me", "linkedin.com",
+              "instagram.com", "wa.me", "tiktok.com", "x.com")
+
     def is_valid(href):
         host = (urlparse(href).hostname or "").lower()
-        if not host:  # âncora relativa
+        if not host:
             return False
         if "med.estrategia.com" in host:
             return False
@@ -79,17 +82,15 @@ def extract_official_link(soup, base_url):
             return False
         return True
 
-    # procure blocos (p/div/section) cujo texto contenha a frase completa do aviso
-    for block in soup.find_all(["p", "div", "section"]):
-        text = norm(block.get_text(" "))
-        if ATENCAO_BLOCK_RE.search(text):
-            # pegue SOMENTE <a> DENTRO do bloco
-            for a in block.find_all("a", href=True):
-                href = urljoin(base_url, a["href"])
-                if is_valid(href):
-                    return href
+    # Procura diretamente <a> cujo innerText contenha a frase exata
+    for a in soup.find_all("a", href=True):
+        text = norm(a.get_text(" "))
+        if PHRASE.search(text):
+            href = urljoin(base_url, a["href"])
+            if is_valid(href):
+                return href
 
-    # nada encontrado no bloco correto → não retorna link
+    # Se não achar, não retorna nada (melhor vazio do que errado)
     return None
 
 def parse_post(url):
@@ -162,4 +163,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
