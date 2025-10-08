@@ -11,18 +11,30 @@
 async function main(){
   const res = await fetch('data/editais.json',{cache:'no-store'});
   const data = await res.json();
+
   const items = data.slice(0,6);
   const grid = document.getElementById('grid');
-  grid.innerHTML = items.map(x => `
-    <div class="card">
-      <img src="${x.imagem||''}" alt="${x.nome}">
-      <div class="p">
-        <div class="badge">Lançamento de edital</div>
-        <h3>${x.nome}</h3>
-        <a class="btn" href="edital.html?slug=${encodeURIComponent(x.slug)}">Ver detalhes</a>
-      </div>
-    </div>`).join('');
+
+  if(!items.length){
+    grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado agora.</div>`;
+    return;
+  }
+
+  grid.innerHTML = items.map(x=>{
+    const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
+    return `
+      <div class="card">
+        <div class="p">
+          <div class="badge">Lançamento de edital</div>
+          <h3 style="margin-top:8px">${titulo}</h3>
+          <a class="btn" href="edital.html?slug=${encodeURIComponent(x.slug)}">Ver detalhes</a>
+        </div>
+      </div>`;
+  }).join('');
 }
-main().catch(console.error);
+main().catch(err=>{
+  console.error(err);
+  document.getElementById('grid').innerHTML = `<div class="meta">Erro ao carregar dados.</div>`;
+});
 </script>
 </body></html>
