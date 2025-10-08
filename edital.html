@@ -1,40 +1,38 @@
 <!doctype html><html lang="pt-br"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Lançamento de editais</title>
+<title>Detalhe do edital</title>
 <link rel="stylesheet" href="assets/style.css">
 </head><body>
 <div class="container">
-  <div class="header"><h1>Últimos lançamentos</h1></div>
-  <div id="grid" class="grid"></div>
+  <div class="header"><h1 id="titulo">Edital</h1><a class="btn" href="./">← Voltar</a></div>
+  <table class="table" id="tabela"></table>
+  <div id="linkOficial" class="link-oficial"></div>
 </div>
 <script>
 async function main(){
-  const res = await fetch('data/editais.json',{cache:'no-store'});
-  const data = await res.json();
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug');
 
-  const items = data.slice(0,6);
-  const grid = document.getElementById('grid');
+  const data = await (await fetch('data/editais.json',{cache:'no-store'})).json();
+  const item = data.find(x=>x.slug===slug);
 
-  if(!items.length){
-    grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado agora.</div>`;
+  if(!item){
+    document.getElementById('titulo').textContent = 'Edital não encontrado';
     return;
   }
 
-  grid.innerHTML = items.map(x=>{
-    const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
-    return `
-      <div class="card">
-        <div class="p">
-          <div class="badge">Lançamento de edital</div>
-          <h3 style="margin-top:8px">${titulo}</h3>
-          <a class="btn" href="edital.html?slug=${encodeURIComponent(x.slug)}">Ver detalhes</a>
-        </div>
-      </div>`;
-  }).join('');
+  document.getElementById('titulo').textContent = `Edital: ${item.nome}`;
+
+  const tbody = document.getElementById('tabela');
+  tbody.innerHTML = (item.dados||[]).map(r=>`<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`).join('');
+
+  const linkDiv = document.getElementById('linkOficial');
+  if(item.link_banca){
+    linkDiv.innerHTML = `🔗 <strong>Link para o site oficial:</strong> <a href="${item.link_banca}" target="_blank" rel="noopener">${new URL(item.link_banca).hostname}</a>`;
+  } else {
+    linkDiv.textContent = '';
+  }
 }
-main().catch(err=>{
-  console.error(err);
-  document.getElementById('grid').innerHTML = `<div class="meta">Erro ao carregar dados.</div>`;
-});
+main().catch(console.error);
 </script>
 </body></html>
