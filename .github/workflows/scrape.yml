@@ -23,7 +23,7 @@ jobs:
       - name: Install deps (requests, bs4, lxml, OCR stack)
         run: |
           sudo apt-get update
-          sudo apt-get install -y tesseract-ocr
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-por
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 "lxml==5.3.0" pillow pytesseract opencv-python-headless
     
@@ -43,6 +43,7 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
+
       # Publica o site independentemente de ter commitado algo
       - name: Upload artifact (site)
         uses: actions/upload-pages-artifact@v3
@@ -51,4 +52,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
 
