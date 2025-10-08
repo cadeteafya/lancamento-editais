@@ -3,6 +3,70 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
+import io, numpy as np
+from PIL import Image, ImageOps, ImageFilter
+import pytesseract
+import cv2
+
+def fetch_image_bytes(url):
+    try:
+        r = S.get(url, timeout=30)
+        r.raise_for_status()
+        return r.content
+    except Exception:
+        return None
+
+def ocr_instituicao_from_image(image_url):
+    """
+    Baixa a imagem do post (og:image) e extrai o nome logo abaixo do selo 'SAIU O EDITAL!'.
+    Estratégia: OCR por linhas; ignora linhas com 'SAIU O EDITAL'; retorna a linha mais 'forte'.
+    """
+    raw = fetch_image_bytes(image_url)
+    if not raw:
+        return None
+
+    # abre e pré-processa
+    img = Image.open(io.BytesIO(raw)).convert("RGB")
+    # aumenta tamanho para melhorar OCR
+    scale = 1.6
+    img = img.resize((int(img.width*scale), int(img.height*scale)), Image.LANCZOS)
+
+    # realce de contraste + tons de cinza
+    gray = ImageOps.grayscale(img)
+    gray = ImageOps.autocontrast(gray)
+
+    # leve desfoque para reduzir ruído
+    gray = gray.filter(ImageFilter.MedianFilter(size=3))
+
+    # binarização com Otsu (via OpenCV)
+    arr = np.array(gray)
+    arr = cv2.threshold(arr, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+
+    # OCR
+    text = pytesseract.image_to_string(arr, lang="por+eng", config="--psm 6")
+    lines = [re.sub(r"\s+", " ", l).strip() for l in text.splitlines()]
+    lines = [l for l in lines if l]
+
+    # remove linhas do selo
+    lines = [l for l in lines if not re.search(r"saiu\s*o\s*edital", l, re.I)]
+
+    if not lines:
+        return None
+
+    # heurística: escolher a linha mais "institucional":
+    # - prioriza linhas com ≥ 2 caracteres, poucas pontuações, com letras maiúsculas predominantes
+    def score(l):
+        caps = sum(1 for ch in l if ch.isupper())
+        letters = sum(1 for ch in l if ch.isalpha())
+        frac_caps = caps / letters if letters else 0
+        penal = sum(1 for ch in l if ch in ":|/\\.!?,;")  # menos sinais
+        return (len(l) * 1.0) + (frac_caps * 10.0) - (penal * 2.0)
+
+    best = max(lines, key=score)
+    # limpar ruído comum tipo artefatos
+    best = re.sub(r"^[^A-Za-z0-9]+|[^A-Za-z0-9]+$", "", best)
+    return best or None
+
 
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
@@ -114,6 +178,18 @@ def parse_post(url):
     dados = extract_table(soup)
     link_banca = extract_official_link(soup, url)
 
+    instituicao = ocr_instituicao_from_image(image) if image else None
+
+    return {
+        "slug": slug(title),
+        "nome": title,
+        "instituicao": instituicao,   # <— novo
+        "link": url,
+        "imagem": image,
+        "dados": dados,
+        "link_banca": link_banca
+    }
+
     # Critério de "card SAIU O EDITAL": precisa ter TABELA + FRASE EXATA + LINK EXTERNO
     if not dados or not link_banca:
         print(f"  × DESCARTADO: {title} | tabela={len(dados)} | link_banca={'ok' if link_banca else 'none'}")
@@ -163,5 +239,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
