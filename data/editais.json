@@ -1,1 +1,16 @@
+[
+  {
+    "nome": "Instituto Oncoclínicas 2026",
+    "link": "https://med.estrategia.com/portal/.../",
+    "imagem": "https://med.estrategia.com/.../oncoclinicas.jpg",
+    "dados": [
+      {"etapa": "Inscrições on-line", "data": "08/10/2025 (14h) a 06/11/2025"},
+      {"etapa": "Taxa de inscrição", "data": "R$ 400,00"},
+      {"etapa": "Composição do processo seletivo", "data": "Etapa única: Prova Discursiva"},
+      ...
+    ],
+    "link_banca": "https://institutooncoclinicas.com.br/concursos/"
+  },
+  ...
+]
 
