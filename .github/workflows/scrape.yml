@@ -1,30 +1,27 @@
-
 name: Scrape & Deploy (Estratégia MED)
 
 on:
+  # agenda diária (07:30 BRT ≈ 10:30 UTC)
   schedule:
-    # 07:30 BRT ≈ 10:30 UTC
     - cron: "30 10 * * *"
+  # botão "Run workflow"
   workflow_dispatch: {}
+  # re-rodar quando o scraper mudar
   push:
     paths:
       - "scraper.py"
+      - ".github/workflows/scrape.yml"
 
 permissions:
-  contents: write
+  contents: write   # (caso você queira commitar arquivos no futuro)
   pages: write
   id-token: write
 
 jobs:
   scrape_and_deploy:
     runs-on: ubuntu-latest
-    steps:
 
-      - name: Install deps (mínimo)
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 "lxml==5.3.0"
-    
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -33,21 +30,25 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      # Dependências: Tesseract + idioma PT-BR, e libs Python
+      - name: Install deps (requests, bs4, lxml, OCR stack)
         run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-por
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 "lxml==5.3.0"
+          pip install requests beautifulsoup4 "lxml==5.3.0" pillow pytesseract opencv-python-headless
 
       - name: Run scraper
         run: python scraper.py
 
+      # Mostrar um pedaço do JSON gerado (útil para debug)
       - name: Show JSON head
         run: |
           echo "----- data/editais.json (first 1200 chars) -----"
           head -c 1200 data/editais.json || true
           echo
 
-      # Publica o site independentemente de ter commitado algo
+      # Publica SEMPRE o artefato atual para Pages
       - name: Upload artifact (site)
         uses: actions/upload-pages-artifact@v3
         with:
@@ -55,8 +56,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-
-
-
-
