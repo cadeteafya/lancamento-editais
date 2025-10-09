@@ -1,36 +1,56 @@
 name: Scrape & Deploy (Estratégia MED)
 
 on:
-  # agenda diária (07:30 BRT ≈ 10:30 UTC)
+  # agenda “grossa” — roda a cada 20 min em UTC
   schedule:
-    - cron: "30 10 * * *"
-  # botão "Run workflow"
+    - cron: "*/20 * * * *"
   workflow_dispatch: {}
-  # re-rodar quando o scraper/fluxo mudar
   push:
     paths:
       - "scraper.py"
       - ".github/workflows/scrape.yml"
 
+# evita sobreposição de execuções
+concurrency:
+  group: scrape-and-deploy
+  cancel-in-progress: true
+
 permissions:
-  contents: write     # para commitar data/*.json
+  contents: write
   pages: write
   id-token: write
 
 jobs:
   scrape_and_deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # <— NECESSÁRIO para usar HEAD~1 no git show
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Dependências do scraper (Tesseract + libs Python)
+      # Janela de funcionamento: seg–sex 06:30–18:30 (BRT). Fora disso, encerra.
+      - name: Guard (somente seg–sex 06:30–18:30 BRT)
+        run: |
+          export TZ=America/Sao_Paulo
+          dow=$(date +%u)   # 1=Seg ... 7=Dom
+          hhmm=$(date +%H%M)
+          if [ "$dow" -ge 6 ]; then
+            echo "Fim de semana (BRT) → encerrando."; exit 0
+          fi
+          if { [ "$hhmm" \> "0629" ] && [ "$hhmm" \< "1831" ]; }; then
+            echo "Dentro da janela (BRT)."
+          else
+            echo "Fora da janela (BRT) → encerrando."; exit 0
+          fi
+
       - name: Install deps (requests, bs4, lxml, OCR stack)
         run: |
           sudo apt-get update
@@ -41,8 +61,7 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      # ---------- ALERTA TEAMS: evitar repetição ----------
-      # Carrega lista já notificada do commit anterior (ou cria vazia)
+      # ---------- ALERTAS (Teams) sem repetição ----------
       - name: Load notified state
         run: |
           mkdir -p data
@@ -52,8 +71,7 @@ jobs:
             echo "[]" > data/notified.json
           fi
 
-      # Monta a fila de notificações (somente links ainda não notificados)
-      - name: Build notifications
+      - name: Build notifications (new-only)
         id: notif
         run: |
           python - << 'PY'
@@ -78,12 +96,10 @@ jobs:
 
           Path("to_notify.json").write_text(json.dumps(to_notify, ensure_ascii=False), encoding="utf-8")
 
-          # exporta count para próximos steps (sem set-output)
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write(f"count={len(to_notify)}\n")
           PY
 
-      # Envia 1 cartão por item novo ao Microsoft Teams (Incoming Webhook)
       - name: Notify Teams (new only)
         if: steps.notif.outputs.count != '0'
         env:
@@ -97,7 +113,6 @@ jobs:
           for it in items:
               nome = it.get("nome") or "Novo edital"
               site = it.get("site")
-              # O365 Connector Card (Incoming Webhook)
               payload = {
                 "@type": "MessageCard",
                 "@context": "https://schema.org/extensions",
@@ -111,7 +126,6 @@ jobs:
           print(f"Enviado {len(items)} alerta(s) ao Teams.")
           PY
 
-      # Atualiza o estado de notificados
       - name: Update notified state
         if: steps.notif.outputs.count != '0'
         run: |
@@ -127,7 +141,6 @@ jobs:
           Path("data/notified.json").write_text(json.dumps(sorted(notified), ensure_ascii=False, indent=2), encoding="utf-8")
           PY
 
-      # Commita dados e estado (mantém histórico + evita alertas repetidos)
       - name: Commit data & notified if changed
         run: |
           if [[ -n "$(git status --porcelain -- data/editais.json data/notified.json)" ]]; then
@@ -140,14 +153,12 @@ jobs:
             echo "No changes to commit."
           fi
 
-      # Mostra um pedaço do JSON (debug rápido no log)
-      - name: Show JSON head
+      - name: Show JSON head (debug)
         run: |
           echo "----- data/editais.json (first 1200 chars) -----"
           head -c 1200 data/editais.json || true
           echo
 
-      # Publica SEMPRE o artefato atual para Pages
       - name: Upload artifact (site)
         uses: actions/upload-pages-artifact@v3
         with:
