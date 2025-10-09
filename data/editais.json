@@ -60,7 +60,7 @@
       }
     ],
     "link_banca": "http://hsja.com.br/residencia/",
-    "captured_at": "2025-10-09T18:48:37.522970+00:00"
+    "captured_at": "2025-10-09T19:01:17.898202+00:00"
   },
   {
     "slug": "hpc-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o-abertas",
@@ -127,7 +127,85 @@
       }
     ],
     "link_banca": "https://www.hpccampos.com.br/centrodeestudos",
-    "captured_at": "2025-10-09T18:48:36.361200+00:00"
+    "captured_at": "2025-10-09T19:01:16.647178+00:00"
+  },
+  {
+    "slug": "hmipv-recebe-inscri-es-para-resid-ncia-m-dica-com-pr-requisito-em-go-confira-o-e",
+    "nome": "HMIPV recebe inscrições para residência médica com pré-requisito em GO; confira o edital 2026",
+    "instituicao": "HMIPV",
+    "link": "https://med.estrategia.com/portal/noticias/hmipv-esta-com-inscricoes-abertas-para-residencia-medica-com-pre-requisito-em-go-confira-o-edital-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-31.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "3 vagas"
+      },
+      {
+        "etapa": "Processo seletivo",
+        "data": "Prova escrita + Avaliação curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$350,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "29/09 a 02/12/2025"
+      },
+      {
+        "etapa": "Prova Escrita",
+        "data": "04/12/2025"
+      },
+      {
+        "etapa": "Entrevista e Análise do Currículo",
+        "data": "04/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "12/12/2025"
+      }
+    ],
+    "link_banca": "https://prefeitura.poa.br/sms/concursos",
+    "captured_at": "2025-10-09T19:01:13.556364+00:00"
+  },
+  {
+    "slug": "uvv-2026-edital-para-resid-ncia-m-dica-com-10-vagas-est-dispon-vel",
+    "nome": "UVV 2026: edital para residência médica com 10 vagas está disponível",
+    "instituicao": "UVV",
+    "link": "https://med.estrategia.com/portal/noticias/uvv-divulga-edital-2026-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-32.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "10 vagas"
+      },
+      {
+        "etapa": "Processo seletivo",
+        "data": "Prova escrita + Avaliação curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$400,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "15/10 a 24/11/2025"
+      },
+      {
+        "etapa": "Prova Teórica e entrega do currículo",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "17/12/2025"
+      }
+    ],
+    "link_banca": "https://uvv.br/editais/",
+    "captured_at": "2025-10-09T19:01:12.271948+00:00"
   },
   {
     "slug": "hospital-santo-amaro-oferta-14-vagas-para-resid-ncia-m-dica-2026-acesse-o-edital",
@@ -162,7 +240,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-09T18:48:32.116376+00:00"
+    "captured_at": "2025-10-09T19:01:11.038712+00:00"
   },
   {
     "slug": "centro-m-dico-de-campinas-tem-sele-o-para-resid-ncia-m-dica-2026-aberta",
@@ -201,7 +279,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-09T18:48:30.859087+00:00"
+    "captured_at": "2025-10-09T19:01:09.807113+00:00"
   },
   {
     "slug": "sus-ba-2026-tem-institui-es-e-mais-de-450-vagas-confirmadas-confira-a-rela-o-com",
@@ -348,7 +426,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-09T18:48:29.641440+00:00"
+    "captured_at": "2025-10-09T19:01:08.141000+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
