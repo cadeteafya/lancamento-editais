@@ -3,14 +3,16 @@
 Scraper de lançamentos de edital (Estratégia MED)
 
 Critérios para entrar no JSON:
-  (a) Ter TABELA de resumo (2 colunas, >= 2 linhas úteis)
-  (b) Ter ÂNCORA cujo texto contenha exatamente "página oficial da banca organizadora"
+  (a) Ter RESUMO do edital:
+      - preferencialmente em <table> 2 colunas (>=2 linhas úteis), ou
+      - fallback: bloco "Resumo Edital ..." com pares "rótulo : valor" ou <strong>rótulo</strong> valor
+  (b) Ter ÂNCORA cujo texto contenha "página oficial da (banca organizadora|instituição|processo seletivo)"
       e cujo href seja EXTERNO (não med.estrategia.com e não rede social)
 
-Campos:
-  - slug, nome (título do post), instituicao (OCR na imagem), link, imagem,
-    dados (tabela [{etapa, data}]), link_banca (externo), captured_at (ISO-UTC)
-Histórico: acumulado (merge por URL), ordenado por captured_at desc.
+Campos no JSON:
+  - slug, nome (título do post), instituicao (OCR da imagem), link, imagem,
+    dados (lista [{etapa, data}]), link_banca (externo), captured_at (ISO-UTC)
+Histórico: acumulado (merge por URL) e ordenado por captured_at desc.
 """
 
 import io
@@ -37,13 +39,26 @@ except Exception:
 
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
-UA = "ResidMedBot/1.4 (+contato: seu-email)"
+UA = "ResidMedBot/1.5 (+contato: seu-email)"
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
 
-ANCHOR_TXT = re.compile(r"p[aá]gina oficial da banca organizadora", re.I)
-SOCIAL = ("facebook.com","twitter.com","t.me","linkedin.com","instagram.com","wa.me","tiktok.com","x.com")
+# aceita banca organizadora | instituição | processo seletivo
+ANCHOR_TXT = re.compile(
+    r"p[aá]gina oficial da (banca organizadora|institui[cç][aã]o|processo seletivo)",
+    re.I,
+)
+SOCIAL = (
+    "facebook.com",
+    "twitter.com",
+    "t.me",
+    "linkedin.com",
+    "instagram.com",
+    "wa.me",
+    "tiktok.com",
+    "x.com",
+)
 
 # ---------- helpers ----------
 def norm(s: str) -> str:
@@ -74,15 +89,19 @@ def list_article_urls(limit: int = 30):
     return urls[:limit]
 
 # ---------- extração por post ----------
-def extract_table(soup: BeautifulSoup):
-    """Retorna [{etapa,data}] se achar tabela 2 colunas com >=2 linhas úteis."""
+def extract_summary(soup: BeautifulSoup):
+    """
+    1) tenta tabela 2 colunas (>=2 linhas úteis)
+    2) fallback: bloco 'Resumo Edital ...' sem tabela
+    """
+    # 1) TABELA
     for tb in soup.find_all("table"):
         rows = []
         for tr in tb.find_all("tr"):
             tds = tr.find_all(["td", "th"])
             if len(tds) >= 2:
                 etapa = norm(tds[0].get_text(" "))
-                data  = norm(tds[1].get_text(" "))
+                data = norm(tds[1].get_text(" "))
                 if etapa and data:
                     rows.append({"etapa": etapa, "data": data})
         if len(rows) >= 3:
@@ -90,10 +109,42 @@ def extract_table(soup: BeautifulSoup):
                 rows = rows[1:]
             if len(rows) >= 2:
                 return rows
-    return []
+
+    # 2) FALLBACK "Resumo Edital ..."
+    # tenta achar heading com "resumo" próximo do conteúdo
+    heading = soup.find(lambda t: t.name in ["h2", "h3", "h4"] and "resumo" in t.get_text(" ").lower())
+    if not heading:
+        return []
+
+    rows = []
+    for el in heading.find_all_next():
+        # para quando chegar em outro título/seção
+        if el.name in ["h2", "h3", "h4"]:
+            break
+        txt = norm(el.get_text(" "))
+        if not txt:
+            continue
+
+        # caso <li><strong>Rótulo</strong> Valor</li>
+        strong = el.find("strong")
+        if strong:
+            rot = norm(strong.get_text(" "))
+            val = norm(el.get_text(" ").replace(strong.get_text(" "), "", 1))
+            if rot and val and len(rot) <= 80:
+                rows.append({"etapa": rot, "data": val})
+            continue
+
+        # split por ":" OU por espaços largos
+        parts = re.split(r"\s{2,}|:", txt, maxsplit=1)
+        if len(parts) == 2:
+            rot, val = norm(parts[0]), norm(parts[1])
+            if rot and val and len(rot) <= 80:
+                rows.append({"etapa": rot, "data": val})
+
+    return rows if len(rows) >= 2 else []
 
 def extract_official_link(soup: BeautifulSoup, base_url: str):
-    """Pega SOMENTE <a> cujo texto contenha 'página oficial da banca organizadora' e que seja externo (não social)."""
+    """Pega SOMENTE <a> cujo texto contenha ANCHOR_TXT e que seja externo (não social / não Estratégia)."""
     for a in soup.find_all("a", href=True):
         txt = norm(a.get_text(" "))
         if ANCHOR_TXT.search(txt):
@@ -163,12 +214,12 @@ def parse_post(url: str):
         if imgel and imgel.get("src"):
             image = urljoin(url, imgel["src"])
 
-    dados = extract_table(soup)
+    dados = extract_summary(soup)
     link_banca = extract_official_link(soup, url)
 
-    # Filtro estrito (tabela + link_banca)
+    # Filtro: precisa ter resumo + link oficial
     if not dados or not link_banca:
-        print(f"  × DESCARTADO: {title} | tabela={len(dados)} | link_banca={'OK' if link_banca else '—'}")
+        print(f"  × DESCARTADO: {title} | resumo={len(dados)} | link_banca={'OK' if link_banca else '—'}")
         return None
 
     instituicao = None
@@ -184,20 +235,20 @@ def parse_post(url: str):
     return {
         "slug": slugify(title),
         "nome": title,
-        "instituicao": instituicao,       # pode ser None
+        "instituicao": instituicao,   # pode ser None
         "link": url,
         "imagem": image,
         "dados": dados,
         "link_banca": link_banca,
-        "captured_at": captured_at
+        "captured_at": captured_at,
     }
 
 # ---------- merge (histórico acumulado) ----------
 def merge(existing: list, new_items: list):
     by = {x.get("link"): x for x in existing if isinstance(x, dict) and x.get("link")}
     for it in new_items:
-        # atualiza se já existir; mantém campos antigos se os novos vierem None
         prev = by.get(it["link"], {})
+        # não sobrescreve campos com None
         merged = {**prev, **{k: v for k, v in it.items() if v is not None}}
         by[it["link"]] = merged
     def sort_key(x):
