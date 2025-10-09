@@ -218,6 +218,14 @@ def parse_post(url: str):
     dados = extract_summary(soup)
     link_banca = extract_official_link(soup, url)
 
+    # data de publicação (quando o site fornece)
+    posted_at = None
+    meta_pub = soup.find("meta", {"property": "article:published_time"}) \
+               or soup.find("meta", {"name": "article:published_time"}) \
+               or soup.find("time", {"itemprop": "datePublished"})
+    if meta_pub:
+        posted_at = (meta_pub.get("content") or meta_pub.get("datetime") or "").strip() or None
+
     # Filtro: precisa ter resumo + link oficial
     if not dados or not link_banca:
         print(f"  × DESCARTADO: {title} | resumo={len(dados)} | link_banca={'OK' if link_banca else '—'}")
@@ -234,6 +242,7 @@ def parse_post(url: str):
     print(f"  ✓ {title} | linhas={len(dados)} | banca=OK")
 
     return {
+        "posted_at": posted_at,        # NOVO: quando existir no post
         "slug": slugify(title),
         "nome": title,
         "instituicao": instituicao,   # pode ser None
@@ -249,11 +258,12 @@ def merge(existing: list, new_items: list):
     by = {x.get("link"): x for x in existing if isinstance(x, dict) and x.get("link")}
     for it in new_items:
         prev = by.get(it["link"], {})
-        # não sobrescreve campos com None
         merged = {**prev, **{k: v for k, v in it.items() if v is not None}}
         by[it["link"]] = merged
+
     def sort_key(x):
-        return x.get("captured_at", "")
+        # ordem: posted_at (se houver) senão captured_at — ambos ISO
+        return (x.get("posted_at") or x.get("captured_at") or "")
     return sorted(by.values(), key=sort_key, reverse=True)
 
 # ---------- main ----------
@@ -290,4 +300,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
