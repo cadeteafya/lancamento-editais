@@ -46,9 +46,10 @@ S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
 
 # aceita banca organizadora | instituição | processo seletivo
 ANCHOR_TXT = re.compile(
-    r"p[aá]gina oficial da (banca organizadora|institui[cç][aã]o|processo seletivo)",
-    re.I,
+    r"p[aá]gina oficial da (banca organizadora|institui[cç][aã]o|processo seletivo|sele[cç][aã]o)",
+    re.I
 )
+
 SOCIAL = (
     "facebook.com",
     "twitter.com",
@@ -289,3 +290,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
