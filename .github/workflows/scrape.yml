@@ -6,14 +6,14 @@ on:
     - cron: "30 10 * * *"
   # botão "Run workflow"
   workflow_dispatch: {}
-  # re-rodar quando o scraper mudar
+  # re-rodar quando o scraper/fluxo mudar
   push:
     paths:
       - "scraper.py"
       - ".github/workflows/scrape.yml"
 
 permissions:
-  contents: write   # (caso você queira commitar arquivos no futuro)
+  contents: write     # para commitar data/*.json
   pages: write
   id-token: write
 
@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Dependências: Tesseract + idioma PT-BR, e libs Python
+      # Dependências do scraper (Tesseract + libs Python)
       - name: Install deps (requests, bs4, lxml, OCR stack)
         run: |
           sudo apt-get update
@@ -41,88 +41,106 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      # 1) Descobrir itens novos comparando com o commit anterior
-      - name: Diff new items
-        id: diff
+      # ---------- ALERTA TEAMS: evitar repetição ----------
+      # Carrega lista já notificada do commit anterior (ou cria vazia)
+      - name: Load notified state
         run: |
-          set -e
-          # carrega atual
-          CUR="data/editais.json"
-          # tenta obter o JSON anterior do commit HEAD (se não existir, considera vazio)
-          if git rev-parse HEAD~1 >/dev/null 2>&1 && git show HEAD~1:${CUR} >/dev/null 2>&1; then
-            git show HEAD~1:${CUR} > .prev_editais.json || echo "[]">.prev_editais.json
+          mkdir -p data
+          if git rev-parse HEAD~1 >/dev/null 2>&1 && git show HEAD~1:data/notified.json >/dev/null 2>&1; then
+            git show HEAD~1:data/notified.json > data/notified.json || echo "[]" > data/notified.json
           else
-            echo "[]">.prev_editais.json
+            echo "[]" > data/notified.json
           fi
 
-          python - << 'PY'
-          import json, sys
-          from urllib.parse import quote
-          # lê atual e anterior
-          cur = json.load(open("data/editais.json", "r", encoding="utf-8"))
-          prev = json.load(open(".prev_editais.json", "r", encoding="utf-8"))
-          prev_links = { x.get("link") for x in prev if isinstance(x, dict) }
-          # novos por link
-          new_items = [x for x in cur if isinstance(x, dict) and x.get("link") not in prev_links]
-          # ordena por captured_at desc (se houver)
-          new_items.sort(key=lambda x: x.get("captured_at",""), reverse=True)
-          # prepara payload enxuto (até 5 por segurança)
-          slim = []
-          for x in new_items[:5]:
-            nome_inst = (x.get("instituicao") or x.get("nome") or "").strip()
-            slug = x.get("slug")
-            site = f"https://cadeteafya.github.io/lancamento-editais/edital.html?slug={quote(slug)}" if slug else x.get("link")
-            slim.append({"nome": nome_inst, "site": site})
-          print(f"Novos: {len(new_items)}")
-          # expõe para os próximos steps
-          print(f"::set-output name=count::{len(new_items)}")
-          print("::set-output name=json::" + json.dumps(slim, ensure_ascii=False))
-          PY
-
-      # 2) Enviar alerta para o Microsoft Teams (1 cartão por item novo)
-      - name: Notify Teams (for each new item)
-        if: steps.diff.outputs.count != '0'
-        env:
-          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          ITEMS_JSON: ${{ steps.diff.outputs.json }}
+      # Monta a fila de notificações (somente links ainda não notificados)
+      - name: Build notifications
+        id: notif
         run: |
           python - << 'PY'
-          import json, os, sys, requests
-          hook = os.environ["TEAMS_WEBHOOK_URL"]
-          items = json.loads(os.environ["ITEMS_JSON"] or "[]")
+          import json, os, urllib.parse
+          from pathlib import Path
 
-          # formata e envia um card por item
+          cur  = json.loads(Path("data/editais.json").read_text(encoding="utf-8"))
+          try:
+            notified = set(json.loads(Path("data/notified.json").read_text(encoding="utf-8")))
+          except Exception:
+            notified = set()
+
+          to_notify = []
+          for x in cur:
+              link = x.get("link")
+              if not link or link in notified:
+                  continue
+              nome = (x.get("instituicao") or x.get("nome") or "").strip()
+              slug = x.get("slug")
+              site = f"https://cadeteafya.github.io/lancamento-editais/edital.html?slug={urllib.parse.quote(slug)}" if slug else x.get("link")
+              to_notify.append({"link": link, "nome": nome, "site": site})
+
+          Path("to_notify.json").write_text(json.dumps(to_notify, ensure_ascii=False), encoding="utf-8")
+
+          # exporta count para próximos steps (sem set-output)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"count={len(to_notify)}\n")
+          PY
+
+      # Envia 1 cartão por item novo ao Microsoft Teams (Incoming Webhook)
+      - name: Notify Teams (new only)
+        if: steps.notif.outputs.count != '0'
+        env:
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+        run: |
+          python - << 'PY'
+          import json, os, requests
+          items = json.loads(open("to_notify.json","r",encoding="utf-8").read())
+          hook  = os.environ["TEAMS_WEBHOOK_URL"]
+
           for it in items:
-            titulo = it.get("nome") or "Novo edital"
-            link   = it.get("site")
-            # payload no formato "connector card" do Teams
-            payload = {
-              "@type": "MessageCard",
-              "@context": "https://schema.org/extensions",
-              "summary": "Alerta de novo edital",
-              "themeColor": "00A884",
-              "title": "EM TESTE: Alerta de novo edital!",
-              "text": f"**{titulo}**: [{link}]({link})"
-            }
-            r = requests.post(hook, json=payload, timeout=30)
-            r.raise_for_status()
+              nome = it.get("nome") or "Novo edital"
+              site = it.get("site")
+              # O365 Connector Card (Incoming Webhook)
+              payload = {
+                "@type": "MessageCard",
+                "@context": "https://schema.org/extensions",
+                "summary": "Alerta de novo edital",
+                "themeColor": "00A884",
+                "title": "EM TESTE: Alerta de novo edital!",
+                "text": f"'**{nome}**': '{site}'"
+              }
+              r = requests.post(hook, json=payload, timeout=30)
+              r.raise_for_status()
           print(f"Enviado {len(items)} alerta(s) ao Teams.")
           PY
 
-
-      - name: Commit data if changed
+      # Atualiza o estado de notificados
+      - name: Update notified state
+        if: steps.notif.outputs.count != '0'
         run: |
-          if [[ -n "$(git status --porcelain -- data/editais.json)" ]]; then
-            git config user.name "github-actions[bot]"
+          python - << 'PY'
+          import json
+          from pathlib import Path
+          try:
+            notified = set(json.loads(Path("data/notified.json").read_text(encoding="utf-8")))
+          except Exception:
+            notified = set()
+          for it in json.loads(Path("to_notify.json").read_text(encoding="utf-8")):
+            notified.add(it["link"])
+          Path("data/notified.json").write_text(json.dumps(sorted(notified), ensure_ascii=False, indent=2), encoding="utf-8")
+          PY
+
+      # Commita dados e estado (mantém histórico + evita alertas repetidos)
+      - name: Commit data & notified if changed
+        run: |
+          if [[ -n "$(git status --porcelain -- data/editais.json data/notified.json)" ]]; then
+            git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/editais.json
-            git commit -m "chore: update data/editais.json"
+            git add data/editais.json data/notified.json
+            git commit -m "chore: update data (editais/notified)"
             git push
           else
             echo "No changes to commit."
           fi
-          
-      # Mostrar um pedaço do JSON gerado (útil para debug)
+
+      # Mostra um pedaço do JSON (debug rápido no log)
       - name: Show JSON head
         run: |
           echo "----- data/editais.json (first 1200 chars) -----"
@@ -137,5 +155,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-
