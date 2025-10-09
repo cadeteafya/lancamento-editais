@@ -1,285 +1,109 @@
 [
   {
-    "slug": "hsja-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abertas",
-    "nome": "HSJA divulga edital para Residência Médica 2026; inscrições estão abertas",
-    "instituicao": "HSJA",
-    "link": "https://med.estrategia.com/portal/noticias/hsja-divulga-edital-para-residencia-medica-2026-inscricoes-estao-abertas/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-HSJA-residencia-medica.jpg",
+    "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
+    "nome": "Instituto Oncoclínicas divulga edital para processo seletivo de Residência Médica 2026",
+    "instituicao": "ONCOCLÍNICAS",
+    "link": "https://med.estrategia.com/portal/noticias/instituto-oncoclinicas-divulga-edital-para-processo-seletivo-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-instituto-oncoclinicas-residencia-medica.jpg",
     "dados": [
       {
-        "etapa": "Período de inscrições",
-        "data": "01/10/2025 a 28/11/2025"
-      },
-      {
-        "etapa": "Composição do processo seletivo",
-        "data": "1ª Fase: Prova Objetiva + 2ª Fase: Prova Discursiva e Análise Curricular"
+        "etapa": "Inscrições on-line",
+        "data": "08/10/2025 (14h) a 06/11/2025"
       },
       {
         "etapa": "Taxa de inscrição",
         "data": "R$ 400,00"
       },
       {
-        "etapa": "Prova objetiva (1ª fase)",
-        "data": "05/12/2025 (8h às 12h)"
+        "etapa": "Composição do processo seletivo",
+        "data": "Etapa única: Prova Discursiva"
       },
       {
-        "etapa": "Gabarito preliminar e resultado preliminar da 1ª fase",
-        "data": "05/12/2025 (a partir das 15h)"
+        "etapa": "Solicitação de isenção da taxa de inscrição",
+        "data": "08/10/2025 (14h) a 10/10/2025"
       },
       {
-        "etapa": "Recursos – 1ª fase (prova objetiva)",
-        "data": "05/12/2025 (15h às 16h30)"
+        "etapa": "Entrega da documentação de isenção da taxa",
+        "data": "08/10/2025 (14h) a 10/10/2025 e 13/10/2025"
       },
       {
-        "etapa": "Prova discursiva (2ª fase)",
-        "data": "06/12/2025 (8h às 10h)"
+        "etapa": "Último dia para pagamento da taxa de inscrição",
+        "data": "07/11/2025 (até 16h)"
       },
       {
-        "etapa": "Análise curricular e entrevista",
-        "data": "06/12/2025 (10h30 às 12h)"
+        "etapa": "Realização da prova",
+        "data": "07/12/2025"
       },
       {
-        "etapa": "Gabarito e resultado preliminar da 2ª fase",
-        "data": "08/12/2025 (a partir das 15h)"
+        "etapa": "Divulgação do gabarito das provas",
+        "data": "07/12/2025"
       },
       {
-        "etapa": "Recursos – 2ª fase (prova discursiva e currículo)",
-        "data": "09/12/2025 (8h às 10h)"
+        "etapa": "Interposição de recursos – gabarito das provas",
+        "data": "07/12/2025 a 09/12/2025"
       },
       {
-        "etapa": "Resultado preliminar do seletivo",
-        "data": "12/12/2025 (a partir das 17h)"
+        "etapa": "Divulgação do gabarito final das provas",
+        "data": "13/01/2026 (18h)"
+      },
+      {
+        "etapa": "Divulgação das notas preliminares",
+        "data": "13/01/2026 (18h)"
+      },
+      {
+        "etapa": "Revisão às notas preliminares",
+        "data": "13/01/2026 (18h) e 14/01/2026"
       },
       {
         "etapa": "Resultado final",
-        "data": "12/12/2025 (a partir das 17h)"
+        "data": "22/01/2026"
       },
       {
         "etapa": "Matrículas",
-        "data": "12/01/2026 a 20/02/2026"
+        "data": "03/02/2026 a 05/02/2026"
       }
     ],
-    "link_banca": "http://hsja.com.br/residencia/",
-    "captured_at": "2025-10-09T19:01:17.898202+00:00"
+    "link_banca": "https://www.cepuerj.uerj.br/concursos2.php?concurso=S00024&ano=2026",
+    "captured_at": "2025-10-09T13:44:14.795740+00:00"
   },
   {
-    "slug": "hpc-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o-abertas",
-    "nome": "HPC 2026: inscrições para o seletivo de Residência Médica estão abertas",
-    "instituicao": "HPC",
-    "link": "https://med.estrategia.com/portal/noticias/hpc-2026-inscricoes-para-o-seletivo-de-residencia-medica-estao-abertas/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-HPC-residencia-medica.jpg",
+    "slug": "idor-libera-edital-unificado-para-resid-ncia-m-dica-2026-com-102-vagas",
+    "nome": "IDOR libera edital unificado para residência médica 2026 com 102 vagas",
+    "instituicao": "IDOR",
+    "link": "https://med.estrategia.com/portal/noticias/idor-libera-edital-unificado-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-30.jpg",
     "dados": [
       {
-        "etapa": "Período de inscrições",
-        "data": "01/10 a 09/11/2025"
+        "etapa": "Vagas Disponíveis",
+        "data": "66 (AD) + 36 (PR)"
       },
       {
-        "etapa": "Composição do processo seletivo",
-        "data": "1ª Fase: Prova Objetiva + 2ª Fase: Entrevista e Avaliação Curricular"
+        "etapa": "Período de Inscrições",
+        "data": "15/10 a 08/12/2025"
       },
       {
         "etapa": "Taxa de inscrição",
-        "data": "R$ 600,00"
+        "data": "R$550,00"
       },
       {
-        "etapa": "Envio do cartão de confirmação",
-        "data": "Até dia 25/11/2025"
-      },
-      {
-        "etapa": "Realização da prova – 1ª fase",
-        "data": "02/12/2025"
-      },
-      {
-        "etapa": "Divulgação do gabarito da 1ª fase",
-        "data": "02/12/2025"
-      },
-      {
-        "etapa": "Prazo de solicitação de recursos",
-        "data": "03 e 04/12/2025 – até às 16h"
-      },
-      {
-        "etapa": "Resultado preliminar – 1ª fase",
-        "data": "05/12/2025"
-      },
-      {
-        "etapa": "Divulgação dos convocados para 2ª fase",
-        "data": "05/12/2025"
-      },
-      {
-        "etapa": "Prazo para envio dos documentos para a 2ª fase",
-        "data": "05 a 07/12/2025"
-      },
-      {
-        "etapa": "Realização da 2ª fase",
-        "data": "09/12/2025"
-      },
-      {
-        "etapa": "Resultado final",
-        "data": "19/12/2025"
-      },
-      {
-        "etapa": "Período para matrícula",
-        "data": "26/01/2026 a 06/02/2026 – até às 16h"
-      },
-      {
-        "etapa": "Início das atividades",
-        "data": "01/03/2026"
-      }
-    ],
-    "link_banca": "https://www.hpccampos.com.br/centrodeestudos",
-    "captured_at": "2025-10-09T19:01:16.647178+00:00"
-  },
-  {
-    "slug": "hmipv-recebe-inscri-es-para-resid-ncia-m-dica-com-pr-requisito-em-go-confira-o-e",
-    "nome": "HMIPV recebe inscrições para residência médica com pré-requisito em GO; confira o edital 2026",
-    "instituicao": "HMIPV",
-    "link": "https://med.estrategia.com/portal/noticias/hmipv-esta-com-inscricoes-abertas-para-residencia-medica-com-pre-requisito-em-go-confira-o-edital-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-31.jpg",
-    "dados": [
-      {
-        "etapa": "Vagas ofertadas",
-        "data": "3 vagas"
-      },
-      {
-        "etapa": "Processo seletivo",
-        "data": "Prova escrita + Avaliação curricular"
-      },
-      {
-        "etapa": "Taxa de Inscrição",
-        "data": "R$350,00"
-      },
-      {
-        "etapa": "Período de Inscrições",
-        "data": "29/09 a 02/12/2025"
-      },
-      {
-        "etapa": "Prova Escrita",
-        "data": "04/12/2025"
-      },
-      {
-        "etapa": "Entrevista e Análise do Currículo",
-        "data": "04/12/2025"
-      },
-      {
-        "etapa": "Resultado Final",
-        "data": "12/12/2025"
-      }
-    ],
-    "link_banca": "https://prefeitura.poa.br/sms/concursos",
-    "captured_at": "2025-10-09T19:01:13.556364+00:00"
-  },
-  {
-    "slug": "uvv-2026-edital-para-resid-ncia-m-dica-com-10-vagas-est-dispon-vel",
-    "nome": "UVV 2026: edital para residência médica com 10 vagas está disponível",
-    "instituicao": "UVV",
-    "link": "https://med.estrategia.com/portal/noticias/uvv-divulga-edital-2026-para-residencia-medica/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-32.jpg",
-    "dados": [
-      {
-        "etapa": "Vagas ofertadas",
-        "data": "10 vagas"
-      },
-      {
-        "etapa": "Processo seletivo",
-        "data": "Prova escrita + Avaliação curricular"
-      },
-      {
-        "etapa": "Taxa de Inscrição",
-        "data": "R$400,00"
-      },
-      {
-        "etapa": "Período de Inscrições",
-        "data": "15/10 a 24/11/2025"
-      },
-      {
-        "etapa": "Prova Teórica e entrega do currículo",
-        "data": "02/12/2025"
-      },
-      {
-        "etapa": "Gabarito preliminar",
-        "data": "02/12/2025"
-      },
-      {
-        "etapa": "Resultado Final",
-        "data": "17/12/2025"
-      }
-    ],
-    "link_banca": "https://uvv.br/editais/",
-    "captured_at": "2025-10-09T19:01:12.271948+00:00"
-  },
-  {
-    "slug": "hospital-santo-amaro-oferta-14-vagas-para-resid-ncia-m-dica-2026-acesse-o-edital",
-    "nome": "Hospital Santo Amaro oferta 14 vagas para Residência Médica 2026; acesse o edital",
-    "instituicao": "HSA",
-    "link": "https://med.estrategia.com/portal/noticias/hospital-santo-amaro-oferta-14-vagas-para-residencia-medica-2026-acesse-o-edital/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/HSA-edital.jpg",
-    "dados": [
-      {
-        "etapa": "Taxa de Inscrição",
-        "data": "R$ 600,00"
-      },
-      {
-        "etapa": "Período de Inscrição",
-        "data": "24/10 a 28/12/2025"
+        "etapa": "Envio do Currículo",
+        "data": "29/09 a 08/12/2025"
       },
       {
         "etapa": "Prova Objetiva",
-        "data": "11/01/2026"
+        "data": "13/12/2025 – 15h"
       },
       {
-        "etapa": "Gabarito Preliminar",
-        "data": "12/01/2026"
+        "etapa": "Gabarito",
+        "data": "14/12/2025 – 20h"
       },
       {
-        "etapa": "Convocação para Análise Curricular",
-        "data": "23/01/2026"
-      },
-      {
-        "etapa": "Resultado Final",
-        "data": "19/02/2026"
+        "etapa": "Convocação para Matrículas",
+        "data": "21/01/2026"
       }
     ],
-    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-09T19:01:11.038712+00:00"
-  },
-  {
-    "slug": "centro-m-dico-de-campinas-tem-sele-o-para-resid-ncia-m-dica-2026-aberta",
-    "nome": "Centro Médico de Campinas tem seleção para Residência Médica 2026 aberta",
-    "instituicao": "CMC",
-    "link": "https://med.estrategia.com/portal/noticias/centro-medico-campinas-edital-residencia-medica-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/CMC-EDITAL.jpg",
-    "dados": [
-      {
-        "etapa": "Taxa de Inscrição",
-        "data": "R$ 580,00"
-      },
-      {
-        "etapa": "Período de Inscrição",
-        "data": "24/10 a 30/11/2025"
-      },
-      {
-        "etapa": "Prova Objetiva",
-        "data": "15/12/2025"
-      },
-      {
-        "etapa": "Gabarito Preliminar",
-        "data": "15/12/2025"
-      },
-      {
-        "etapa": "Avaliação Prático Profissional",
-        "data": "12 a 16/01/2026"
-      },
-      {
-        "etapa": "Resultado Preliminar",
-        "data": "30/01/2026"
-      },
-      {
-        "etapa": "Resultado Final",
-        "data": "16/02/2026"
-      }
-    ],
-    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-09T19:01:09.807113+00:00"
+    "link_banca": "https://www.rededorsaoluiz.com.br/instituto/idor/cursos/residencia-medica-em-medicina-de-emergencia-rj/",
+    "captured_at": "2025-10-09T13:44:12.879447+00:00"
   },
   {
     "slug": "sus-ba-2026-tem-institui-es-e-mais-de-450-vagas-confirmadas-confira-a-rela-o-com",
@@ -426,112 +250,295 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-09T19:01:08.141000+00:00"
+    "captured_at": "2025-10-09T19:40:36.102873+00:00",
+    "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
-    "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
-    "nome": "Instituto Oncoclínicas divulga edital para processo seletivo de Residência Médica 2026",
-    "instituicao": "ONCOCLÍNICAS",
-    "link": "https://med.estrategia.com/portal/noticias/instituto-oncoclinicas-divulga-edital-para-processo-seletivo-de-residencia-medica-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-instituto-oncoclinicas-residencia-medica.jpg",
+    "slug": "centro-m-dico-de-campinas-tem-sele-o-para-resid-ncia-m-dica-2026-aberta",
+    "nome": "Centro Médico de Campinas tem seleção para Residência Médica 2026 aberta",
+    "instituicao": "CMC",
+    "link": "https://med.estrategia.com/portal/noticias/centro-medico-campinas-edital-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/CMC-EDITAL.jpg",
     "dados": [
       {
-        "etapa": "Inscrições on-line",
-        "data": "08/10/2025 (14h) a 06/11/2025"
+        "etapa": "Taxa de Inscrição",
+        "data": "R$ 580,00"
+      },
+      {
+        "etapa": "Período de Inscrição",
+        "data": "24/10 a 30/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Avaliação Prático Profissional",
+        "data": "12 a 16/01/2026"
+      },
+      {
+        "etapa": "Resultado Preliminar",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "16/02/2026"
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
+    "captured_at": "2025-10-09T19:40:37.286565+00:00",
+    "posted_at": "2025-10-08T21:16:17+00:00"
+  },
+  {
+    "slug": "hospital-santo-amaro-oferta-14-vagas-para-resid-ncia-m-dica-2026-acesse-o-edital",
+    "nome": "Hospital Santo Amaro oferta 14 vagas para Residência Médica 2026; acesse o edital",
+    "instituicao": "HSA",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-santo-amaro-oferta-14-vagas-para-residencia-medica-2026-acesse-o-edital/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/HSA-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Período de Inscrição",
+        "data": "24/10 a 28/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Convocação para Análise Curricular",
+        "data": "23/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "19/02/2026"
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
+    "captured_at": "2025-10-09T19:40:38.465884+00:00",
+    "posted_at": "2025-10-08T13:28:01+00:00"
+  },
+  {
+    "slug": "uvv-2026-edital-para-resid-ncia-m-dica-com-10-vagas-est-dispon-vel",
+    "nome": "UVV 2026: edital para residência médica com 10 vagas está disponível",
+    "instituicao": "UVV",
+    "link": "https://med.estrategia.com/portal/noticias/uvv-divulga-edital-2026-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-32.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "10 vagas"
+      },
+      {
+        "etapa": "Processo seletivo",
+        "data": "Prova escrita + Avaliação curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$400,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "15/10 a 24/11/2025"
+      },
+      {
+        "etapa": "Prova Teórica e entrega do currículo",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "17/12/2025"
+      }
+    ],
+    "link_banca": "https://uvv.br/editais/",
+    "captured_at": "2025-10-09T19:40:39.692011+00:00",
+    "posted_at": "2025-10-07T23:30:27+00:00"
+  },
+  {
+    "slug": "hmipv-recebe-inscri-es-para-resid-ncia-m-dica-com-pr-requisito-em-go-confira-o-e",
+    "nome": "HMIPV recebe inscrições para residência médica com pré-requisito em GO; confira o edital 2026",
+    "instituicao": "HMIPV",
+    "link": "https://med.estrategia.com/portal/noticias/hmipv-esta-com-inscricoes-abertas-para-residencia-medica-com-pre-requisito-em-go-confira-o-edital-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-31.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "3 vagas"
+      },
+      {
+        "etapa": "Processo seletivo",
+        "data": "Prova escrita + Avaliação curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$350,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "29/09 a 02/12/2025"
+      },
+      {
+        "etapa": "Prova Escrita",
+        "data": "04/12/2025"
+      },
+      {
+        "etapa": "Entrevista e Análise do Currículo",
+        "data": "04/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "12/12/2025"
+      }
+    ],
+    "link_banca": "https://prefeitura.poa.br/sms/concursos",
+    "captured_at": "2025-10-09T19:40:40.921928+00:00",
+    "posted_at": "2025-10-07T22:04:39+00:00"
+  },
+  {
+    "slug": "hpc-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o-abertas",
+    "nome": "HPC 2026: inscrições para o seletivo de Residência Médica estão abertas",
+    "instituicao": "HPC",
+    "link": "https://med.estrategia.com/portal/noticias/hpc-2026-inscricoes-para-o-seletivo-de-residencia-medica-estao-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-HPC-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "01/10 a 09/11/2025"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "1ª Fase: Prova Objetiva + 2ª Fase: Entrevista e Avaliação Curricular"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Envio do cartão de confirmação",
+        "data": "Até dia 25/11/2025"
+      },
+      {
+        "etapa": "Realização da prova – 1ª fase",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito da 1ª fase",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Prazo de solicitação de recursos",
+        "data": "03 e 04/12/2025 – até às 16h"
+      },
+      {
+        "etapa": "Resultado preliminar – 1ª fase",
+        "data": "05/12/2025"
+      },
+      {
+        "etapa": "Divulgação dos convocados para 2ª fase",
+        "data": "05/12/2025"
+      },
+      {
+        "etapa": "Prazo para envio dos documentos para a 2ª fase",
+        "data": "05 a 07/12/2025"
+      },
+      {
+        "etapa": "Realização da 2ª fase",
+        "data": "09/12/2025"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "19/12/2025"
+      },
+      {
+        "etapa": "Período para matrícula",
+        "data": "26/01/2026 a 06/02/2026 – até às 16h"
+      },
+      {
+        "etapa": "Início das atividades",
+        "data": "01/03/2026"
+      }
+    ],
+    "link_banca": "https://www.hpccampos.com.br/centrodeestudos",
+    "captured_at": "2025-10-09T19:40:43.988389+00:00",
+    "posted_at": "2025-10-07T13:17:05+00:00"
+  },
+  {
+    "slug": "hsja-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abertas",
+    "nome": "HSJA divulga edital para Residência Médica 2026; inscrições estão abertas",
+    "instituicao": "HSJA",
+    "link": "https://med.estrategia.com/portal/noticias/hsja-divulga-edital-para-residencia-medica-2026-inscricoes-estao-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-HSJA-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "01/10/2025 a 28/11/2025"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "1ª Fase: Prova Objetiva + 2ª Fase: Prova Discursiva e Análise Curricular"
       },
       {
         "etapa": "Taxa de inscrição",
         "data": "R$ 400,00"
       },
       {
-        "etapa": "Composição do processo seletivo",
-        "data": "Etapa única: Prova Discursiva"
+        "etapa": "Prova objetiva (1ª fase)",
+        "data": "05/12/2025 (8h às 12h)"
       },
       {
-        "etapa": "Solicitação de isenção da taxa de inscrição",
-        "data": "08/10/2025 (14h) a 10/10/2025"
+        "etapa": "Gabarito preliminar e resultado preliminar da 1ª fase",
+        "data": "05/12/2025 (a partir das 15h)"
       },
       {
-        "etapa": "Entrega da documentação de isenção da taxa",
-        "data": "08/10/2025 (14h) a 10/10/2025 e 13/10/2025"
+        "etapa": "Recursos – 1ª fase (prova objetiva)",
+        "data": "05/12/2025 (15h às 16h30)"
       },
       {
-        "etapa": "Último dia para pagamento da taxa de inscrição",
-        "data": "07/11/2025 (até 16h)"
+        "etapa": "Prova discursiva (2ª fase)",
+        "data": "06/12/2025 (8h às 10h)"
       },
       {
-        "etapa": "Realização da prova",
-        "data": "07/12/2025"
+        "etapa": "Análise curricular e entrevista",
+        "data": "06/12/2025 (10h30 às 12h)"
       },
       {
-        "etapa": "Divulgação do gabarito das provas",
-        "data": "07/12/2025"
+        "etapa": "Gabarito e resultado preliminar da 2ª fase",
+        "data": "08/12/2025 (a partir das 15h)"
       },
       {
-        "etapa": "Interposição de recursos – gabarito das provas",
-        "data": "07/12/2025 a 09/12/2025"
+        "etapa": "Recursos – 2ª fase (prova discursiva e currículo)",
+        "data": "09/12/2025 (8h às 10h)"
       },
       {
-        "etapa": "Divulgação do gabarito final das provas",
-        "data": "13/01/2026 (18h)"
-      },
-      {
-        "etapa": "Divulgação das notas preliminares",
-        "data": "13/01/2026 (18h)"
-      },
-      {
-        "etapa": "Revisão às notas preliminares",
-        "data": "13/01/2026 (18h) e 14/01/2026"
+        "etapa": "Resultado preliminar do seletivo",
+        "data": "12/12/2025 (a partir das 17h)"
       },
       {
         "etapa": "Resultado final",
-        "data": "22/01/2026"
+        "data": "12/12/2025 (a partir das 17h)"
       },
       {
         "etapa": "Matrículas",
-        "data": "03/02/2026 a 05/02/2026"
+        "data": "12/01/2026 a 20/02/2026"
       }
     ],
-    "link_banca": "https://www.cepuerj.uerj.br/concursos2.php?concurso=S00024&ano=2026",
-    "captured_at": "2025-10-09T13:44:14.795740+00:00"
-  },
-  {
-    "slug": "idor-libera-edital-unificado-para-resid-ncia-m-dica-2026-com-102-vagas",
-    "nome": "IDOR libera edital unificado para residência médica 2026 com 102 vagas",
-    "instituicao": "IDOR",
-    "link": "https://med.estrategia.com/portal/noticias/idor-libera-edital-unificado-para-residencia-medica-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-30.jpg",
-    "dados": [
-      {
-        "etapa": "Vagas Disponíveis",
-        "data": "66 (AD) + 36 (PR)"
-      },
-      {
-        "etapa": "Período de Inscrições",
-        "data": "15/10 a 08/12/2025"
-      },
-      {
-        "etapa": "Taxa de inscrição",
-        "data": "R$550,00"
-      },
-      {
-        "etapa": "Envio do Currículo",
-        "data": "29/09 a 08/12/2025"
-      },
-      {
-        "etapa": "Prova Objetiva",
-        "data": "13/12/2025 – 15h"
-      },
-      {
-        "etapa": "Gabarito",
-        "data": "14/12/2025 – 20h"
-      },
-      {
-        "etapa": "Convocação para Matrículas",
-        "data": "21/01/2026"
-      }
-    ],
-    "link_banca": "https://www.rededorsaoluiz.com.br/instituto/idor/cursos/residencia-medica-em-medicina-de-emergencia-rj/",
-    "captured_at": "2025-10-09T13:44:12.879447+00:00"
+    "link_banca": "http://hsja.com.br/residencia/",
+    "captured_at": "2025-10-09T19:40:45.150310+00:00",
+    "posted_at": "2025-10-07T12:10:46+00:00"
   }
 ]
