@@ -12,21 +12,33 @@ async function main(){
   const res = await fetch('data/editais.json',{cache:'no-store'});
   const data = await res.json();
 
+  // 1) ORDENAR: mais recentes primeiro
+  const sorted = [...data].sort((a,b)=>{
+    const da = (a.posted_at || a.captured_at || '');
+    const db = (b.posted_at || b.captured_at || '');
+    // ISO strings comparam certo com localeCompare
+    const cmp = db.localeCompare(da);
+    if (cmp !== 0) return cmp;
+    // desempate estável
+    return (b.slug || '').localeCompare(a.slug || '');
+  });
+
+  // 2) PAGINAÇÃO 3x3
   const pageSize = 9;
   const params = new URLSearchParams(location.search);
   let page = parseInt(params.get('page') || '1', 10);
   if (isNaN(page) || page < 1) page = 1;
 
-  const total = data.length;
+  const total = sorted.length;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   if (page > totalPages) page = totalPages;
 
   const start = (page - 1) * pageSize;
-  const end = start + pageSize;
-  const slice = data.slice(start, end);
+  const end   = start + pageSize;
+  const slice = sorted.slice(start, end);
 
   const grid = document.getElementById('grid');
-  if (!slice.length) {
+  if(!slice.length){
     grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado.</div>`;
     renderPager(totalPages, page);
     return;
@@ -56,7 +68,7 @@ function renderPager(totalPages, current){
     pager.className = 'pager';
     document.querySelector('.container').appendChild(pager);
   }
-  const mkLink = (p, label=String(p), disabled=false, active=false) => {
+  const link = (p, label, disabled=false, active=false) => {
     if (disabled) return `<span class="pg disabled">${label}</span>`;
     if (active)   return `<span class="pg active">${label}</span>`;
     const url = new URL(location.href);
@@ -65,18 +77,13 @@ function renderPager(totalPages, current){
   };
 
   const parts = [];
-  parts.push(mkLink(Math.max(1, current-1), '‹', current===1));
-  // números (máx 7 visíveis)
+  parts.push(link(Math.max(1,current-1),'‹', current===1));
   const span = 3;
-  let start = Math.max(1, current - span);
-  let end = Math.min(totalPages, current + span);
-  if (current <= span) end = Math.min(totalPages, 1 + 2*span);
-  if (current + span > totalPages) start = Math.max(1, totalPages - 2*span);
-  for (let p=start; p<=end; p++){
-    parts.push(mkLink(p, String(p), false, p===current));
-  }
-  parts.push(mkLink(Math.min(totalPages, current+1), '›', current===totalPages));
-
+  let s = Math.max(1, current-span), e = Math.min(totalPages, current+span);
+  if (current <= span) e = Math.min(totalPages, 1+2*span);
+  if (current + span > totalPages) s = Math.max(1, totalPages-2*span);
+  for (let p=s; p<=e; p++) parts.push(link(p, String(p), false, p===current));
+  parts.push(link(Math.min(totalPages,current+1),'›', current===totalPages));
   pager.innerHTML = parts.join('');
 }
 
@@ -85,6 +92,8 @@ main().catch(err=>{
   document.getElementById('grid').innerHTML = `<div class="meta">Erro ao carregar dados.</div>`;
 });
 </script>
+
 </body></html>
+
 
 
