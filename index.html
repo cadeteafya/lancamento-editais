@@ -9,18 +9,16 @@
 </div>
 <script>
 async function main(){
-  const res = await fetch('data/editais.json',{cache:'no-store'});
+  const res = await fetch('data/editais.json', { cache: 'no-store' });
   const data = await res.json();
 
-  // 1) ORDENAR: mais recentes primeiro
+  // 1) ORDEM: mais recentes primeiro
   const sorted = [...data].sort((a,b)=>{
     const da = (a.posted_at || a.captured_at || '');
     const db = (b.posted_at || b.captured_at || '');
-    // ISO strings comparam certo com localeCompare
     const cmp = db.localeCompare(da);
     if (cmp !== 0) return cmp;
-    // desempate estável
-    return (b.slug || '').localeCompare(a.slug || '');
+    return (b.slug || '').localeCompare(a.slug || ''); // desempate estável
   });
 
   // 2) PAGINAÇÃO 3x3
@@ -38,12 +36,13 @@ async function main(){
   const slice = sorted.slice(start, end);
 
   const grid = document.getElementById('grid');
-  if(!slice.length){
+  if (!slice.length) {
     grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado.</div>`;
     renderPager(totalPages, page);
     return;
   }
 
+  // Cards (3 colunas → 1..9 por página)
   grid.innerHTML = slice.map(x=>{
     const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
     return `
@@ -60,30 +59,51 @@ async function main(){
 }
 
 function renderPager(totalPages, current){
-  const containerId = 'pager';
-  let pager = document.getElementById(containerId);
+  // cria/pega contêiner
+  let pager = document.getElementById('pager');
   if (!pager) {
     pager = document.createElement('div');
-    pager.id = containerId;
+    pager.id = 'pager';
     pager.className = 'pager';
     document.querySelector('.container').appendChild(pager);
   }
-  const link = (p, label, disabled=false, active=false) => {
+
+  // helper de link
+  const makeLink = (p, label, {disabled=false, active=false}={})=>{
     if (disabled) return `<span class="pg disabled">${label}</span>`;
     if (active)   return `<span class="pg active">${label}</span>`;
     const url = new URL(location.href);
     url.searchParams.set('page', p);
-    return `<a class="pg" href="${url.pathname}${url.search}">${label}</a>`;
+    return `<a class="pg" href="?${url.searchParams.toString()}">${label}</a>`;
   };
 
   const parts = [];
-  parts.push(link(Math.max(1,current-1),'‹', current===1));
-  const span = 3;
-  let s = Math.max(1, current-span), e = Math.min(totalPages, current+span);
-  if (current <= span) e = Math.min(totalPages, 1+2*span);
-  if (current + span > totalPages) s = Math.max(1, totalPages-2*span);
-  for (let p=s; p<=e; p++) parts.push(link(p, String(p), false, p===current));
-  parts.push(link(Math.min(totalPages,current+1),'›', current===totalPages));
+  // seta esquerda
+  parts.push(makeLink(Math.max(1, current-1), '‹', {disabled: current===1}));
+
+  // para poucas páginas, mostra todas
+  if (totalPages <= 7) {
+    for (let p=1; p<=totalPages; p++) {
+      parts.push(makeLink(p, String(p), {active: p===current}));
+    }
+  } else {
+    // janela deslizante (mantém 7 visíveis)
+    const span = 3;
+    let s = Math.max(1, current - span);
+    let e = Math.min(totalPages, current + span);
+    if (current <= span) e = 1 + 2*span;
+    if (current + span > totalPages) s = totalPages - 2*span;
+
+    if (s > 1) parts.push(makeLink(1, '1'));
+    if (s > 2) parts.push('<span class="pg dots">…</span>');
+    for (let p=s; p<=e; p++) parts.push(makeLink(p, String(p), {active: p===current}));
+    if (e < totalPages-1) parts.push('<span class="pg dots">…</span>');
+    if (e < totalPages) parts.push(makeLink(totalPages, String(totalPages)));
+  }
+
+  // seta direita
+  parts.push(makeLink(Math.min(totalPages, current+1), '›', {disabled: current===totalPages}));
+
   pager.innerHTML = parts.join('');
 }
 
@@ -93,7 +113,9 @@ main().catch(err=>{
 });
 </script>
 
+
 </body></html>
+
 
 
 
