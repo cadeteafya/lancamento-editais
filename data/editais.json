@@ -60,7 +60,7 @@
       }
     ],
     "link_banca": "http://hsja.com.br/residencia/",
-    "captured_at": "2025-10-09T16:06:43.708596+00:00"
+    "captured_at": "2025-10-09T18:23:29.566103+00:00"
   },
   {
     "slug": "hpc-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o-abertas",
@@ -127,7 +127,81 @@
       }
     ],
     "link_banca": "https://www.hpccampos.com.br/centrodeestudos",
-    "captured_at": "2025-10-09T16:06:40.583372+00:00"
+    "captured_at": "2025-10-09T18:23:26.701553+00:00"
+  },
+  {
+    "slug": "hospital-santo-amaro-oferta-14-vagas-para-resid-ncia-m-dica-2026-acesse-o-edital",
+    "nome": "Hospital Santo Amaro oferta 14 vagas para Residência Médica 2026; acesse o edital",
+    "instituicao": "HSA",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-santo-amaro-oferta-14-vagas-para-residencia-medica-2026-acesse-o-edital/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/HSA-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Período de Inscrição",
+        "data": "24/10 a 28/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Convocação para Análise Curricular",
+        "data": "23/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "19/02/2026"
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
+    "captured_at": "2025-10-09T18:23:15.000791+00:00"
+  },
+  {
+    "slug": "centro-m-dico-de-campinas-tem-sele-o-para-resid-ncia-m-dica-2026-aberta",
+    "nome": "Centro Médico de Campinas tem seleção para Residência Médica 2026 aberta",
+    "instituicao": "CMC",
+    "link": "https://med.estrategia.com/portal/noticias/centro-medico-campinas-edital-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/CMC-EDITAL.jpg",
+    "dados": [
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$ 580,00"
+      },
+      {
+        "etapa": "Período de Inscrição",
+        "data": "24/10 a 30/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Avaliação Prático Profissional",
+        "data": "12 a 16/01/2026"
+      },
+      {
+        "etapa": "Resultado Preliminar",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "16/02/2026"
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
+    "captured_at": "2025-10-09T18:23:12.456020+00:00"
   },
   {
     "slug": "sus-ba-2026-tem-institui-es-e-mais-de-450-vagas-confirmadas-confira-a-rela-o-com",
@@ -274,7 +348,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-09T16:06:34.952564+00:00"
+    "captured_at": "2025-10-09T18:23:11.080370+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
