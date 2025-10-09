@@ -41,6 +41,75 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
+      # 1) Descobrir itens novos comparando com o commit anterior
+      - name: Diff new items
+        id: diff
+        run: |
+          set -e
+          # carrega atual
+          CUR="data/editais.json"
+          # tenta obter o JSON anterior do commit HEAD (se não existir, considera vazio)
+          if git rev-parse HEAD~1 >/dev/null 2>&1 && git show HEAD~1:${CUR} >/dev/null 2>&1; then
+            git show HEAD~1:${CUR} > .prev_editais.json || echo "[]">.prev_editais.json
+          else
+            echo "[]">.prev_editais.json
+          fi
+
+          python - << 'PY'
+          import json, sys
+          from urllib.parse import quote
+          # lê atual e anterior
+          cur = json.load(open("data/editais.json", "r", encoding="utf-8"))
+          prev = json.load(open(".prev_editais.json", "r", encoding="utf-8"))
+          prev_links = { x.get("link") for x in prev if isinstance(x, dict) }
+          # novos por link
+          new_items = [x for x in cur if isinstance(x, dict) and x.get("link") not in prev_links]
+          # ordena por captured_at desc (se houver)
+          new_items.sort(key=lambda x: x.get("captured_at",""), reverse=True)
+          # prepara payload enxuto (até 5 por segurança)
+          slim = []
+          for x in new_items[:5]:
+            nome_inst = (x.get("instituicao") or x.get("nome") or "").strip()
+            slug = x.get("slug")
+            site = f"https://cadeteafya.github.io/lancamento-editais/edital.html?slug={quote(slug)}" if slug else x.get("link")
+            slim.append({"nome": nome_inst, "site": site})
+          print(f"Novos: {len(new_items)}")
+          # expõe para os próximos steps
+          print(f"::set-output name=count::{len(new_items)}")
+          print("::set-output name=json::" + json.dumps(slim, ensure_ascii=False))
+          PY
+
+      # 2) Enviar alerta para o Microsoft Teams (1 cartão por item novo)
+      - name: Notify Teams (for each new item)
+        if: steps.diff.outputs.count != '0'
+        env:
+          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          ITEMS_JSON: ${{ steps.diff.outputs.json }}
+        run: |
+          python - << 'PY'
+          import json, os, sys, requests
+          hook = os.environ["TEAMS_WEBHOOK_URL"]
+          items = json.loads(os.environ["ITEMS_JSON"] or "[]")
+
+          # formata e envia um card por item
+          for it in items:
+            titulo = it.get("nome") or "Novo edital"
+            link   = it.get("site")
+            # payload no formato "connector card" do Teams
+            payload = {
+              "@type": "MessageCard",
+              "@context": "https://schema.org/extensions",
+              "summary": "Alerta de novo edital",
+              "themeColor": "00A884",
+              "title": "EM TESTE: Alerta de novo edital!",
+              "text": f"**{titulo}**: [{link}]({link})"
+            }
+            r = requests.post(hook, json=payload, timeout=30)
+            r.raise_for_status()
+          print(f"Enviado {len(items)} alerta(s) ao Teams.")
+          PY
+
+
       - name: Commit data if changed
         run: |
           if [[ -n "$(git status --porcelain -- data/editais.json)" ]]; then
@@ -68,4 +137,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
 
