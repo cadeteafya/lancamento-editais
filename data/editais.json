@@ -1,111 +1,5 @@
 [
   {
-    "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
-    "nome": "Instituto Oncoclínicas divulga edital para processo seletivo de Residência Médica 2026",
-    "instituicao": "ONCOCLÍNICAS",
-    "link": "https://med.estrategia.com/portal/noticias/instituto-oncoclinicas-divulga-edital-para-processo-seletivo-de-residencia-medica-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-instituto-oncoclinicas-residencia-medica.jpg",
-    "dados": [
-      {
-        "etapa": "Inscrições on-line",
-        "data": "08/10/2025 (14h) a 06/11/2025"
-      },
-      {
-        "etapa": "Taxa de inscrição",
-        "data": "R$ 400,00"
-      },
-      {
-        "etapa": "Composição do processo seletivo",
-        "data": "Etapa única: Prova Discursiva"
-      },
-      {
-        "etapa": "Solicitação de isenção da taxa de inscrição",
-        "data": "08/10/2025 (14h) a 10/10/2025"
-      },
-      {
-        "etapa": "Entrega da documentação de isenção da taxa",
-        "data": "08/10/2025 (14h) a 10/10/2025 e 13/10/2025"
-      },
-      {
-        "etapa": "Último dia para pagamento da taxa de inscrição",
-        "data": "07/11/2025 (até 16h)"
-      },
-      {
-        "etapa": "Realização da prova",
-        "data": "07/12/2025"
-      },
-      {
-        "etapa": "Divulgação do gabarito das provas",
-        "data": "07/12/2025"
-      },
-      {
-        "etapa": "Interposição de recursos – gabarito das provas",
-        "data": "07/12/2025 a 09/12/2025"
-      },
-      {
-        "etapa": "Divulgação do gabarito final das provas",
-        "data": "13/01/2026 (18h)"
-      },
-      {
-        "etapa": "Divulgação das notas preliminares",
-        "data": "13/01/2026 (18h)"
-      },
-      {
-        "etapa": "Revisão às notas preliminares",
-        "data": "13/01/2026 (18h) e 14/01/2026"
-      },
-      {
-        "etapa": "Resultado final",
-        "data": "22/01/2026"
-      },
-      {
-        "etapa": "Matrículas",
-        "data": "03/02/2026 a 05/02/2026"
-      }
-    ],
-    "link_banca": "https://www.cepuerj.uerj.br/concursos2.php?concurso=S00024&ano=2026",
-    "captured_at": "2025-10-09T13:44:14.795740+00:00"
-  },
-  {
-    "slug": "idor-libera-edital-unificado-para-resid-ncia-m-dica-2026-com-102-vagas",
-    "nome": "IDOR libera edital unificado para residência médica 2026 com 102 vagas",
-    "instituicao": "IDOR",
-    "link": "https://med.estrategia.com/portal/noticias/idor-libera-edital-unificado-para-residencia-medica-2026/",
-    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-30.jpg",
-    "dados": [
-      {
-        "etapa": "Vagas Disponíveis",
-        "data": "66 (AD) + 36 (PR)"
-      },
-      {
-        "etapa": "Período de Inscrições",
-        "data": "15/10 a 08/12/2025"
-      },
-      {
-        "etapa": "Taxa de inscrição",
-        "data": "R$550,00"
-      },
-      {
-        "etapa": "Envio do Currículo",
-        "data": "29/09 a 08/12/2025"
-      },
-      {
-        "etapa": "Prova Objetiva",
-        "data": "13/12/2025 – 15h"
-      },
-      {
-        "etapa": "Gabarito",
-        "data": "14/12/2025 – 20h"
-      },
-      {
-        "etapa": "Convocação para Matrículas",
-        "data": "21/01/2026"
-      }
-    ],
-    "link_banca": "https://www.rededorsaoluiz.com.br/instituto/idor/cursos/residencia-medica-em-medicina-de-emergencia-rj/",
-    "captured_at": "2025-10-09T13:44:12.879447+00:00"
-  },
-  {
     "slug": "hsja-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abertas",
     "nome": "HSJA divulga edital para Residência Médica 2026; inscrições estão abertas",
     "instituicao": "HSJA",
@@ -166,7 +60,7 @@
       }
     ],
     "link_banca": "http://hsja.com.br/residencia/",
-    "captured_at": "2025-10-09T13:44:10.979191+00:00"
+    "captured_at": "2025-10-09T16:06:43.708596+00:00"
   },
   {
     "slug": "hpc-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o-abertas",
@@ -233,7 +127,7 @@
       }
     ],
     "link_banca": "https://www.hpccampos.com.br/centrodeestudos",
-    "captured_at": "2025-10-09T13:44:09.754323+00:00"
+    "captured_at": "2025-10-09T16:06:40.583372+00:00"
   },
   {
     "slug": "sus-ba-2026-tem-institui-es-e-mais-de-450-vagas-confirmadas-confira-a-rela-o-com",
@@ -380,6 +274,112 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-09T13:44:04.375221+00:00"
+    "captured_at": "2025-10-09T16:06:34.952564+00:00"
+  },
+  {
+    "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
+    "nome": "Instituto Oncoclínicas divulga edital para processo seletivo de Residência Médica 2026",
+    "instituicao": "ONCOCLÍNICAS",
+    "link": "https://med.estrategia.com/portal/noticias/instituto-oncoclinicas-divulga-edital-para-processo-seletivo-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-instituto-oncoclinicas-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições on-line",
+        "data": "08/10/2025 (14h) a 06/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 400,00"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Etapa única: Prova Discursiva"
+      },
+      {
+        "etapa": "Solicitação de isenção da taxa de inscrição",
+        "data": "08/10/2025 (14h) a 10/10/2025"
+      },
+      {
+        "etapa": "Entrega da documentação de isenção da taxa",
+        "data": "08/10/2025 (14h) a 10/10/2025 e 13/10/2025"
+      },
+      {
+        "etapa": "Último dia para pagamento da taxa de inscrição",
+        "data": "07/11/2025 (até 16h)"
+      },
+      {
+        "etapa": "Realização da prova",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito das provas",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Interposição de recursos – gabarito das provas",
+        "data": "07/12/2025 a 09/12/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito final das provas",
+        "data": "13/01/2026 (18h)"
+      },
+      {
+        "etapa": "Divulgação das notas preliminares",
+        "data": "13/01/2026 (18h)"
+      },
+      {
+        "etapa": "Revisão às notas preliminares",
+        "data": "13/01/2026 (18h) e 14/01/2026"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "22/01/2026"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "03/02/2026 a 05/02/2026"
+      }
+    ],
+    "link_banca": "https://www.cepuerj.uerj.br/concursos2.php?concurso=S00024&ano=2026",
+    "captured_at": "2025-10-09T13:44:14.795740+00:00"
+  },
+  {
+    "slug": "idor-libera-edital-unificado-para-resid-ncia-m-dica-2026-com-102-vagas",
+    "nome": "IDOR libera edital unificado para residência médica 2026 com 102 vagas",
+    "instituicao": "IDOR",
+    "link": "https://med.estrategia.com/portal/noticias/idor-libera-edital-unificado-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-30.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Disponíveis",
+        "data": "66 (AD) + 36 (PR)"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "15/10 a 08/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$550,00"
+      },
+      {
+        "etapa": "Envio do Currículo",
+        "data": "29/09 a 08/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "13/12/2025 – 15h"
+      },
+      {
+        "etapa": "Gabarito",
+        "data": "14/12/2025 – 20h"
+      },
+      {
+        "etapa": "Convocação para Matrículas",
+        "data": "21/01/2026"
+      }
+    ],
+    "link_banca": "https://www.rededorsaoluiz.com.br/instituto/idor/cursos/residencia-medica-em-medicina-de-emergencia-rj/",
+    "captured_at": "2025-10-09T13:44:12.879447+00:00"
   }
 ]
