@@ -6,13 +6,15 @@ Critérios para entrar no JSON:
   (a) Ter RESUMO do edital:
       - preferencialmente em <table> 2 colunas (>=2 linhas úteis), ou
       - fallback: bloco "Resumo Edital ..." com pares "rótulo : valor" ou <strong>rótulo</strong> valor
-  (b) Ter ÂNCORA cujo texto contenha "página oficial da (banca organizadora|instituição|processo seletivo)"
+  (b) Ter ÂNCORA cujo texto contenha "página oficial da (banca organizadora|instituição|processo seletivo|seleção)"
       e cujo href seja EXTERNO (não med.estrategia.com e não rede social)
 
-Campos no JSON:
-  - slug, nome (título do post), instituicao (OCR da imagem), link, imagem,
-    dados (lista [{etapa, data}]), link_banca (externo), captured_at (ISO-UTC)
-Histórico: acumulado (merge por URL) e ordenado por captured_at desc.
+JSON:
+  - slug, nome (título), instituicao (OCR da imagem), link, imagem,
+    dados ([{etapa, data}]), link_banca (externo),
+    posted_at (se houver no post), captured_at (ISO-UTC)
+
+Histórico: acumulado (merge por URL) e ordenado por posted_at||captured_at desc.
 """
 
 import io
@@ -39,27 +41,16 @@ except Exception:
 
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
-UA = "ResidMedBot/1.5 (+contato: seu-email)"
+UA = "ResidMedBot/1.6 (+contato: seu-email)"
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
 
-# aceita banca organizadora | instituição | processo seletivo
 ANCHOR_TXT = re.compile(
     r"p[aá]gina oficial da (banca organizadora|institui[cç][aã]o|processo seletivo|sele[cç][aã]o)",
-    re.I
+    re.I,
 )
-
-SOCIAL = (
-    "facebook.com",
-    "twitter.com",
-    "t.me",
-    "linkedin.com",
-    "instagram.com",
-    "wa.me",
-    "tiktok.com",
-    "x.com",
-)
+SOCIAL = ("facebook.com","twitter.com","t.me","linkedin.com","instagram.com","wa.me","tiktok.com","x.com")
 
 # ---------- helpers ----------
 def norm(s: str) -> str:
@@ -112,21 +103,19 @@ def extract_summary(soup: BeautifulSoup):
                 return rows
 
     # 2) FALLBACK "Resumo Edital ..."
-    # tenta achar heading com "resumo" próximo do conteúdo
-    heading = soup.find(lambda t: t.name in ["h2", "h3", "h4"] and "resumo" in t.get_text(" ").lower())
+    heading = soup.find(lambda t: getattr(t, "name", "") in {"h2","h3","h4"} and "resumo" in t.get_text(" ").lower())
     if not heading:
         return []
 
     rows = []
     for el in heading.find_all_next():
-        # para quando chegar em outro título/seção
-        if el.name in ["h2", "h3", "h4"]:
+        if getattr(el, "name", "") in {"h2","h3","h4"}:
             break
         txt = norm(el.get_text(" "))
         if not txt:
             continue
 
-        # caso <li><strong>Rótulo</strong> Valor</li>
+        # <li><strong>Rótulo</strong> Valor</li>
         strong = el.find("strong")
         if strong:
             rot = norm(strong.get_text(" "))
@@ -135,7 +124,7 @@ def extract_summary(soup: BeautifulSoup):
                 rows.append({"etapa": rot, "data": val})
             continue
 
-        # split por ":" OU por espaços largos
+        # "Rótulo: Valor" ou "Rótulo   Valor"
         parts = re.split(r"\s{2,}|:", txt, maxsplit=1)
         if len(parts) == 2:
             rot, val = norm(parts[0]), norm(parts[1])
@@ -164,7 +153,7 @@ def fetch_image_bytes(url: str):
         return None
 
 def ocr_instituicao_from_image(image_url: str):
-    """OCR: ignora linha 'SAIU O EDITAL' e devolve a melhor linha como nome da instituição."""
+    """OCR: ignora 'SAIU O EDITAL' e tenta devolver a melhor linha como instituição."""
     if not (OCR_AVAILABLE and image_url):
         return None
     raw = fetch_image_bytes(image_url)
@@ -201,6 +190,7 @@ def ocr_instituicao_from_image(image_url: str):
 def parse_post(url: str):
     soup = soup_of(url)
 
+    # título
     title = soup.find("meta", {"property": "og:title"})
     title = title.get("content", "") if title else ""
     if not title:
@@ -208,6 +198,7 @@ def parse_post(url: str):
         title = h1.get_text(" ", strip=True) if h1 else url
     title = norm(title)
 
+    # imagem
     ogimg = soup.find("meta", {"property": "og:image"})
     image = ogimg.get("content", "") if ogimg else ""
     if not image:
@@ -215,10 +206,7 @@ def parse_post(url: str):
         if imgel and imgel.get("src"):
             image = urljoin(url, imgel["src"])
 
-    dados = extract_summary(soup)
-    link_banca = extract_official_link(soup, url)
-
-    # data de publicação (quando o site fornece)
+    # data de publicação do post (se o site fornecer)
     posted_at = None
     meta_pub = soup.find("meta", {"property": "article:published_time"}) \
                or soup.find("meta", {"name": "article:published_time"}) \
@@ -226,7 +214,9 @@ def parse_post(url: str):
     if meta_pub:
         posted_at = (meta_pub.get("content") or meta_pub.get("datetime") or "").strip() or None
 
-    # Filtro: precisa ter resumo + link oficial
+    dados = extract_summary(soup)
+    link_banca = extract_official_link(soup, url)
+
     if not dados or not link_banca:
         print(f"  × DESCARTADO: {title} | resumo={len(dados)} | link_banca={'OK' if link_banca else '—'}")
         return None
@@ -242,7 +232,6 @@ def parse_post(url: str):
     print(f"  ✓ {title} | linhas={len(dados)} | banca=OK")
 
     return {
-        "posted_at": posted_at,        # NOVO: quando existir no post
         "slug": slugify(title),
         "nome": title,
         "instituicao": instituicao,   # pode ser None
@@ -250,6 +239,7 @@ def parse_post(url: str):
         "imagem": image,
         "dados": dados,
         "link_banca": link_banca,
+        "posted_at": posted_at,       # NOVO
         "captured_at": captured_at,
     }
 
@@ -258,12 +248,14 @@ def merge(existing: list, new_items: list):
     by = {x.get("link"): x for x in existing if isinstance(x, dict) and x.get("link")}
     for it in new_items:
         prev = by.get(it["link"], {})
+        # não sobrescreve campos com None
         merged = {**prev, **{k: v for k, v in it.items() if v is not None}}
         by[it["link"]] = merged
 
     def sort_key(x):
-        # ordem: posted_at (se houver) senão captured_at — ambos ISO
+        # usa posted_at se houver; senão captured_at (ambos ISO)
         return (x.get("posted_at") or x.get("captured_at") or "")
+
     return sorted(by.values(), key=sort_key, reverse=True)
 
 # ---------- main ----------
@@ -300,5 +292,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
