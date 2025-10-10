@@ -1,38 +1,55 @@
-<!doctype html><html lang="pt-br"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Detalhe do edital</title>
-<link rel="stylesheet" href="assets/style.css">
-</head><body>
-<div class="container">
-  <div class="header"><h1 id="titulo">Edital</h1><a class="btn" href="./">← Voltar</a></div>
-  <table class="table" id="tabela"></table>
-  <div id="linkOficial" class="link-oficial"></div>
-</div>
-<script>
-async function main(){
-  const params = new URLSearchParams(location.search);
-  const slug = params.get('slug');
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Detalhe do edital</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="titulo">Edital</h1>
+      <a class="btn" href="./">← Voltar</a>
+    </div>
 
-  const data = await (await fetch('data/editais.json',{cache:'no-store'})).json();
-  const item = data.find(x=>x.slug===slug);
+    <table class="table" id="tabela"></table>
+    <div id="linkOficial" class="link-oficial"></div>
+  </div>
 
-  if(!item){
-    document.getElementById('titulo').textContent = 'Edital não encontrado';
-    return;
+  <script>
+  async function main(){
+    const params = new URLSearchParams(location.search);
+    const slug = params.get('slug');
+
+    const data = await (await fetch('data/editais.json',{cache:'no-store'})).json();
+    const item = data.find(x=>x.slug===slug);
+
+    if(!item){
+      document.getElementById('titulo').textContent = 'Edital não encontrado';
+      return;
+    }
+
+    // >>> AQUI é a mudança: usa display_title quando existir
+    document.getElementById('titulo').textContent =
+      `Edital: ${item.display_title || item.nome}`;
+
+    const tbody = document.getElementById('tabela');
+    tbody.innerHTML = (item.dados||[])
+      .map(r => `<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`)
+      .join('');
+
+    const linkDiv = document.getElementById('linkOficial');
+    if(item.link_banca){
+      linkDiv.innerHTML =
+        `🔗 <strong>Link para o site oficial:</strong> ` +
+        `<a href="${item.link_banca}" target="_blank" rel="noopener">` +
+        `${new URL(item.link_banca).hostname}</a>`;
+    } else {
+      linkDiv.textContent = '';
+    }
   }
-
-  document.getElementById('titulo').textContent = `Edital: ${item.nome}`;
-
-  const tbody = document.getElementById('tabela');
-  tbody.innerHTML = (item.dados||[]).map(r=>`<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`).join('');
-
-  const linkDiv = document.getElementById('linkOficial');
-  if(item.link_banca){
-    linkDiv.innerHTML = `🔗 <strong>Link para o site oficial:</strong> <a href="${item.link_banca}" target="_blank" rel="noopener">${new URL(item.link_banca).hostname}</a>`;
-  } else {
-    linkDiv.textContent = '';
-  }
-}
-main().catch(console.error);
-</script>
-</body></html>
+  main().catch(console.error);
+  </script>
+</body>
+</html>
