@@ -1,5 +1,49 @@
 [
   {
+    "slug": "funda-o-hospitalar-s-o-lucas-recebe-inscri-es-para-resid-ncia-m-dica-2026-confir",
+    "nome": "Fundação Hospitalar São Lucas recebe inscrições para residência médica 2026; confira o edital",
+    "instituicao": "FHSL",
+    "link": "https://med.estrategia.com/portal/noticias/fundacao-hospitalar-sao-lucas-recebe-inscricoes-para-residencia-medica-2026-confira-o-edital/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-33-e1760137013153.jpg",
+    "dados": [
+      {
+        "etapa": "Vaga s",
+        "data": "32 vagas"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$350,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "07/10 a 09/11/2025"
+      },
+      {
+        "etapa": "1ª Etapa – Prova Escrita",
+        "data": "19/11/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "19/11/2025"
+      },
+      {
+        "etapa": "2ª Etapa – Prova Prática",
+        "data": "27 e 28/01/2026"
+      },
+      {
+        "etapa": "3ª Etapa – Entrevista e Análise Curricular",
+        "data": "27 e 28/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "02/02/2026"
+      }
+    ],
+    "link_banca": "https://www.fhsl.org.br/residencia",
+    "posted_at": "2025-10-10T22:54:34+00:00",
+    "captured_at": "2025-10-10T23:28:14.988498+00:00"
+  },
+  {
     "slug": "sobrapar-2026-edital-com-vagas-de-resid-ncia-m-dica-em-cirurgia-pl-stica-est-dis",
     "nome": "SOBRAPAR 2026: edital com vagas de residência médica em Cirurgia Plástica está disponível",
     "display_title": "Sociedade Brasileira de Pesquisa e Assistência para Reabilitação Craniofacial (SOBRAPAR)",
@@ -38,7 +82,7 @@
     ],
     "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
     "posted_at": "2025-10-10T18:01:48+00:00",
-    "captured_at": "2025-10-10T22:43:33.760173+00:00"
+    "captured_at": "2025-10-10T23:28:16.171164+00:00"
   },
   {
     "slug": "institutos-ortop-dico-e-de-olhos-de-goi-nia-divulgam-editais-para-ingresso-na-re",
@@ -78,7 +122,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-10T22:43:35.518099+00:00",
+    "captured_at": "2025-10-10T23:28:17.912863+00:00",
     "display_title": "Instituto de Olhos de Goiânia (IOG)"
   },
   {
@@ -155,7 +199,7 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-10T22:43:36.728151+00:00"
+    "captured_at": "2025-10-10T23:28:19.080847+00:00"
   },
   {
     "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -207,7 +251,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-10T22:43:37.980453+00:00"
+    "captured_at": "2025-10-10T23:28:20.287977+00:00"
   },
   {
     "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
@@ -255,7 +299,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-10T22:43:39.205778+00:00"
+    "captured_at": "2025-10-10T23:28:21.480874+00:00"
   },
   {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
@@ -295,7 +339,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-10T22:43:40.396047+00:00"
+    "captured_at": "2025-10-10T23:28:22.669456+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
@@ -548,7 +592,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-10T22:43:43.935031+00:00",
+    "captured_at": "2025-10-10T23:28:26.114622+00:00",
     "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
@@ -588,7 +632,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-10T22:43:45.105588+00:00",
+    "captured_at": "2025-10-10T23:28:27.275201+00:00",
     "posted_at": "2025-10-08T21:16:17+00:00"
   },
   {
@@ -624,7 +668,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-10T22:43:46.269971+00:00",
+    "captured_at": "2025-10-10T23:28:28.445543+00:00",
     "posted_at": "2025-10-08T13:28:01+00:00"
   },
   {
