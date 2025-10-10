@@ -1,5 +1,85 @@
 [
   {
+    "slug": "sobrapar-2026-edital-com-vagas-de-resid-ncia-m-dica-em-cirurgia-pl-stica-est-dis",
+    "nome": "SOBRAPAR 2026: edital com vagas de residência médica em Cirurgia Plástica está disponível",
+    "instituicao": "SOBRAPAR",
+    "link": "https://med.estrategia.com/portal/noticias/sobrapar-2026-edital-com-vagas-de-residencia-medica-em-cirurgia-plastica-esta-disponivel/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/sobrapar-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "2 para Cirurgia Plástica"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Escrita (50%) + Prova Prática (40%) e Análise Curricular e Entrevista (10%)"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$550,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "01/10/2025 a 28/11/2025"
+      },
+      {
+        "etapa": "Prova Escrita",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Prova Prática e Análise Curricular e Entrevista",
+        "data": "13/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "17/12/2025"
+      }
+    ],
+    "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
+    "posted_at": "2025-10-10T18:01:48+00:00",
+    "captured_at": "2025-10-10T20:09:11.221713+00:00"
+  },
+  {
+    "slug": "institutos-ortop-dico-e-de-olhos-de-goi-nia-divulgam-editais-para-ingresso-na-re",
+    "nome": "Institutos Ortopédico e de Olhos de Goiânia divulgam editais para ingresso na residência médica em 2026",
+    "instituicao": "joje",
+    "link": "https://med.estrategia.com/portal/noticias/institutos-ortopedico-e-de-olhos-de-goiania-divulgam-editais-para-ingresso-na-residencia-medica-em-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/iog-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "1ª Fase: Prova Objetiva (Peso 9) + 2ª Fase: Análise Curricular (Peso 1)"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$600,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "23/10 a 13/11/2025"
+      },
+      {
+        "etapa": "1ª Fase: Prova",
+        "data": "22/11/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito",
+        "data": "24/11/2025"
+      },
+      {
+        "etapa": "2ª Fase: Análise Curricular",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "29/01/2026"
+      }
+    ],
+    "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
+    "posted_at": "2025-10-10T16:01:07+00:00",
+    "captured_at": "2025-10-10T20:09:12.970726+00:00"
+  },
+  {
     "slug": "hospital-varela-santiago-divulga-edital-de-resid-ncia-m-dica-2026",
     "nome": "Hospital Varela Santiago divulga edital de Residência Médica 2026",
     "instituicao": "HIVS",
@@ -73,7 +153,7 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-10T19:44:26.666187+00:00"
+    "captured_at": "2025-10-10T20:09:14.110775+00:00"
   },
   {
     "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -125,7 +205,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-10T19:44:27.989894+00:00"
+    "captured_at": "2025-10-10T20:09:15.328357+00:00"
   },
   {
     "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
@@ -173,7 +253,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-10T19:44:29.315857+00:00"
+    "captured_at": "2025-10-10T20:09:16.520089+00:00"
   },
   {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
@@ -213,7 +293,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-10T19:44:30.510244+00:00"
+    "captured_at": "2025-10-10T20:09:17.704420+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
@@ -466,7 +546,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-10T19:44:33.996178+00:00",
+    "captured_at": "2025-10-10T20:09:21.126798+00:00",
     "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
@@ -506,7 +586,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-10T19:44:35.184704+00:00",
+    "captured_at": "2025-10-10T20:09:22.269237+00:00",
     "posted_at": "2025-10-08T21:16:17+00:00"
   },
   {
@@ -542,7 +622,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-10T19:44:36.344689+00:00",
+    "captured_at": "2025-10-10T20:09:23.407770+00:00",
     "posted_at": "2025-10-08T13:28:01+00:00"
   },
   {
@@ -582,7 +662,7 @@
       }
     ],
     "link_banca": "https://uvv.br/editais/",
-    "captured_at": "2025-10-10T19:44:37.531292+00:00",
+    "captured_at": "2025-10-10T20:09:24.573248+00:00",
     "posted_at": "2025-10-07T23:30:27+00:00"
   },
   {
