@@ -1,10 +1,10 @@
 /* === Base / Tema === */
 :root{
-  --bg: #000;          /* fundo preto */
-  --card: #ff1fb0;        /* cards claros (limpos) */
-  --text: #0b1a13;     /* texto do card */
-  --muted: #687674;    /* textos suaves, se precisar */
-  --acc: #23c76a;      /* verde de ação/paginação ativa */
+  --bg: #44474B;        /* fundo cinza escuro (para contraste) */
+  --card: #ff3399;      /* rosa vibrante (fúcsia) */
+  --text: #ffffff;      /* texto do card branco puro (alto contraste) */
+  --muted: #687674;     /* textos suaves, se precisar */
+  --acc: #ff3399;       /* rosa de ação/paginação ativa */
 }
 
 *{ box-sizing: border-box; }
@@ -21,7 +21,7 @@ h1{ font-size:22px; margin:0; }
 
 /* === Faixa (hero) do topo === */
 .hero{
-  background:#e31b23;          /* vermelho da faixa */
+  background:var(--card);        /* usa o rosa do card */
   color:#fff;
   text-align:center;
   font-weight:700;
@@ -29,7 +29,7 @@ h1{ font-size:22px; margin:0; }
   padding:14px 16px;
   border-radius:10px;
   margin-bottom:18px;
-  box-shadow:0 6px 24px rgba(0,0,0,.25);
+  box-shadow:0 4px 12px rgba(0, 0, 0, 0.4); /* sombra mais suave */
 }
 
 /* === Grid 3×3 fixo === */
@@ -50,15 +50,15 @@ h1{ font-size:22px; margin:0; }
 
 /* card “limpo”: título + CTA centralizados */
 .card-min{
-  color:#fff;
+  /* color:#fff; <-- Removida */
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:flex-start;
+  justify-content:space-around; /* Nova: distribui o espaço verticalmente */
   text-align:center;
   min-height:160px;
   padding:22px 18px;
-  color:var(--text);
+  color:var(--text); /* #ffffff */
 }
 .card-min-link{
   display:block;               /* o card todo é clicável */
@@ -71,10 +71,10 @@ h1{ font-size:22px; margin:0; }
   line-height:1.2;
 }
 .card-min .cta{
-  margin-top:auto;           /* <-- faz ficar no rodapé */
+  margin-top:auto;
   font-style:italic;
   font-weight:550;
-  color:#0b3b25;             /* se o fundo for rosa, pode trocar para #fff ou #eaf9f0 */
+  color:#ffffff; /* Branco puro para alto contraste */
 }
 
 /* (Suporte legado se ainda houver .p/.badge/.btn em outras páginas) */
@@ -140,5 +140,6 @@ td:first-child{ color:#5a6b69; width:40%; }
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
 
 
