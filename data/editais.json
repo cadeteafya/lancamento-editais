@@ -1,5 +1,105 @@
 [
   {
+    "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
+    "nome": "Santa Casa de Adamantina divulga edital para Residência Médica 2026",
+    "instituicao": "SANTA CASA",
+    "link": "https://med.estrategia.com/portal/noticias/santa-casa-de-adamantina-divulga-edital-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/santa-casa-adamantina-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Período de Inscrição",
+        "data": "24/10/2025 a 28/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Último dia para pagamento da Taxa de Inscrição",
+        "data": "29/12/2025"
+      },
+      {
+        "etapa": "Aplicação da Prova Objetiva",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Divulgação dos gabaritos preliminares e cadernos de provas",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Interposição de Recursos sobre os gabaritos preliminares",
+        "data": "12/01/2026 (após 14h) até 13/01/2026 (23h59)"
+      },
+      {
+        "etapa": "Divulgação do Resultado Preliminar 1ª e 2ª fases",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Interposição de recurso sobre o Resultado 1ª e 2ª fases",
+        "data": "30/01/2026 (após 14h) até 31/01/2026 (23h59)"
+      },
+      {
+        "etapa": "Resultado Final e Convocação para Matrícula",
+        "data": "20/02/2026"
+      },
+      {
+        "etapa": "Matrícula dos Residentes (1ª Chamada)",
+        "data": "23 e 24/02/2026"
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
+    "posted_at": "2025-10-10T13:16:22+00:00",
+    "captured_at": "2025-10-10T13:24:19.956589+00:00"
+  },
+  {
+    "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
+    "nome": "Hospital Vitória Apart 2026: inscrições para o seletivo de Residência Médica estão abertas",
+    "instituicao": "VITORIA APART",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-vitoria-apart-2026-inscricoes-para-o-seletivo-de-residencia-medica-estao-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/vitoria-apart-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "06/10/2025 a 14/11/2025"
+      },
+      {
+        "etapa": "1ª Etapa – Prova Teórica",
+        "data": "24/11/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito",
+        "data": "25/11/2025"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar",
+        "data": "27/11/2025"
+      },
+      {
+        "etapa": "Divulgação do resultado final da 1ª etapa",
+        "data": "03/12/2025"
+      },
+      {
+        "etapa": "2ª Etapa – Prática e Entrevista",
+        "data": "11/12/2025"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar",
+        "data": "17/12/2025"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "22/12/2025"
+      },
+      {
+        "etapa": "Período de matrículas",
+        "data": "19/01/2026 a 30/01/2026"
+      }
+    ],
+    "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
+    "posted_at": "2025-10-10T12:14:09+00:00",
+    "captured_at": "2025-10-10T13:24:21.136592+00:00"
+  },
+  {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
     "nome": "Edital para residência médica em 2026 do Hospital IGESP é divulgado",
     "instituicao": "IGESP",
@@ -37,7 +137,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-10T11:45:41.564491+00:00"
+    "captured_at": "2025-10-10T13:24:22.285668+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
@@ -290,7 +390,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-10T11:45:44.955660+00:00",
+    "captured_at": "2025-10-10T13:24:25.745623+00:00",
     "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
@@ -330,7 +430,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-10T11:45:46.089323+00:00",
+    "captured_at": "2025-10-10T13:24:26.888602+00:00",
     "posted_at": "2025-10-08T21:16:17+00:00"
   },
   {
@@ -366,7 +466,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-10T11:45:47.239976+00:00",
+    "captured_at": "2025-10-10T13:24:28.038654+00:00",
     "posted_at": "2025-10-08T13:28:01+00:00"
   },
   {
@@ -406,7 +506,7 @@
       }
     ],
     "link_banca": "https://uvv.br/editais/",
-    "captured_at": "2025-10-10T11:45:48.391739+00:00",
+    "captured_at": "2025-10-10T13:24:29.198397+00:00",
     "posted_at": "2025-10-07T23:30:27+00:00"
   },
   {
@@ -446,7 +546,7 @@
       }
     ],
     "link_banca": "https://prefeitura.poa.br/sms/concursos",
-    "captured_at": "2025-10-10T11:45:49.584867+00:00",
+    "captured_at": "2025-10-10T13:24:30.388372+00:00",
     "posted_at": "2025-10-07T22:04:39+00:00"
   },
   {
