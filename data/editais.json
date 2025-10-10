@@ -1,8 +1,49 @@
 [
   {
+    "slug": "sobrapar-2026-edital-com-vagas-de-resid-ncia-m-dica-em-cirurgia-pl-stica-est-dis",
+    "nome": "SOBRAPAR 2026: edital com vagas de residência médica em Cirurgia Plástica está disponível",
+    "display_title": "Sociedade Brasileira de Pesquisa e Assistência para Reabilitação Craniofacial (SOBRAPAR)",
+    "instituicao": "SOBRAPAR",
+    "link": "https://med.estrategia.com/portal/noticias/sobrapar-2026-edital-com-vagas-de-residencia-medica-em-cirurgia-plastica-esta-disponivel/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/sobrapar-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "2 para Cirurgia Plástica"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Escrita (50%) + Prova Prática (40%) e Análise Curricular e Entrevista (10%)"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$550,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "01/10/2025 a 28/11/2025"
+      },
+      {
+        "etapa": "Prova Escrita",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Prova Prática e Análise Curricular e Entrevista",
+        "data": "13/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "17/12/2025"
+      }
+    ],
+    "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
+    "posted_at": "2025-10-10T18:01:48+00:00",
+    "captured_at": "2025-10-10T21:02:16.576034+00:00"
+  },
+  {
     "slug": "institutos-ortop-dico-e-de-olhos-de-goi-nia-divulgam-editais-para-ingresso-na-re",
     "nome": "Institutos Ortopédico e de Olhos de Goiânia divulgam editais para ingresso na residência médica em 2026",
-    "instituicao": "joje",
+    "instituicao": "IOG",
     "link": "https://med.estrategia.com/portal/noticias/institutos-ortopedico-e-de-olhos-de-goiania-divulgam-editais-para-ingresso-na-residencia-medica-em-2026/",
     "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/iog-edital.jpg",
     "dados": [
@@ -37,7 +78,8 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-10T20:47:33.542934+00:00"
+    "captured_at": "2025-10-10T21:02:19.797854+00:00",
+    "display_title": "Instituto de Olhos de Goiânia (IOG)"
   },
   {
     "slug": "hospital-varela-santiago-divulga-edital-de-resid-ncia-m-dica-2026",
@@ -113,12 +155,12 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-10T20:47:34.719854+00:00"
+    "captured_at": "2025-10-10T21:02:21.027772+00:00"
   },
   {
     "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
     "nome": "Santa Casa de Adamantina divulga edital para Residência Médica 2026",
-    "instituicao": "SANTA CASA",
+    "instituicao": "SANTA",
     "link": "https://med.estrategia.com/portal/noticias/santa-casa-de-adamantina-divulga-edital-para-residencia-medica-2026/",
     "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/santa-casa-adamantina-edital.jpg",
     "dados": [
@@ -165,12 +207,12 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-10T20:47:35.924719+00:00"
+    "captured_at": "2025-10-10T21:02:22.347936+00:00"
   },
   {
     "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
     "nome": "Hospital Vitória Apart 2026: inscrições para o seletivo de Residência Médica estão abertas",
-    "instituicao": "VITORIA APART",
+    "instituicao": "VITORIA",
     "link": "https://med.estrategia.com/portal/noticias/hospital-vitoria-apart-2026-inscricoes-para-o-seletivo-de-residencia-medica-estao-abertas/",
     "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/vitoria-apart-edital.jpg",
     "dados": [
@@ -213,7 +255,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-10T20:47:37.119693+00:00"
+    "captured_at": "2025-10-10T21:02:23.599268+00:00"
   },
   {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
@@ -253,7 +295,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-10T20:47:38.282352+00:00"
+    "captured_at": "2025-10-10T21:02:24.887805+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
@@ -364,7 +406,7 @@
   {
     "slug": "sus-ba-2026-tem-institui-es-e-mais-de-450-vagas-confirmadas-confira-a-rela-o-com",
     "nome": "SUS-BA 2026 tem instituições e mais de 450 vagas confirmadas; confira a relação completa",
-    "instituicao": "SUS-BA",
+    "instituicao": "SUSBA",
     "link": "https://med.estrategia.com/portal/noticias/sus-ba-2026-tem-instituicoes-e-vagas-confirmadas-confira-a-relacao-completa/",
     "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/05/sus-ba-atualizacao.jpg",
     "dados": [
@@ -506,7 +548,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-10T20:47:41.732395+00:00",
+    "captured_at": "2025-10-10T21:02:28.553018+00:00",
     "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
@@ -546,7 +588,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-10T20:47:42.882203+00:00",
+    "captured_at": "2025-10-10T21:02:29.773859+00:00",
     "posted_at": "2025-10-08T21:16:17+00:00"
   },
   {
@@ -582,7 +624,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-10T20:47:44.098817+00:00",
+    "captured_at": "2025-10-10T21:02:30.970892+00:00",
     "posted_at": "2025-10-08T13:28:01+00:00"
   },
   {
@@ -622,8 +664,9 @@
       }
     ],
     "link_banca": "https://uvv.br/editais/",
-    "captured_at": "2025-10-10T20:47:45.255800+00:00",
-    "posted_at": "2025-10-07T23:30:27+00:00"
+    "captured_at": "2025-10-10T21:02:32.192005+00:00",
+    "posted_at": "2025-10-07T23:30:27+00:00",
+    "display_title": "Universidade Vila Velha (UVV)"
   },
   {
     "slug": "hmipv-recebe-inscri-es-para-resid-ncia-m-dica-com-pr-requisito-em-go-confira-o-e",
