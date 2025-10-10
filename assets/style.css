@@ -1,7 +1,7 @@
 /* === Base / Tema === */
 :root{
   --bg: #000;          /* fundo preto */
-  --card: #fff;        /* cards claros (limpos) */
+  --card: #ff1fb0;        /* cards claros (limpos) */
   --text: #0b1a13;     /* texto do card */
   --muted: #687674;    /* textos suaves, se precisar */
   --acc: #23c76a;      /* verde de ação/paginação ativa */
@@ -139,3 +139,4 @@ td:first-child{ color:#5a6b69; width:40%; }
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
