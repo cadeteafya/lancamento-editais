@@ -1,29 +1,141 @@
-<style>
-.pager{display:flex;gap:8px;justify-content:center;align-items:center;margin:22px 0 8px}
-.pg{display:inline-block;padding:6px 10px;border-radius:10px;border:1px solid rgba(0,0,0,.12);text-decoration:none}
-.pg.active{background:#41b883;color:#031;border-color:transparent;font-weight:700}
-.pg.disabled{opacity:.5;pointer-events:none}
-.pg.dots{border:none;padding:0 4px;color:#999}
-</style>
-:root{--bg:#0b1320;--card:#111a2b;--text:#e9eef9;--muted:#9fb0d1;--acc:#41b883}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font:16px/1.5 system-ui;color:var(--text)}
-.container{max-width:1100px;margin:0 auto;padding:24px}
-.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-h1{font-size:22px;margin:0}
-.grid{display:grid;gap:16px;grid-template-columns:1fr}
-.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.28)}
-.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-.card .p{padding:14px}
-.badge{display:inline-block;background:rgba(65,184,131,.1);color:var(--acc);border:1px solid rgba(65,184,131,.3);padding:2px 8px;border-radius:999px;font-size:12px;margin-bottom:8px}
-a.btn{display:inline-block;margin-top:8px;padding:8px 12px;background:var(--acc);color:#031; border-radius:10px;text-decoration:none;font-weight:600}
-.meta{color:var(--muted);font-size:13px}
-.table{width:100%;border-collapse:separate;border-spacing:0 8px}
-tr{background:var(--card)}
-td{padding:12px 14px}
-td:first-child{color:var(--muted);width:40%}
-.link-oficial{margin-top:14px}
-@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+/* === Base / Tema === */
+:root{
+  --bg: #000;          /* fundo preto */
+  --card: #fff;        /* cards claros (limpos) */
+  --text: #0b1a13;     /* texto do card */
+  --muted: #687674;    /* textos suaves, se precisar */
+  --acc: #23c76a;      /* verde de ação/paginação ativa */
+}
 
+*{ box-sizing: border-box; }
+body{
+  margin:0;
+  background:var(--bg);
+  font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:#e9eef9; /* cor de textos gerais fora do card */
+}
 
+.container{ max-width:1100px; margin:0 auto; padding:24px; }
+.header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+h1{ font-size:22px; margin:0; }
 
+/* === Faixa (hero) do topo === */
+.hero{
+  background:#e31b23;          /* vermelho da faixa */
+  color:#fff;
+  text-align:center;
+  font-weight:700;
+  font-size:1.25rem;
+  padding:14px 16px;
+  border-radius:10px;
+  margin-bottom:18px;
+  box-shadow:0 6px 24px rgba(0,0,0,.25);
+}
+
+/* === Grid 3×3 fixo === */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: row;
+  gap:18px;
+}
+
+/* === Card minimalista (mantém sombra e cantos) === */
+.card{
+  background:var(--card);
+  border-radius:16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.22);
+  overflow:hidden;
+}
+
+/* card “limpo”: título + CTA centralizados */
+.card-min{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:160px;
+  padding:22px 18px;
+  color:var(--text);
+}
+.card-min-link{
+  display:block;               /* o card todo é clicável */
+  text-decoration:none;
+  color:inherit;
+}
+.card-min .title{
+  font-weight:800;
+  font-size:1.35rem;
+  line-height:1.2;
+}
+.card-min .cta{
+  margin-top:10px;
+  font-style:italic;
+  font-weight:700;
+  color:#0b3b25;
+}
+
+/* (Suporte legado se ainda houver .p/.badge/.btn em outras páginas) */
+.card .p{ padding:14px; color:var(--text); }
+.badge{
+  display:inline-block;
+  background:rgba(65,184,131,.1);
+  color:#147a4e;
+  border:1px solid rgba(65,184,131,.3);
+  padding:2px 8px;
+  border-radius:999px;
+  font-size:12px;
+  margin-bottom:8px;
+}
+a.btn{
+  display:inline-block;
+  margin-top:8px;
+  padding:8px 12px;
+  background:var(--acc);
+  color:#031;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+.meta{ color:#9fb0d1; font-size:13px; }
+
+/* Tabelas das páginas de detalhe (se usadas) */
+.table{ width:100%; border-collapse:separate; border-spacing:0 8px; }
+tr{ background:#f5f7f9; }
+td{ padding:12px 14px; color:#0b1a13; }
+td:first-child{ color:#5a6b69; width:40%; }
+.link-oficial{ margin-top:14px; }
+
+/* === Paginação: transparente, centralizada, números brancos === */
+.pager{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  margin:26px auto 6px;   /* dá espaço dos cards */
+}
+.pg{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:36px;
+  height:36px;
+  padding:0 10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.25);
+  background:transparent;
+  color:#fff;             /* números brancos */
+  text-decoration:none;
+  font-weight:600;
+}
+.pg.active{
+  background:var(--acc);
+  color:#031;
+  border-color:transparent;
+}
+.pg.disabled{ opacity:.45; pointer-events:none; }
+.pg.dots{ border:none; padding:0 4px; color:#bdbdbd; }
+
+/* (Se em alguma página antiga existirem imagens dentro do card) */
+.card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
