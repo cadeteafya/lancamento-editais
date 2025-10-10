@@ -44,8 +44,11 @@ h1{ font-size:22px; margin:0; }
 .card{
   background:var(--card);
   border-radius:16px;
-  box-shadow:0 12px 28px rgba(0,0,0,.22);
-  overflow:hidden;
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.22),  /* Sombra externa existente */
+    inset 0 0 10px rgba(255, 255, 255, 0.2); /* NOVA: Sombra interna branca sutil */
+    /* ou uma sombra interna com a cor do card, se preferir: */
+    /* inset 0 0 10px var(--card); */
 }
 
 /* card “limpo”: título + CTA centralizados */
@@ -140,6 +143,7 @@ td:first-child{ color:#5a6b69; width:40%; }
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
 
 
 
