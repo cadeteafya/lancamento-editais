@@ -1,5 +1,81 @@
 [
   {
+    "slug": "hospital-varela-santiago-divulga-edital-de-resid-ncia-m-dica-2026",
+    "nome": "Hospital Varela Santiago divulga edital de Residência Médica 2026",
+    "instituicao": "HIVS",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-varela-santiago-divulga-edital-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/hivs-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Evento",
+        "data": "Data"
+      },
+      {
+        "etapa": "Inscrições e entrega do currículo",
+        "data": "10/11/2025 a 21/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 300,00"
+      },
+      {
+        "etapa": "Solicitação da taxa de isenção",
+        "data": "10/11/2025 a 14/11/2025"
+      },
+      {
+        "etapa": "Pagamento da taxa de inscrição",
+        "data": "até 21/11/2025"
+      },
+      {
+        "etapa": "Divulgação das solicitações de isenção",
+        "data": "17/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva (Pediatria)",
+        "data": "05/01/2026"
+      },
+      {
+        "etapa": "Prova Objetiva ( Terapia Intensiva Pediatrica )",
+        "data": "06/01/2026, às 8h"
+      },
+      {
+        "etapa": "Resultado da 1ª fase",
+        "data": "09/01/2026"
+      },
+      {
+        "etapa": "Entrevista (Pediatria)",
+        "data": "14/01/2026"
+      },
+      {
+        "etapa": "Entrevista e Prova Teórico-Prática ( Terapia Intensiva Pediatrica )",
+        "data": "13/01/2026, às 8h"
+      },
+      {
+        "etapa": "Análise Curricular ( Terapia Intensiva Pediatrica )",
+        "data": "13/01/2026"
+      },
+      {
+        "etapa": "Divulgação das notas da Análise Curricular (Pediatria)",
+        "data": "27/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "11/02/2026"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "14/02/2026 a 25/02/2026"
+      },
+      {
+        "etapa": "Início do Programa",
+        "data": "02/03/2026"
+      }
+    ],
+    "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
+    "posted_at": "2025-10-10T14:27:43+00:00",
+    "captured_at": "2025-10-10T14:46:25.921706+00:00"
+  },
+  {
     "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
     "nome": "Santa Casa de Adamantina divulga edital para Residência Médica 2026",
     "instituicao": "SANTA CASA",
@@ -49,7 +125,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-10T13:49:20.400633+00:00"
+    "captured_at": "2025-10-10T14:46:27.402633+00:00"
   },
   {
     "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
@@ -97,7 +173,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-10T13:49:22.041382+00:00"
+    "captured_at": "2025-10-10T14:46:30.697487+00:00"
   },
   {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
@@ -137,7 +213,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-10T13:49:23.232730+00:00"
+    "captured_at": "2025-10-10T14:46:31.931104+00:00"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
@@ -390,7 +466,7 @@
       }
     ],
     "link_banca": "https://strixeducacao.com.br/evento/processo-seletivo-unificado-de-residencia-medica-bahia-2026/",
-    "captured_at": "2025-10-10T13:49:28.512944+00:00",
+    "captured_at": "2025-10-10T14:46:38.261984+00:00",
     "posted_at": "2025-10-08T21:43:12+00:00"
   },
   {
@@ -430,7 +506,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4699",
-    "captured_at": "2025-10-10T13:49:29.729677+00:00",
+    "captured_at": "2025-10-10T14:46:39.567416+00:00",
     "posted_at": "2025-10-08T21:16:17+00:00"
   },
   {
@@ -466,7 +542,7 @@
       }
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4696",
-    "captured_at": "2025-10-10T13:49:30.900075+00:00",
+    "captured_at": "2025-10-10T14:46:40.771266+00:00",
     "posted_at": "2025-10-08T13:28:01+00:00"
   },
   {
@@ -506,7 +582,7 @@
       }
     ],
     "link_banca": "https://uvv.br/editais/",
-    "captured_at": "2025-10-10T13:49:32.099986+00:00",
+    "captured_at": "2025-10-10T14:46:41.984846+00:00",
     "posted_at": "2025-10-07T23:30:27+00:00"
   },
   {
@@ -546,7 +622,7 @@
       }
     ],
     "link_banca": "https://prefeitura.poa.br/sms/concursos",
-    "captured_at": "2025-10-10T13:49:33.386563+00:00",
+    "captured_at": "2025-10-10T14:46:43.256269+00:00",
     "posted_at": "2025-10-07T22:04:39+00:00"
   },
   {
