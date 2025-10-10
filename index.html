@@ -4,24 +4,24 @@
 <link rel="stylesheet" href="assets/style.css">
 </head><body>
 <div class="container">
-  <div class="header"><h1>Últimos lançamentos</h1></div>
+  <div class="hero">Últimos lançamentos de editais em residência médica:</div>
   <div id="grid" class="grid"></div>
 </div>
 <script>
 async function main(){
-  const res = await fetch('data/editais.json', { cache: 'no-store' });
+  const res = await fetch('data/editais.json',{cache:'no-store'});
   const data = await res.json();
 
-  // 1) ORDEM: mais recentes primeiro
+  // ORDEM: mais recentes (posted_at || captured_at)
   const sorted = [...data].sort((a,b)=>{
     const da = (a.posted_at || a.captured_at || '');
     const db = (b.posted_at || b.captured_at || '');
     const cmp = db.localeCompare(da);
     if (cmp !== 0) return cmp;
-    return (b.slug || '').localeCompare(a.slug || ''); // desempate estável
+    return (b.slug || '').localeCompare(a.slug || '');
   });
 
-  // 2) PAGINAÇÃO 3x3
+  // Paginação 3x3 (9 por página)
   const pageSize = 9;
   const params = new URLSearchParams(location.search);
   let page = parseInt(params.get('page') || '1', 10);
@@ -42,24 +42,21 @@ async function main(){
     return;
   }
 
-  // Cards (3 colunas → 1..9 por página)
+  // Cards minimalistas
   grid.innerHTML = slice.map(x=>{
     const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
+    const href = `edital.html?slug=${encodeURIComponent(x.slug)}`;
     return `
-      <div class="card">
-        <div class="p">
-          <div class="badge">Lançamento de edital</div>
-          <h3 style="margin-top:8px">${titulo}</h3>
-          <a class="btn" href="edital.html?slug=${encodeURIComponent(x.slug)}">Ver detalhes</a>
-        </div>
-      </div>`;
+      <a class="card card-min card-min-link" href="${href}">
+        <div class="title">${titulo}</div>
+        <div class="cta">Ver detalhes</div>
+      </a>`;
   }).join('');
 
   renderPager(totalPages, page);
 }
 
 function renderPager(totalPages, current){
-  // cria/pega contêiner
   let pager = document.getElementById('pager');
   if (!pager) {
     pager = document.createElement('div');
@@ -68,41 +65,33 @@ function renderPager(totalPages, current){
     document.querySelector('.container').appendChild(pager);
   }
 
-  // helper de link
   const makeLink = (p, label, {disabled=false, active=false}={})=>{
     if (disabled) return `<span class="pg disabled">${label}</span>`;
     if (active)   return `<span class="pg active">${label}</span>`;
     const url = new URL(location.href);
     url.searchParams.set('page', p);
-    return `<a class="pg" href="?${url.searchParams.toString()}">${label}</a>`;
+    return `<a class="pg" href="${url.pathname}?${url.searchParams.toString()}">${label}</a>`;
   };
 
   const parts = [];
   // seta esquerda
-  parts.push(makeLink(Math.max(1, current-1), '‹', {disabled: current===1}));
+  parts.push(makeLink(Math.max(1,current-1), '‹', {disabled: current===1}));
 
-  // para poucas páginas, mostra todas
-  if (totalPages <= 7) {
-    for (let p=1; p<=totalPages; p++) {
-      parts.push(makeLink(p, String(p), {active: p===current}));
-    }
+  // janela com no máx. 5 páginas visíveis
+  const maxWin = 5;
+  if (totalPages <= maxWin) {
+    for (let p=1; p<=totalPages; p++) parts.push(makeLink(p, String(p), {active:p===current}));
   } else {
-    // janela deslizante (mantém 7 visíveis)
-    const span = 3;
-    let s = Math.max(1, current - span);
-    let e = Math.min(totalPages, current + span);
-    if (current <= span) e = 1 + 2*span;
-    if (current + span > totalPages) s = totalPages - 2*span;
+    // tenta centralizar a página atual na janela
+    let s = Math.max(1, current - Math.floor(maxWin/2));
+    let e = s + maxWin - 1;
+    if (e > totalPages) { e = totalPages; s = e - maxWin + 1; }
 
-    if (s > 1) parts.push(makeLink(1, '1'));
-    if (s > 2) parts.push('<span class="pg dots">…</span>');
-    for (let p=s; p<=e; p++) parts.push(makeLink(p, String(p), {active: p===current}));
-    if (e < totalPages-1) parts.push('<span class="pg dots">…</span>');
-    if (e < totalPages) parts.push(makeLink(totalPages, String(totalPages)));
+    for (let p=s; p<=e; p++) parts.push(makeLink(p, String(p), {active:p===current}));
   }
 
   // seta direita
-  parts.push(makeLink(Math.min(totalPages, current+1), '›', {disabled: current===totalPages}));
+  parts.push(makeLink(Math.min(totalPages,current+1), '›', {disabled: current===totalPages}));
 
   pager.innerHTML = parts.join('');
 }
@@ -113,8 +102,8 @@ main().catch(err=>{
 });
 </script>
 
-
 </body></html>
+
 
 
 
