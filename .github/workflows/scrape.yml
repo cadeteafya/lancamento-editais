@@ -1,7 +1,7 @@
 name: Scrape & Deploy (Estratégia MED)
 
 on:
-  # agenda “grossa” — roda a cada 20 min em UTC
+  # roda a cada 20 minutos (UTC); um guard abaixo filtra a janela BR
   schedule:
     - cron: "*/20 * * * *"
   workflow_dispatch: {}
@@ -9,11 +9,6 @@ on:
     paths:
       - "scraper.py"
       - ".github/workflows/scrape.yml"
-
-# evita sobreposição de execuções
-concurrency:
-  group: scrape-and-deploy
-  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -23,35 +18,49 @@ permissions:
 jobs:
   scrape_and_deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
 
     steps:
-      - name: Checkout
+      - name: Checkout (full history)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # <— NECESSÁRIO para usar HEAD~1 no git show
+          fetch-depth: 0
 
-      - name: Set up Python
+      # Guarda: só segue em seg–sex, 06:30–18:30 (horário de Brasília)
+      - name: Guard (Mon–Fri, 06:30–18:30 BRT)
+        id: guard
+        run: |
+          set -e
+          TZ=America/Sao_Paulo
+          DOW=$(date +"%u")                # 1..7 (Mon..Sun)
+          H=$(date +"%H")
+          M=$(date +"%M")
+          MINUTES=$((10#$H*60 + 10#$M))    # minutos desde 00:00
+          START=$((6*60+30))               # 06:30 => 390
+          END=$((18*60+30))                # 18:30 => 1110
+
+          if [ "$DOW" -ge 6 ]; then
+            echo "outside_window=true" >> $GITHUB_OUTPUT
+            echo "Hoje é sábado/domingo (BR). Saindo."
+            exit 0
+          fi
+
+          if [ "$MINUTES" -lt "$START" ] || [ "$MINUTES" -gt "$END" ]; then
+            echo "outside_window=true" >> $GITHUB_OUTPUT
+            echo "Fora da janela 06:30–18:30 BRT. Saindo."
+            exit 0
+          fi
+
+          echo "outside_window=false" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Set up Python 3.11
+        if: steps.guard.outputs.outside_window == 'false'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Janela de funcionamento: seg–sex 06:30–18:30 (BRT). Fora disso, encerra.
-      - name: Guard (somente seg–sex 06:30–18:30 BRT)
-        run: |
-          export TZ=America/Sao_Paulo
-          dow=$(date +%u)   # 1=Seg ... 7=Dom
-          hhmm=$(date +%H%M)
-          if [ "$dow" -ge 6 ]; then
-            echo "Fim de semana (BRT) → encerrando."; exit 0
-          fi
-          if { [ "$hhmm" \> "0629" ] && [ "$hhmm" \< "1831" ]; }; then
-            echo "Dentro da janela (BRT)."
-          else
-            echo "Fora da janela (BRT) → encerrando."; exit 0
-          fi
-
-      - name: Install deps (requests, bs4, lxml, OCR stack)
+      - name: Install deps (Tesseract + pip)
+        if: steps.guard.outputs.outside_window == 'false'
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr tesseract-ocr-por
@@ -59,110 +68,115 @@ jobs:
           pip install requests beautifulsoup4 "lxml==5.3.0" pillow pytesseract opencv-python-headless
 
       - name: Run scraper
-        run: python scraper.py
-
-      # ---------- ALERTAS (Teams) sem repetição ----------
-      - name: Load notified state
+        if: steps.guard.outputs.outside_window == 'false'
         run: |
-          mkdir -p data
-          if git rev-parse HEAD~1 >/dev/null 2>&1 && git show HEAD~1:data/notified.json >/dev/null 2>&1; then
-            git show HEAD~1:data/notified.json > data/notified.json || echo "[]" > data/notified.json
+          set -e
+          python scraper.py
+          echo "---- HEAD data/editais.json ----"
+          head -c 1500 data/editais.json || true
+          echo
+
+      # Compara com o commit anterior e identifica novos itens
+      - name: Compute new items
+        if: steps.guard.outputs.outside_window == 'false'
+        id: diff
+        run: |
+          set -e
+          CUR="data/editais.json"
+          PREV=".prev_editais.json"
+
+          if git rev-parse HEAD~1 >/dev/null 2>&1 && git show HEAD~1:${CUR} >/dev/null 2>&1; then
+            git show HEAD~1:${CUR} > "$PREV" || echo "[]" > "$PREV"
           else
-            echo "[]" > data/notified.json
+            echo "[]" > "$PREV"
           fi
 
-      - name: Build notifications (new-only)
-        id: notif
-        run: |
-          python - << 'PY'
-          import json, os, urllib.parse
-          from pathlib import Path
+          python - <<'PY'
+          import json, os
+          from urllib.parse import quote
 
-          cur  = json.loads(Path("data/editais.json").read_text(encoding="utf-8"))
-          try:
-            notified = set(json.loads(Path("data/notified.json").read_text(encoding="utf-8")))
-          except Exception:
-            notified = set()
+          with open("data/editais.json","r",encoding="utf-8") as f:
+              cur = json.load(f)
+          with open(".prev_editais.json","r",encoding="utf-8") as f:
+              prev = json.load(f)
 
-          to_notify = []
-          for x in cur:
-              link = x.get("link")
-              if not link or link in notified:
-                  continue
+          prev_links = { x.get("link") for x in prev if isinstance(x,dict) }
+          new = [x for x in cur if isinstance(x,dict) and x.get("link") not in prev_links]
+
+          payload = []
+          for x in new[:5]:
               nome = (x.get("instituicao") or x.get("nome") or "").strip()
               slug = x.get("slug")
-              site = f"https://cadeteafya.github.io/lancamento-editais/edital.html?slug={urllib.parse.quote(slug)}" if slug else x.get("link")
-              to_notify.append({"link": link, "nome": nome, "site": site})
+              site = f"https://cadeteafya.github.io/lancamento-editais/edital.html?slug={quote(slug)}" if slug else (x.get("link") or "")
+              payload.append({"nome": nome, "site": site})
 
-          Path("to_notify.json").write_text(json.dumps(to_notify, ensure_ascii=False), encoding="utf-8")
-
-          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
-              f.write(f"count={len(to_notify)}\n")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"count={len(new)}\n")
+              out.write("items="+json.dumps(payload, ensure_ascii=False)+"\n")
           PY
 
-      - name: Notify Teams (new only)
-        if: steps.notif.outputs.count != '0'
+      - name: Notify Teams (new items)
+        if: steps.guard.outputs.outside_window == 'false' && steps.diff.outputs.count != '0'
         env:
           TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          ITEMS_JSON: ${{ steps.diff.outputs.items }}
         run: |
           python - << 'PY'
           import json, os, requests
-          items = json.loads(open("to_notify.json","r",encoding="utf-8").read())
-          hook  = os.environ["TEAMS_WEBHOOK_URL"]
+          hook = os.environ.get("TEAMS_WEBHOOK_URL","").strip()
+          if not hook:
+            print("Sem TEAMS_WEBHOOK_URL; pulando.")
+            raise SystemExit(0)
 
+          items = json.loads(os.environ.get("ITEMS_JSON","[]"))
           for it in items:
-              nome = it.get("nome") or "Novo edital"
-              site = it.get("site")
-              payload = {
-                "@type": "MessageCard",
-                "@context": "https://schema.org/extensions",
-                "summary": "Alerta de novo edital",
-                "themeColor": "00A884",
-                "title": "EM TESTE: Alerta de novo edital!",
-                "text": f"'**{nome}**': '{site}'"
-              }
-              r = requests.post(hook, json=payload, timeout=30)
-              r.raise_for_status()
+            titulo = it.get("nome") or "Novo edital"
+            link   = it.get("site") or ""
+            payload = {
+              "@type": "MessageCard",
+              "@context": "https://schema.org/extensions",
+              "summary": "Alerta de novo edital",
+              "themeColor": "00A884",
+              "title": "EM TESTE: Alerta de novo edital!",
+              "text": f"**{titulo}**: [{link}]({link})"
+            }
+            r = requests.post(hook, json=payload, timeout=30)
+            r.raise_for_status()
           print(f"Enviado {len(items)} alerta(s) ao Teams.")
           PY
 
-      - name: Update notified state
-        if: steps.notif.outputs.count != '0'
+      - name: Commit data if changed
+        if: steps.guard.outputs.outside_window == 'false'
+        env:
+          GH_EMAIL: "${{ github.actor }}@users.noreply.github.com"
+          GH_NAME:  "${{ github.actor }}"
         run: |
-          python - << 'PY'
-          import json
-          from pathlib import Path
-          try:
-            notified = set(json.loads(Path("data/notified.json").read_text(encoding="utf-8")))
-          except Exception:
-            notified = set()
-          for it in json.loads(Path("to_notify.json").read_text(encoding="utf-8")):
-            notified.add(it["link"])
-          Path("data/notified.json").write_text(json.dumps(sorted(notified), ensure_ascii=False, indent=2), encoding="utf-8")
-          PY
+          set -euo pipefail
 
-      - name: Commit data & notified if changed
-        run: |
-          if [[ -n "$(git status --porcelain -- data/editais.json data/notified.json)" ]]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/editais.json data/notified.json
-            git commit -m "chore: update data (editais/notified)"
-            git push
-          else
+          echo "Status:"
+          git status --porcelain || true
+
+          if git diff --quiet -- data/editais.json; then
             echo "No changes to commit."
+            exit 0
           fi
 
-      - name: Show JSON head (debug)
-        run: |
-          echo "----- data/editais.json (first 1200 chars) -----"
-          head -c 1200 data/editais.json || true
-          echo
+          git config user.email "$GH_EMAIL"
+          git config user.name  "$GH_NAME"
+
+          git add data/editais.json
+          git commit -m "chore: update data/editais.json"
+
+          # protege contra non-fast-forward
+          git pull --rebase
+          git push
 
       - name: Upload artifact (site)
+        if: steps.guard.outputs.outside_window == 'false'
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
       - name: Deploy to GitHub Pages
+        if: steps.guard.outputs.outside_window == 'false'
         uses: actions/deploy-pages@v4
