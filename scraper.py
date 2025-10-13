@@ -2,18 +2,12 @@
 """
 Scraper de lançamentos de edital (Estratégia MED)
 
-Regras para incluir no JSON:
-  (a) Ter RESUMO:
-      - em <table> 2 colunas (>=2 linhas), OU
-      - fallback: bloco "Resumo Edital ..." com pares "rótulo: valor" / <strong>rótulo</strong> valor
-  (b) Ter ÂNCORA cujo texto contenha "página oficial da (banca organizadora|instituição|processo seletivo|seleção)"
-      e href EXTERNO (não med.estrategia.com e não redes sociais)
-
-Campos:
-  - slug, nome (título do post), display_title (Nome + SIGLA), instituicao (sigla), link, imagem,
-    dados (linhas do resumo), link_banca, posted_at (se houver), captured_at
-
-Histórico: acumulado (merge por URL) e ordenado por posted_at||captured_at desc.
+Inclui:
+  - Múltiplas tabelas 2 colunas por post, cada uma com título = última frase em negrito antes da tabela
+    (se a última for "Aviso", ignora e pega a anterior).
+  - Fallbacks existentes (link oficial, OCR, Nome(SIGLA), etc.)
+  - Compat: mantém 'dados' (primeira tabela) e agora salva 'secoes' = [{titulo, linhas}]
+  - Ordenação por posted_at || captured_at (desc)
 """
 
 import io
@@ -40,7 +34,7 @@ except Exception:
 
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
-UA = "ResidMedBot/1.7 (+contato: seu-email)"
+UA = "ResidMedBot/1.8 (+contato: seu-email)"
 
 S = requests.Session()
 S.headers.update({"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
@@ -51,7 +45,7 @@ ANCHOR_TXT = re.compile(
 )
 SOCIAL = ("facebook.com","twitter.com","t.me","linkedin.com","instagram.com","wa.me","tiktok.com","x.com")
 
-# ---------- helpers ----------
+# ---- Helpers ----
 def norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "").strip())
 
@@ -64,69 +58,10 @@ def soup_of(url: str) -> BeautifulSoup:
     r.raise_for_status()
     return BeautifulSoup(r.text, "lxml")
 
-# ---------- listagem ----------
-def list_article_urls(limit: int = 30):
-    print(f"[i] Lendo listagem: {LIST_URL}")
-    soup = soup_of(LIST_URL)
-    urls, seen = [], set()
-    for a in soup.select("a[href]"):
-        href = a.get("href", "")
-        if "/portal/noticias/" in href:
-            u = urljoin(LIST_URL, href.split("?")[0].split("#")[0])
-            if urlparse(u).scheme in ("http", "https") and u not in seen:
-                seen.add(u)
-                urls.append(u)
-    print(f"[i] Encontrados {len(urls)} links; checando {min(limit, len(urls))}.")
-    return urls[:limit]
+def looks_like_sigla(s: str) -> bool:
+    return bool(re.fullmatch(r"[A-Z]{2,10}(?:-[A-Z]{2,10})*", (s or "").upper()))
 
-# ---------- resumo ----------
-def extract_summary(soup: BeautifulSoup):
-    # 1) tabela 2 colunas
-    for tb in soup.find_all("table"):
-        rows = []
-        for tr in tb.find_all("tr"):
-            tds = tr.find_all(["td", "th"])
-            if len(tds) >= 2:
-                etapa = norm(tds[0].get_text(" "))
-                data = norm(tds[1].get_text(" "))
-                if etapa and data:
-                    rows.append({"etapa": etapa, "data": data})
-        if len(rows) >= 3:
-            if re.search(r"\betapa\b", rows[0]["etapa"], re.I) and re.search(r"\bdata\b", rows[0]["data"], re.I):
-                rows = rows[1:]
-            if len(rows) >= 2:
-                return rows
-
-    # 2) fallback "Resumo Edital ..."
-    heading = soup.find(lambda t: getattr(t, "name", "") in {"h2","h3","h4"} and "resumo" in t.get_text(" ").lower())
-    if not heading:
-        return []
-
-    rows = []
-    for el in heading.find_all_next():
-        if getattr(el, "name", "") in {"h2","h3","h4"}:
-            break
-        txt = norm(el.get_text(" "))
-        if not txt:
-            continue
-
-        strong = el.find("strong")
-        if strong:
-            rot = norm(strong.get_text(" "))
-            val = norm(el.get_text(" ").replace(strong.get_text(" "), "", 1))
-            if rot and val and len(rot) <= 80:
-                rows.append({"etapa": rot, "data": val})
-            continue
-
-        parts = re.split(r"\s{2,}|:", txt, maxsplit=1)
-        if len(parts) == 2:
-            rot, val = norm(parts[0]), norm(parts[1])
-            if rot and val and len(rot) <= 80:
-                rows.append({"etapa": rot, "data": val})
-
-    return rows if len(rows) >= 2 else []
-
-# ---------- link oficial ----------
+# ---- Link oficial ----
 def extract_official_link(soup: BeautifulSoup, base_url: str):
     for a in soup.find_all("a", href=True):
         txt = norm(a.get_text(" "))
@@ -137,7 +72,7 @@ def extract_official_link(soup: BeautifulSoup, base_url: str):
                 return href
     return None
 
-# ---------- OCR ----------
+# ---- OCR (instituição) ----
 def fetch_image_bytes(url: str):
     try:
         r = S.get(url, timeout=30)
@@ -147,7 +82,6 @@ def fetch_image_bytes(url: str):
         return None
 
 def ocr_instituicao_from_image(image_url: str):
-    """OCR: ignora 'SAIU O EDITAL' e tenta devolver uma sigla ou nome curto."""
     if not (OCR_AVAILABLE and image_url):
         return None
     raw = fetch_image_bytes(image_url)
@@ -163,11 +97,9 @@ def ocr_instituicao_from_image(image_url: str):
         arr = cv2.threshold(arr, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
         text = pytesseract.image_to_string(arr, lang="por+eng", config="--psm 6")
         lines = [re.sub(r"\s+", " ", l).strip() for l in text.splitlines() if l.strip()]
-        # remove o selo
         lines = [l for l in lines if not re.search(r"saiu\s*o\s*edital", l, re.I)]
         if not lines:
             return None
-        # escolhe a "melhor" linha
         def score(l):
             letters = sum(1 for ch in l if ch.isalpha())
             caps = sum(1 for ch in l if ch.isupper())
@@ -175,9 +107,8 @@ def ocr_instituicao_from_image(image_url: str):
             penal = sum(1 for ch in l if ch in ":|/\\.!?,;")
             return len(l) + 10 * frac_caps - 2 * penal
         best = max(lines, key=score)
-        # normalização leve
         best = best.upper()
-        best = re.sub(r"[^A-Z ]", "", best)
+        best = re.sub(r"[^A-Z\- ]", "", best)            # preserva hífen
         best = max(best.split(), key=len) if best.split() else best
         if 2 <= len(best) <= 80:
             print(f"    (OCR) candidato = {best}")
@@ -186,17 +117,15 @@ def ocr_instituicao_from_image(image_url: str):
         print(f"    (OCR) falhou: {e}")
     return None
 
-# ---------- Nome (SIGLA) nos primeiros parágrafos ----------
+# ---- Nome(SIGLA) no corpo ----
 NAME_SIGLA_RE = re.compile(
-    r"(?P<nome>[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][^()]{2,120})\s*\(\s*(?P<sigla>[A-Z]{2,10})\s*\)"
+    r"(?P<nome>[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][^()]{2,120})\s*\(\s*(?P<sigla>[A-Z]{2,10}(?:-[A-Z]{2,10})*)\s*\)"
 )
 
 def find_nome_sigla_pairs(soup: BeautifulSoup):
-    """Pega 'Nome (SIGLA)' nos 3–4 primeiros parágrafos do artigo (preserva caixa)."""
     pairs = []
     ps = soup.select("article p") or soup.find_all("p")
     for p in ps[:4]:
-        # dá preferência ao que estiver em <strong>/<b>, senão usa o texto do parágrafo
         txt_strong = " ".join(t.get_text(" ") for t in p.find_all(["strong","b"]))
         txt = norm(txt_strong) if txt_strong else norm(p.get_text(" "))
         for m in NAME_SIGLA_RE.finditer(txt):
@@ -206,11 +135,50 @@ def find_nome_sigla_pairs(soup: BeautifulSoup):
                 pairs.append({"nome": nome, "sigla": sigla, "sigla_up": sigla.upper()})
     return pairs
 
-# ---------- parse de um post ----------
+# ---- Títulos para cada tabela (última frase em negrito antes dela; se for 'Aviso', pula) ----
+AVISO_RE = re.compile(r"^\s*aviso\s*$", re.I)
+
+def last_bold_before(node) -> str | None:
+    # varre elementos anteriores; pega o primeiro <strong>/<b> não 'Aviso';
+    # se não houver, tenta um heading h2/h3/h4.
+    for prev in node.find_all_previous():
+        name = getattr(prev, "name", "")
+        if name in ("strong", "b"):
+            txt = norm(prev.get_text(" "))
+            if txt and not AVISO_RE.match(txt):
+                return txt
+        if name in ("h2", "h3", "h4"):
+            txt = norm(prev.get_text(" "))
+            if txt and not AVISO_RE.match(txt):
+                return txt
+    return None
+
+# ---- Todas as tabelas 2 colunas com títulos ----
+def extract_table_sections(soup: BeautifulSoup):
+    sections = []
+    tables = soup.find_all("table")
+    for tb in tables:
+        rows = []
+        for tr in tb.find_all("tr"):
+            tds = tr.find_all(["td", "th"])
+            if len(tds) >= 2:
+                etapa = norm(tds[0].get_text(" "))
+                data = norm(tds[1].get_text(" "))
+                if etapa and data:
+                    rows.append({"etapa": etapa, "data": data})
+        # valida padrão: pelo menos 2 linhas úteis; remove header óbvio
+        if len(rows) >= 3 and re.search(r"\betapa\b", rows[0]["etapa"], re.I) and re.search(r"\bdata\b", rows[0]["data"], re.I):
+            rows = rows[1:]
+        if len(rows) >= 2:
+            titulo = last_bold_before(tb) or "Resumo"
+            sections.append({"titulo": titulo, "linhas": rows})
+    return sections
+
+# ---- Parse de um post ----
 def parse_post(url: str):
     soup = soup_of(url)
 
-    # título do post (ainda mantemos em 'nome' como metadado)
+    # título do post (mantido como metadado)
     title = soup.find("meta", {"property": "og:title"})
     title = title.get("content", "") if title else ""
     if not title:
@@ -226,7 +194,7 @@ def parse_post(url: str):
         if imgel and imgel.get("src"):
             image = urljoin(url, imgel["src"])
 
-    # publicado em
+    # data de publicação
     posted_at = None
     meta_pub = soup.find("meta", {"property": "article:published_time"}) \
                or soup.find("meta", {"name": "article:published_time"}) \
@@ -234,51 +202,55 @@ def parse_post(url: str):
     if meta_pub:
         posted_at = (meta_pub.get("content") or meta_pub.get("datetime") or "").strip() or None
 
-    # resumo + link oficial
-    dados = extract_summary(soup)
-    link_banca = extract_official_link(soup, url)
-    if not dados or not link_banca:
-        print(f"  × DESCARTADO: {title} | resumo={len(dados)} | link_banca={'OK' if link_banca else '—'}")
+    # Tabelas + títulos (todas)
+    secoes = extract_table_sections(soup)
+    if not secoes:
+        print(f"  × DESCARTADO: {title} | sem tabelas no padrão")
         return None
 
-    # OCR (sigla ou nome curto)
-    instituicao = ocr_instituicao_from_image(image)
+    # Link da banca
+    link_banca = extract_official_link(soup, url)
+    if not link_banca:
+        print(f"  × DESCARTADO: {title} | link_banca —")
+        return None
 
-    # Nome(SIGLA) no corpo
+    # OCR (sigla) e Nome(SIGLA) do corpo
+    instituicao = ocr_instituicao_from_image(image)
     pairs = find_nome_sigla_pairs(soup)
     display_title = None
     if pairs:
-        # tenta casar com a sigla do OCR (se parecer sigla curta)
-        ocr_sigla = instituicao.upper() if (instituicao and len(instituicao) < 6 and instituicao.isalpha()) else None
+        ocr_sigla = instituicao.upper() if looks_like_sigla(instituicao) else None
         picked = None
         if ocr_sigla:
             for pr in pairs:
                 if pr["sigla_up"] == ocr_sigla:
-                    picked = pr
-                    break
+                    picked = pr; break
         if not picked:
             picked = pairs[0]
         display_title = f'{picked["nome"]} ({picked["sigla"]})'
-        # para nossos cards (instituicao), prefira a SIGLA validada
         instituicao = picked["sigla"]
 
     captured_at = datetime.now(timezone.utc).isoformat()
-    print(f"  ✓ {title} | linhas={len(dados)} | banca=OK")
+    print(f"  ✓ {title} | tabelas={len(secoes)} | banca=OK")
+
+    # compat: 'dados' = primeira tabela
+    dados_first = secoes[0]["linhas"] if secoes else []
 
     return {
         "slug": slugify(title),
-        "nome": title,                # título do post (metadado)
-        "display_title": display_title, # NOVO: frase "Nome (SIGLA)" para usar na página de detalhes
-        "instituicao": instituicao,   # sigla p/ lista (cards)
+        "nome": title,                   # título do post (metadado)
+        "display_title": display_title,  # "Nome (SIGLA)" p/ página de detalhes
+        "instituicao": instituicao,      # sigla p/ cards
         "link": url,
         "imagem": image,
-        "dados": dados,
+        "dados": dados_first,            # compatibilidade
+        "secoes": secoes,                # NOVO
         "link_banca": link_banca,
         "posted_at": posted_at,
         "captured_at": captured_at,
     }
 
-# ---------- merge (histórico acumulado) ----------
+# ---- Merge + ordenação ----
 def merge(existing: list, new_items: list):
     by = {x.get("link"): x for x in existing if isinstance(x, dict) and x.get("link")}
     for it in new_items:
@@ -291,9 +263,8 @@ def merge(existing: list, new_items: list):
 
     return sorted(by.values(), key=sort_key, reverse=True)
 
-# ---------- main ----------
+# ---- Main ----
 def main():
-    # carrega existente
     try:
         existing = json.loads(OUT_PATH.read_text(encoding="utf-8"))
         if not isinstance(existing, list):
