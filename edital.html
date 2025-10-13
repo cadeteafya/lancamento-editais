@@ -13,7 +13,7 @@
       <a class="btn" href="./">← Voltar</a>
     </div>
 
-    <table class="table" id="tabela"></table>
+    <div id="blocos"></div>
     <div id="linkOficial" class="link-oficial"></div>
   </div>
 
@@ -30,14 +30,29 @@
       return;
     }
 
-    // >>> AQUI é a mudança: usa display_title quando existir
     document.getElementById('titulo').textContent =
       `Edital: ${item.display_title || item.nome}`;
 
-    const tbody = document.getElementById('tabela');
-    tbody.innerHTML = (item.dados||[])
-      .map(r => `<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`)
-      .join('');
+    const blocos = document.getElementById('blocos');
+
+    // monta lista de seções (compat: se não houver, usa 'dados' como 1 seção)
+    const secoes = Array.isArray(item.secoes) && item.secoes.length
+      ? item.secoes
+      : (item.dados && item.dados.length ? [{ titulo: 'Resumo do edital', linhas: item.dados }] : []);
+
+    if(!secoes.length){
+      blocos.innerHTML = `<div class="meta">Sem informações de tabela.</div>`;
+    } else {
+      blocos.innerHTML = secoes.map(sec=>{
+        const linhas = (sec.linhas || []).map(r =>
+          `<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`
+        ).join('');
+        return `
+          <h2 style="margin:18px 0 10px">${sec.titulo}</h2>
+          <table class="table">${linhas}</table>
+        `;
+      }).join('');
+    }
 
     const linkDiv = document.getElementById('linkOficial');
     if(item.link_banca){
