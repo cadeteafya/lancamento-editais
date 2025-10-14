@@ -104,12 +104,54 @@ a.btn{
 }
 .meta{ color:#9fb0d1; font-size:13px; }
 
-/* Tabelas das páginas de detalhe (se usadas) */
+.table-2col,
+.table-n {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+.table-2col td,
+.table-n th, .table-n td {
+  background: #ffffff;      /* branco */
+  color: #000000;           /* preto */
+  padding: 12px 14px;
+  border-radius: 6px;
+}
+
+/* primeira tabela (sempre 2 colunas sem cabeçalho):
+   apenas conteúdo em preto, alinhamento padrão (esquerda) */
+.table-2col td:first-child {
+  width: 40%;
+  color: #2b2b2b;           /* rótulo levemente mais escuro, se quiser */
+}
+
+/* tabelas que têm cabeçalho (N colunas):
+   cabeçalho em negrito e centralizado, linhas centralizadas */
+.table-n thead th {
+  font-weight: 700;
+  text-align: center;
+}
+.table-n tbody td {
+  text-align: center;       /* centraliza o conteúdo das células */
+}
+
+/* separador visual entre linhas (com fundo escuro do site continua visível) */
+.table-2col tr + tr td,
+.table-n tr + tr td {
+  border-top: 8px solid transparent;
+}
+
+/* Tabelas das páginas de detalhe (se usadas) 
 .table{ width:100%; border-collapse:separate; border-spacing:0 8px; }
 tr{ background:#f5f7f9; }
 td{ padding:12px 14px; color:#0b1a13; }
-td:first-child{ color:#5a6b69; width:40%; }
-.link-oficial{ margin-top:14px; }
+td:first-child{ color:#5a6b69; width:40%; } */
+
+/* link oficial: branco para boa leitura no fundo escuro */
+.link-oficial a {
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 /* === Paginação: transparente, centralizada, números brancos === */
 .pager{
@@ -143,6 +185,7 @@ td:first-child{ color:#5a6b69; width:40%; }
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
 
 
 
