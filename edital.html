@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Detalhe do edital</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* tabela genérica N-col (aproveita seu tema) */
+    .table-n { width:100%; border-collapse:separate; border-spacing:0 8px }
+    .table-n th, .table-n td { padding:12px 14px; background:var(--card); }
+    .table-n th { color:var(--text); font-weight:700 }
+    .table-n tr + tr td, .table-n tr + tr th { border-top: 8px solid transparent }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -33,33 +40,43 @@
     document.getElementById('titulo').textContent =
       `Edital: ${item.display_title || item.nome}`;
 
-    const blocos = document.getElementById('blocos');
+    const cont = document.getElementById('blocos');
 
-    // monta lista de seções (compat: se não houver, usa 'dados' como 1 seção)
+    // Usa 'secoes' (N colunas). Se não houver, cai no compat 'dados' 2-col.
     const secoes = Array.isArray(item.secoes) && item.secoes.length
       ? item.secoes
-      : (item.dados && item.dados.length ? [{ titulo: 'Resumo do edital', linhas: item.dados }] : []);
+      : (item.dados && item.dados.length
+          ? [{ titulo: 'Resumo do edital', linhas: item.dados, cols: 2 }]
+          : []);
 
-    if(!secoes.length){
-      blocos.innerHTML = `<div class="meta">Sem informações de tabela.</div>`;
-    } else {
-      blocos.innerHTML = secoes.map(sec=>{
-        const linhas = (sec.linhas || []).map(r =>
-          `<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`
-        ).join('');
+    const html = secoes.map(sec=>{
+      // se vier no formato novo (headers/rows)
+      if (Array.isArray(sec.rows) && sec.rows.length){
+        const headers = Array.isArray(sec.headers) ? sec.headers : [];
+        const head = headers.length
+          ? `<thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead>`
+          : '';
+        const body = `<tbody>${
+          sec.rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')
+        }</tbody>`;
         return `
           <h2 style="margin:18px 0 10px">${sec.titulo}</h2>
-          <table class="table">${linhas}</table>
+          <table class="table-n">${head}${body}</table>
         `;
-      }).join('');
-    }
+      }
+      // compat 2-col (linhas com etapa/data)
+      const linhas = (sec.linhas||[]).map(r=>`<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`).join('');
+      return `
+        <h2 style="margin:18px 0 10px">${sec.titulo||'Resumo do edital'}</h2>
+        <table class="table">${linhas}</table>
+      `;
+    }).join('');
+
+    cont.innerHTML = html || `<div class="meta">Sem informações de tabela.</div>`;
 
     const linkDiv = document.getElementById('linkOficial');
     if(item.link_banca){
-      linkDiv.innerHTML =
-        `🔗 <strong>Link para o site oficial:</strong> ` +
-        `<a href="${item.link_banca}" target="_blank" rel="noopener">` +
-        `${new URL(item.link_banca).hostname}</a>`;
+      linkDiv.innerHTML = `🔗 <strong>Link para o site oficial:</strong> <a href="${item.link_banca}" target="_blank" rel="noopener">${new URL(item.link_banca).hostname}</a>`;
     } else {
       linkDiv.textContent = '';
     }
