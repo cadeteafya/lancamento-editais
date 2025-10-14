@@ -149,30 +149,38 @@ jobs:
           PY
 
       - name: Commit data if changed
-        if: steps.guard.outputs.outside_window == 'false'
         env:
           GH_EMAIL: "${{ github.actor }}@users.noreply.github.com"
           GH_NAME:  "${{ github.actor }}"
         run: |
           set -euo pipefail
-
+      
           echo "Status:"
           git status --porcelain || true
-
+      
+          # Sai se não houve mudança real
           if git diff --quiet -- data/editais.json; then
             echo "No changes to commit."
             exit 0
           fi
-
+      
           git config user.email "$GH_EMAIL"
           git config user.name  "$GH_NAME"
-
+      
           git add data/editais.json
-          git commit -m "chore: update data/editais.json"
-
-          # protege contra non-fast-forward
-          git pull --rebase
+          git commit -m "chore: update data/editais.json" || true
+      
+          # Tenta rebase; se conflitar, mantém NOSSA versão do JSON e continua
+          if ! git pull --rebase; then
+            echo "Rebase conflitou. Mantendo a versão gerada de data/editais.json (ours)."
+            git checkout --ours -- data/editais.json
+            git add data/editais.json
+            git rebase --continue || true
+          fi
+      
           git push
+
+
 
       - name: Upload artifact (site)
         if: steps.guard.outputs.outside_window == 'false'
@@ -180,7 +188,13 @@ jobs:
         with:
           path: .
 
+      - name: Sync main before scraping
+        run: |
+          git fetch origin
+          git pull --rebase
+
       - name: Deploy to GitHub Pages
         if: steps.guard.outputs.outside_window == 'false'
         uses: actions/deploy-pages@v4
+
 
