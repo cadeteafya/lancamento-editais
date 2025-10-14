@@ -9,100 +9,75 @@
 </div>
 <script>
 async function main(){
-  const res = await fetch('data/editais.json',{cache:'no-store'});
-  const data = await res.json();
-
-  // ORDEM: mais recentes (posted_at || captured_at)
-  const sorted = [...data].sort((a,b)=>{
-    const da = (a.posted_at || a.captured_at || '');
-    const db = (b.posted_at || b.captured_at || '');
-    const cmp = db.localeCompare(da);
-    if (cmp !== 0) return cmp;
-    return (b.slug || '').localeCompare(a.slug || '');
-  });
-
-  // Paginação 3x3 (9 por página)
-  const pageSize = 9;
   const params = new URLSearchParams(location.search);
-  let page = parseInt(params.get('page') || '1', 10);
-  if (isNaN(page) || page < 1) page = 1;
+  const slug = params.get('slug');
 
-  const total = sorted.length;
-  const totalPages = Math.max(1, Math.ceil(total / pageSize));
-  if (page > totalPages) page = totalPages;
+  const data = await (await fetch('data/editais.json',{cache:'no-store'})).json();
+  const item = data.find(x=>x.slug===slug);
 
-  const start = (page - 1) * pageSize;
-  const end   = start + pageSize;
-  const slice = sorted.slice(start, end);
-
-  const grid = document.getElementById('grid');
-  if (!slice.length) {
-    grid.innerHTML = `<div class="meta">Nenhum lançamento encontrado.</div>`;
-    renderPager(totalPages, page);
+  if(!item){
+    document.getElementById('titulo').textContent = 'Edital não encontrado';
     return;
   }
 
-  // Cards minimalistas
-  grid.innerHTML = slice.map(x=>{
-    const titulo = (x.instituicao && x.instituicao.trim()) || x.nome;
-    const href = `edital.html?slug=${encodeURIComponent(x.slug)}`;
+  document.getElementById('titulo').textContent =
+    `Edital: ${item.display_title || item.nome}`;
+
+  const cont = document.getElementById('blocos');
+
+  // Usa 'secoes' (N colunas) ou cai no compat 'dados' como primeira seção 2-col
+  let secoes = Array.isArray(item.secoes) && item.secoes.length
+    ? item.secoes
+    : (item.dados && item.dados.length ? [{ titulo:'Resumo do edital', linhas:item.dados, cols:2 }] : []);
+
+  const html = secoes.map((sec, idx) => {
+    const isFirst = idx === 0; // primeira seção = tabela 2 colunas
+
+    // formato novo (headers/rows)
+    if (Array.isArray(sec.rows) && sec.rows.length) {
+      const headers = Array.isArray(sec.headers) ? sec.headers : [];
+      const head = headers.length
+        ? `<thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead>`
+        : '';
+      const body = `<tbody>${
+        sec.rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')
+      }</tbody>`;
+
+      // se for a primeira seção mas ela já veio em formato N-col,
+      // ainda assim usamos .table-2col só quando realmente for 2 colunas
+      const cls = (isFirst && (sec.cols === 2)) ? 'table-2col' : 'table-n';
+      return `
+        <h2 style="margin:18px 0 10px">${sec.titulo}</h2>
+        <table class="${cls}">${head}${body}</table>
+      `;
+    }
+
+    // compat 2-col (linhas com etapa/data)
+    const linhas = (sec.linhas||[]).map(r=>`<tr><td>${r.etapa}</td><td>${r.data}</td></tr>`).join('');
+    const cls = isFirst ? 'table-2col' : 'table-n';
     return `
-      <a class="card card-min card-min-link" href="${href}">
-        <div class="title">${titulo}</div>
-        <div class="cta">Ver detalhes</div>
-      </a>`;
+      <h2 style="margin:18px 0 10px">${sec.titulo||'Resumo do edital'}</h2>
+      <table class="${cls}"><tbody>${linhas}</tbody></table>
+    `;
   }).join('');
 
-  renderPager(totalPages, page);
-}
+  cont.innerHTML = html || `<div class="meta">Sem informações de tabela.</div>`;
 
-function renderPager(totalPages, current){
-  let pager = document.getElementById('pager');
-  if (!pager) {
-    pager = document.createElement('div');
-    pager.id = 'pager';
-    pager.className = 'pager';
-    document.querySelector('.container').appendChild(pager);
-  }
-
-  const makeLink = (p, label, {disabled=false, active=false}={})=>{
-    if (disabled) return `<span class="pg disabled">${label}</span>`;
-    if (active)   return `<span class="pg active">${label}</span>`;
-    const url = new URL(location.href);
-    url.searchParams.set('page', p);
-    return `<a class="pg" href="${url.pathname}?${url.searchParams.toString()}">${label}</a>`;
-  };
-
-  const parts = [];
-  // seta esquerda
-  parts.push(makeLink(Math.max(1,current-1), '‹', {disabled: current===1}));
-
-  // janela com no máx. 5 páginas visíveis
-  const maxWin = 5;
-  if (totalPages <= maxWin) {
-    for (let p=1; p<=totalPages; p++) parts.push(makeLink(p, String(p), {active:p===current}));
+  const linkDiv = document.getElementById('linkOficial');
+  if(item.link_banca){
+    linkDiv.innerHTML =
+      `🔗 <strong>Link para o site oficial:</strong> ` +
+      `<a href="${item.link_banca}" target="_blank" rel="noopener">${new URL(item.link_banca).hostname}</a>`;
   } else {
-    // tenta centralizar a página atual na janela
-    let s = Math.max(1, current - Math.floor(maxWin/2));
-    let e = s + maxWin - 1;
-    if (e > totalPages) { e = totalPages; s = e - maxWin + 1; }
-
-    for (let p=s; p<=e; p++) parts.push(makeLink(p, String(p), {active:p===current}));
+    linkDiv.textContent = '';
   }
-
-  // seta direita
-  parts.push(makeLink(Math.min(totalPages,current+1), '›', {disabled: current===totalPages}));
-
-  pager.innerHTML = parts.join('');
 }
-
-main().catch(err=>{
-  console.error(err);
-  document.getElementById('grid').innerHTML = `<div class="meta">Erro ao carregar dados.</div>`;
-});
+main().catch(console.error);
 </script>
 
+
 </body></html>
+
 
 
 
