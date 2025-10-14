@@ -59,7 +59,7 @@ h1{ font-size:22px; margin:0; }
   align-items:center;
   justify-content:space-around; /* Nova: distribui o espaço verticalmente */
   text-align:center;
-  min-height:160px;
+  min-height:130px;
   padding:22px 18px;
   color:var(--text); /* #ffffff */
 }
@@ -143,6 +143,7 @@ td:first-child{ color:#5a6b69; width:40%; }
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
 
 
 
