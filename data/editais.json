@@ -1,5 +1,214 @@
 [
   {
+    "slug": "grupo-viv-publica-edital-de-resid-ncia-m-dica-2026-com-vagas-em-psiquiatria-em-d",
+    "nome": "Grupo VIV publica edital de Residência Médica 2026 com vagas em Psiquiatria em diversos estados",
+    "display_title": "Grupo VIV – Saúde Mental e Emocional Residência Médica 2026 17 vagas na especialidade de Psiquiatria São José (SC)",
+    "instituicao": "SC",
+    "link": "https://med.estrategia.com/portal/noticias/grupo-viv-publica-edital-de-residencia-medica-2026-com-vagas-em-psiquiatria-em-diversos-estados/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-grupo-viv-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrição",
+        "data": "28/10/2025 a 07/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00 / R$ 900,00"
+      },
+      {
+        "etapa": "Último dia para pagamento da taxa de inscrição",
+        "data": "08/12/2025"
+      },
+      {
+        "etapa": "Cartão de convocação e local da prova",
+        "data": "10/01/2026"
+      },
+      {
+        "etapa": "Aplicação das provas objetivas (1ª Fase)",
+        "data": "17/01/2026"
+      },
+      {
+        "etapa": "Divulgação dos gabaritos preliminares e da prova objetiva (a partir das 21h)",
+        "data": "17/01/2026"
+      },
+      {
+        "etapa": "Interposição de recursos sobre os gabaritos preliminares",
+        "data": "18 e 19/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado das análises de recursos dos gabaritos preliminares",
+        "data": "24/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar da prova objetiva (1ª Fase)",
+        "data": "27/01/2026"
+      },
+      {
+        "etapa": "Interposição de recursos sobre o resultado preliminar da prova objetiva (1ª Fase)",
+        "data": "28/01/2026"
+      },
+      {
+        "etapa": "Divulgação das respostas aos recursos da prova objetiva (1ª Fase)",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado final da 1ª Fase e convocação para a 2ª Fase",
+        "data": "03/02/2026"
+      },
+      {
+        "etapa": "Envio dos currículos dos candidatos habilitados (2ª Fase)",
+        "data": "04 e 05/02/2026"
+      },
+      {
+        "etapa": "Realização da análise curricular/entrevista (2ª Fase)",
+        "data": "06/02 a 11/02/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar (1ª e 2ª Fases)",
+        "data": "13/02/2026"
+      },
+      {
+        "etapa": "Interposição de recurso sobre o resultado preliminar da 2ª Fase",
+        "data": "14/02/2026"
+      },
+      {
+        "etapa": "Divulgação das respostas dos recursos da 2ª Fase",
+        "data": "19/02/2026"
+      },
+      {
+        "etapa": "Publicação do resultado final do processo seletivo",
+        "data": "20/02/2026"
+      },
+      {
+        "etapa": "Convocação para matrícula dos residentes (1ª Chamada)",
+        "data": "21/02/2026"
+      },
+      {
+        "etapa": "Matrícula dos residentes (1ª Chamada)",
+        "data": "23 e 24/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo edital Grupo VIV 2026",
+        "linhas": [
+          {
+            "etapa": "Período de inscrição",
+            "data": "28/10/2025 a 07/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 600,00 / R$ 900,00"
+          },
+          {
+            "etapa": "Último dia para pagamento da taxa de inscrição",
+            "data": "08/12/2025"
+          },
+          {
+            "etapa": "Cartão de convocação e local da prova",
+            "data": "10/01/2026"
+          },
+          {
+            "etapa": "Aplicação das provas objetivas (1ª Fase)",
+            "data": "17/01/2026"
+          },
+          {
+            "etapa": "Divulgação dos gabaritos preliminares e da prova objetiva (a partir das 21h)",
+            "data": "17/01/2026"
+          },
+          {
+            "etapa": "Interposição de recursos sobre os gabaritos preliminares",
+            "data": "18 e 19/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado das análises de recursos dos gabaritos preliminares",
+            "data": "24/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar da prova objetiva (1ª Fase)",
+            "data": "27/01/2026"
+          },
+          {
+            "etapa": "Interposição de recursos sobre o resultado preliminar da prova objetiva (1ª Fase)",
+            "data": "28/01/2026"
+          },
+          {
+            "etapa": "Divulgação das respostas aos recursos da prova objetiva (1ª Fase)",
+            "data": "30/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado final da 1ª Fase e convocação para a 2ª Fase",
+            "data": "03/02/2026"
+          },
+          {
+            "etapa": "Envio dos currículos dos candidatos habilitados (2ª Fase)",
+            "data": "04 e 05/02/2026"
+          },
+          {
+            "etapa": "Realização da análise curricular/entrevista (2ª Fase)",
+            "data": "06/02 a 11/02/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar (1ª e 2ª Fases)",
+            "data": "13/02/2026"
+          },
+          {
+            "etapa": "Interposição de recurso sobre o resultado preliminar da 2ª Fase",
+            "data": "14/02/2026"
+          },
+          {
+            "etapa": "Divulgação das respostas dos recursos da 2ª Fase",
+            "data": "19/02/2026"
+          },
+          {
+            "etapa": "Publicação do resultado final do processo seletivo",
+            "data": "20/02/2026"
+          },
+          {
+            "etapa": "Convocação para matrícula dos residentes (1ª Chamada)",
+            "data": "21/02/2026"
+          },
+          {
+            "etapa": "Matrícula dos residentes (1ª Chamada)",
+            "data": "23 e 24/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "linhas": [
+          {
+            "etapa": "Especialidade",
+            "data": "Instituição"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "Instituto São José – São José"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "Cadmo – Curitiba"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "Vila Verde Saúde Mental – Juiz de Fora"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "Clínica da Gávea – Rio de Janeiro"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "Green House – Guarapari"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/33?_gl=1*1j2m6lo*_ga*MTQ4Mjk3NTU0My4xNzYwNDQ3Mzgx*_ga_C8WLKDKMRY*czE3NjA0NDczODEkbzEkZzAkdDE3NjA0NDczODEkajYwJGwwJGgw",
+    "posted_at": "2025-10-14T13:45:39+00:00",
+    "captured_at": "2025-10-14T13:57:57.676041+00:00"
+  },
+  {
     "slug": "hog-recebe-inscri-es-para-vagas-de-resid-ncia-m-dica-em-oftalmologia-confira-o-e",
     "nome": "HOG recebe inscrições para vagas de residência médica em Oftalmologia; confira o edital 2026",
     "instituicao": "HOG",
@@ -41,7 +250,7 @@
     ],
     "link_banca": "https://hospitaldeolhosguarapuava.com.br/residenciamedica/",
     "posted_at": "2025-10-13T15:31:01+00:00",
-    "captured_at": "2025-10-14T13:37:50.160442+00:00",
+    "captured_at": "2025-10-14T13:57:59.540633+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital HOG Residência Médica 2026",
@@ -124,7 +333,7 @@
     ],
     "link_banca": "https://saude.riopreto.sp.gov.br/portal/?page_id=7111",
     "posted_at": "2025-10-13T15:19:45+00:00",
-    "captured_at": "2025-10-14T13:37:51.531999+00:00",
+    "captured_at": "2025-10-14T13:58:00.787995+00:00",
     "display_title": "Secretaria Municipal de Saúde de São José do Rio Preto (SMS-SJRP)",
     "secoes": [
       {
@@ -226,7 +435,7 @@
     ],
     "link_banca": "https://cermam.com.br/",
     "posted_at": "2025-10-13T11:36:16+00:00",
-    "captured_at": "2025-10-14T13:37:53.490808+00:00",
+    "captured_at": "2025-10-14T13:58:02.554261+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital CERMAM 2026",
@@ -305,7 +514,7 @@
     ],
     "link_banca": "https://www.fhsl.org.br/residencia",
     "posted_at": "2025-10-10T22:54:34+00:00",
-    "captured_at": "2025-10-14T13:37:54.658322+00:00",
+    "captured_at": "2025-10-14T13:58:03.727223+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital – Fundação Hospitalar São Lucas 2026",
@@ -442,7 +651,7 @@
     ],
     "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
     "posted_at": "2025-10-10T18:01:48+00:00",
-    "captured_at": "2025-10-14T13:37:55.866342+00:00",
+    "captured_at": "2025-10-14T13:58:04.903655+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital SOBRAPAR 2026",
@@ -517,7 +726,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-14T13:37:57.699118+00:00",
+    "captured_at": "2025-10-14T13:58:06.661717+00:00",
     "display_title": "Instituto de Olhos de Goiânia (IOG)",
     "secoes": [
       {
@@ -683,7 +892,7 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-14T13:38:00.144370+00:00",
+    "captured_at": "2025-10-14T13:58:07.834269+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Varela Santiago 2026",
@@ -806,7 +1015,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-14T13:38:01.409904+00:00",
+    "captured_at": "2025-10-14T13:58:09.049313+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Santa Casa de Adamantina 2026",
@@ -901,7 +1110,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-14T13:38:03.729773+00:00",
+    "captured_at": "2025-10-14T13:58:10.253526+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Vitória Apart 2026",
@@ -984,7 +1193,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-14T13:38:04.949209+00:00",
+    "captured_at": "2025-10-14T13:58:11.416917+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital IGESP 2026",
