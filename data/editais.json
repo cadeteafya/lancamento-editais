@@ -91,6 +91,93 @@
     "secoes": [
       {
         "titulo": "Resumo edital Grupo VIV 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrição",
+            "28/10/2025 a 07/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 600,00 / R$ 900,00"
+          ],
+          [
+            "Último dia para pagamento da taxa de inscrição",
+            "08/12/2025"
+          ],
+          [
+            "Cartão de convocação e local da prova",
+            "10/01/2026"
+          ],
+          [
+            "Aplicação das provas objetivas (1ª Fase)",
+            "17/01/2026"
+          ],
+          [
+            "Divulgação dos gabaritos preliminares e da prova objetiva (a partir das 21h)",
+            "17/01/2026"
+          ],
+          [
+            "Interposição de recursos sobre os gabaritos preliminares",
+            "18 e 19/01/2026"
+          ],
+          [
+            "Divulgação do resultado das análises de recursos dos gabaritos preliminares",
+            "24/01/2026"
+          ],
+          [
+            "Divulgação do resultado preliminar da prova objetiva (1ª Fase)",
+            "27/01/2026"
+          ],
+          [
+            "Interposição de recursos sobre o resultado preliminar da prova objetiva (1ª Fase)",
+            "28/01/2026"
+          ],
+          [
+            "Divulgação das respostas aos recursos da prova objetiva (1ª Fase)",
+            "30/01/2026"
+          ],
+          [
+            "Divulgação do resultado final da 1ª Fase e convocação para a 2ª Fase",
+            "03/02/2026"
+          ],
+          [
+            "Envio dos currículos dos candidatos habilitados (2ª Fase)",
+            "04 e 05/02/2026"
+          ],
+          [
+            "Realização da análise curricular/entrevista (2ª Fase)",
+            "06/02 a 11/02/2026"
+          ],
+          [
+            "Divulgação do resultado preliminar (1ª e 2ª Fases)",
+            "13/02/2026"
+          ],
+          [
+            "Interposição de recurso sobre o resultado preliminar da 2ª Fase",
+            "14/02/2026"
+          ],
+          [
+            "Divulgação das respostas dos recursos da 2ª Fase",
+            "19/02/2026"
+          ],
+          [
+            "Publicação do resultado final do processo seletivo",
+            "20/02/2026"
+          ],
+          [
+            "Convocação para matrícula dos residentes (1ª Chamada)",
+            "21/02/2026"
+          ],
+          [
+            "Matrícula dos residentes (1ª Chamada)",
+            "23 e 24/02/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Período de inscrição",
@@ -176,37 +263,50 @@
       },
       {
         "titulo": "Especialidades e vagas",
-        "linhas": [
-          {
-            "etapa": "Especialidade",
-            "data": "Instituição"
-          },
-          {
-            "etapa": "Psiquiatria",
-            "data": "Instituto São José – São José"
-          },
-          {
-            "etapa": "Psiquiatria",
-            "data": "Cadmo – Curitiba"
-          },
-          {
-            "etapa": "Psiquiatria",
-            "data": "Vila Verde Saúde Mental – Juiz de Fora"
-          },
-          {
-            "etapa": "Psiquiatria",
-            "data": "Clínica da Gávea – Rio de Janeiro"
-          },
-          {
-            "etapa": "Psiquiatria",
-            "data": "Green House – Guarapari"
-          }
-        ]
+        "headers": [
+          "Especialidade",
+          "Instituição",
+          "Estado",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Psiquiatria",
+            "Instituto São José – São José",
+            "SC",
+            "4"
+          ],
+          [
+            "Psiquiatria",
+            "Cadmo – Curitiba",
+            "PR",
+            "5"
+          ],
+          [
+            "Psiquiatria",
+            "Vila Verde Saúde Mental – Juiz de Fora",
+            "MG",
+            "2"
+          ],
+          [
+            "Psiquiatria",
+            "Clínica da Gávea – Rio de Janeiro",
+            "RJ",
+            "3"
+          ],
+          [
+            "Psiquiatria",
+            "Green House – Guarapari",
+            "ES",
+            "3"
+          ]
+        ],
+        "cols": 4
       }
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/33?_gl=1*1j2m6lo*_ga*MTQ4Mjk3NTU0My4xNzYwNDQ3Mzgx*_ga_C8WLKDKMRY*czE3NjA0NDczODEkbzEkZzAkdDE3NjA0NDczODEkajYwJGwwJGgw",
     "posted_at": "2025-10-14T13:45:39+00:00",
-    "captured_at": "2025-10-14T14:02:41.951384+00:00"
+    "captured_at": "2025-10-14T14:32:59.370636+00:00"
   },
   {
     "slug": "hog-recebe-inscri-es-para-vagas-de-resid-ncia-m-dica-em-oftalmologia-confira-o-e",
@@ -250,10 +350,46 @@
     ],
     "link_banca": "https://hospitaldeolhosguarapuava.com.br/residenciamedica/",
     "posted_at": "2025-10-13T15:31:01+00:00",
-    "captured_at": "2025-10-14T14:02:43.682427+00:00",
+    "captured_at": "2025-10-14T14:33:01.158121+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital HOG Residência Médica 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "2 em Oftalmologia"
+          ],
+          [
+            "Período de inscrições",
+            "06/10/2025 a 08/01/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$750,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "1ª Fase: Prova Objetiva + 2ª Fase: Análise e Arguição de Currículo"
+          ],
+          [
+            "Prova Objetiva",
+            "16/01/2026"
+          ],
+          [
+            "Análise e Entrevista para Arguição de Currículo",
+            "19/01/2026"
+          ],
+          [
+            "Gabarito preliminar",
+            "21/01/2026"
+          ],
+          [
+            "Resultado final",
+            "30/01/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Vagas ofertadas",
@@ -289,7 +425,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Hospital de Olhos de Guarapuava (HOG"
   },
   {
     "slug": "sms-sjrp-oferta-16-vagas-para-resid-ncia-m-dica-em-2026-confira-o-edital",
@@ -333,11 +470,47 @@
     ],
     "link_banca": "https://saude.riopreto.sp.gov.br/portal/?page_id=7111",
     "posted_at": "2025-10-13T15:19:45+00:00",
-    "captured_at": "2025-10-14T14:02:44.919994+00:00",
+    "captured_at": "2025-10-14T14:33:02.414850+00:00",
     "display_title": "Secretaria Municipal de Saúde de São José do Rio Preto (SMS-SJRP)",
     "secoes": [
       {
         "titulo": "Resumo Edital SMS-SJRP 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "16"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$ 600,00"
+          ],
+          [
+            "Período de Inscrições",
+            "23/10 a 05/11/2025"
+          ],
+          [
+            "Prova Objetiva e Entrega do Currículo",
+            "26/11/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "27/11/2025"
+          ],
+          [
+            "Resultado 1ª Fase",
+            "05/12/2025"
+          ],
+          [
+            "Análise Curricular",
+            "09/12/2025 a 16/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "21/01/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Vagas Ofertadas",
@@ -375,11 +548,26 @@
       },
       {
         "titulo": "Quadro de Vagas",
+        "headers": [
+          "PROGRAMA",
+          "VAGAS OFERECIDAS"
+        ],
+        "rows": [
+          [
+            "Medicina de Família e Comunidade",
+            "9"
+          ],
+          [
+            "Medicina de Emergência",
+            "4"
+          ],
+          [
+            "Psiquiatria",
+            "3"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
-          {
-            "etapa": "PROGRAMA",
-            "data": "VAGAS OFERECIDAS"
-          },
           {
             "etapa": "Medicina de Família e Comunidade",
             "data": "9"
@@ -435,10 +623,42 @@
     ],
     "link_banca": "https://cermam.com.br/",
     "posted_at": "2025-10-13T11:36:16+00:00",
-    "captured_at": "2025-10-14T14:02:46.699926+00:00",
+    "captured_at": "2025-10-14T14:33:04.203542+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital CERMAM 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Total de vagas ofertadas",
+            "177 (AD) + 23 (PR)"
+          ],
+          [
+            "Inscrições",
+            "28/10 a 14/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 450,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva (90%) + Avaliação e Arguição Curricular (10%)"
+          ],
+          [
+            "Data da prova",
+            "30/11/2025"
+          ],
+          [
+            "Gabarito preliminar",
+            "30/11/2025"
+          ],
+          [
+            "Resultado final",
+            "09/01/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Total de vagas ofertadas",
@@ -514,10 +734,46 @@
     ],
     "link_banca": "https://www.fhsl.org.br/residencia",
     "posted_at": "2025-10-10T22:54:34+00:00",
-    "captured_at": "2025-10-14T14:02:47.865600+00:00",
+    "captured_at": "2025-10-14T14:33:05.400491+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital – Fundação Hospitalar São Lucas 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas",
+            "32 vagas"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$350,00"
+          ],
+          [
+            "Período de Inscrições",
+            "07/10 a 09/11/2025"
+          ],
+          [
+            "1ª Etapa – Prova Escrita",
+            "19/11/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "19/11/2025"
+          ],
+          [
+            "2ª Etapa – Prova Prática",
+            "27 e 28/01/2026"
+          ],
+          [
+            "3ª Etapa – Entrevista e Análise Curricular",
+            "27 e 28/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "02/02/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Vagas",
@@ -555,11 +811,62 @@
       },
       {
         "titulo": "Vagas Fundação Hospitalar São Lucas 2026",
+        "headers": [
+          "ESPECIALIDADE",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "ANESTESIOLOGIA",
+            "3"
+          ],
+          [
+            "CIRURGIA GERAL",
+            "3"
+          ],
+          [
+            "CLÍNICA MÉDICA",
+            "6"
+          ],
+          [
+            "GINECOLOGIA E OBSTETRÍCIA",
+            "4"
+          ],
+          [
+            "MEDICINA INTENSIVA",
+            "2"
+          ],
+          [
+            "MEDICINA INTENSIVA PEDIÁTRICA",
+            "2"
+          ],
+          [
+            "MEDICINA DE FAMÍLIA E COMUNIDADE",
+            "2"
+          ],
+          [
+            "NEUROCIRURGIA",
+            "1"
+          ],
+          [
+            "OFTALMOLOGIA",
+            "2"
+          ],
+          [
+            "ORTOPEDIA E TRAUMATOLOGIA",
+            "2"
+          ],
+          [
+            "PEDIATRIA",
+            "3"
+          ],
+          [
+            "RADIOLOGIA E DIAGNÓSTICO POR IMAGEM",
+            "2"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
-          {
-            "etapa": "ESPECIALIDADE",
-            "data": "VAGAS"
-          },
           {
             "etapa": "ANESTESIOLOGIA",
             "data": "3"
@@ -610,7 +917,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Fundação Hospitalar São Lucas de Cascavel, no Paraná"
   },
   {
     "slug": "sobrapar-2026-edital-com-vagas-de-resid-ncia-m-dica-em-cirurgia-pl-stica-est-dis",
@@ -651,10 +959,42 @@
     ],
     "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
     "posted_at": "2025-10-10T18:01:48+00:00",
-    "captured_at": "2025-10-14T14:02:49.046982+00:00",
+    "captured_at": "2025-10-14T14:33:06.608121+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital SOBRAPAR 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "2 para Cirurgia Plástica"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Prova Escrita (50%) + Prova Prática (40%) e Análise Curricular e Entrevista (10%)"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$550,00"
+          ],
+          [
+            "Período de Inscrições",
+            "01/10/2025 a 28/11/2025"
+          ],
+          [
+            "Prova Escrita",
+            "12/12/2025"
+          ],
+          [
+            "Prova Prática e Análise Curricular e Entrevista",
+            "13/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "17/12/2025"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Vagas Ofertadas",
@@ -726,11 +1066,43 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-14T14:02:50.799973+00:00",
+    "captured_at": "2025-10-14T14:33:08.417721+00:00",
     "display_title": "Instituto de Olhos de Goiânia (IOG)",
     "secoes": [
       {
         "titulo": "Resumo Edital Instituto de Olhos de Goiânia 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Composição do Processo Seletivo",
+            "1ª Fase: Prova Objetiva (Peso 9) + 2ª Fase: Análise Curricular (Peso 1)"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$600,00"
+          ],
+          [
+            "Período de Inscrições",
+            "23/10 a 13/11/2025"
+          ],
+          [
+            "1ª Fase: Prova",
+            "22/11/2025"
+          ],
+          [
+            "Divulgação do gabarito",
+            "24/11/2025"
+          ],
+          [
+            "2ª Fase: Análise Curricular",
+            "12/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "29/01/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Composição do Processo Seletivo",
@@ -764,6 +1136,34 @@
       },
       {
         "titulo": "Resumo Edital Instituto Ortopédico de Goiânia 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Composição do Processo Seletivo",
+            "Fase única: Prova Objetiva"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$650,00"
+          ],
+          [
+            "Período de Inscrições",
+            "16/10 a 14/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "06/12/2025"
+          ],
+          [
+            "Divulgação do gabarito",
+            "08/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "29/12/2025"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Composição do Processo Seletivo",
@@ -793,28 +1193,34 @@
       },
       {
         "titulo": "Vagas IOG 2026",
-        "linhas": [
-          {
-            "etapa": "INSTITUIÇÃO",
-            "data": "ESPECIALIDADE"
-          },
-          {
-            "etapa": "Instituto de Olhos de Goiânia",
-            "data": "Oftalmologia"
-          },
-          {
-            "etapa": "Instituto Ortopédico de Goiânia",
-            "data": "Ortopedia e Traumatologia"
-          },
-          {
-            "etapa": "Instituto Ortopédico de Goiânia",
-            "data": "Medicina Intensiva"
-          },
-          {
-            "etapa": "Instituto Ortopédico de Goiânia",
-            "data": "Clínica Médica"
-          }
-        ]
+        "headers": [
+          "INSTITUIÇÃO",
+          "ESPECIALIDADE",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "Instituto de Olhos de Goiânia",
+            "Oftalmologia",
+            "3"
+          ],
+          [
+            "Instituto Ortopédico de Goiânia",
+            "Ortopedia e Traumatologia",
+            "3"
+          ],
+          [
+            "Instituto Ortopédico de Goiânia",
+            "Medicina Intensiva",
+            "2"
+          ],
+          [
+            "Instituto Ortopédico de Goiânia",
+            "Clínica Médica",
+            "2"
+          ]
+        ],
+        "cols": 3
       }
     ]
   },
@@ -825,10 +1231,6 @@
     "link": "https://med.estrategia.com/portal/noticias/hospital-varela-santiago-divulga-edital-de-residencia-medica-2026/",
     "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/hivs-edital.jpg",
     "dados": [
-      {
-        "etapa": "Evento",
-        "data": "Data"
-      },
       {
         "etapa": "Inscrições e entrega do currículo",
         "data": "10/11/2025 a 21/11/2025"
@@ -892,15 +1294,78 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-14T14:02:51.964981+00:00",
+    "captured_at": "2025-10-14T14:33:09.646134+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Varela Santiago 2026",
+        "headers": [
+          "Evento",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrições e entrega do currículo",
+            "10/11/2025 a 21/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 300,00"
+          ],
+          [
+            "Solicitação da taxa de isenção",
+            "10/11/2025 a 14/11/2025"
+          ],
+          [
+            "Pagamento da taxa de inscrição",
+            "até 21/11/2025"
+          ],
+          [
+            "Divulgação das solicitações de isenção",
+            "17/11/2025"
+          ],
+          [
+            "Prova Objetiva (Pediatria)",
+            "05/01/2026"
+          ],
+          [
+            "Prova Objetiva ( Terapia Intensiva Pediatrica )",
+            "06/01/2026, às 8h"
+          ],
+          [
+            "Resultado da 1ª fase",
+            "09/01/2026"
+          ],
+          [
+            "Entrevista (Pediatria)",
+            "14/01/2026"
+          ],
+          [
+            "Entrevista e Prova Teórico-Prática ( Terapia Intensiva Pediatrica )",
+            "13/01/2026, às 8h"
+          ],
+          [
+            "Análise Curricular ( Terapia Intensiva Pediatrica )",
+            "13/01/2026"
+          ],
+          [
+            "Divulgação das notas da Análise Curricular (Pediatria)",
+            "27/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "11/02/2026"
+          ],
+          [
+            "Matrículas",
+            "14/02/2026 a 25/02/2026"
+          ],
+          [
+            "Início do Programa",
+            "02/03/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
-          {
-            "etapa": "Evento",
-            "data": "Data"
-          },
           {
             "etapa": "Inscrições e entrega do currículo",
             "data": "10/11/2025 a 21/11/2025"
@@ -963,7 +1428,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Hospital Infantil Varela Santiago"
   },
   {
     "slug": "santa-casa-de-adamantina-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -1015,10 +1481,57 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-14T14:02:53.166597+00:00",
+    "captured_at": "2025-10-14T14:33:10.909249+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Santa Casa de Adamantina 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de Inscrição",
+            "24/10/2025 a 28/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 600,00"
+          ],
+          [
+            "Último dia para pagamento da Taxa de Inscrição",
+            "29/12/2025"
+          ],
+          [
+            "Aplicação da Prova Objetiva",
+            "11/01/2026"
+          ],
+          [
+            "Divulgação dos gabaritos preliminares e cadernos de provas",
+            "12/01/2026"
+          ],
+          [
+            "Interposição de Recursos sobre os gabaritos preliminares",
+            "12/01/2026 (após 14h) até 13/01/2026 (23h59)"
+          ],
+          [
+            "Divulgação do Resultado Preliminar 1ª e 2ª fases",
+            "30/01/2026"
+          ],
+          [
+            "Interposição de recurso sobre o Resultado 1ª e 2ª fases",
+            "30/01/2026 (após 14h) até 31/01/2026 (23h59)"
+          ],
+          [
+            "Resultado Final e Convocação para Matrícula",
+            "20/02/2026"
+          ],
+          [
+            "Matrícula dos Residentes (1ª Chamada)",
+            "23 e 24/02/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Período de Inscrição",
@@ -1062,7 +1575,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Santa Casa de Adamantina"
   },
   {
     "slug": "hospital-vit-ria-apart-2026-inscri-es-para-o-seletivo-de-resid-ncia-m-dica-est-o",
@@ -1110,10 +1624,53 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-14T14:02:54.357589+00:00",
+    "captured_at": "2025-10-14T14:33:12.352900+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Vitória Apart 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "06/10/2025 a 14/11/2025"
+          ],
+          [
+            "1ª Etapa – Prova Teórica",
+            "24/11/2025"
+          ],
+          [
+            "Divulgação do gabarito",
+            "25/11/2025"
+          ],
+          [
+            "Divulgação do resultado preliminar",
+            "27/11/2025"
+          ],
+          [
+            "Divulgação do resultado final da 1ª etapa",
+            "03/12/2025"
+          ],
+          [
+            "2ª Etapa – Prática e Entrevista",
+            "11/12/2025"
+          ],
+          [
+            "Divulgação do resultado preliminar",
+            "17/12/2025"
+          ],
+          [
+            "Resultado final",
+            "22/12/2025"
+          ],
+          [
+            "Período de matrículas",
+            "19/01/2026 a 30/01/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Período de inscrições",
@@ -1153,7 +1710,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Hospital Vitória Apart"
   },
   {
     "slug": "edital-para-resid-ncia-m-dica-em-2026-do-hospital-igesp-divulgado",
@@ -1193,10 +1751,42 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4701",
     "posted_at": "2025-10-09T20:16:00+00:00",
-    "captured_at": "2025-10-14T14:02:55.528362+00:00",
+    "captured_at": "2025-10-14T14:33:13.597385+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital IGESP 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Taxa de Inscrição",
+            "R$ 600"
+          ],
+          [
+            "Período de Inscrição",
+            "25/10 a 28/12/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "10 e 11/01/2026"
+          ],
+          [
+            "Gabarito Preliminar",
+            "12/01/2026"
+          ],
+          [
+            "Convocação 2ª fase",
+            "23/01/2026"
+          ],
+          [
+            "Resultado Preliminar",
+            "03/02/2026"
+          ],
+          [
+            "Resultado Final",
+            "13/02/2026"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
           {
             "etapa": "Taxa de Inscrição",
@@ -1230,11 +1820,42 @@
       },
       {
         "titulo": "Vagas IGESP 2026",
+        "headers": [
+          "PROGRAMA",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "2"
+          ],
+          [
+            "Cirurgia Geral",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "2"
+          ],
+          [
+            "Medicina Intensiva",
+            "2"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "2"
+          ],
+          [
+            "Nutrologia*",
+            "2"
+          ],
+          [
+            "Oncologia Clínica*",
+            "2"
+          ]
+        ],
+        "cols": 2,
         "linhas": [
-          {
-            "etapa": "PROGRAMA",
-            "data": "VAGAS"
-          },
           {
             "etapa": "Anestesiologia",
             "data": "2"
@@ -1265,7 +1886,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display_title": "Hospital IGESP, em São Paulo"
   },
   {
     "slug": "instituto-oncocl-nicas-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dic",
