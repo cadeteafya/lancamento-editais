@@ -1,5 +1,564 @@
 [
   {
+    "slug": "unimar-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dica-2026",
+    "nome": "UNIMAR divulga edital para processo seletivo de residência médica 2026",
+    "display_title": "Universidade de Marília (UNIMAR)",
+    "instituicao": "UNIMAR",
+    "link": "https://med.estrategia.com/portal/noticias/unimar-divulga-edital-para-processo-seletivo-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-36.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas",
+        "data": "23 (AD) + 6 (PR)"
+      },
+      {
+        "etapa": "Período de Inscrição",
+        "data": "09/10/2025 a 23/11/2025"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$650,00"
+      },
+      {
+        "etapa": "Primeira Fase – Prova Escrita (Objetiva Geral e Específica)",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Gabarito",
+        "data": "03/12/2025"
+      },
+      {
+        "etapa": "Envio de Documentos Análise Curricular",
+        "data": "03 a 08/12/2025"
+      },
+      {
+        "etapa": "Segunda Fase – Prova Prática",
+        "data": "06/12/2025"
+      },
+      {
+        "etapa": "Homologação do Resultado final",
+        "data": "23/12/2025"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital UNIMAR 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas",
+            "23 (AD) + 6 (PR)"
+          ],
+          [
+            "Período de Inscrição",
+            "09/10/2025 a 23/11/2025"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$650,00"
+          ],
+          [
+            "Primeira Fase – Prova Escrita (Objetiva Geral e Específica)",
+            "02/12/2025"
+          ],
+          [
+            "Divulgação do Gabarito",
+            "03/12/2025"
+          ],
+          [
+            "Envio de Documentos Análise Curricular",
+            "03 a 08/12/2025"
+          ],
+          [
+            "Segunda Fase – Prova Prática",
+            "06/12/2025"
+          ],
+          [
+            "Homologação do Resultado final",
+            "23/12/2025"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas",
+            "data": "23 (AD) + 6 (PR)"
+          },
+          {
+            "etapa": "Período de Inscrição",
+            "data": "09/10/2025 a 23/11/2025"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$650,00"
+          },
+          {
+            "etapa": "Primeira Fase – Prova Escrita (Objetiva Geral e Específica)",
+            "data": "02/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Gabarito",
+            "data": "03/12/2025"
+          },
+          {
+            "etapa": "Envio de Documentos Análise Curricular",
+            "data": "03 a 08/12/2025"
+          },
+          {
+            "etapa": "Segunda Fase – Prova Prática",
+            "data": "06/12/2025"
+          },
+          {
+            "etapa": "Homologação do Resultado final",
+            "data": "23/12/2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Acesso Direto",
+        "headers": [
+          "Especialidade",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "4"
+          ],
+          [
+            "Cirurgia Geral",
+            "2"
+          ],
+          [
+            "Obstetrícia e Ginecologia",
+            "2"
+          ],
+          [
+            "Medicina de Família e Comunidade",
+            "4"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "3"
+          ],
+          [
+            "Pediatria",
+            "2"
+          ],
+          [
+            "Medicina Intensiva",
+            "2"
+          ],
+          [
+            "Radiologia e Diagnóstico por Imagem",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Anestesiologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "4"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "2"
+          },
+          {
+            "etapa": "Obstetrícia e Ginecologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina de Família e Comunidade",
+            "data": "4"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "3"
+          },
+          {
+            "etapa": "Pediatria",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "2"
+          },
+          {
+            "etapa": "Radiologia e Diagnóstico por Imagem",
+            "data": "2"
+          }
+        ]
+      },
+      {
+        "titulo": "Pré-Requisito",
+        "headers": [
+          "Especialidade",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Cardiologia",
+            "2"
+          ],
+          [
+            "Cirurgia do Aparelho Digestivo",
+            "2"
+          ],
+          [
+            "Neonatologia",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Cardiologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Cirurgia do Aparelho Digestivo",
+            "data": "2"
+          },
+          {
+            "etapa": "Neonatologia",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.hospitalunimar.com.br/residencia-medica/",
+    "posted_at": "2025-10-14T17:30:49+00:00",
+    "captured_at": "2025-10-14T17:31:18.385288+00:00"
+  },
+  {
+    "slug": "husf-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dica",
+    "nome": "HUSF 2026: confira o edital para o processo seletivo de Residência Médica",
+    "display_title": "Hospital Universitário São Francisco na Providência de Deus (HUSF)",
+    "instituicao": "HUSF",
+    "link": "https://med.estrategia.com/portal/noticias/husf-2026-confira-o-edital-para-o-processo-seletivo-de-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-husf-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições",
+        "data": "25/10/2025 a 28/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Prova teórica (Para todos os programas)",
+        "data": "16/01/2026, início às 9h"
+      },
+      {
+        "etapa": "Gabarito",
+        "data": "16/01/2026 (A partir das 15h)"
+      },
+      {
+        "etapa": "Recurso do gabarito da prova teórica",
+        "data": "16/01 a 19/01/2026 (das 8h às 16h)"
+      },
+      {
+        "etapa": "Resposta dos recursos",
+        "data": "Até 23/01/2026"
+      },
+      {
+        "etapa": "Notas do resultado preliminar",
+        "data": "28/01/2026 (A partir das 15h)"
+      },
+      {
+        "etapa": "Recurso das notas do resultado preliminar",
+        "data": "Até às 23h59 do dia 30/01/2026"
+      },
+      {
+        "etapa": "Notas e classificação: Resultado definitivo",
+        "data": "04/02/2026 (A partir das 15h)"
+      },
+      {
+        "etapa": "Matrículas em 1ª chamada",
+        "data": "05/02 a 11/02/2026"
+      },
+      {
+        "etapa": "Integração dos novos residentes",
+        "data": "26 e 27/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo edital HUSF 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrições",
+            "25/10/2025 a 28/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 600,00"
+          ],
+          [
+            "Prova teórica (Para todos os programas)",
+            "16/01/2026, início às 9h"
+          ],
+          [
+            "Gabarito",
+            "16/01/2026 (A partir das 15h)"
+          ],
+          [
+            "Recurso do gabarito da prova teórica",
+            "16/01 a 19/01/2026 (das 8h às 16h)"
+          ],
+          [
+            "Resposta dos recursos",
+            "Até 23/01/2026"
+          ],
+          [
+            "Notas do resultado preliminar",
+            "28/01/2026 (A partir das 15h)"
+          ],
+          [
+            "Recurso das notas do resultado preliminar",
+            "Até às 23h59 do dia 30/01/2026"
+          ],
+          [
+            "Notas e classificação: Resultado definitivo",
+            "04/02/2026 (A partir das 15h)"
+          ],
+          [
+            "Matrículas em 1ª chamada",
+            "05/02 a 11/02/2026"
+          ],
+          [
+            "Integração dos novos residentes",
+            "26 e 27/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrições",
+            "data": "25/10/2025 a 28/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 600,00"
+          },
+          {
+            "etapa": "Prova teórica (Para todos os programas)",
+            "data": "16/01/2026, início às 9h"
+          },
+          {
+            "etapa": "Gabarito",
+            "data": "16/01/2026 (A partir das 15h)"
+          },
+          {
+            "etapa": "Recurso do gabarito da prova teórica",
+            "data": "16/01 a 19/01/2026 (das 8h às 16h)"
+          },
+          {
+            "etapa": "Resposta dos recursos",
+            "data": "Até 23/01/2026"
+          },
+          {
+            "etapa": "Notas do resultado preliminar",
+            "data": "28/01/2026 (A partir das 15h)"
+          },
+          {
+            "etapa": "Recurso das notas do resultado preliminar",
+            "data": "Até às 23h59 do dia 30/01/2026"
+          },
+          {
+            "etapa": "Notas e classificação: Resultado definitivo",
+            "data": "04/02/2026 (A partir das 15h)"
+          },
+          {
+            "etapa": "Matrículas em 1ª chamada",
+            "data": "05/02 a 11/02/2026"
+          },
+          {
+            "etapa": "Integração dos novos residentes",
+            "data": "26 e 27/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Acesso Direto",
+        "headers": [
+          "Especialidades",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "03"
+          ],
+          [
+            "Cirurgia Geral",
+            "04"
+          ],
+          [
+            "Clínica Médica",
+            "06"
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "05"
+          ],
+          [
+            "Medicina Intensiva",
+            "03"
+          ],
+          [
+            "Neurocirurgia",
+            "01"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "04"
+          ],
+          [
+            "Otorrinolaringologia",
+            "02"
+          ],
+          [
+            "Pediatria",
+            "03"
+          ],
+          [
+            "Psiquiatria",
+            "03"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Anestesiologia",
+            "data": "03"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "04"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "06"
+          },
+          {
+            "etapa": "Ginecologia e Obstetrícia",
+            "data": "05"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "03"
+          },
+          {
+            "etapa": "Neurocirurgia",
+            "data": "01"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "04"
+          },
+          {
+            "etapa": "Otorrinolaringologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Pediatria",
+            "data": "03"
+          },
+          {
+            "etapa": "Psiquiatria",
+            "data": "03"
+          }
+        ]
+      },
+      {
+        "titulo": "Pré-Requisito",
+        "headers": [
+          "Especialidades",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Cardiologia",
+            "02"
+          ],
+          [
+            "Cirurgia Pediátrica*",
+            "0*"
+          ],
+          [
+            "Coloproctologia",
+            "02"
+          ],
+          [
+            "Nefrologia",
+            "02"
+          ],
+          [
+            "Neonatologia",
+            "02"
+          ],
+          [
+            "Oncologia Clínica",
+            "01"
+          ],
+          [
+            "Urologia",
+            "01"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Cardiologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Cirurgia Pediátrica*",
+            "data": "0*"
+          },
+          {
+            "etapa": "Coloproctologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Nefrologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Neonatologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Oncologia Clínica",
+            "data": "01"
+          },
+          {
+            "etapa": "Urologia",
+            "data": "01"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://husf.com.br/2025/10/09/husf-divulga-edital-do-processo-seletivo-de-residencia-medica-2026/",
+    "posted_at": "2025-10-14T15:14:00+00:00",
+    "captured_at": "2025-10-14T17:31:19.948221+00:00"
+  },
+  {
     "slug": "grupo-viv-publica-edital-de-resid-ncia-m-dica-2026-com-vagas-em-psiquiatria-em-d",
     "nome": "Grupo VIV publica edital de Residência Médica 2026 com vagas em Psiquiatria em diversos estados",
     "display_title": "Grupo VIV – Saúde Mental e Emocional Residência Médica 2026 17 vagas na especialidade de Psiquiatria São José (SC)",
@@ -306,7 +865,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/33?_gl=1*1j2m6lo*_ga*MTQ4Mjk3NTU0My4xNzYwNDQ3Mzgx*_ga_C8WLKDKMRY*czE3NjA0NDczODEkbzEkZzAkdDE3NjA0NDczODEkajYwJGwwJGgw",
     "posted_at": "2025-10-14T13:45:39+00:00",
-    "captured_at": "2025-10-14T16:47:06.961890+00:00"
+    "captured_at": "2025-10-14T17:31:22.997816+00:00"
   },
   {
     "slug": "hog-recebe-inscri-es-para-vagas-de-resid-ncia-m-dica-em-oftalmologia-confira-o-e",
@@ -350,7 +909,7 @@
     ],
     "link_banca": "https://hospitaldeolhosguarapuava.com.br/residenciamedica/",
     "posted_at": "2025-10-13T15:31:01+00:00",
-    "captured_at": "2025-10-14T16:47:08.812400+00:00",
+    "captured_at": "2025-10-14T17:31:26.182046+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital HOG Residência Médica 2026",
@@ -470,7 +1029,7 @@
     ],
     "link_banca": "https://saude.riopreto.sp.gov.br/portal/?page_id=7111",
     "posted_at": "2025-10-13T15:19:45+00:00",
-    "captured_at": "2025-10-14T16:47:10.083430+00:00",
+    "captured_at": "2025-10-14T17:31:27.472867+00:00",
     "display_title": "Secretaria Municipal de Saúde de São José do Rio Preto (SMS-SJRP)",
     "secoes": [
       {
@@ -623,7 +1182,7 @@
     ],
     "link_banca": "https://cermam.com.br/",
     "posted_at": "2025-10-13T11:36:16+00:00",
-    "captured_at": "2025-10-14T16:47:12.009486+00:00",
+    "captured_at": "2025-10-14T17:31:29.506311+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital CERMAM 2026",
@@ -734,7 +1293,7 @@
     ],
     "link_banca": "https://www.fhsl.org.br/residencia",
     "posted_at": "2025-10-10T22:54:34+00:00",
-    "captured_at": "2025-10-14T16:47:13.207695+00:00",
+    "captured_at": "2025-10-14T17:31:30.735283+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital – Fundação Hospitalar São Lucas 2026",
@@ -959,7 +1518,7 @@
     ],
     "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
     "posted_at": "2025-10-10T18:01:48+00:00",
-    "captured_at": "2025-10-14T16:47:14.420521+00:00",
+    "captured_at": "2025-10-14T17:31:31.983292+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital SOBRAPAR 2026",
@@ -1066,7 +1625,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-14T16:47:16.230641+00:00",
+    "captured_at": "2025-10-14T17:31:35.883086+00:00",
     "display_title": "Instituto de Olhos de Goiânia (IOG)",
     "secoes": [
       {
@@ -1294,7 +1853,7 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-14T16:47:17.437778+00:00",
+    "captured_at": "2025-10-14T17:31:37.148634+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Varela Santiago 2026",
@@ -1481,7 +2040,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4700",
     "posted_at": "2025-10-10T13:16:22+00:00",
-    "captured_at": "2025-10-14T16:47:18.695478+00:00",
+    "captured_at": "2025-10-14T17:31:38.443017+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Santa Casa de Adamantina 2026",
@@ -1624,7 +2183,7 @@
     ],
     "link_banca": "https://www.hospitalvitoriaapart.com.br/atendimento/residencia-medica/",
     "posted_at": "2025-10-10T12:14:09+00:00",
-    "captured_at": "2025-10-14T16:47:19.956149+00:00",
+    "captured_at": "2025-10-14T17:31:39.654698+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Vitória Apart 2026",
