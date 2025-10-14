@@ -130,6 +130,7 @@ a.btn{
 .table-n thead th {
   font-weight: 700;
   text-align: center;
+  color: #000000 !important;         /* cabeçalho preto */
 }
 .table-n tbody td {
   text-align: center;       /* centraliza o conteúdo das células */
@@ -185,6 +186,7 @@ td:first-child{ color:#5a6b69; width:40%; } */
 
 /* (Se em alguma página antiga existirem imagens dentro do card) */
 .card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
 
 
 
