@@ -18,6 +18,9 @@ permissions:
 jobs:
   scrape_and_deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: launch-${{ github.ref }}          # 1 run por branch
+      cancel-in-progress: true       
 
     steps:
       - name: Checkout (full history)
@@ -180,3 +183,4 @@ jobs:
       - name: Deploy to GitHub Pages
         if: steps.guard.outputs.outside_window == 'false'
         uses: actions/deploy-pages@v4
+
