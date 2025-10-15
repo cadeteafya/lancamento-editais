@@ -1,5 +1,333 @@
 [
   {
+    "slug": "sociedade-portuguesa-de-benefic-ncia-de-ribeir-o-preto-divulga-edital-para-resid",
+    "nome": "Sociedade Portuguesa de Beneficência de Ribeirão Preto divulga edital para residência médica 2026",
+    "display_title": "Sociedade Portuguesa de Beneficência de Ribeirão Preto",
+    "instituicao": "NOVA",
+    "link": "https://med.estrategia.com/portal/noticias/sociedade-portuguesa-de-beneficencia-de-ribeirao-preto-divulga-edital-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-37.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "14 (AD) 3 (PR)"
+      },
+      {
+        "etapa": "Inscrições",
+        "data": "30/10 a 30/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$700,00"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Objetiva (90 pontos) + Análise Curricular (10 pontos)"
+      },
+      {
+        "etapa": "Envio dos Curriculum Vitae e documentos Comprobatórios para Avaliação Curricular",
+        "data": "25/10 a 01/12/2025"
+      },
+      {
+        "etapa": "Data da Prova Objetiva Virtual",
+        "data": "10/12/2025"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "11/12/2025, após as 9h"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "29/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Nova Benê 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "14 (AD) 3 (PR)"
+          ],
+          [
+            "Inscrições",
+            "30/10 a 30/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$700,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva (90 pontos) + Análise Curricular (10 pontos)"
+          ],
+          [
+            "Envio dos Curriculum Vitae e documentos Comprobatórios para Avaliação Curricular",
+            "25/10 a 01/12/2025"
+          ],
+          [
+            "Data da Prova Objetiva Virtual",
+            "10/12/2025"
+          ],
+          [
+            "Gabarito preliminar",
+            "11/12/2025, após as 9h"
+          ],
+          [
+            "Resultado Final",
+            "29/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "14 (AD) 3 (PR)"
+          },
+          {
+            "etapa": "Inscrições",
+            "data": "30/10 a 30/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$700,00"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Objetiva (90 pontos) + Análise Curricular (10 pontos)"
+          },
+          {
+            "etapa": "Envio dos Curriculum Vitae e documentos Comprobatórios para Avaliação Curricular",
+            "data": "25/10 a 01/12/2025"
+          },
+          {
+            "etapa": "Data da Prova Objetiva Virtual",
+            "data": "10/12/2025"
+          },
+          {
+            "etapa": "Gabarito preliminar",
+            "data": "11/12/2025, após as 9h"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "29/01/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas e especialidades",
+        "headers": [
+          "Programas de Acesso Direto",
+          "Total de Vagas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "04"
+          ],
+          [
+            "Cirurgia Geral",
+            "02"
+          ],
+          [
+            "Medicina Intensiva",
+            "03"
+          ],
+          [
+            "Neurocirurgia",
+            "01"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "04"
+          ],
+          [
+            "Radioterapia",
+            "01"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Anestesiologia",
+            "data": "04"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "02"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "03"
+          },
+          {
+            "etapa": "Neurocirurgia",
+            "data": "01"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "04"
+          },
+          {
+            "etapa": "Radioterapia",
+            "data": "01"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas e especialidades",
+        "headers": [
+          "Programa com Pré-Requisito",
+          "Total de Vagas"
+        ],
+        "rows": [
+          [
+            "Cirurgia Oncológica",
+            "01"
+          ],
+          [
+            "Cirurgia Vascular",
+            "02"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Cirurgia Oncológica",
+            "data": "01"
+          },
+          {
+            "etapa": "Cirurgia Vascular",
+            "data": "02"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4707",
+    "posted_at": "2025-10-14T23:47:13+00:00",
+    "captured_at": "2025-10-15T06:53:13.383639+00:00"
+  },
+  {
+    "slug": "hospital-de-olhos-aparecida-2026-confira-o-edital-da-sele-o-para-resid-ncia-m-di",
+    "nome": "Hospital de Olhos Aparecida 2026: confira o edital da seleção para residência médica",
+    "display_title": "Hospital de Olhos Aparecida (HOA)",
+    "instituicao": "HOA",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-de-olhos-aparecida-2026-confira-o-edital-da-selecao-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-35.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "4 vagas em Oftalmologia"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Objetiva + Análise Curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$650,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "29/10 a 26/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "08/12/2025, após as 14h"
+      },
+      {
+        "etapa": "Análise Curricular e Comprovação dos documentos do currículo",
+        "data": "15/01/2026"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "05/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital de Olhos Aparecida 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "4 vagas em Oftalmologia"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Prova Objetiva + Análise Curricular"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$650,00"
+          ],
+          [
+            "Período de Inscrições",
+            "29/10 a 26/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "07/12/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "08/12/2025, após as 14h"
+          ],
+          [
+            "Análise Curricular e Comprovação dos documentos do currículo",
+            "15/01/2026"
+          ],
+          [
+            "Resultado final",
+            "05/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "4 vagas em Oftalmologia"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Prova Objetiva + Análise Curricular"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$650,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "29/10 a 26/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "07/12/2025"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "08/12/2025, após as 14h"
+          },
+          {
+            "etapa": "Análise Curricular e Comprovação dos documentos do currículo",
+            "data": "15/01/2026"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "05/02/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4706",
+    "posted_at": "2025-10-14T17:31:08+00:00",
+    "captured_at": "2025-10-15T06:53:14.536528+00:00"
+  },
+  {
     "slug": "unimar-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dica-2026",
     "nome": "UNIMAR divulga edital para processo seletivo de residência médica 2026",
     "display_title": "Universidade de Marília (UNIMAR)",
@@ -237,7 +565,7 @@
     ],
     "link_banca": "https://www.hospitalunimar.com.br/residencia-medica/",
     "posted_at": "2025-10-14T17:30:49+00:00",
-    "captured_at": "2025-10-14T17:44:13.737495+00:00"
+    "captured_at": "2025-10-15T06:53:15.722589+00:00"
   },
   {
     "slug": "husf-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dica",
@@ -556,7 +884,7 @@
     ],
     "link_banca": "https://husf.com.br/2025/10/09/husf-divulga-edital-do-processo-seletivo-de-residencia-medica-2026/",
     "posted_at": "2025-10-14T15:14:00+00:00",
-    "captured_at": "2025-10-14T17:44:15.092027+00:00"
+    "captured_at": "2025-10-15T06:53:16.929122+00:00"
   },
   {
     "slug": "grupo-viv-publica-edital-de-resid-ncia-m-dica-2026-com-vagas-em-psiquiatria-em-d",
@@ -865,7 +1193,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/33?_gl=1*1j2m6lo*_ga*MTQ4Mjk3NTU0My4xNzYwNDQ3Mzgx*_ga_C8WLKDKMRY*czE3NjA0NDczODEkbzEkZzAkdDE3NjA0NDczODEkajYwJGwwJGgw",
     "posted_at": "2025-10-14T13:45:39+00:00",
-    "captured_at": "2025-10-14T17:44:16.409642+00:00"
+    "captured_at": "2025-10-15T06:53:18.091756+00:00"
   },
   {
     "slug": "hog-recebe-inscri-es-para-vagas-de-resid-ncia-m-dica-em-oftalmologia-confira-o-e",
@@ -909,7 +1237,7 @@
     ],
     "link_banca": "https://hospitaldeolhosguarapuava.com.br/residenciamedica/",
     "posted_at": "2025-10-13T15:31:01+00:00",
-    "captured_at": "2025-10-14T17:44:18.291620+00:00",
+    "captured_at": "2025-10-15T06:53:19.819236+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital HOG Residência Médica 2026",
@@ -1029,7 +1357,7 @@
     ],
     "link_banca": "https://saude.riopreto.sp.gov.br/portal/?page_id=7111",
     "posted_at": "2025-10-13T15:19:45+00:00",
-    "captured_at": "2025-10-14T17:44:19.632007+00:00",
+    "captured_at": "2025-10-15T06:53:21.051388+00:00",
     "display_title": "Secretaria Municipal de Saúde de São José do Rio Preto (SMS-SJRP)",
     "secoes": [
       {
@@ -1182,7 +1510,7 @@
     ],
     "link_banca": "https://cermam.com.br/",
     "posted_at": "2025-10-13T11:36:16+00:00",
-    "captured_at": "2025-10-14T17:44:21.567331+00:00",
+    "captured_at": "2025-10-15T06:53:22.795522+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital CERMAM 2026",
@@ -1293,7 +1621,7 @@
     ],
     "link_banca": "https://www.fhsl.org.br/residencia",
     "posted_at": "2025-10-10T22:54:34+00:00",
-    "captured_at": "2025-10-14T17:44:22.805744+00:00",
+    "captured_at": "2025-10-15T06:53:25.582972+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital – Fundação Hospitalar São Lucas 2026",
@@ -1518,7 +1846,7 @@
     ],
     "link_banca": "https://sobrapar.org.br/ensino-e-pesquisa/editais/",
     "posted_at": "2025-10-10T18:01:48+00:00",
-    "captured_at": "2025-10-14T17:44:24.089585+00:00",
+    "captured_at": "2025-10-15T06:53:26.768645+00:00",
     "secoes": [
       {
         "titulo": "Resumo Edital SOBRAPAR 2026",
@@ -1625,7 +1953,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-10T16:01:07+00:00",
-    "captured_at": "2025-10-14T17:44:25.995307+00:00",
+    "captured_at": "2025-10-15T06:53:28.515443+00:00",
     "display_title": "Instituto de Olhos de Goiânia (IOG)",
     "secoes": [
       {
@@ -1853,7 +2181,7 @@
     ],
     "link_banca": "https://www.hospitalvarelasantiago.org.br/p/processos-seletivos",
     "posted_at": "2025-10-10T14:27:43+00:00",
-    "captured_at": "2025-10-14T17:44:27.235560+00:00",
+    "captured_at": "2025-10-15T06:53:31.040189+00:00",
     "secoes": [
       {
         "titulo": "Resumo edital Hospital Varela Santiago 2026",
