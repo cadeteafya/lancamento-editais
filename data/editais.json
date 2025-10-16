@@ -1,5 +1,157 @@
 [
   {
+    "slug": "huse-divulga-edital-para-sele-o-de-resid-ncia-m-dica-com-16-vagas-confira-o-docu",
+    "nome": "HUSE divulga edital para seleção de residência médica com 16 vagas; confira o documento",
+    "display_title": "Hospital de Urgências de Sergipe Governador João Alves Filho (HUSE)",
+    "instituicao": "HUSE",
+    "link": "https://med.estrategia.com/portal/noticias/huse-divulga-edital-para-selecao-de-residencia-medica-com-16-vagas-confira-o-documento/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-40.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "14 (AD) + 2 (PR)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Fase única: prova objetiva"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$400,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "29/10 a 07/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "11/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "11/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "16/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital HUSE 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "14 (AD) + 2 (PR)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Fase única: prova objetiva"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$400,00"
+          ],
+          [
+            "Período de Inscrições",
+            "29/10 a 07/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "11/12/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "11/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "16/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "14 (AD) + 2 (PR)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Fase única: prova objetiva"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$400,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "29/10 a 07/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "11/12/2025"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "11/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "16/01/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas HUSE 2026",
+        "headers": [
+          "ESPECIALIDADE",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "CLÍNICA MÉDICA",
+            "6"
+          ],
+          [
+            "PEDIATRIA",
+            "4"
+          ],
+          [
+            "CIRURGIA GERAL",
+            "4"
+          ],
+          [
+            "NEONATOLOGIA",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "CLÍNICA MÉDICA",
+            "data": "6"
+          },
+          {
+            "etapa": "PEDIATRIA",
+            "data": "4"
+          },
+          {
+            "etapa": "CIRURGIA GERAL",
+            "data": "4"
+          },
+          {
+            "etapa": "NEONATOLOGIA",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://funesa.se.gov.br/",
+    "posted_at": "2025-10-16T17:17:49+00:00",
+    "captured_at": "2025-10-16T17:37:38.975152+00:00"
+  },
+  {
     "slug": "hospital-regional-hilda-strenger-ribeiro-libera-edital-para-resid-ncia-m-dica-20",
     "nome": "Hospital Regional Hilda Strenger Ribeiro libera edital para residência médica 2026",
     "display_title": "Hospital Regional Hilda Strenger Ribeiro (HRHSR)",
@@ -405,7 +557,7 @@
     ],
     "link_banca": "https://concursos.objetivas.com.br/informacoes/2568/",
     "posted_at": "2025-10-16T13:02:05+00:00",
-    "captured_at": "2025-10-16T16:54:07.534126+00:00"
+    "captured_at": "2025-10-16T17:37:43.172011+00:00"
   },
   {
     "slug": "ses-ro-divulga-edital-de-resid-ncia-m-dica-2026-com-2-vagas-para-medicina-de-eme",
@@ -516,7 +668,7 @@
     ],
     "link_banca": "https://rondonia.ro.gov.br/sesau/publicacoes/edital/",
     "posted_at": "2025-10-15T12:41:17+00:00",
-    "captured_at": "2025-10-16T16:54:11.174935+00:00"
+    "captured_at": "2025-10-16T17:37:46.836430+00:00"
   },
   {
     "slug": "iamspe-abre-sele-o-para-resid-ncia-m-dica-2026-prova-acontece-em-20-12",
@@ -936,7 +1088,7 @@
     ],
     "link_banca": "https://www.avancasp.org.br/informacoes/200/",
     "posted_at": "2025-10-15T08:14:40+00:00",
-    "captured_at": "2025-10-16T16:54:13.005114+00:00"
+    "captured_at": "2025-10-16T17:37:48.652688+00:00"
   },
   {
     "slug": "sociedade-portuguesa-de-benefic-ncia-de-ribeir-o-preto-divulga-edital-para-resid",
@@ -1144,7 +1296,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4707",
     "posted_at": "2025-10-14T23:47:13+00:00",
-    "captured_at": "2025-10-16T16:54:14.253521+00:00"
+    "captured_at": "2025-10-16T17:37:49.882962+00:00"
   },
   {
     "slug": "hospital-de-olhos-aparecida-2026-confira-o-edital-da-sele-o-para-resid-ncia-m-di",
