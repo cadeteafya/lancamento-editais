@@ -1,5 +1,245 @@
 [
   {
+    "slug": "rede-m-rio-gatti-2026-veja-o-edital-para-resid-ncia-m-dica-com-fase-nica",
+    "nome": "Rede Mário Gatti 2026: veja o edital para residência médica com fase única",
+    "display_title": "Rede Municipal Dr. Mário Gatti de Urgência, Emergência e Hospitalar",
+    "instituicao": "GATTI",
+    "link": "https://med.estrategia.com/portal/noticias/rede-mario-gatti-2026-veja-o-edital-para-residencia-medica-com-fase-unica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-38.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "56 (AD) + 13 (PR)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Fase única: Prova Objetiva"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$550,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "27/10/2025 a 19/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "14/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "09/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Rede Mário Gatti 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "56 (AD) + 13 (PR)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Fase única: Prova Objetiva"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$550,00"
+          ],
+          [
+            "Período de Inscrições",
+            "27/10/2025 a 19/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "14/12/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "15/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "09/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "56 (AD) + 13 (PR)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Fase única: Prova Objetiva"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$550,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "27/10/2025 a 19/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "14/12/2025"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "15/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "09/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas Rede Mário Gatti 2026",
+        "headers": [
+          "PRM e Hospital-base",
+          "Vagas ofertadas",
+          "Ampla concorrência",
+          "PcD",
+          "PN"
+        ],
+        "rows": [
+          [
+            "Anestesiologia – Maternidade Campinas",
+            "06",
+            "05",
+            "–",
+            "01"
+          ],
+          [
+            "Anestesiologia – RMG",
+            "03",
+            "02",
+            "–",
+            "01"
+          ],
+          [
+            "Cirurgia Geral – RMG",
+            "07",
+            "06",
+            "–",
+            "01"
+          ],
+          [
+            "Clínica Médica – RMG",
+            "10",
+            "07",
+            "01",
+            "02"
+          ],
+          [
+            "Medicina da Família e Comunidade – RMG",
+            "04",
+            "03",
+            "–",
+            "01"
+          ],
+          [
+            "Medicina Intensiva Adulto – RMG",
+            "01",
+            "01",
+            "–",
+            "–"
+          ],
+          [
+            "Neurocirurgia – RMG",
+            "02",
+            "02",
+            "–",
+            "–"
+          ],
+          [
+            "Oftalmologia – RMG",
+            "03",
+            "02",
+            "–",
+            "01"
+          ],
+          [
+            "Ortopedia e Traumatologia – RMG",
+            "08",
+            "06",
+            "–",
+            "02"
+          ],
+          [
+            "Otorrinolaringologia – RMG",
+            "02",
+            "02",
+            "–",
+            "–"
+          ],
+          [
+            "Pediatria – RMG",
+            "10",
+            "07",
+            "01",
+            "02"
+          ],
+          [
+            "Cirurgia Pediátrica – RMG",
+            "01",
+            "01",
+            "–",
+            "–"
+          ],
+          [
+            "Cirurgia Plástica – RMG",
+            "02",
+            "02",
+            "–",
+            "–"
+          ],
+          [
+            "Cirurgia Vascular – RMG",
+            "03",
+            "02",
+            "–",
+            "01"
+          ],
+          [
+            "Coloproctologia – RMG",
+            "02",
+            "02",
+            "–",
+            "–"
+          ],
+          [
+            "Urologia – RMG",
+            "03",
+            "02",
+            "–",
+            "01"
+          ],
+          [
+            "Medicina Intensiva Pediátrica – RMG",
+            "02",
+            "02",
+            "–",
+            "–"
+          ]
+        ],
+        "cols": 5
+      }
+    ],
+    "link_banca": "https://concursos.objetivas.com.br/informacoes/2568/",
+    "posted_at": "2025-10-16T13:02:05+00:00",
+    "captured_at": "2025-10-16T13:42:32.265833+00:00"
+  },
+  {
     "slug": "ses-ro-divulga-edital-de-resid-ncia-m-dica-2026-com-2-vagas-para-medicina-de-eme",
     "nome": "SES-RO divulga edital de Residência Médica 2026 com 2 vagas para Medicina de Emergência",
     "display_title": "Secretaria Estadual de Saúde do Governo de Rondônia (SES-RO)",
@@ -108,7 +348,7 @@
     ],
     "link_banca": "https://rondonia.ro.gov.br/sesau/publicacoes/edital/",
     "posted_at": "2025-10-15T12:41:17+00:00",
-    "captured_at": "2025-10-16T11:43:18.413602+00:00"
+    "captured_at": "2025-10-16T13:42:35.813081+00:00"
   },
   {
     "slug": "iamspe-abre-sele-o-para-resid-ncia-m-dica-2026-prova-acontece-em-20-12",
@@ -528,7 +768,7 @@
     ],
     "link_banca": "https://www.avancasp.org.br/informacoes/200/",
     "posted_at": "2025-10-15T08:14:40+00:00",
-    "captured_at": "2025-10-16T11:43:20.195288+00:00"
+    "captured_at": "2025-10-16T13:42:37.732789+00:00"
   },
   {
     "slug": "sociedade-portuguesa-de-benefic-ncia-de-ribeir-o-preto-divulga-edital-para-resid",
@@ -736,7 +976,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4707",
     "posted_at": "2025-10-14T23:47:13+00:00",
-    "captured_at": "2025-10-16T11:43:21.433849+00:00"
+    "captured_at": "2025-10-16T13:42:40.263150+00:00"
   },
   {
     "slug": "hospital-de-olhos-aparecida-2026-confira-o-edital-da-sele-o-para-resid-ncia-m-di",
@@ -856,7 +1096,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4706",
     "posted_at": "2025-10-14T17:31:08+00:00",
-    "captured_at": "2025-10-16T11:43:22.632809+00:00"
+    "captured_at": "2025-10-16T13:42:41.453552+00:00"
   },
   {
     "slug": "unimar-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dica-2026",
@@ -1096,7 +1336,7 @@
     ],
     "link_banca": "https://www.hospitalunimar.com.br/residencia-medica/",
     "posted_at": "2025-10-14T17:30:49+00:00",
-    "captured_at": "2025-10-16T11:43:23.838270+00:00"
+    "captured_at": "2025-10-16T13:42:42.649162+00:00"
   },
   {
     "slug": "husf-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dica",
@@ -1415,7 +1655,7 @@
     ],
     "link_banca": "https://husf.com.br/2025/10/09/husf-divulga-edital-do-processo-seletivo-de-residencia-medica-2026/",
     "posted_at": "2025-10-14T15:14:00+00:00",
-    "captured_at": "2025-10-16T11:43:25.028632+00:00"
+    "captured_at": "2025-10-16T13:42:44.867997+00:00"
   },
   {
     "slug": "grupo-viv-publica-edital-de-resid-ncia-m-dica-2026-com-vagas-em-psiquiatria-em-d",
@@ -1724,7 +1964,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/33?_gl=1*1j2m6lo*_ga*MTQ4Mjk3NTU0My4xNzYwNDQ3Mzgx*_ga_C8WLKDKMRY*czE3NjA0NDczODEkbzEkZzAkdDE3NjA0NDczODEkajYwJGwwJGgw",
     "posted_at": "2025-10-14T13:45:39+00:00",
-    "captured_at": "2025-10-16T11:43:26.195944+00:00"
+    "captured_at": "2025-10-16T13:42:47.090806+00:00"
   },
   {
     "slug": "hog-recebe-inscri-es-para-vagas-de-resid-ncia-m-dica-em-oftalmologia-confira-o-e",
