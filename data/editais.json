@@ -1,5 +1,173 @@
 [
   {
+    "slug": "hospital-regional-hilda-strenger-ribeiro-libera-edital-para-resid-ncia-m-dica-20",
+    "nome": "Hospital Regional Hilda Strenger Ribeiro libera edital para residência médica 2026",
+    "display_title": "Hospital Regional Hilda Strenger RibeiroHospital Regional Hilda Strenger Ribeiro (HRHSR)",
+    "instituicao": "HRHSR",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-regional-hilda-strenger-ribeiro-libera-edital-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-39.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "11 (AD)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Avaliação Cognitiva e de Conhecimentos Teóricos (prova objetiva) + Análise Curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$500,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "03/11/2025 a 28/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva e Entrega do Currículo para análise",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "20/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital HRHSR 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "11 (AD)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Avaliação Cognitiva e de Conhecimentos Teóricos (prova objetiva) + Análise Curricular"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$500,00"
+          ],
+          [
+            "Período de Inscrições",
+            "03/11/2025 a 28/12/2025"
+          ],
+          [
+            "Prova Objetiva e Entrega do Currículo para análise",
+            "11/01/2026"
+          ],
+          [
+            "Gabarito Preliminar",
+            "11/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "20/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "11 (AD)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Avaliação Cognitiva e de Conhecimentos Teóricos (prova objetiva) + Análise Curricular"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$500,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "03/11/2025 a 28/12/2025"
+          },
+          {
+            "etapa": "Prova Objetiva e Entrega do Currículo para análise",
+            "data": "11/01/2026"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "11/01/2026"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "20/01/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas HRHSR 2026",
+        "headers": [
+          "ESPECIALIDADE",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "ANESTESIOLOGIA",
+            "2"
+          ],
+          [
+            "CLÍNICA MÉDICA",
+            "2"
+          ],
+          [
+            "GINECOLOGIA E OBSTETRÍCIA",
+            "2"
+          ],
+          [
+            "PEDIATRIA",
+            "2"
+          ],
+          [
+            "CIRURGIA GERAL",
+            "2"
+          ],
+          [
+            "CIRURGIA CARDIOVASCULAR",
+            "1"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "ANESTESIOLOGIA",
+            "data": "2"
+          },
+          {
+            "etapa": "CLÍNICA MÉDICA",
+            "data": "2"
+          },
+          {
+            "etapa": "GINECOLOGIA E OBSTETRÍCIA",
+            "data": "2"
+          },
+          {
+            "etapa": "PEDIATRIA",
+            "data": "2"
+          },
+          {
+            "etapa": "CIRURGIA GERAL",
+            "data": "2"
+          },
+          {
+            "etapa": "CIRURGIA CARDIOVASCULAR",
+            "data": "1"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://coreme.hospitalhilda.com.br/editais/",
+    "posted_at": "2025-10-16T14:39:42+00:00",
+    "captured_at": "2025-10-16T14:44:47.860702+00:00"
+  },
+  {
     "slug": "rede-m-rio-gatti-2026-veja-o-edital-para-resid-ncia-m-dica-com-fase-nica",
     "nome": "Rede Mário Gatti 2026: veja o edital para residência médica com fase única",
     "display_title": "Rede Municipal Dr. Mário Gatti de Urgência, Emergência e Hospitalar",
@@ -237,7 +405,7 @@
     ],
     "link_banca": "https://concursos.objetivas.com.br/informacoes/2568/",
     "posted_at": "2025-10-16T13:02:05+00:00",
-    "captured_at": "2025-10-16T13:58:16.121876+00:00"
+    "captured_at": "2025-10-16T14:44:50.712068+00:00"
   },
   {
     "slug": "ses-ro-divulga-edital-de-resid-ncia-m-dica-2026-com-2-vagas-para-medicina-de-eme",
@@ -348,7 +516,7 @@
     ],
     "link_banca": "https://rondonia.ro.gov.br/sesau/publicacoes/edital/",
     "posted_at": "2025-10-15T12:41:17+00:00",
-    "captured_at": "2025-10-16T13:58:19.667552+00:00"
+    "captured_at": "2025-10-16T14:44:54.363327+00:00"
   },
   {
     "slug": "iamspe-abre-sele-o-para-resid-ncia-m-dica-2026-prova-acontece-em-20-12",
@@ -768,7 +936,7 @@
     ],
     "link_banca": "https://www.avancasp.org.br/informacoes/200/",
     "posted_at": "2025-10-15T08:14:40+00:00",
-    "captured_at": "2025-10-16T13:58:21.430354+00:00"
+    "captured_at": "2025-10-16T14:44:57.873192+00:00"
   },
   {
     "slug": "sociedade-portuguesa-de-benefic-ncia-de-ribeir-o-preto-divulga-edital-para-resid",
@@ -976,7 +1144,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4707",
     "posted_at": "2025-10-14T23:47:13+00:00",
-    "captured_at": "2025-10-16T13:58:22.763731+00:00"
+    "captured_at": "2025-10-16T14:45:00.653124+00:00"
   },
   {
     "slug": "hospital-de-olhos-aparecida-2026-confira-o-edital-da-sele-o-para-resid-ncia-m-di",
@@ -1096,7 +1264,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4706",
     "posted_at": "2025-10-14T17:31:08+00:00",
-    "captured_at": "2025-10-16T13:58:23.908069+00:00"
+    "captured_at": "2025-10-16T14:45:01.836603+00:00"
   },
   {
     "slug": "unimar-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dica-2026",
@@ -1336,7 +1504,7 @@
     ],
     "link_banca": "https://www.hospitalunimar.com.br/residencia-medica/",
     "posted_at": "2025-10-14T17:30:49+00:00",
-    "captured_at": "2025-10-16T13:58:25.091628+00:00"
+    "captured_at": "2025-10-16T14:45:04.442871+00:00"
   },
   {
     "slug": "husf-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dica",
@@ -1655,7 +1823,7 @@
     ],
     "link_banca": "https://husf.com.br/2025/10/09/husf-divulga-edital-do-processo-seletivo-de-residencia-medica-2026/",
     "posted_at": "2025-10-14T15:14:00+00:00",
-    "captured_at": "2025-10-16T13:58:26.237044+00:00"
+    "captured_at": "2025-10-16T14:45:07.584065+00:00"
   },
   {
     "slug": "grupo-viv-publica-edital-de-resid-ncia-m-dica-2026-com-vagas-em-psiquiatria-em-d",
