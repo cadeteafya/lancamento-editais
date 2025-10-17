@@ -1,5 +1,327 @@
 [
   {
+    "slug": "unesp-divulga-edital-para-resid-ncia-m-dica-em-reas-de-atua-o-2026",
+    "nome": "UNESP divulga edital para residência médica em Áreas de Atuação 2026",
+    "display_title": "Faculdade de Medicina de Botucatu (UNESP)",
+    "instituicao": "UNESP",
+    "link": "https://med.estrategia.com/portal/noticias/unesp-divulga-edital-para-residencia-medica-em-areas-de-atuacao-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/05/unesp-edital.jpg",
+    "dados": [
+      {
+        "etapa": "Período de Inscrições",
+        "data": "12 a 17/11/2025"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "1ª Etapa: Prova Objetiva (Peso 90%) + 2ª Etapa: Avaliação Curricular (Peso 10%)"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 180,00"
+      },
+      {
+        "etapa": "Pagamento da Taxa de Inscrição",
+        "data": "até 17/11/2025"
+      },
+      {
+        "etapa": "Consulta da Confirmação da Inscrição",
+        "data": "a partir de 24/11/2025"
+      },
+      {
+        "etapa": "Divulgação dos Locais de Prova",
+        "data": "a partir de 20/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "04/12/2025 – às 09h"
+      },
+      {
+        "etapa": "Divulgação do Gabarito",
+        "data": "até 05/12/2025 (à tarde)"
+      },
+      {
+        "etapa": "Período para Recursos contra o Gabarito",
+        "data": "08/12/2025 e 09/12/2025 (das 09h às 11h e das 14h às 17h)"
+      },
+      {
+        "etapa": "Envio do Currículo (upload no sistema)",
+        "data": "06/12/2025 a 09/12/2025"
+      },
+      {
+        "etapa": "Avaliação Curricular",
+        "data": "10/12/2025 a 15/12/2025"
+      },
+      {
+        "etapa": "Resultado Preliminar (classificação)",
+        "data": "até 16/01/2026"
+      },
+      {
+        "etapa": "Recursos contra o Resultado Preliminar",
+        "data": "19/01/2026 e 20/01/2026 (das 09h às 11h e das 14h às 17h)"
+      },
+      {
+        "etapa": "Resultado Final (classificação definitiva)",
+        "data": "até 30/01/2026"
+      },
+      {
+        "etapa": "Declaração de Interesse em Vaga Remanescente",
+        "data": "02/02/2026 a 05/02/2026 (das 10h às 16h)"
+      },
+      {
+        "etapa": "Matrículas (1ª chamada)",
+        "data": "10/02/2026 e 11/02/2026 (das 09h às 11h e das 14h às 17h)"
+      },
+      {
+        "etapa": "Início da Residência Médica",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo edital UNESP Áreas de Atuação 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de Inscrições",
+            "12 a 17/11/2025"
+          ],
+          [
+            "Composição do processo seletivo",
+            "1ª Etapa: Prova Objetiva (Peso 90%) + 2ª Etapa: Avaliação Curricular (Peso 10%)"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 180,00"
+          ],
+          [
+            "Pagamento da Taxa de Inscrição",
+            "até 17/11/2025"
+          ],
+          [
+            "Consulta da Confirmação da Inscrição",
+            "a partir de 24/11/2025"
+          ],
+          [
+            "Divulgação dos Locais de Prova",
+            "a partir de 20/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "04/12/2025 – às 09h"
+          ],
+          [
+            "Divulgação do Gabarito",
+            "até 05/12/2025 (à tarde)"
+          ],
+          [
+            "Período para Recursos contra o Gabarito",
+            "08/12/2025 e 09/12/2025 (das 09h às 11h e das 14h às 17h)"
+          ],
+          [
+            "Envio do Currículo (upload no sistema)",
+            "06/12/2025 a 09/12/2025"
+          ],
+          [
+            "Avaliação Curricular",
+            "10/12/2025 a 15/12/2025"
+          ],
+          [
+            "Resultado Preliminar (classificação)",
+            "até 16/01/2026"
+          ],
+          [
+            "Recursos contra o Resultado Preliminar",
+            "19/01/2026 e 20/01/2026 (das 09h às 11h e das 14h às 17h)"
+          ],
+          [
+            "Resultado Final (classificação definitiva)",
+            "até 30/01/2026"
+          ],
+          [
+            "Declaração de Interesse em Vaga Remanescente",
+            "02/02/2026 a 05/02/2026 (das 10h às 16h)"
+          ],
+          [
+            "Matrículas (1ª chamada)",
+            "10/02/2026 e 11/02/2026 (das 09h às 11h e das 14h às 17h)"
+          ],
+          [
+            "Início da Residência Médica",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de Inscrições",
+            "data": "12 a 17/11/2025"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "1ª Etapa: Prova Objetiva (Peso 90%) + 2ª Etapa: Avaliação Curricular (Peso 10%)"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 180,00"
+          },
+          {
+            "etapa": "Pagamento da Taxa de Inscrição",
+            "data": "até 17/11/2025"
+          },
+          {
+            "etapa": "Consulta da Confirmação da Inscrição",
+            "data": "a partir de 24/11/2025"
+          },
+          {
+            "etapa": "Divulgação dos Locais de Prova",
+            "data": "a partir de 20/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "04/12/2025 – às 09h"
+          },
+          {
+            "etapa": "Divulgação do Gabarito",
+            "data": "até 05/12/2025 (à tarde)"
+          },
+          {
+            "etapa": "Período para Recursos contra o Gabarito",
+            "data": "08/12/2025 e 09/12/2025 (das 09h às 11h e das 14h às 17h)"
+          },
+          {
+            "etapa": "Envio do Currículo (upload no sistema)",
+            "data": "06/12/2025 a 09/12/2025"
+          },
+          {
+            "etapa": "Avaliação Curricular",
+            "data": "10/12/2025 a 15/12/2025"
+          },
+          {
+            "etapa": "Resultado Preliminar (classificação)",
+            "data": "até 16/01/2026"
+          },
+          {
+            "etapa": "Recursos contra o Resultado Preliminar",
+            "data": "19/01/2026 e 20/01/2026 (das 09h às 11h e das 14h às 17h)"
+          },
+          {
+            "etapa": "Resultado Final (classificação definitiva)",
+            "data": "até 30/01/2026"
+          },
+          {
+            "etapa": "Declaração de Interesse em Vaga Remanescente",
+            "data": "02/02/2026 a 05/02/2026 (das 10h às 16h)"
+          },
+          {
+            "etapa": "Matrículas (1ª chamada)",
+            "data": "10/02/2026 e 11/02/2026 (das 09h às 11h e das 14h às 17h)"
+          },
+          {
+            "etapa": "Início da Residência Médica",
+            "data": "01/03/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "PROGRAMA – ÁREAS DE ATUAÇÃO",
+          "VAGAS PREVISTAS",
+          "Reserva de Vagas PPI"
+        ],
+        "rows": [
+          [
+            "DOR",
+            "4",
+            "–"
+          ],
+          [
+            "ECOCARDIOGRAFIA",
+            "1",
+            "–"
+          ],
+          [
+            "INFECTOLOGIA HOSPITALAR",
+            "1",
+            "–"
+          ],
+          [
+            "NEUROFISIOLOGIA CLÍNICA",
+            "2*",
+            "–"
+          ],
+          [
+            "NEURORRADIOLOGIA",
+            "1",
+            "–"
+          ],
+          [
+            "ENDOSCOPIA GINECOLÓGICA",
+            "1",
+            "–"
+          ],
+          [
+            "ENDOCRINOLOGIA PEDIÁTRICA",
+            "2*",
+            "–"
+          ],
+          [
+            "GASTROENTEROLOGIA PEDIÁTRICA",
+            "2",
+            "–"
+          ],
+          [
+            "MEDICINA INTENSIVA PEDIÁTRICA",
+            "5",
+            "1"
+          ],
+          [
+            "NEFROLOGIA PEDIÁTRICA",
+            "2*",
+            "–"
+          ],
+          [
+            "NEONATOLOGIA",
+            "4*",
+            "–"
+          ],
+          [
+            "PNEUMOLOGIA PEDIÁTRICA",
+            "2",
+            "–"
+          ],
+          [
+            "REUMATOLOGIA PEDIÁTRICA",
+            "1",
+            "–"
+          ],
+          [
+            "NEUROLOGIA PEDIÁTRICA",
+            "5",
+            "1"
+          ],
+          [
+            "ANGIORRADIOLOGIA E CIRURGIA ENDOVASCULAR",
+            "1",
+            "–"
+          ],
+          [
+            "ECOGRAFIA VASCULAR COM DOPPLER",
+            "–",
+            "–"
+          ]
+        ],
+        "cols": 3
+      }
+    ],
+    "link_banca": "https://www.inscricoes.fmb.unesp.br/",
+    "posted_at": "2025-10-17T11:43:15+00:00",
+    "captured_at": "2025-10-17T11:43:36.557161+00:00"
+  },
+  {
     "slug": "ufrb-2026-edital-de-resid-ncia-m-dica-oferta-3-vagas-em-mfc",
     "nome": "UFRB 2026: edital de Residência Médica oferta 3 vagas em MFC",
     "display_title": "Universidade Federal do Recôncavo da Bahia (UFRB)",
@@ -252,7 +574,7 @@
     ],
     "link_banca": "https://www.ufrb.edu.br/ccs/residencia-em-medicina-de-familia-e-comunidade",
     "posted_at": "2025-10-16T18:03:05+00:00",
-    "captured_at": "2025-10-17T11:27:39.873968+00:00"
+    "captured_at": "2025-10-17T11:43:38.930034+00:00"
   },
   {
     "slug": "huse-divulga-edital-para-sele-o-de-resid-ncia-m-dica-com-16-vagas-confira-o-docu",
@@ -404,7 +726,7 @@
     ],
     "link_banca": "https://funesa.se.gov.br/",
     "posted_at": "2025-10-16T17:17:49+00:00",
-    "captured_at": "2025-10-17T11:27:41.040094+00:00"
+    "captured_at": "2025-10-17T11:43:40.087106+00:00"
   },
   {
     "slug": "hospital-regional-hilda-strenger-ribeiro-libera-edital-para-resid-ncia-m-dica-20",
@@ -572,7 +894,7 @@
     ],
     "link_banca": "https://coreme.hospitalhilda.com.br/editais/",
     "posted_at": "2025-10-16T14:39:42+00:00",
-    "captured_at": "2025-10-17T10:51:21.331614+00:00"
+    "captured_at": "2025-10-17T11:43:42.456951+00:00"
   },
   {
     "slug": "rede-m-rio-gatti-2026-veja-o-edital-para-resid-ncia-m-dica-com-fase-nica",
@@ -812,7 +1134,7 @@
     ],
     "link_banca": "https://concursos.objetivas.com.br/informacoes/2568/",
     "posted_at": "2025-10-16T13:02:05+00:00",
-    "captured_at": "2025-10-17T11:27:45.117274+00:00"
+    "captured_at": "2025-10-17T11:43:44.783446+00:00"
   },
   {
     "slug": "ses-ro-divulga-edital-de-resid-ncia-m-dica-2026-com-2-vagas-para-medicina-de-eme",
