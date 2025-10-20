@@ -1,5 +1,334 @@
 [
   {
+    "slug": "rede-am-ricas-divulga-edital-para-resid-ncia-m-dica-em-seus-hospitais-com-ingres",
+    "nome": "Rede Américas divulga edital para residência médica em seus hospitais com ingresso em 2026",
+    "display_title": "processo seletivo de residência médica",
+    "instituicao": "AMRICAS",
+    "link": "https://med.estrategia.com/portal/noticias/rede-americas-divulga-edital-para-residencia-medica-em-seus-hospitais-com-ingresso-em-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-42.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "43 (AD) + 31 (PR)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "1ª fase – Prova objetiva (virtual) 2ª fase – Avaliação de prática profissional 3ª fase – Avaliação curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$540,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "02/11 a 30/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva Virtual",
+        "data": "10/12/2025"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "10/12/2025, após as 14h"
+      },
+      {
+        "etapa": "Realização da 2ª (Prática) e 3ª Fase (Av. curricular)",
+        "data": "entre os dias 14 e 20/01"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "04/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Rede Américas 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "43 (AD) + 31 (PR)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "1ª fase – Prova objetiva (virtual) 2ª fase – Avaliação de prática profissional 3ª fase – Avaliação curricular"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$540,00"
+          ],
+          [
+            "Período de Inscrições",
+            "02/11 a 30/11/2025"
+          ],
+          [
+            "Prova Objetiva Virtual",
+            "10/12/2025"
+          ],
+          [
+            "Gabarito Preliminar",
+            "10/12/2025, após as 14h"
+          ],
+          [
+            "Realização da 2ª (Prática) e 3ª Fase (Av. curricular)",
+            "entre os dias 14 e 20/01"
+          ],
+          [
+            "Resultado Final",
+            "04/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "43 (AD) + 31 (PR)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "1ª fase – Prova objetiva (virtual) 2ª fase – Avaliação de prática profissional 3ª fase – Avaliação curricular"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$540,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "02/11 a 30/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva Virtual",
+            "data": "10/12/2025"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "10/12/2025, após as 14h"
+          },
+          {
+            "etapa": "Realização da 2ª (Prática) e 3ª Fase (Av. curricular)",
+            "data": "entre os dias 14 e 20/01"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "04/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Acesso Direto",
+        "headers": [],
+        "rows": [
+          [
+            "PROGRAMAS",
+            "HOSPITAL/UF",
+            "VAGAS"
+          ],
+          [
+            "Anestesiologia",
+            "Complexo Américas – RJ (Capital)",
+            "2"
+          ],
+          [
+            "Hospital Nove de Julho – SP (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Cirurgia Geral",
+            "Hospital São Lucas Copacabana – RJ (Capital)",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "Hospital Nossa Senhora do Carmo – RJ (Capital)",
+            "2"
+          ],
+          [
+            "Complexo Américas – RJ (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Complexo Hospitalar de Niterói – RJ (Niterói)",
+            "2",
+            ""
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "Maternidade Brasília – DF",
+            "2"
+          ],
+          [
+            "Medicina Intensiva Adulto",
+            "Hospital Brasília – DF",
+            "2"
+          ],
+          [
+            "Complexo Américas – RJ (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Hospital Samaritano Botafogo – RJ (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Hospital Pró-cardíaco- RJ (Capital)",
+            "1",
+            ""
+          ],
+          [
+            "Hospital Nossa Senhora do Carmo – RJ (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Hospital Nove de Julho – SP (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Medicina Nuclear",
+            "Hospital Pró-cardíaco – RJ (Capital)",
+            "1"
+          ],
+          [
+            "Neurocirurgia",
+            "Hospital Santa Paula – SP (Capital)",
+            "1"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "Hospital Nossa Senhora do Carmo – RJ (Capital)",
+            "2"
+          ],
+          [
+            "Hospital Alvorada Moema – SP (Capital)",
+            "4",
+            ""
+          ],
+          [
+            "Pediatria",
+            "Complexo Hospitalar de Niterói – RJ (Niterói)",
+            "2"
+          ],
+          [
+            "Radiologia e Diagnóstico por Imagem",
+            "Hospital São Domingos – MA (Capital)",
+            "3"
+          ],
+          [
+            "Complexo Hospitalar de Niterói– RJ (Niterói)",
+            "2",
+            ""
+          ],
+          [
+            "Hospital Nove de Julho- SP (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Radioterapia",
+            "Complexo Américas – RJ (Capital)",
+            "1"
+          ]
+        ],
+        "cols": 3
+      },
+      {
+        "titulo": "Pré-Requisito",
+        "headers": [],
+        "rows": [
+          [
+            "PROGRAMAS",
+            "HOSPITAL/UF",
+            "VAGAS"
+          ],
+          [
+            "Cancerologia Clínica",
+            "Complexo Américas – RJ (Capital)",
+            "1"
+          ],
+          [
+            "Cardiologia",
+            "Hospital Nossa Senhora do Carmo – RJ (Capital)",
+            "1"
+          ],
+          [
+            "Hospital Samaritano Botafogo – RJ (Capital)",
+            "1",
+            ""
+          ],
+          [
+            "Hospital Pró-cardíaco – RJ (Capital)",
+            "7",
+            ""
+          ],
+          [
+            "Complexo Américas – RJ (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Complexo Hospitalar de Niterói – RJ (Niterói)",
+            "2",
+            ""
+          ],
+          [
+            "Hospital Samaritano Paulista – SP (Capital)",
+            "4",
+            ""
+          ],
+          [
+            "Cirurgia de Mão",
+            "Hospital Alvorada Moema – SP (Capital)",
+            "2"
+          ],
+          [
+            "Cirurgia Vascular",
+            "Hospital Nove de Julho- SP (Capital)",
+            "2"
+          ],
+          [
+            "Ecocardiografia",
+            "Hospital Pró-cardíaco- RJ (Capital)",
+            "1"
+          ],
+          [
+            "Hospital Samaritano Paulista- SP (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Hematologia e Hemoterapia",
+            "Complexo Américas – RJ (Capital)",
+            "1"
+          ],
+          [
+            "Hospital Nove de Julho- SP (Capital)",
+            "2",
+            ""
+          ],
+          [
+            "Medicina Paliativa",
+            "Complexo Américas – RJ (Capital)",
+            "1"
+          ],
+          [
+            "Transplante Renal Pediátrico",
+            "Hospital Samaritano Higienópolis- SP (Capital)",
+            "2"
+          ]
+        ],
+        "cols": 3
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4726",
+    "posted_at": "2025-10-20T17:01:03+00:00",
+    "captured_at": "2025-10-20T17:33:30.780799+00:00"
+  },
+  {
     "slug": "hospital-asmigo-divulga-edital-para-resid-ncia-m-dica-2026",
     "nome": "Hospital Asmigo divulga edital para Residência Médica 2026",
     "display_title": "Hospital Asmigo",
@@ -192,7 +521,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-20T16:02:20+00:00",
-    "captured_at": "2025-10-20T16:47:04.762625+00:00"
+    "captured_at": "2025-10-20T17:33:32.191631+00:00"
   },
   {
     "slug": "amil-2026-edital-oferta-30-vagas-para-resid-ncia-m-dica",
@@ -444,7 +773,7 @@
     ],
     "link_banca": "https://www.aremg.org.br/detalhes-do-processo/aremg-divulga-editais-para-a-amil--rede-total-care-2026/2039",
     "posted_at": "2025-10-20T13:33:21+00:00",
-    "captured_at": "2025-10-20T16:47:08.128958+00:00"
+    "captured_at": "2025-10-20T17:33:33.963460+00:00"
   },
   {
     "slug": "scm-barra-mansa-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abert",
@@ -723,7 +1052,7 @@
     ],
     "link_banca": "https://concursos.access.org.br/informacoes/156/",
     "posted_at": "2025-10-20T12:24:41+00:00",
-    "captured_at": "2025-10-20T16:47:09.320999+00:00"
+    "captured_at": "2025-10-20T17:33:37.422965+00:00"
   },
   {
     "slug": "instituto-prevent-senior-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -985,7 +1314,7 @@
     ],
     "link_banca": "https://institutopreventsenior.com.br/processo-seletivo-de-residencia-medica-instituto-prevent-senior-2026/",
     "posted_at": "2025-10-17T21:20:40+00:00",
-    "captured_at": "2025-10-20T16:47:11.087274+00:00"
+    "captured_at": "2025-10-20T17:33:39.170286+00:00"
   },
   {
     "slug": "unesp-divulga-edital-para-resid-ncia-m-dica-em-reas-de-atua-o-2026",
@@ -1307,7 +1636,7 @@
     ],
     "link_banca": "https://www.inscricoes.fmb.unesp.br/",
     "posted_at": "2025-10-17T11:43:15+00:00",
-    "captured_at": "2025-10-20T16:47:13.496981+00:00"
+    "captured_at": "2025-10-20T17:33:41.561648+00:00"
   },
   {
     "slug": "ufrb-2026-edital-de-resid-ncia-m-dica-oferta-3-vagas-em-mfc",
@@ -1562,7 +1891,7 @@
     ],
     "link_banca": "https://www.ufrb.edu.br/ccs/residencia-em-medicina-de-familia-e-comunidade",
     "posted_at": "2025-10-16T18:03:05+00:00",
-    "captured_at": "2025-10-20T16:47:15.898194+00:00"
+    "captured_at": "2025-10-20T17:33:43.962871+00:00"
   },
   {
     "slug": "huse-divulga-edital-para-sele-o-de-resid-ncia-m-dica-com-16-vagas-confira-o-docu",
@@ -1714,7 +2043,7 @@
     ],
     "link_banca": "https://funesa.se.gov.br/",
     "posted_at": "2025-10-16T17:17:49+00:00",
-    "captured_at": "2025-10-20T16:47:17.066923+00:00"
+    "captured_at": "2025-10-20T17:33:45.133343+00:00"
   },
   {
     "slug": "hospital-regional-hilda-strenger-ribeiro-libera-edital-para-resid-ncia-m-dica-20",
