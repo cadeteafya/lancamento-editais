@@ -1,5 +1,536 @@
 [
   {
+    "slug": "amil-2026-edital-oferta-30-vagas-para-resid-ncia-m-dica",
+    "nome": "Amil 2026: edital oferta 30 vagas para Residência Médica",
+    "display_title": "Amil",
+    "instituicao": "AMIL",
+    "link": "https://med.estrategia.com/portal/noticias/amil-2026-edital-oferta-30-vagas-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Edital-amil-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrição",
+        "data": "03 a 13/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 450,00"
+      },
+      {
+        "etapa": "Último dia para pagamento da inscrição",
+        "data": "14/11/2025"
+      },
+      {
+        "etapa": "Definição do local de prova",
+        "data": "20/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "30/11/2025"
+      },
+      {
+        "etapa": "Publicação do gabarito",
+        "data": "30/11/2025, após 19h"
+      },
+      {
+        "etapa": "Recursos ao gabarito",
+        "data": "Das 19h de 30/11/2025 às 19h de 02/12/2025"
+      },
+      {
+        "etapa": "Resultado Preliminar",
+        "data": "16/12/2025"
+      },
+      {
+        "etapa": "Recursos do Resultado Preliminar",
+        "data": "16/12/2025 a 18/12/2025"
+      },
+      {
+        "etapa": "Divulgação das informações para banca de heteroidentificação das vagas afirmativas",
+        "data": "19/12/2025"
+      },
+      {
+        "etapa": "Resultado Definitivo",
+        "data": "28/01/2026"
+      },
+      {
+        "etapa": "Confirmação de interesse/desistência e matrículas dos aprovados",
+        "data": "30/01 a 02/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo edital AMIL 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrição",
+            "03 a 13/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 450,00"
+          ],
+          [
+            "Último dia para pagamento da inscrição",
+            "14/11/2025"
+          ],
+          [
+            "Definição do local de prova",
+            "20/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "30/11/2025"
+          ],
+          [
+            "Publicação do gabarito",
+            "30/11/2025, após 19h"
+          ],
+          [
+            "Recursos ao gabarito",
+            "Das 19h de 30/11/2025 às 19h de 02/12/2025"
+          ],
+          [
+            "Resultado Preliminar",
+            "16/12/2025"
+          ],
+          [
+            "Recursos do Resultado Preliminar",
+            "16/12/2025 a 18/12/2025"
+          ],
+          [
+            "Divulgação das informações para banca de heteroidentificação das vagas afirmativas",
+            "19/12/2025"
+          ],
+          [
+            "Resultado Definitivo",
+            "28/01/2026"
+          ],
+          [
+            "Confirmação de interesse/desistência e matrículas dos aprovados",
+            "30/01 a 02/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrição",
+            "data": "03 a 13/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 450,00"
+          },
+          {
+            "etapa": "Último dia para pagamento da inscrição",
+            "data": "14/11/2025"
+          },
+          {
+            "etapa": "Definição do local de prova",
+            "data": "20/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "30/11/2025"
+          },
+          {
+            "etapa": "Publicação do gabarito",
+            "data": "30/11/2025, após 19h"
+          },
+          {
+            "etapa": "Recursos ao gabarito",
+            "data": "Das 19h de 30/11/2025 às 19h de 02/12/2025"
+          },
+          {
+            "etapa": "Resultado Preliminar",
+            "data": "16/12/2025"
+          },
+          {
+            "etapa": "Recursos do Resultado Preliminar",
+            "data": "16/12/2025 a 18/12/2025"
+          },
+          {
+            "etapa": "Divulgação das informações para banca de heteroidentificação das vagas afirmativas",
+            "data": "19/12/2025"
+          },
+          {
+            "etapa": "Resultado Definitivo",
+            "data": "28/01/2026"
+          },
+          {
+            "etapa": "Confirmação de interesse/desistência e matrículas dos aprovados",
+            "data": "30/01 a 02/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Especialidade",
+          "Hospital",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia – SP",
+            "Pitangueiras",
+            "3"
+          ],
+          [
+            "Anestesiologia – SP",
+            "Ana Costa",
+            "1"
+          ],
+          [
+            "Anestesiologia – RJ",
+            "Pasteur",
+            "2"
+          ],
+          [
+            "Clínica Médica – SP",
+            "Ana Costa",
+            "3"
+          ],
+          [
+            "Clínica Médica – SP",
+            "Pitangueiras",
+            "2"
+          ],
+          [
+            "Clínica Médica – RJ",
+            "Pasteur",
+            "4"
+          ],
+          [
+            "Cirurgia Geral",
+            "Ana Costa",
+            "1"
+          ],
+          [
+            "Pediatria",
+            "Ana Costa",
+            "3"
+          ],
+          [
+            "Medicina Intensiva",
+            "Paulistano",
+            "3"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "Ana Costa",
+            "2"
+          ],
+          [
+            "Oncologia Clínica",
+            "Paulistano",
+            "3"
+          ],
+          [
+            "Oncologia Clínica",
+            "Ana Costa",
+            "1"
+          ],
+          [
+            "Urologia",
+            "Ana Costa",
+            "1"
+          ],
+          [
+            "Cardiologia",
+            "Ana Costa",
+            "1"
+          ]
+        ],
+        "cols": 3
+      }
+    ],
+    "link_banca": "https://www.aremg.org.br/detalhes-do-processo/aremg-divulga-editais-para-a-amil--rede-total-care-2026/2039",
+    "posted_at": "2025-10-20T13:33:21+00:00",
+    "captured_at": "2025-10-20T13:37:32.801482+00:00"
+  },
+  {
+    "slug": "scm-barra-mansa-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abert",
+    "nome": "SCM Barra Mansa divulga edital para Residência Médica 2026; inscrições estão abertas",
+    "display_title": "Santa Casa de Misericórdia de Barra Mansa",
+    "instituicao": "BARRA",
+    "link": "https://med.estrategia.com/portal/noticias/scm-barra-mansa-divulga-edital-para-residencia-medica-2026-inscricoes-estao-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-scm-barra-mansa-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período das inscrições",
+        "data": "20/10 a 11/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 300,00"
+      },
+      {
+        "etapa": "Período para solicitação de isenção da taxa de inscrição",
+        "data": "20 e 21/10/2025"
+      },
+      {
+        "etapa": "Último dia para reimpressão do boleto bancário e pagamento da taxa de inscrição",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Divulgação dos locais de prova (cartão de confirmação de inscrição – CCI)",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Realização da prova geral de conhecimentos médicos",
+        "data": "18/01/2026"
+      },
+      {
+        "etapa": "Divulgação dos gabaritos preliminares da prova geral de conhecimentos médicos",
+        "data": "19/01/2026"
+      },
+      {
+        "etapa": "Prazo para interposição de recurso contra os gabaritos preliminares da prova geral de conhecimentos médicos",
+        "data": "20 e 21/01/2026"
+      },
+      {
+        "etapa": "Divulgação dos gabaritos definitivos da prova geral de conhecimentos médicos",
+        "data": "28/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar da prova geral de conhecimentos médicos",
+        "data": "28/01/2026"
+      },
+      {
+        "etapa": "Prazo para interposição de recurso contra o resultado preliminar da prova geral de conhecimentos médicos",
+        "data": "29 e 30/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado final da prova geral de conhecimentos médicos",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado final do processo seletivo e convocação para a matrícula",
+        "data": "13/02/2026"
+      },
+      {
+        "etapa": "Início do Programa de Residência Médica",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo edital SCM Barra Mansa 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período das inscrições",
+            "20/10 a 11/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 300,00"
+          ],
+          [
+            "Período para solicitação de isenção da taxa de inscrição",
+            "20 e 21/10/2025"
+          ],
+          [
+            "Último dia para reimpressão do boleto bancário e pagamento da taxa de inscrição",
+            "12/12/2025"
+          ],
+          [
+            "Divulgação dos locais de prova (cartão de confirmação de inscrição – CCI)",
+            "12/01/2026"
+          ],
+          [
+            "Realização da prova geral de conhecimentos médicos",
+            "18/01/2026"
+          ],
+          [
+            "Divulgação dos gabaritos preliminares da prova geral de conhecimentos médicos",
+            "19/01/2026"
+          ],
+          [
+            "Prazo para interposição de recurso contra os gabaritos preliminares da prova geral de conhecimentos médicos",
+            "20 e 21/01/2026"
+          ],
+          [
+            "Divulgação dos gabaritos definitivos da prova geral de conhecimentos médicos",
+            "28/01/2026"
+          ],
+          [
+            "Divulgação do resultado preliminar da prova geral de conhecimentos médicos",
+            "28/01/2026"
+          ],
+          [
+            "Prazo para interposição de recurso contra o resultado preliminar da prova geral de conhecimentos médicos",
+            "29 e 30/01/2026"
+          ],
+          [
+            "Divulgação do resultado final da prova geral de conhecimentos médicos",
+            "05/02/2026"
+          ],
+          [
+            "Divulgação do resultado final do processo seletivo e convocação para a matrícula",
+            "13/02/2026"
+          ],
+          [
+            "Início do Programa de Residência Médica",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período das inscrições",
+            "data": "20/10 a 11/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 300,00"
+          },
+          {
+            "etapa": "Período para solicitação de isenção da taxa de inscrição",
+            "data": "20 e 21/10/2025"
+          },
+          {
+            "etapa": "Último dia para reimpressão do boleto bancário e pagamento da taxa de inscrição",
+            "data": "12/12/2025"
+          },
+          {
+            "etapa": "Divulgação dos locais de prova (cartão de confirmação de inscrição – CCI)",
+            "data": "12/01/2026"
+          },
+          {
+            "etapa": "Realização da prova geral de conhecimentos médicos",
+            "data": "18/01/2026"
+          },
+          {
+            "etapa": "Divulgação dos gabaritos preliminares da prova geral de conhecimentos médicos",
+            "data": "19/01/2026"
+          },
+          {
+            "etapa": "Prazo para interposição de recurso contra os gabaritos preliminares da prova geral de conhecimentos médicos",
+            "data": "20 e 21/01/2026"
+          },
+          {
+            "etapa": "Divulgação dos gabaritos definitivos da prova geral de conhecimentos médicos",
+            "data": "28/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar da prova geral de conhecimentos médicos",
+            "data": "28/01/2026"
+          },
+          {
+            "etapa": "Prazo para interposição de recurso contra o resultado preliminar da prova geral de conhecimentos médicos",
+            "data": "29 e 30/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado final da prova geral de conhecimentos médicos",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado final do processo seletivo e convocação para a matrícula",
+            "data": "13/02/2026"
+          },
+          {
+            "etapa": "Início do Programa de Residência Médica",
+            "data": "01/03/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Especialidade",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "3"
+          ],
+          [
+            "Cirurgia Geral",
+            "3"
+          ],
+          [
+            "Clínica Médica",
+            "5"
+          ],
+          [
+            "Medicina da Família e Comunidade",
+            "4"
+          ],
+          [
+            "Medicina Intensiva",
+            "1"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "3"
+          ],
+          [
+            "Cirurgia Oncológica",
+            "2"
+          ],
+          [
+            "Terapia Intensiva Pediátrica",
+            "1"
+          ],
+          [
+            "Cirurgia de Cabeça e Pescoço",
+            "1"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Anestesiologia",
+            "data": "3"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "3"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "5"
+          },
+          {
+            "etapa": "Medicina da Família e Comunidade",
+            "data": "4"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "1"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "3"
+          },
+          {
+            "etapa": "Cirurgia Oncológica",
+            "data": "2"
+          },
+          {
+            "etapa": "Terapia Intensiva Pediátrica",
+            "data": "1"
+          },
+          {
+            "etapa": "Cirurgia de Cabeça e Pescoço",
+            "data": "1"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://concursos.access.org.br/informacoes/156/",
+    "posted_at": "2025-10-20T12:24:41+00:00",
+    "captured_at": "2025-10-20T13:37:34.034579+00:00"
+  },
+  {
     "slug": "instituto-prevent-senior-divulga-edital-para-resid-ncia-m-dica-2026",
     "nome": "Instituto Prevent Senior divulga edital para Residência Médica 2026",
     "display_title": "3 de novembro de 2025 a 5 de janeiro de 2026",
@@ -259,7 +790,7 @@
     ],
     "link_banca": "https://institutopreventsenior.com.br/processo-seletivo-de-residencia-medica-instituto-prevent-senior-2026/",
     "posted_at": "2025-10-17T21:20:40+00:00",
-    "captured_at": "2025-10-20T11:29:28.529411+00:00"
+    "captured_at": "2025-10-20T13:37:35.775014+00:00"
   },
   {
     "slug": "unesp-divulga-edital-para-resid-ncia-m-dica-em-reas-de-atua-o-2026",
@@ -581,7 +1112,7 @@
     ],
     "link_banca": "https://www.inscricoes.fmb.unesp.br/",
     "posted_at": "2025-10-17T11:43:15+00:00",
-    "captured_at": "2025-10-20T11:45:20.973714+00:00"
+    "captured_at": "2025-10-20T13:37:38.147956+00:00"
   },
   {
     "slug": "ufrb-2026-edital-de-resid-ncia-m-dica-oferta-3-vagas-em-mfc",
@@ -836,7 +1367,7 @@
     ],
     "link_banca": "https://www.ufrb.edu.br/ccs/residencia-em-medicina-de-familia-e-comunidade",
     "posted_at": "2025-10-16T18:03:05+00:00",
-    "captured_at": "2025-10-20T11:45:23.364445+00:00"
+    "captured_at": "2025-10-20T13:37:40.481107+00:00"
   },
   {
     "slug": "huse-divulga-edital-para-sele-o-de-resid-ncia-m-dica-com-16-vagas-confira-o-docu",
@@ -988,7 +1519,7 @@
     ],
     "link_banca": "https://funesa.se.gov.br/",
     "posted_at": "2025-10-16T17:17:49+00:00",
-    "captured_at": "2025-10-20T11:45:24.518567+00:00"
+    "captured_at": "2025-10-20T13:37:41.683211+00:00"
   },
   {
     "slug": "hospital-regional-hilda-strenger-ribeiro-libera-edital-para-resid-ncia-m-dica-20",
@@ -1156,7 +1687,7 @@
     ],
     "link_banca": "https://coreme.hospitalhilda.com.br/editais/",
     "posted_at": "2025-10-16T14:39:42+00:00",
-    "captured_at": "2025-10-20T11:45:26.886798+00:00"
+    "captured_at": "2025-10-20T13:37:44.056675+00:00"
   },
   {
     "slug": "rede-m-rio-gatti-2026-veja-o-edital-para-resid-ncia-m-dica-com-fase-nica",
