@@ -1,5 +1,113 @@
 [
   {
+    "slug": "sms-ipu-est-com-seletivo-aberto-para-resid-ncia-m-dica-com-ingresso-em-2026",
+    "nome": "SMS-Ipuã está com seletivo aberto para residência médica com ingresso em 2026",
+    "display_title": "Prefeitura Municipal de Ipuã Universidade de Franca (UNIFRAN)",
+    "instituicao": "UNIFRAN",
+    "link": "https://med.estrategia.com/portal/noticias/sms-ipua-esta-com-seletivo-aberto-para-residencia-medica-com-ingresso-em-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-45.jpg",
+    "dados": [
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Escrita (peso 90%) + Avaliação de Currículo (peso 10%)"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$150,00"
+      },
+      {
+        "etapa": "Inscrições",
+        "data": "10/10/2025 a 30/11/2025"
+      },
+      {
+        "etapa": "Data da Prova Objetiva",
+        "data": "05/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Gabarito da Prova Objetiva",
+        "data": "05/12/2025"
+      },
+      {
+        "etapa": "Resultado da Prova Objetiva e Avaliação do Currículo",
+        "data": "09/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "16/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital SMS-Ipuã 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Composição do processo seletivo",
+            "Prova Escrita (peso 90%) + Avaliação de Currículo (peso 10%)"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$150,00"
+          ],
+          [
+            "Inscrições",
+            "10/10/2025 a 30/11/2025"
+          ],
+          [
+            "Data da Prova Objetiva",
+            "05/12/2025"
+          ],
+          [
+            "Divulgação do Gabarito da Prova Objetiva",
+            "05/12/2025"
+          ],
+          [
+            "Resultado da Prova Objetiva e Avaliação do Currículo",
+            "09/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "16/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Escrita (peso 90%) + Avaliação de Currículo (peso 10%)"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$150,00"
+          },
+          {
+            "etapa": "Inscrições",
+            "data": "10/10/2025 a 30/11/2025"
+          },
+          {
+            "etapa": "Data da Prova Objetiva",
+            "data": "05/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Gabarito da Prova Objetiva",
+            "data": "05/12/2025"
+          },
+          {
+            "etapa": "Resultado da Prova Objetiva e Avaliação do Currículo",
+            "data": "09/01/2026"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "16/01/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.ipua.sp.gov.br/residencia-medica",
+    "posted_at": "2025-10-22T16:49:45+00:00",
+    "captured_at": "2025-10-22T16:56:54.178397+00:00"
+  },
+  {
     "slug": "uema-publica-edital-para-resid-ncia-m-dica-2026-com-quatro-vagas-de-acesso-diret",
     "nome": "UEMA publica edital para residência médica 2026 com quatro vagas de Acesso Direto",
     "display_title": "Universidade Estadual do Maranhão (UEMA)",
@@ -133,7 +241,7 @@
     ],
     "link_banca": "https://sigconcursos.uema.br/eventoselecionado",
     "posted_at": "2025-10-21T22:45:30+00:00",
-    "captured_at": "2025-10-22T15:48:41.125470+00:00"
+    "captured_at": "2025-10-22T16:56:58.918556+00:00"
   },
   {
     "slug": "unimed-jo-o-pessoa-2026-edital-para-seletivo-de-resid-ncia-m-dica-divulgado",
@@ -269,7 +377,7 @@
     ],
     "link_banca": "https://www.unimedjp.com.br/residenciamedica/",
     "posted_at": "2025-10-21T22:26:09+00:00",
-    "captured_at": "2025-10-22T15:48:42.467852+00:00"
+    "captured_at": "2025-10-22T16:57:01.207904+00:00"
   },
   {
     "slug": "iscmsjrp-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -518,7 +626,7 @@
     ],
     "link_banca": "https://www.institutomais.org.br/Concursos/Detalhe/10615",
     "posted_at": "2025-10-21T18:48:25+00:00",
-    "captured_at": "2025-10-22T15:48:43.688059+00:00"
+    "captured_at": "2025-10-22T16:57:03.578278+00:00"
   },
   {
     "slug": "ses-df-divulga-edital-unificado-para-sele-o-de-resid-ncia-m-dica-2026",
@@ -626,7 +734,7 @@
     ],
     "link_banca": "https://www.iades.com.br/inscricao/ProcessoSeletivo.aspx?id=57cc492f27",
     "posted_at": "2025-10-20T23:50:25+00:00",
-    "captured_at": "2025-10-22T15:48:45.477447+00:00"
+    "captured_at": "2025-10-22T16:57:07.268027+00:00"
   },
   {
     "slug": "rede-am-ricas-divulga-edital-para-resid-ncia-m-dica-em-seus-hospitais-com-ingres",
@@ -955,7 +1063,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4726",
     "posted_at": "2025-10-20T17:01:03+00:00",
-    "captured_at": "2025-10-22T15:48:47.286811+00:00"
+    "captured_at": "2025-10-22T16:57:11.925134+00:00"
   },
   {
     "slug": "hospital-asmigo-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -1150,7 +1258,7 @@
     ],
     "link_banca": "https://www.ceremgoias.org.br/processo-seletivo",
     "posted_at": "2025-10-20T16:02:20+00:00",
-    "captured_at": "2025-10-22T15:48:48.575083+00:00"
+    "captured_at": "2025-10-22T16:57:14.935522+00:00"
   },
   {
     "slug": "amil-2026-edital-oferta-30-vagas-para-resid-ncia-m-dica",
@@ -1402,7 +1510,7 @@
     ],
     "link_banca": "https://www.aremg.org.br/detalhes-do-processo/aremg-divulga-editais-para-a-amil--rede-total-care-2026/2039",
     "posted_at": "2025-10-20T13:33:21+00:00",
-    "captured_at": "2025-10-22T15:48:50.309492+00:00"
+    "captured_at": "2025-10-22T16:57:18.037499+00:00"
   },
   {
     "slug": "scm-barra-mansa-divulga-edital-para-resid-ncia-m-dica-2026-inscri-es-est-o-abert",
@@ -1681,7 +1789,7 @@
     ],
     "link_banca": "https://concursos.access.org.br/informacoes/156/",
     "posted_at": "2025-10-20T12:24:41+00:00",
-    "captured_at": "2025-10-22T15:48:51.576927+00:00"
+    "captured_at": "2025-10-22T16:57:20.512922+00:00"
   },
   {
     "slug": "instituto-prevent-senior-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -1943,7 +2051,7 @@
     ],
     "link_banca": "https://institutopreventsenior.com.br/processo-seletivo-de-residencia-medica-instituto-prevent-senior-2026/",
     "posted_at": "2025-10-17T21:20:40+00:00",
-    "captured_at": "2025-10-22T15:48:53.332030+00:00"
+    "captured_at": "2025-10-22T16:57:25.148466+00:00"
   },
   {
     "slug": "unesp-divulga-edital-para-resid-ncia-m-dica-em-reas-de-atua-o-2026",
