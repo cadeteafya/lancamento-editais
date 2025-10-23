@@ -105,7 +105,7 @@
     ],
     "link_banca": "https://www.ipua.sp.gov.br/residencia-medica",
     "posted_at": "2025-10-22T16:49:45+00:00",
-    "captured_at": "2025-10-23T14:43:39.884919+00:00"
+    "captured_at": "2025-10-23T15:36:25.095910+00:00"
   },
   {
     "slug": "uema-publica-edital-para-resid-ncia-m-dica-2026-com-quatro-vagas-de-acesso-diret",
@@ -241,7 +241,7 @@
     ],
     "link_banca": "https://sigconcursos.uema.br/eventoselecionado",
     "posted_at": "2025-10-21T22:45:30+00:00",
-    "captured_at": "2025-10-23T14:43:41.687270+00:00"
+    "captured_at": "2025-10-23T15:36:27.045217+00:00"
   },
   {
     "slug": "unimed-jo-o-pessoa-2026-edital-para-seletivo-de-resid-ncia-m-dica-divulgado",
@@ -377,7 +377,7 @@
     ],
     "link_banca": "https://www.unimedjp.com.br/residenciamedica/",
     "posted_at": "2025-10-21T22:26:09+00:00",
-    "captured_at": "2025-10-23T14:43:42.884895+00:00"
+    "captured_at": "2025-10-23T15:36:28.307193+00:00"
   },
   {
     "slug": "iscmsjrp-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -626,7 +626,7 @@
     ],
     "link_banca": "https://www.institutomais.org.br/Concursos/Detalhe/10615",
     "posted_at": "2025-10-21T18:48:25+00:00",
-    "captured_at": "2025-10-23T14:43:44.082494+00:00"
+    "captured_at": "2025-10-23T15:36:29.596566+00:00"
   },
   {
     "slug": "ses-df-divulga-edital-unificado-para-sele-o-de-resid-ncia-m-dica-2026",
@@ -730,11 +730,62 @@
             "data": "29 a 31/01/2026"
           }
         ]
+      },
+      {
+        "titulo": "Reta Final SES-DF Residência Médica 2025/26",
+        "headers": [
+          "DATA",
+          "HORÁRIO",
+          "EVENTO"
+        ],
+        "rows": [
+          [
+            "14/12",
+            "08:00 às 15:20",
+            "Premonição SES-DF Residência Médica"
+          ],
+          [
+            "15/12",
+            "19:00 às 21:30",
+            "Hora da Verdade – Ginecologia e Obstetrícia SES-DF Residência Médica"
+          ],
+          [
+            "16/12",
+            "19:00 às 21:30",
+            "Hora da Verdade – Cirurgia SES-DF Residência Médica"
+          ],
+          [
+            "17/12",
+            "19:00 às 21:30",
+            "Hora da Verdade – Pediatria SES-DF Residência Médica"
+          ],
+          [
+            "18/12",
+            "19:00 às 21:30",
+            "Hora da Verdade – Medicina Preventiva SES-DF Residência Médica"
+          ],
+          [
+            "19/12",
+            "19:00 às 23:00",
+            "Hora da Verdade – Clínica Médica SES-DF Residência Médica"
+          ],
+          [
+            "20/12",
+            "08:00 às 15:20",
+            "Revisão de Véspera SES-DF Residência Médica"
+          ],
+          [
+            "21/12",
+            "Horário a definir",
+            "Gabarito SES-DF Residência Médica 2025/26"
+          ]
+        ],
+        "cols": 3
       }
     ],
     "link_banca": "https://www.iades.com.br/inscricao/ProcessoSeletivo.aspx?id=57cc492f27",
     "posted_at": "2025-10-20T23:50:25+00:00",
-    "captured_at": "2025-10-23T14:43:45.858648+00:00"
+    "captured_at": "2025-10-23T15:36:31.581405+00:00"
   },
   {
     "slug": "rede-am-ricas-divulga-edital-para-resid-ncia-m-dica-em-seus-hospitais-com-ingres",
@@ -1063,7 +1114,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4726",
     "posted_at": "2025-10-20T17:01:03+00:00",
-    "captured_at": "2025-10-23T14:43:47.632285+00:00"
+    "captured_at": "2025-10-23T15:36:33.501059+00:00"
   },
   {
     "slug": "hospital-asmigo-divulga-edital-para-resid-ncia-m-dica-2026",
