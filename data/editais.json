@@ -1,5 +1,165 @@
 [
   {
+    "slug": "univag-divulga-edital-com-sete-vagas-para-resid-ncia-m-dica-com-in-cio-em-2026",
+    "nome": "UNIVAG divulga edital com sete vagas para residência médica com início em 2026",
+    "display_title": "Centro Universitário de Várzea Grande (UNIVAG)",
+    "instituicao": "UNIVAG",
+    "link": "https://med.estrategia.com/portal/noticias/univag-divulga-edital-com-sete-vagas-para-residencia-medica-com-inicio-em-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-46.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "7 vagas"
+      },
+      {
+        "etapa": "Inscrições",
+        "data": "06/11/2025 a 04/01/2026"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Objetiva + Análise Curricular"
+      },
+      {
+        "etapa": "Data da Prova Objetiva e entrega dos currículos",
+        "data": "18/01/2026"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "19/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "19/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital UNIVAG 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "7 vagas"
+          ],
+          [
+            "Inscrições",
+            "06/11/2025 a 04/01/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 600,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva + Análise Curricular"
+          ],
+          [
+            "Data da Prova Objetiva e entrega dos currículos",
+            "18/01/2026"
+          ],
+          [
+            "Gabarito preliminar",
+            "19/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "19/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "7 vagas"
+          },
+          {
+            "etapa": "Inscrições",
+            "data": "06/11/2025 a 04/01/2026"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 600,00"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Objetiva + Análise Curricular"
+          },
+          {
+            "etapa": "Data da Prova Objetiva e entrega dos currículos",
+            "data": "18/01/2026"
+          },
+          {
+            "etapa": "Gabarito preliminar",
+            "data": "19/01/2026"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "19/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas UNIVAG 2026",
+        "headers": [
+          "Especialidade",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Clínica Médica",
+            "1"
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "2"
+          ],
+          [
+            "Medicina em Família e Comunidade",
+            "1"
+          ],
+          [
+            "Pediatria",
+            "1"
+          ],
+          [
+            "Neonatologia",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Clínica Médica",
+            "data": "1"
+          },
+          {
+            "etapa": "Ginecologia e Obstetrícia",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina em Família e Comunidade",
+            "data": "1"
+          },
+          {
+            "etapa": "Pediatria",
+            "data": "1"
+          },
+          {
+            "etapa": "Neonatologia",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4727",
+    "posted_at": "2025-10-23T15:52:00+00:00",
+    "captured_at": "2025-10-23T16:48:52.678855+00:00"
+  },
+  {
     "slug": "sms-ipu-est-com-seletivo-aberto-para-resid-ncia-m-dica-com-ingresso-em-2026",
     "nome": "SMS-Ipuã está com seletivo aberto para residência médica com ingresso em 2026",
     "display_title": "Prefeitura Municipal de Ipuã Universidade de Franca (UNIFRAN)",
@@ -105,7 +265,7 @@
     ],
     "link_banca": "https://www.ipua.sp.gov.br/residencia-medica",
     "posted_at": "2025-10-22T16:49:45+00:00",
-    "captured_at": "2025-10-23T15:44:45.461784+00:00"
+    "captured_at": "2025-10-23T16:48:57.880322+00:00"
   },
   {
     "slug": "uema-publica-edital-para-resid-ncia-m-dica-2026-com-quatro-vagas-de-acesso-diret",
@@ -241,7 +401,7 @@
     ],
     "link_banca": "https://sigconcursos.uema.br/eventoselecionado",
     "posted_at": "2025-10-21T22:45:30+00:00",
-    "captured_at": "2025-10-23T15:44:50.084219+00:00"
+    "captured_at": "2025-10-23T16:48:59.815334+00:00"
   },
   {
     "slug": "unimed-jo-o-pessoa-2026-edital-para-seletivo-de-resid-ncia-m-dica-divulgado",
@@ -377,7 +537,7 @@
     ],
     "link_banca": "https://www.unimedjp.com.br/residenciamedica/",
     "posted_at": "2025-10-21T22:26:09+00:00",
-    "captured_at": "2025-10-23T15:44:52.688496+00:00"
+    "captured_at": "2025-10-23T16:49:01.039640+00:00"
   },
   {
     "slug": "iscmsjrp-divulga-edital-para-resid-ncia-m-dica-2026",
@@ -626,7 +786,7 @@
     ],
     "link_banca": "https://www.institutomais.org.br/Concursos/Detalhe/10615",
     "posted_at": "2025-10-21T18:48:25+00:00",
-    "captured_at": "2025-10-23T15:44:55.299427+00:00"
+    "captured_at": "2025-10-23T16:49:02.244505+00:00"
   },
   {
     "slug": "ses-df-divulga-edital-unificado-para-sele-o-de-resid-ncia-m-dica-2026",
@@ -785,7 +945,7 @@
     ],
     "link_banca": "https://www.iades.com.br/inscricao/ProcessoSeletivo.aspx?id=57cc492f27",
     "posted_at": "2025-10-20T23:50:25+00:00",
-    "captured_at": "2025-10-23T15:44:59.558135+00:00"
+    "captured_at": "2025-10-23T16:49:04.209521+00:00"
   },
   {
     "slug": "rede-am-ricas-divulga-edital-para-resid-ncia-m-dica-em-seus-hospitais-com-ingres",
