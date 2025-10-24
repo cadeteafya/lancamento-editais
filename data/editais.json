@@ -1,5 +1,467 @@
 [
   {
+    "slug": "hospital-santa-rosa-divulga-edital-de-resid-ncia-m-dica-2026",
+    "nome": "Hospital Santa Rosa divulga edital de Residência Médica 2026",
+    "display_title": "Hospital Santa Rosa",
+    "instituicao": "HOSPITAL",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-santa-rosa-divulga-edital-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Edital-hospital-santa-rosa-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrição",
+        "data": "08 a 16/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 600,00"
+      },
+      {
+        "etapa": "Último dia para pagamento da taxa de inscrição",
+        "data": "17/11/2025"
+      },
+      {
+        "etapa": "Aplicação da prova objetiva e entrega dos documentos para avaliação curricular",
+        "data": "30/11/2025"
+      },
+      {
+        "etapa": "Divulgação dos gabaritos preliminares e cadernos de provas",
+        "data": "01/12/2025, após as 14h"
+      },
+      {
+        "etapa": "Interposição de recursos sobre os gabaritos preliminares",
+        "data": "Das 14h do dia 01 até as 14h do dia 03/12/2025"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar da 1ª fase (prova objetiva) e convocação para 2ª fase (avaliação curricular)",
+        "data": "16/12/2025, após as 14h"
+      },
+      {
+        "etapa": "Interposição de recurso sobre o resultado da 1ª fase",
+        "data": "Das 14h do dia 16 até as 14h do dia 18/12/2025"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar da 1ª e 2ª fases",
+        "data": "09/01/2026"
+      },
+      {
+        "etapa": "Interposição de recurso sobre o resultado da 2ª fase (avaliação curricular)",
+        "data": "10 e 11/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado final e convocação para matrícula",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Matrícula dos residentes (1ª chamada)",
+        "data": "10 e 11/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Santa Rosa 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrição",
+            "08 a 16/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 600,00"
+          ],
+          [
+            "Último dia para pagamento da taxa de inscrição",
+            "17/11/2025"
+          ],
+          [
+            "Aplicação da prova objetiva e entrega dos documentos para avaliação curricular",
+            "30/11/2025"
+          ],
+          [
+            "Divulgação dos gabaritos preliminares e cadernos de provas",
+            "01/12/2025, após as 14h"
+          ],
+          [
+            "Interposição de recursos sobre os gabaritos preliminares",
+            "Das 14h do dia 01 até as 14h do dia 03/12/2025"
+          ],
+          [
+            "Divulgação do resultado preliminar da 1ª fase (prova objetiva) e convocação para 2ª fase (avaliação curricular)",
+            "16/12/2025, após as 14h"
+          ],
+          [
+            "Interposição de recurso sobre o resultado da 1ª fase",
+            "Das 14h do dia 16 até as 14h do dia 18/12/2025"
+          ],
+          [
+            "Divulgação do resultado preliminar da 1ª e 2ª fases",
+            "09/01/2026"
+          ],
+          [
+            "Interposição de recurso sobre o resultado da 2ª fase (avaliação curricular)",
+            "10 e 11/01/2026"
+          ],
+          [
+            "Divulgação do resultado final e convocação para matrícula",
+            "30/01/2026"
+          ],
+          [
+            "Matrícula dos residentes (1ª chamada)",
+            "10 e 11/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrição",
+            "data": "08 a 16/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 600,00"
+          },
+          {
+            "etapa": "Último dia para pagamento da taxa de inscrição",
+            "data": "17/11/2025"
+          },
+          {
+            "etapa": "Aplicação da prova objetiva e entrega dos documentos para avaliação curricular",
+            "data": "30/11/2025"
+          },
+          {
+            "etapa": "Divulgação dos gabaritos preliminares e cadernos de provas",
+            "data": "01/12/2025, após as 14h"
+          },
+          {
+            "etapa": "Interposição de recursos sobre os gabaritos preliminares",
+            "data": "Das 14h do dia 01 até as 14h do dia 03/12/2025"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar da 1ª fase (prova objetiva) e convocação para 2ª fase (avaliação curricular)",
+            "data": "16/12/2025, após as 14h"
+          },
+          {
+            "etapa": "Interposição de recurso sobre o resultado da 1ª fase",
+            "data": "Das 14h do dia 16 até as 14h do dia 18/12/2025"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar da 1ª e 2ª fases",
+            "data": "09/01/2026"
+          },
+          {
+            "etapa": "Interposição de recurso sobre o resultado da 2ª fase (avaliação curricular)",
+            "data": "10 e 11/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado final e convocação para matrícula",
+            "data": "30/01/2026"
+          },
+          {
+            "etapa": "Matrícula dos residentes (1ª chamada)",
+            "data": "10 e 11/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Acesso Direto",
+        "headers": [
+          "Programa",
+          "Vagas",
+          "Reserva Negro"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "03",
+            "01"
+          ],
+          [
+            "Cirurgia Geral",
+            "02",
+            "–"
+          ],
+          [
+            "Clínica Médica",
+            "02",
+            "–"
+          ],
+          [
+            "Medicina Intensiva",
+            "02",
+            "–"
+          ],
+          [
+            "Neurocirurgia",
+            "01",
+            "–"
+          ]
+        ],
+        "cols": 3
+      },
+      {
+        "titulo": "Pré-Requisito",
+        "headers": [
+          "Programa",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Cardiologia",
+            "02"
+          ],
+          [
+            "Ecocardiografia",
+            "01"
+          ],
+          [
+            "Neurorradiologia",
+            "01"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Cardiologia",
+            "data": "02"
+          },
+          {
+            "etapa": "Ecocardiografia",
+            "data": "01"
+          },
+          {
+            "etapa": "Neurorradiologia",
+            "data": "01"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4734",
+    "posted_at": "2025-10-24T13:30:09+00:00",
+    "captured_at": "2025-10-24T13:39:05.240384+00:00"
+  },
+  {
+    "slug": "hospital-do-rim-2026-edital-oferta-vaga-para-resid-ncia-m-dica-em-nefrologia",
+    "nome": "Hospital do Rim 2026: edital oferta vaga para Residência Médica em Nefrologia",
+    "display_title": "Hospital do Rim",
+    "instituicao": "HOSPITAL",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-do-rim-2026-edital-oferta-vaga-para-residencia-medica-em-nefrologia/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/edital-hospital-rim-residencia-medica-nefrologia.jpg",
+    "dados": [
+      {
+        "etapa": "Período para solicitação de inscrição",
+        "data": "05/11 a 05/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 350,00"
+      },
+      {
+        "etapa": "Período para pagamento da taxa de inscrição",
+        "data": "05 a 30/11/2025"
+      },
+      {
+        "etapa": "Divulgação do horário e local do exame (Cartão de Informação do Candidato)",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Aplicação do Exame Escrito",
+        "data": "20/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Gabarito Preliminar e do(s) Caderno(s) de Questões",
+        "data": "22/12/2025"
+      },
+      {
+        "etapa": "Período para recurso contra o Gabarito Preliminar",
+        "data": "29 a 31/12/2025"
+      },
+      {
+        "etapa": "Divulgação do edital de pareceres dos recursos deferidos, gabarito pós-recurso, folhas de resposta e resultado preliminar do exame",
+        "data": "02/01/2026"
+      },
+      {
+        "etapa": "Período para recurso contra o resultado do Exame Escrito – Preliminar",
+        "data": "03 a 15/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado do Exame Escrito – Pós-recurso e Gabarito Definitivo",
+        "data": "16/01/2026"
+      },
+      {
+        "etapa": "Prazo para envio via link da documentação para análise curricular",
+        "data": "19 a 20/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado preliminar da análise curricular",
+        "data": "22/01/2026"
+      },
+      {
+        "etapa": "Período para recurso contra o resultado da análise curricular",
+        "data": "23 a 25/01/2026"
+      },
+      {
+        "etapa": "Divulgação do resultado da análise curricular pós-recurso e Nota Final",
+        "data": "26/01/2026"
+      },
+      {
+        "etapa": "Prazo para envio da documentação para matrícula",
+        "data": "02 a 05/02/2026"
+      },
+      {
+        "etapa": "Início do programa",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital do Rim 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período para solicitação de inscrição",
+            "05/11 a 05/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 350,00"
+          ],
+          [
+            "Período para pagamento da taxa de inscrição",
+            "05 a 30/11/2025"
+          ],
+          [
+            "Divulgação do horário e local do exame (Cartão de Informação do Candidato)",
+            "12/12/2025"
+          ],
+          [
+            "Aplicação do Exame Escrito",
+            "20/12/2025"
+          ],
+          [
+            "Divulgação do Gabarito Preliminar e do(s) Caderno(s) de Questões",
+            "22/12/2025"
+          ],
+          [
+            "Período para recurso contra o Gabarito Preliminar",
+            "29 a 31/12/2025"
+          ],
+          [
+            "Divulgação do edital de pareceres dos recursos deferidos, gabarito pós-recurso, folhas de resposta e resultado preliminar do exame",
+            "02/01/2026"
+          ],
+          [
+            "Período para recurso contra o resultado do Exame Escrito – Preliminar",
+            "03 a 15/01/2026"
+          ],
+          [
+            "Divulgação do resultado do Exame Escrito – Pós-recurso e Gabarito Definitivo",
+            "16/01/2026"
+          ],
+          [
+            "Prazo para envio via link da documentação para análise curricular",
+            "19 a 20/01/2026"
+          ],
+          [
+            "Divulgação do resultado preliminar da análise curricular",
+            "22/01/2026"
+          ],
+          [
+            "Período para recurso contra o resultado da análise curricular",
+            "23 a 25/01/2026"
+          ],
+          [
+            "Divulgação do resultado da análise curricular pós-recurso e Nota Final",
+            "26/01/2026"
+          ],
+          [
+            "Prazo para envio da documentação para matrícula",
+            "02 a 05/02/2026"
+          ],
+          [
+            "Início do programa",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período para solicitação de inscrição",
+            "data": "05/11 a 05/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 350,00"
+          },
+          {
+            "etapa": "Período para pagamento da taxa de inscrição",
+            "data": "05 a 30/11/2025"
+          },
+          {
+            "etapa": "Divulgação do horário e local do exame (Cartão de Informação do Candidato)",
+            "data": "12/12/2025"
+          },
+          {
+            "etapa": "Aplicação do Exame Escrito",
+            "data": "20/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Gabarito Preliminar e do(s) Caderno(s) de Questões",
+            "data": "22/12/2025"
+          },
+          {
+            "etapa": "Período para recurso contra o Gabarito Preliminar",
+            "data": "29 a 31/12/2025"
+          },
+          {
+            "etapa": "Divulgação do edital de pareceres dos recursos deferidos, gabarito pós-recurso, folhas de resposta e resultado preliminar do exame",
+            "data": "02/01/2026"
+          },
+          {
+            "etapa": "Período para recurso contra o resultado do Exame Escrito – Preliminar",
+            "data": "03 a 15/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado do Exame Escrito – Pós-recurso e Gabarito Definitivo",
+            "data": "16/01/2026"
+          },
+          {
+            "etapa": "Prazo para envio via link da documentação para análise curricular",
+            "data": "19 a 20/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado preliminar da análise curricular",
+            "data": "22/01/2026"
+          },
+          {
+            "etapa": "Período para recurso contra o resultado da análise curricular",
+            "data": "23 a 25/01/2026"
+          },
+          {
+            "etapa": "Divulgação do resultado da análise curricular pós-recurso e Nota Final",
+            "data": "26/01/2026"
+          },
+          {
+            "etapa": "Prazo para envio da documentação para matrícula",
+            "data": "02 a 05/02/2026"
+          },
+          {
+            "etapa": "Início do programa",
+            "data": "01/03/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://hospitaldorimacre.com.br/edital/2025/10/21/edital-no-1-2025-exame-de-selecao-para-residencia-medica-em-nefrologia-2025-2026-do-hospital-do-rim-acre/",
+    "posted_at": "2025-10-24T12:17:29+00:00",
+    "captured_at": "2025-10-24T13:39:07.749040+00:00"
+  },
+  {
     "slug": "univag-divulga-edital-com-sete-vagas-para-resid-ncia-m-dica-com-in-cio-em-2026",
     "nome": "UNIVAG divulga edital com sete vagas para residência médica com início em 2026",
     "display_title": "Centro Universitário de Várzea Grande (UNIVAG)",
@@ -157,7 +619,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4727",
     "posted_at": "2025-10-23T15:52:00+00:00",
-    "captured_at": "2025-10-24T11:29:56.035727+00:00"
+    "captured_at": "2025-10-24T13:39:13.859876+00:00"
   },
   {
     "slug": "sms-ipu-est-com-seletivo-aberto-para-resid-ncia-m-dica-com-ingresso-em-2026",
@@ -265,7 +727,7 @@
     ],
     "link_banca": "https://www.ipua.sp.gov.br/residencia-medica",
     "posted_at": "2025-10-22T16:49:45+00:00",
-    "captured_at": "2025-10-24T11:43:55.115366+00:00"
+    "captured_at": "2025-10-24T13:39:26.145972+00:00"
   },
   {
     "slug": "uema-publica-edital-para-resid-ncia-m-dica-2026-com-quatro-vagas-de-acesso-diret",
@@ -401,7 +863,7 @@
     ],
     "link_banca": "https://sigconcursos.uema.br/eventoselecionado",
     "posted_at": "2025-10-21T22:45:30+00:00",
-    "captured_at": "2025-10-24T11:43:56.867868+00:00"
+    "captured_at": "2025-10-24T13:39:30.808574+00:00"
   },
   {
     "slug": "unimed-jo-o-pessoa-2026-edital-para-seletivo-de-resid-ncia-m-dica-divulgado",
@@ -537,7 +999,7 @@
     ],
     "link_banca": "https://www.unimedjp.com.br/residenciamedica/",
     "posted_at": "2025-10-21T22:26:09+00:00",
-    "captured_at": "2025-10-24T11:43:58.106303+00:00"
+    "captured_at": "2025-10-24T13:39:33.258149+00:00"
   },
   {
     "slug": "iscmsjrp-divulga-edital-para-resid-ncia-m-dica-2026",
