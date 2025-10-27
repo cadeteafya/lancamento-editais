@@ -1,5 +1,305 @@
 [
   {
+    "slug": "hospital-santa-casa-de-campo-mour-o-recebe-inscri-es-para-sele-o-de-resid-ncia-m",
+    "nome": "Hospital Santa Casa de Campo Mourão recebe inscrições para seleção de residência médica 2026",
+    "display_title": "Hospital Santa Casa de Campo Mourão (SCCM)",
+    "instituicao": "SCCM",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-santa-casa-de-campo-mourao-2026-confira-o-edital-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-48.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "14 (AD)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Objetiva + Entrevista e Análise Curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$500,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "15/10/2025 à 05/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "27/11/2025"
+      },
+      {
+        "etapa": "Gabarito",
+        "data": "28/11/2025"
+      },
+      {
+        "etapa": "Envio do currículo",
+        "data": "09/12/2025 a 12/12/2025"
+      },
+      {
+        "etapa": "Entrevista e Análise Curricular",
+        "data": "13/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "22/12/2025"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital SCCM 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "14 (AD)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Prova Objetiva + Entrevista e Análise Curricular"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$500,00"
+          ],
+          [
+            "Período de Inscrições",
+            "15/10/2025 à 05/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "27/11/2025"
+          ],
+          [
+            "Gabarito",
+            "28/11/2025"
+          ],
+          [
+            "Envio do currículo",
+            "09/12/2025 a 12/12/2025"
+          ],
+          [
+            "Entrevista e Análise Curricular",
+            "13/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "22/12/2025"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "14 (AD)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Prova Objetiva + Entrevista e Análise Curricular"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$500,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "15/10/2025 à 05/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "27/11/2025"
+          },
+          {
+            "etapa": "Gabarito",
+            "data": "28/11/2025"
+          },
+          {
+            "etapa": "Envio do currículo",
+            "data": "09/12/2025 a 12/12/2025"
+          },
+          {
+            "etapa": "Entrevista e Análise Curricular",
+            "data": "13/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "22/12/2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas SCCM 2026",
+        "headers": [
+          "PROGRAMAS",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "Ginecologia e Obstreticia",
+            "2"
+          ],
+          [
+            "Anestesiologia",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "2"
+          ],
+          [
+            "Cirurgia Geral",
+            "2"
+          ],
+          [
+            "Medicina Intensiva",
+            "3"
+          ],
+          [
+            "Pediatria",
+            "3"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Ginecologia e Obstreticia",
+            "data": "2"
+          },
+          {
+            "etapa": "Anestesiologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "2"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "3"
+          },
+          {
+            "etapa": "Pediatria",
+            "data": "3"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://santacasacm.com.br/residenciamedica/",
+    "posted_at": "2025-10-24T23:04:47+00:00",
+    "captured_at": "2025-10-27T06:56:41.214370+00:00"
+  },
+  {
+    "slug": "instituto-penido-burnier-2026-confira-o-edital-para-resid-ncia-m-dica-inscri-es-",
+    "nome": "Instituto Penido Burnier 2026: confira o edital para residência médica; inscrições estão abertas",
+    "display_title": "Instituto Penido Burnier (IPB)",
+    "instituicao": "IPB",
+    "link": "https://med.estrategia.com/portal/noticias/instituto-penido-burnier-2026-confira-o-edital-para-residencia-medica-inscricoes-estao-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-47.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "2 para Otorrinolaringologia"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Objetiva + Entrevista e Análise Curricular"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$750,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "22/10/2025 a 22/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "29/11/2025"
+      },
+      {
+        "etapa": "Entrevista e Análise Curricular",
+        "data": "29/11/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "até o dia 21/12/2025"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Instituto Penido Burnier 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "2 para Otorrinolaringologia"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Prova Objetiva + Entrevista e Análise Curricular"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$750,00"
+          ],
+          [
+            "Período de Inscrições",
+            "22/10/2025 a 22/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "29/11/2025"
+          ],
+          [
+            "Entrevista e Análise Curricular",
+            "29/11/2025"
+          ],
+          [
+            "Resultado Final",
+            "até o dia 21/12/2025"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "2 para Otorrinolaringologia"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Prova Objetiva + Entrevista e Análise Curricular"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$750,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "22/10/2025 a 22/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "29/11/2025"
+          },
+          {
+            "etapa": "Entrevista e Análise Curricular",
+            "data": "29/11/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "até o dia 21/12/2025"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.otorrinopenidoburnier.com.br/residenciamedica",
+    "posted_at": "2025-10-24T22:53:29+00:00",
+    "captured_at": "2025-10-27T06:56:42.374937+00:00"
+  },
+  {
     "slug": "cepoa-divulga-edital-de-resid-ncia-m-dica-2026-com-vaga-para-oftalmologia",
     "nome": "CEPOA divulga edital de Residência Médica 2026 com vaga para Oftalmologia",
     "display_title": "Centro de Estudos e Pesquisas Oculistas Associados (CEPOA)",
@@ -192,7 +492,7 @@
     ],
     "link_banca": "https://www.cepoa.com.br/residencia-mec-2026/",
     "posted_at": "2025-10-24T15:04:17+00:00",
-    "captured_at": "2025-10-24T17:48:37.413407+00:00"
+    "captured_at": "2025-10-27T06:56:46.420571+00:00"
   },
   {
     "slug": "hospital-santa-rosa-divulga-edital-de-resid-ncia-m-dica-2026",
@@ -435,7 +735,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4734",
     "posted_at": "2025-10-24T13:30:09+00:00",
-    "captured_at": "2025-10-24T17:48:39.231425+00:00"
+    "captured_at": "2025-10-27T06:56:48.155727+00:00"
   },
   {
     "slug": "hospital-do-rim-2026-edital-oferta-vaga-para-resid-ncia-m-dica-em-nefrologia",
@@ -654,7 +954,7 @@
     ],
     "link_banca": "https://hospitaldorimacre.com.br/edital/2025/10/21/edital-no-1-2025-exame-de-selecao-para-residencia-medica-em-nefrologia-2025-2026-do-hospital-do-rim-acre/",
     "posted_at": "2025-10-24T12:17:29+00:00",
-    "captured_at": "2025-10-24T17:48:40.485548+00:00"
+    "captured_at": "2025-10-27T06:56:49.339941+00:00"
   },
   {
     "slug": "univag-divulga-edital-com-sete-vagas-para-resid-ncia-m-dica-com-in-cio-em-2026",
@@ -814,7 +1114,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4727",
     "posted_at": "2025-10-23T15:52:00+00:00",
-    "captured_at": "2025-10-24T17:48:43.375709+00:00"
+    "captured_at": "2025-10-27T06:56:54.583235+00:00"
   },
   {
     "slug": "sms-ipu-est-com-seletivo-aberto-para-resid-ncia-m-dica-com-ingresso-em-2026",
