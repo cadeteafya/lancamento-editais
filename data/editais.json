@@ -1,5 +1,312 @@
 [
   {
+    "slug": "uscs-publica-edital-para-sele-o-da-resid-ncia-m-dica-2026",
+    "nome": "USCS publica edital para seleção da Residência Médica 2026",
+    "display_title": "Universidade Municipal de São Caetano do Sul (USCS)",
+    "instituicao": "USCS",
+    "link": "https://med.estrategia.com/portal/noticias/uscs-publica-edital-para-selecao-da-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Edital-USCS-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "10/11/2025 a 12/01/2026"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 490,00"
+      },
+      {
+        "etapa": "Período para envio de documento de comprovação de pontuação adicional (PROVAB/PRMFC) e documento de comprovação para atendimento especial",
+        "data": "10/11/2025 a 12/01/2026"
+      },
+      {
+        "etapa": "Período para solicitação da isenção da taxa de inscrição e envio da documentação de comprovação",
+        "data": "11/11/2025 (00:00 às 23:59)"
+      },
+      {
+        "etapa": "Último dia para pagamento da taxa de inscrição",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Realização da Prova Objetiva",
+        "data": "01/02/2026"
+      },
+      {
+        "etapa": "Publicação do gabarito preliminar da Prova Objetiva",
+        "data": "02/02/2026"
+      },
+      {
+        "etapa": "Período para interposição de recursos contra o gabarito preliminar",
+        "data": "02/02/2026"
+      },
+      {
+        "etapa": "Publicação do gabarito definitivo da Prova Objetiva / Divulgação do Resultado Preliminar",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Período para interposição de recursos contra o Resultado Preliminar",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Divulgação da Classificação Final",
+        "data": "06/02/2026 (a partir das 17h)"
+      },
+      {
+        "etapa": "Início do Programa de Residência",
+        "data": "01/03/2026"
+      },
+      {
+        "etapa": "Divulgação da 1ª chamada para matrícula (USCS / Município de Barueri / HFASP)",
+        "data": "06/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital USCS 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "10/11/2025 a 12/01/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 490,00"
+          ],
+          [
+            "Período para envio de documento de comprovação de pontuação adicional (PROVAB/PRMFC) e documento de comprovação para atendimento especial",
+            "10/11/2025 a 12/01/2026"
+          ],
+          [
+            "Período para solicitação da isenção da taxa de inscrição e envio da documentação de comprovação",
+            "11/11/2025 (00:00 às 23:59)"
+          ],
+          [
+            "Último dia para pagamento da taxa de inscrição",
+            "12/01/2026"
+          ],
+          [
+            "Realização da Prova Objetiva",
+            "01/02/2026"
+          ],
+          [
+            "Publicação do gabarito preliminar da Prova Objetiva",
+            "02/02/2026"
+          ],
+          [
+            "Período para interposição de recursos contra o gabarito preliminar",
+            "02/02/2026"
+          ],
+          [
+            "Publicação do gabarito definitivo da Prova Objetiva / Divulgação do Resultado Preliminar",
+            "05/02/2026"
+          ],
+          [
+            "Período para interposição de recursos contra o Resultado Preliminar",
+            "05/02/2026"
+          ],
+          [
+            "Divulgação da Classificação Final",
+            "06/02/2026 (a partir das 17h)"
+          ],
+          [
+            "Início do Programa de Residência",
+            "01/03/2026"
+          ],
+          [
+            "Divulgação da 1ª chamada para matrícula (USCS / Município de Barueri / HFASP)",
+            "06/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrições",
+            "data": "10/11/2025 a 12/01/2026"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 490,00"
+          },
+          {
+            "etapa": "Período para envio de documento de comprovação de pontuação adicional (PROVAB/PRMFC) e documento de comprovação para atendimento especial",
+            "data": "10/11/2025 a 12/01/2026"
+          },
+          {
+            "etapa": "Período para solicitação da isenção da taxa de inscrição e envio da documentação de comprovação",
+            "data": "11/11/2025 (00:00 às 23:59)"
+          },
+          {
+            "etapa": "Último dia para pagamento da taxa de inscrição",
+            "data": "12/01/2026"
+          },
+          {
+            "etapa": "Realização da Prova Objetiva",
+            "data": "01/02/2026"
+          },
+          {
+            "etapa": "Publicação do gabarito preliminar da Prova Objetiva",
+            "data": "02/02/2026"
+          },
+          {
+            "etapa": "Período para interposição de recursos contra o gabarito preliminar",
+            "data": "02/02/2026"
+          },
+          {
+            "etapa": "Publicação do gabarito definitivo da Prova Objetiva / Divulgação do Resultado Preliminar",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Período para interposição de recursos contra o Resultado Preliminar",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Divulgação da Classificação Final",
+            "data": "06/02/2026 (a partir das 17h)"
+          },
+          {
+            "etapa": "Início do Programa de Residência",
+            "data": "01/03/2026"
+          },
+          {
+            "etapa": "Divulgação da 1ª chamada para matrícula (USCS / Município de Barueri / HFASP)",
+            "data": "06/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Especialidades",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Pediatria – USCS",
+            "4"
+          ],
+          [
+            "Clínica Médica – USCS",
+            "3"
+          ],
+          [
+            "Psiquiatria – USCS",
+            "4"
+          ],
+          [
+            "Cirurgia Geral – USCS",
+            "2"
+          ],
+          [
+            "Ginecologia e Obstetrícia – USCS",
+            "3"
+          ],
+          [
+            "Medicina de Família e Comunidade – USCS",
+            "8"
+          ],
+          [
+            "Dermatologia – HFASP",
+            "2"
+          ],
+          [
+            "Clínica Médica – HFASP",
+            "2"
+          ],
+          [
+            "Medicina de Família e Comunidade – HFASP",
+            "4"
+          ],
+          [
+            "Psiquiatria – HFASP",
+            "2"
+          ],
+          [
+            "Pediatria – Município de Barueri",
+            "6"
+          ],
+          [
+            "Clínica Médica – Município de Barueri",
+            "6"
+          ],
+          [
+            "Cirurgia Geral – Município de Barueri",
+            "6"
+          ],
+          [
+            "Ginecologia e Obstetrícia – Município de Barueri",
+            "6"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Pediatria – USCS",
+            "data": "4"
+          },
+          {
+            "etapa": "Clínica Médica – USCS",
+            "data": "3"
+          },
+          {
+            "etapa": "Psiquiatria – USCS",
+            "data": "4"
+          },
+          {
+            "etapa": "Cirurgia Geral – USCS",
+            "data": "2"
+          },
+          {
+            "etapa": "Ginecologia e Obstetrícia – USCS",
+            "data": "3"
+          },
+          {
+            "etapa": "Medicina de Família e Comunidade – USCS",
+            "data": "8"
+          },
+          {
+            "etapa": "Dermatologia – HFASP",
+            "data": "2"
+          },
+          {
+            "etapa": "Clínica Médica – HFASP",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina de Família e Comunidade – HFASP",
+            "data": "4"
+          },
+          {
+            "etapa": "Psiquiatria – HFASP",
+            "data": "2"
+          },
+          {
+            "etapa": "Pediatria – Município de Barueri",
+            "data": "6"
+          },
+          {
+            "etapa": "Clínica Médica – Município de Barueri",
+            "data": "6"
+          },
+          {
+            "etapa": "Cirurgia Geral – Município de Barueri",
+            "data": "6"
+          },
+          {
+            "etapa": "Ginecologia e Obstetrícia – Município de Barueri",
+            "data": "6"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://fauscs.selecao.net.br/informacoes/29/",
+    "posted_at": "2025-10-27T14:11:22+00:00",
+    "captured_at": "2025-10-27T14:41:26.993949+00:00"
+  },
+  {
     "slug": "hospital-santa-casa-de-campo-mour-o-recebe-inscri-es-para-sele-o-de-resid-ncia-m",
     "nome": "Hospital Santa Casa de Campo Mourão recebe inscrições para seleção de residência médica 2026",
     "display_title": "Hospital Santa Casa de Campo Mourão (SCCM)",
@@ -189,7 +496,7 @@
     ],
     "link_banca": "https://santacasacm.com.br/residenciamedica/",
     "posted_at": "2025-10-24T23:04:47+00:00",
-    "captured_at": "2025-10-27T13:43:11.904445+00:00"
+    "captured_at": "2025-10-27T14:41:28.819264+00:00"
   },
   {
     "slug": "instituto-penido-burnier-2026-confira-o-edital-para-resid-ncia-m-dica-inscri-es-",
@@ -297,7 +604,7 @@
     ],
     "link_banca": "https://www.otorrinopenidoburnier.com.br/residenciamedica",
     "posted_at": "2025-10-24T22:53:29+00:00",
-    "captured_at": "2025-10-27T13:43:13.078694+00:00"
+    "captured_at": "2025-10-27T14:41:30.074571+00:00"
   },
   {
     "slug": "cepoa-divulga-edital-de-resid-ncia-m-dica-2026-com-vaga-para-oftalmologia",
@@ -492,7 +799,7 @@
     ],
     "link_banca": "https://www.cepoa.com.br/residencia-mec-2026/",
     "posted_at": "2025-10-24T15:04:17+00:00",
-    "captured_at": "2025-10-27T13:43:18.721078+00:00"
+    "captured_at": "2025-10-27T14:41:35.691401+00:00"
   },
   {
     "slug": "hospital-santa-rosa-divulga-edital-de-resid-ncia-m-dica-2026",
@@ -735,7 +1042,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4734",
     "posted_at": "2025-10-24T13:30:09+00:00",
-    "captured_at": "2025-10-27T13:43:20.537810+00:00"
+    "captured_at": "2025-10-27T14:41:37.513008+00:00"
   },
   {
     "slug": "hospital-do-rim-2026-edital-oferta-vaga-para-resid-ncia-m-dica-em-nefrologia",
@@ -954,7 +1261,7 @@
     ],
     "link_banca": "https://hospitaldorimacre.com.br/edital/2025/10/21/edital-no-1-2025-exame-de-selecao-para-residencia-medica-em-nefrologia-2025-2026-do-hospital-do-rim-acre/",
     "posted_at": "2025-10-24T12:17:29+00:00",
-    "captured_at": "2025-10-27T13:43:21.763126+00:00"
+    "captured_at": "2025-10-27T14:41:38.707411+00:00"
   },
   {
     "slug": "univag-divulga-edital-com-sete-vagas-para-resid-ncia-m-dica-com-in-cio-em-2026",
