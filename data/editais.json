@@ -1,5 +1,149 @@
 [
   {
+    "slug": "hospital-cemil-divulga-editais-para-resid-ncia-m-dica-com-ingresso-em-2026",
+    "nome": "Hospital CEMIL divulga editais para residência médica com ingresso em 2026",
+    "display_title": "sete vagas para programas de Acesso Direto",
+    "instituicao": "HOSPITAL",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-cemil-divulga-editais-para-residencia-medica-com-ingresso-em-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-49.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições",
+        "data": "04/11 a 04/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$500,00"
+      },
+      {
+        "etapa": "Prova objetiva",
+        "data": "13/12/2025 – 8h"
+      },
+      {
+        "etapa": "Prova prática e análise de currículo",
+        "data": "13/12/2025 – 13h30"
+      },
+      {
+        "etapa": "Análise de currículo (ortopedia)",
+        "data": "17/12/2025 – 16h30"
+      },
+      {
+        "etapa": "Divulgação do gabarito prova objetiva",
+        "data": "13/12/2025"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "19/12/2025"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital CEMIL 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Inscrições",
+            "04/11 a 04/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$500,00"
+          ],
+          [
+            "Prova objetiva",
+            "13/12/2025 – 8h"
+          ],
+          [
+            "Prova prática e análise de currículo",
+            "13/12/2025 – 13h30"
+          ],
+          [
+            "Análise de currículo (ortopedia)",
+            "17/12/2025 – 16h30"
+          ],
+          [
+            "Divulgação do gabarito prova objetiva",
+            "13/12/2025"
+          ],
+          [
+            "Resultado final",
+            "19/12/2025"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrições",
+            "data": "04/11 a 04/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$500,00"
+          },
+          {
+            "etapa": "Prova objetiva",
+            "data": "13/12/2025 – 8h"
+          },
+          {
+            "etapa": "Prova prática e análise de currículo",
+            "data": "13/12/2025 – 13h30"
+          },
+          {
+            "etapa": "Análise de currículo (ortopedia)",
+            "data": "17/12/2025 – 16h30"
+          },
+          {
+            "etapa": "Divulgação do gabarito prova objetiva",
+            "data": "13/12/2025"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "19/12/2025"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Especialidade",
+          "Vagas Oferecidas"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "3"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Anestesiologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "3"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://hospitalcemil.com.br/ensino-e-pesquisa/",
+    "posted_at": "2025-10-27T19:46:49+00:00",
+    "captured_at": "2025-10-28T06:56:43.463121+00:00"
+  },
+  {
     "slug": "uscs-publica-edital-para-sele-o-da-resid-ncia-m-dica-2026",
     "nome": "USCS publica edital para seleção da Residência Médica 2026",
     "display_title": "Universidade Municipal de São Caetano do Sul (USCS)",
@@ -304,7 +448,7 @@
     ],
     "link_banca": "https://fauscs.selecao.net.br/informacoes/29/",
     "posted_at": "2025-10-27T14:11:22+00:00",
-    "captured_at": "2025-10-27T17:47:03.729741+00:00"
+    "captured_at": "2025-10-28T06:56:44.703765+00:00"
   },
   {
     "slug": "hospital-santa-casa-de-campo-mour-o-recebe-inscri-es-para-sele-o-de-resid-ncia-m",
@@ -496,7 +640,7 @@
     ],
     "link_banca": "https://santacasacm.com.br/residenciamedica/",
     "posted_at": "2025-10-24T23:04:47+00:00",
-    "captured_at": "2025-10-27T17:47:05.533187+00:00"
+    "captured_at": "2025-10-28T06:56:48.328664+00:00"
   },
   {
     "slug": "instituto-penido-burnier-2026-confira-o-edital-para-resid-ncia-m-dica-inscri-es-",
@@ -604,7 +748,7 @@
     ],
     "link_banca": "https://www.otorrinopenidoburnier.com.br/residenciamedica",
     "posted_at": "2025-10-24T22:53:29+00:00",
-    "captured_at": "2025-10-27T17:47:06.788729+00:00"
+    "captured_at": "2025-10-28T06:56:51.067577+00:00"
   },
   {
     "slug": "cepoa-divulga-edital-de-resid-ncia-m-dica-2026-com-vaga-para-oftalmologia",
@@ -799,7 +943,7 @@
     ],
     "link_banca": "https://www.cepoa.com.br/residencia-mec-2026/",
     "posted_at": "2025-10-24T15:04:17+00:00",
-    "captured_at": "2025-10-27T17:47:11.033599+00:00"
+    "captured_at": "2025-10-28T06:57:04.918250+00:00"
   },
   {
     "slug": "hospital-santa-rosa-divulga-edital-de-resid-ncia-m-dica-2026",
@@ -1042,7 +1186,7 @@
     ],
     "link_banca": "https://sis.consesp.com.br/site/index.php?pg=concursos/info&codigo=4734",
     "posted_at": "2025-10-24T13:30:09+00:00",
-    "captured_at": "2025-10-27T17:47:12.911282+00:00"
+    "captured_at": "2025-10-28T06:57:06.790817+00:00"
   },
   {
     "slug": "hospital-do-rim-2026-edital-oferta-vaga-para-resid-ncia-m-dica-em-nefrologia",
@@ -1261,7 +1405,7 @@
     ],
     "link_banca": "https://hospitaldorimacre.com.br/edital/2025/10/21/edital-no-1-2025-exame-de-selecao-para-residencia-medica-em-nefrologia-2025-2026-do-hospital-do-rim-acre/",
     "posted_at": "2025-10-24T12:17:29+00:00",
-    "captured_at": "2025-10-27T17:47:14.172930+00:00"
+    "captured_at": "2025-10-28T06:57:09.448047+00:00"
   },
   {
     "slug": "univag-divulga-edital-com-sete-vagas-para-resid-ncia-m-dica-com-in-cio-em-2026",
