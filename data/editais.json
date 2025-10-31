@@ -1,5 +1,336 @@
 [
   {
+    "slug": "unipampa-est-com-inscri-es-abertas-para-sele-o-de-resid-ncia-m-dica-confira-o-ed",
+    "nome": "UNIPAMPA está com inscrições abertas para seleção de residência médica; confira o edital 2026",
+    "display_title": "Universidade Federal do Pampa (UNIPAMPA)",
+    "instituicao": "UNIPAMPA",
+    "link": "https://med.estrategia.com/portal/noticias/unipampa-2026-confira-o-edital-com-vagas-de-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Capas-Portal-Estrategia-MED.psd-51.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "4 (AD)"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova objetiva + análise do currículo (com entrevista para o programa de Cirurgia Geral)"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "Não há"
+      },
+      {
+        "etapa": "Inscrição",
+        "data": "21/10 a 21/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "08/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Gabarito da Prova",
+        "data": "Até 09/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "Até 16/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital UNIPAMPA 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "4 (AD)"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova objetiva + análise do currículo (com entrevista para o programa de Cirurgia Geral)"
+          ],
+          [
+            "Taxa de inscrição",
+            "Não há"
+          ],
+          [
+            "Inscrição",
+            "21/10 a 21/11/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "08/12/2025"
+          ],
+          [
+            "Divulgação do Gabarito da Prova",
+            "Até 09/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "Até 16/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "4 (AD)"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova objetiva + análise do currículo (com entrevista para o programa de Cirurgia Geral)"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "Não há"
+          },
+          {
+            "etapa": "Inscrição",
+            "data": "21/10 a 21/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "08/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Gabarito da Prova",
+            "data": "Até 09/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "Até 16/01/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas UNIPAMPA Residência Médica 2026",
+        "headers": [
+          "Especialidade",
+          "Vagas Oferecidas"
+        ],
+        "rows": [
+          [
+            "Clínica Médica",
+            "2"
+          ],
+          [
+            "Medicina de Família e Comunidade",
+            "1"
+          ],
+          [
+            "Cirurgia Geral",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Clínica Médica",
+            "data": "2"
+          },
+          {
+            "etapa": "Medicina de Família e Comunidade",
+            "data": "1"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://guri.unipampa.edu.br/psa/processos/visualizarProcessoSeletivo/18698",
+    "posted_at": "2025-10-30T19:41:00+00:00",
+    "captured_at": "2025-10-31T06:55:23.602586+00:00"
+  },
+  {
+    "slug": "uniju-fumssar-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dic",
+    "nome": "UNIJUÍ/FUMSSAR 2026: confira o edital para o processo seletivo de Residência Médica",
+    "display_title": "Fundação Municipal de Saúde de Santa Rosa (FUMSSAR)",
+    "instituicao": "FUMSSAR",
+    "link": "https://med.estrategia.com/portal/noticias/unijui-fumssar-2026-confira-o-edital-para-o-processo-seletivo-de-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Edital-unijui-fumssar-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "21/10/2025 a 01/02/2026"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 200,00"
+      },
+      {
+        "etapa": "Último dia para pagamento da inscrição",
+        "data": "02/02/2026"
+      },
+      {
+        "etapa": "Divulgação da homologação das inscrições",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Realização da prova, entrega dos títulos para análise e entrega da carta de interesse para a vaga e divulgação do gabarito da prova",
+        "data": "07/02/2026"
+      },
+      {
+        "etapa": "Resultado da análise dos títulos (currículo)",
+        "data": "10/02/2026"
+      },
+      {
+        "etapa": "Recurso da prova e recurso da análise dos títulos (currículo)",
+        "data": "11/02/2026"
+      },
+      {
+        "etapa": "Resposta ao recurso da prova e resultado final da prova",
+        "data": "12/02/2026"
+      },
+      {
+        "etapa": "Resposta ao recurso da análise dos títulos (currículo), resultado final da análise dos títulos (currículo) e resultado final do processo seletivo",
+        "data": "13/02/2026"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "23/02/2026"
+      },
+      {
+        "etapa": "Início do ano letivo no programa",
+        "data": "02/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital UNIJUÍ/FUMSSAR 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "21/10/2025 a 01/02/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 200,00"
+          ],
+          [
+            "Último dia para pagamento da inscrição",
+            "02/02/2026"
+          ],
+          [
+            "Divulgação da homologação das inscrições",
+            "05/02/2026"
+          ],
+          [
+            "Realização da prova, entrega dos títulos para análise e entrega da carta de interesse para a vaga e divulgação do gabarito da prova",
+            "07/02/2026"
+          ],
+          [
+            "Resultado da análise dos títulos (currículo)",
+            "10/02/2026"
+          ],
+          [
+            "Recurso da prova e recurso da análise dos títulos (currículo)",
+            "11/02/2026"
+          ],
+          [
+            "Resposta ao recurso da prova e resultado final da prova",
+            "12/02/2026"
+          ],
+          [
+            "Resposta ao recurso da análise dos títulos (currículo), resultado final da análise dos títulos (currículo) e resultado final do processo seletivo",
+            "13/02/2026"
+          ],
+          [
+            "Matrículas",
+            "23/02/2026"
+          ],
+          [
+            "Início do ano letivo no programa",
+            "02/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrições",
+            "data": "21/10/2025 a 01/02/2026"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 200,00"
+          },
+          {
+            "etapa": "Último dia para pagamento da inscrição",
+            "data": "02/02/2026"
+          },
+          {
+            "etapa": "Divulgação da homologação das inscrições",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Realização da prova, entrega dos títulos para análise e entrega da carta de interesse para a vaga e divulgação do gabarito da prova",
+            "data": "07/02/2026"
+          },
+          {
+            "etapa": "Resultado da análise dos títulos (currículo)",
+            "data": "10/02/2026"
+          },
+          {
+            "etapa": "Recurso da prova e recurso da análise dos títulos (currículo)",
+            "data": "11/02/2026"
+          },
+          {
+            "etapa": "Resposta ao recurso da prova e resultado final da prova",
+            "data": "12/02/2026"
+          },
+          {
+            "etapa": "Resposta ao recurso da análise dos títulos (currículo), resultado final da análise dos títulos (currículo) e resultado final do processo seletivo",
+            "data": "13/02/2026"
+          },
+          {
+            "etapa": "Matrículas",
+            "data": "23/02/2026"
+          },
+          {
+            "etapa": "Início do ano letivo no programa",
+            "data": "02/03/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Programas",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Medicina de Família e Comunidade (Santa Rosa/RS)",
+            "6"
+          ],
+          [
+            "Medicina de Família e Comunidade (Ijuí/RS)",
+            "6"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Medicina de Família e Comunidade (Santa Rosa/RS)",
+            "data": "6"
+          },
+          {
+            "etapa": "Medicina de Família e Comunidade (Ijuí/RS)",
+            "data": "6"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.unijui.edu.br/estude/educacao-continuada/especializacao/programa-de-residncia-em-medicina-da-famlia-e-comunidade-484",
+    "posted_at": "2025-10-30T18:57:30+00:00",
+    "captured_at": "2025-10-31T06:55:25.867703+00:00"
+  },
+  {
     "slug": "honorp-2026-confira-o-edital-com-vagas-de-resid-ncia-m-dica-em-oftalmologia",
     "nome": "HONORP 2026: confira o edital com vagas de residência médica em Oftalmologia",
     "display_title": "Hospital de Olhos Noroeste do Paraná (HONORP)",
@@ -105,7 +436,7 @@
     ],
     "link_banca": "https://honorp.com.br/",
     "posted_at": "2025-10-29T21:23:51+00:00",
-    "captured_at": "2025-10-30T17:49:10.155686+00:00"
+    "captured_at": "2025-10-31T06:55:43.198726+00:00"
   },
   {
     "slug": "chjc-2026-seletivo-de-resid-ncia-m-dica-oferta-2-vagas-para-cl-nica-m-dica",
@@ -288,7 +619,7 @@
     ],
     "link_banca": "https://www.chjc.com.br/?pages=editais",
     "posted_at": "2025-10-29T18:33:57+00:00",
-    "captured_at": "2025-10-30T17:49:14.197439+00:00"
+    "captured_at": "2025-10-31T06:55:49.243181+00:00"
   },
   {
     "slug": "hospital-cemil-divulga-editais-para-resid-ncia-m-dica-com-ingresso-em-2026",
