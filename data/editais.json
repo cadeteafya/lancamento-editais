@@ -1,5 +1,212 @@
 [
   {
+    "slug": "pax-cl-nica-psiqui-trica-divulga-edital-de-resid-ncia-m-dica-2026",
+    "nome": "PAX Clínica Psiquiátrica divulga edital de Residência Médica 2026",
+    "display_title": "PAX Clínica Psiquiátrica",
+    "instituicao": "PSIQUIATRIA",
+    "link": "https://med.estrategia.com/portal/noticias/pax-clinica-psiquiatrica-divulga-edital-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/10/Edital-pax-clinica-psiquiatrica-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições",
+        "data": "17 a 24/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$700,00"
+      },
+      {
+        "etapa": "Pagamento da inscrição em forma de depósitos bancários ou transferência",
+        "data": "25/11/2025"
+      },
+      {
+        "etapa": "Entrega da documentação",
+        "data": "28/11/2025"
+      },
+      {
+        "etapa": "Confirmação de Inscrição",
+        "data": "08/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "09/01/2026"
+      },
+      {
+        "etapa": "Divulgação do gabarito",
+        "data": "09/01/2026 (após as 14 horas)"
+      },
+      {
+        "etapa": "Interposição de recurso ao gabarito",
+        "data": "12/01 a 13/01/2026 (09h às 11h e das 13h às 16h)"
+      },
+      {
+        "etapa": "Divulgação do resultado da primeira fase",
+        "data": "20/01/2026"
+      },
+      {
+        "etapa": "Entrega do curriculum vitae",
+        "data": "21/01/2026 (09h às 11h e das 14h às 16h)"
+      },
+      {
+        "etapa": "Resultado do curriculum vitae",
+        "data": "28/01/2026"
+      },
+      {
+        "etapa": "Interposição de recurso à análise curricular",
+        "data": "29/01 a 30/01/2026 (09h às 11h e das 14h às 16h)"
+      },
+      {
+        "etapa": "Divulgação do resultado final do Concurso",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "10/02/2026"
+      },
+      {
+        "etapa": "Início do Programa de Residência Médica",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Pax Clínica Psiquiátrica 2026",
+        "headers": [
+          "Evento",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrições",
+            "17 a 24/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$700,00"
+          ],
+          [
+            "Pagamento da inscrição em forma de depósitos bancários ou transferência",
+            "25/11/2025"
+          ],
+          [
+            "Entrega da documentação",
+            "28/11/2025"
+          ],
+          [
+            "Confirmação de Inscrição",
+            "08/12/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "09/01/2026"
+          ],
+          [
+            "Divulgação do gabarito",
+            "09/01/2026 (após as 14 horas)"
+          ],
+          [
+            "Interposição de recurso ao gabarito",
+            "12/01 a 13/01/2026 (09h às 11h e das 13h às 16h)"
+          ],
+          [
+            "Divulgação do resultado da primeira fase",
+            "20/01/2026"
+          ],
+          [
+            "Entrega do curriculum vitae",
+            "21/01/2026 (09h às 11h e das 14h às 16h)"
+          ],
+          [
+            "Resultado do curriculum vitae",
+            "28/01/2026"
+          ],
+          [
+            "Interposição de recurso à análise curricular",
+            "29/01 a 30/01/2026 (09h às 11h e das 14h às 16h)"
+          ],
+          [
+            "Divulgação do resultado final do Concurso",
+            "05/02/2026"
+          ],
+          [
+            "Matrículas",
+            "10/02/2026"
+          ],
+          [
+            "Início do Programa de Residência Médica",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrições",
+            "data": "17 a 24/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$700,00"
+          },
+          {
+            "etapa": "Pagamento da inscrição em forma de depósitos bancários ou transferência",
+            "data": "25/11/2025"
+          },
+          {
+            "etapa": "Entrega da documentação",
+            "data": "28/11/2025"
+          },
+          {
+            "etapa": "Confirmação de Inscrição",
+            "data": "08/12/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "09/01/2026"
+          },
+          {
+            "etapa": "Divulgação do gabarito",
+            "data": "09/01/2026 (após as 14 horas)"
+          },
+          {
+            "etapa": "Interposição de recurso ao gabarito",
+            "data": "12/01 a 13/01/2026 (09h às 11h e das 13h às 16h)"
+          },
+          {
+            "etapa": "Divulgação do resultado da primeira fase",
+            "data": "20/01/2026"
+          },
+          {
+            "etapa": "Entrega do curriculum vitae",
+            "data": "21/01/2026 (09h às 11h e das 14h às 16h)"
+          },
+          {
+            "etapa": "Resultado do curriculum vitae",
+            "data": "28/01/2026"
+          },
+          {
+            "etapa": "Interposição de recurso à análise curricular",
+            "data": "29/01 a 30/01/2026 (09h às 11h e das 14h às 16h)"
+          },
+          {
+            "etapa": "Divulgação do resultado final do Concurso",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Matrículas",
+            "data": "10/02/2026"
+          },
+          {
+            "etapa": "Início do Programa de Residência Médica",
+            "data": "01/03/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://site.paxclinica.com.br/residencia-medica/",
+    "posted_at": "2025-10-31T15:45:54+00:00",
+    "captured_at": "2025-10-31T15:53:30.579900+00:00"
+  },
+  {
     "slug": "unipampa-est-com-inscri-es-abertas-para-sele-o-de-resid-ncia-m-dica-confira-o-ed",
     "nome": "UNIPAMPA está com inscrições abertas para seleção de residência médica; confira o edital 2026",
     "display_title": "Universidade Federal do Pampa (UNIPAMPA)",
@@ -141,7 +348,7 @@
     ],
     "link_banca": "https://guri.unipampa.edu.br/psa/processos/visualizarProcessoSeletivo/18698",
     "posted_at": "2025-10-30T19:41:00+00:00",
-    "captured_at": "2025-10-31T15:41:53.144801+00:00"
+    "captured_at": "2025-10-31T15:53:34.200248+00:00"
   },
   {
     "slug": "uniju-fumssar-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dic",
@@ -328,7 +535,7 @@
     ],
     "link_banca": "https://www.unijui.edu.br/estude/educacao-continuada/especializacao/programa-de-residncia-em-medicina-da-famlia-e-comunidade-484",
     "posted_at": "2025-10-30T18:57:30+00:00",
-    "captured_at": "2025-10-31T15:41:54.900137+00:00"
+    "captured_at": "2025-10-31T15:53:36.021430+00:00"
   },
   {
     "slug": "honorp-2026-confira-o-edital-com-vagas-de-resid-ncia-m-dica-em-oftalmologia",
@@ -436,7 +643,7 @@
     ],
     "link_banca": "https://honorp.com.br/",
     "posted_at": "2025-10-29T21:23:51+00:00",
-    "captured_at": "2025-10-31T15:41:59.138942+00:00"
+    "captured_at": "2025-10-31T15:53:40.203663+00:00"
   },
   {
     "slug": "chjc-2026-seletivo-de-resid-ncia-m-dica-oferta-2-vagas-para-cl-nica-m-dica",
