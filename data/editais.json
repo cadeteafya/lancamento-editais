@@ -1,5 +1,113 @@
 [
   {
+    "slug": "hospital-dilson-godinho-2026-confira-o-edital-do-seletivo-para-resid-ncia-m-dica",
+    "nome": "Hospital Dilson Godinho 2026: confira o edital do seletivo para residência médica",
+    "display_title": "Hospital Dilson Godinho (HDG)",
+    "instituicao": "HDG",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-dilson-godinho-2026-confira-o-edital-do-seletivo-para-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Capas-Portal-Estrategia-MED.psd-52.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "2 (AD)"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova objetiva + Análise de currículo"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 350,00"
+      },
+      {
+        "etapa": "Inscrição",
+        "data": "7/11/2025 a 19/11/2025"
+      },
+      {
+        "etapa": "Prova Objetiva e entrega de documentos do currículo",
+        "data": "13/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Gabarito da Prova",
+        "data": "15/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "09/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital Dilson Godinho 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "2 (AD)"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova objetiva + Análise de currículo"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 350,00"
+          ],
+          [
+            "Inscrição",
+            "7/11/2025 a 19/11/2025"
+          ],
+          [
+            "Prova Objetiva e entrega de documentos do currículo",
+            "13/12/2025"
+          ],
+          [
+            "Divulgação do Gabarito da Prova",
+            "15/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "09/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "2 (AD)"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova objetiva + Análise de currículo"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 350,00"
+          },
+          {
+            "etapa": "Inscrição",
+            "data": "7/11/2025 a 19/11/2025"
+          },
+          {
+            "etapa": "Prova Objetiva e entrega de documentos do currículo",
+            "data": "13/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Gabarito da Prova",
+            "data": "15/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "09/02/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.hospitaldilsongodinho.org.br/page/editais",
+    "posted_at": "2025-11-03T16:30:06+00:00",
+    "captured_at": "2025-11-03T16:49:00.695012+00:00"
+  },
+  {
     "slug": "pax-cl-nica-psiqui-trica-divulga-edital-de-resid-ncia-m-dica-2026",
     "nome": "PAX Clínica Psiquiátrica divulga edital de Residência Médica 2026",
     "display_title": "PAX Clínica Psiquiátrica",
@@ -204,7 +312,7 @@
     ],
     "link_banca": "https://site.paxclinica.com.br/residencia-medica/",
     "posted_at": "2025-10-31T15:45:54+00:00",
-    "captured_at": "2025-11-03T15:52:13.902230+00:00"
+    "captured_at": "2025-11-03T16:49:11.010636+00:00"
   },
   {
     "slug": "unipampa-est-com-inscri-es-abertas-para-sele-o-de-resid-ncia-m-dica-confira-o-ed",
@@ -348,7 +456,7 @@
     ],
     "link_banca": "https://guri.unipampa.edu.br/psa/processos/visualizarProcessoSeletivo/18698",
     "posted_at": "2025-10-30T19:41:00+00:00",
-    "captured_at": "2025-11-03T15:52:17.646807+00:00"
+    "captured_at": "2025-11-03T16:49:21.369507+00:00"
   },
   {
     "slug": "uniju-fumssar-2026-confira-o-edital-para-o-processo-seletivo-de-resid-ncia-m-dic",
@@ -535,7 +643,7 @@
     ],
     "link_banca": "https://www.unijui.edu.br/estude/educacao-continuada/especializacao/programa-de-residncia-em-medicina-da-famlia-e-comunidade-484",
     "posted_at": "2025-10-30T18:57:30+00:00",
-    "captured_at": "2025-11-03T15:52:19.563247+00:00"
+    "captured_at": "2025-11-03T16:49:24.649137+00:00"
   },
   {
     "slug": "honorp-2026-confira-o-edital-com-vagas-de-resid-ncia-m-dica-em-oftalmologia",
