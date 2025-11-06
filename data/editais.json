@@ -1,5 +1,423 @@
 [
   {
+    "slug": "emescam-divulga-editais-para-o-processo-seletivo-de-resid-ncia-m-dica-2026",
+    "nome": "EMESCAM divulga editais para o processo seletivo de residência médica 2026",
+    "display_title": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória (EMESCAM)",
+    "instituicao": "EMESCAM",
+    "link": "https://med.estrategia.com/portal/noticias/emescam-divulga-editais-para-o-processo-seletivo-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-emescam-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições e entrega do currículo",
+        "data": "24/10/2025 a 28/11/2025"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "1ª Fase: Prova Teórica + 2ª Fase: Prova Prática e Análise Curricular"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 650,00"
+      },
+      {
+        "etapa": "Pagamento da inscrição",
+        "data": "até 01/12/2025"
+      },
+      {
+        "etapa": "Prova teórica",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Divulgação do gabarito preliminar",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Resultado 1ª Etapa",
+        "data": "10/12/2025"
+      },
+      {
+        "etapa": "Prova prática/currículo",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "19/12/2025"
+      },
+      {
+        "etapa": "Matrícula (acesso direto)",
+        "data": "02/02/2026 a 06/02/2026"
+      },
+      {
+        "etapa": "Matrícula (pré-requisito)",
+        "data": "19/01/2026 a 23/01/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital EMESCAM 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrições e entrega do currículo",
+            "24/10/2025 a 28/11/2025"
+          ],
+          [
+            "Composição do processo seletivo",
+            "1ª Fase: Prova Teórica + 2ª Fase: Prova Prática e Análise Curricular"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 650,00"
+          ],
+          [
+            "Pagamento da inscrição",
+            "até 01/12/2025"
+          ],
+          [
+            "Prova teórica",
+            "07/12/2025"
+          ],
+          [
+            "Divulgação do gabarito preliminar",
+            "07/12/2025"
+          ],
+          [
+            "Resultado 1ª Etapa",
+            "10/12/2025"
+          ],
+          [
+            "Prova prática/currículo",
+            "12/12/2025"
+          ],
+          [
+            "Resultado final",
+            "19/12/2025"
+          ],
+          [
+            "Matrícula (acesso direto)",
+            "02/02/2026 a 06/02/2026"
+          ],
+          [
+            "Matrícula (pré-requisito)",
+            "19/01/2026 a 23/01/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrições e entrega do currículo",
+            "data": "24/10/2025 a 28/11/2025"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "1ª Fase: Prova Teórica + 2ª Fase: Prova Prática e Análise Curricular"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 650,00"
+          },
+          {
+            "etapa": "Pagamento da inscrição",
+            "data": "até 01/12/2025"
+          },
+          {
+            "etapa": "Prova teórica",
+            "data": "07/12/2025"
+          },
+          {
+            "etapa": "Divulgação do gabarito preliminar",
+            "data": "07/12/2025"
+          },
+          {
+            "etapa": "Resultado 1ª Etapa",
+            "data": "10/12/2025"
+          },
+          {
+            "etapa": "Prova prática/currículo",
+            "data": "12/12/2025"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "19/12/2025"
+          },
+          {
+            "etapa": "Matrícula (acesso direto)",
+            "data": "02/02/2026 a 06/02/2026"
+          },
+          {
+            "etapa": "Matrícula (pré-requisito)",
+            "data": "19/01/2026 a 23/01/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Acesso Direto",
+        "headers": [
+          "Programa",
+          "Vagas",
+          "Instituição"
+        ],
+        "rows": [
+          [
+            "Anestesiologia",
+            "02",
+            "HSCMV"
+          ],
+          [
+            "Cirurgia Geral",
+            "06",
+            "HSCMV"
+          ],
+          [
+            "Cirurgia Geral",
+            "02",
+            "HSCMCI"
+          ],
+          [
+            "Clínica Médica",
+            "08",
+            "HSCMV"
+          ],
+          [
+            "Clínica Médica",
+            "07",
+            "HSCMCI"
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "10",
+            "HSCMV"
+          ],
+          [
+            "Dermatologia",
+            "02",
+            "HSCMV"
+          ],
+          [
+            "Oftalmologia",
+            "03",
+            "HSCMV"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "03",
+            "HSCMV"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "02",
+            "CMHVV"
+          ],
+          [
+            "Medicina Intensiva",
+            "02",
+            "HSCMV"
+          ],
+          [
+            "Medicina Intensiva",
+            "02",
+            "HSCMCI"
+          ]
+        ],
+        "cols": 3
+      },
+      {
+        "titulo": "Pré-Requisito",
+        "headers": [
+          "Programa",
+          "Vagas",
+          "Instituição"
+        ],
+        "rows": [
+          [
+            "Cirurgia Torácica",
+            "01",
+            "HSCMV"
+          ],
+          [
+            "Neonatologia",
+            "05",
+            "HSCMV/CMHVV"
+          ],
+          [
+            "Cardiologia",
+            "02",
+            "HSCMV"
+          ],
+          [
+            "Geriatria",
+            "02",
+            "HSCMV"
+          ],
+          [
+            "Oncologia Clínica",
+            "02",
+            "HSCMV"
+          ]
+        ],
+        "cols": 3
+      }
+    ],
+    "link_banca": "https://emescam.br/candidato/residencia-medica/",
+    "posted_at": "2025-11-06T15:36:01+00:00",
+    "captured_at": "2025-11-06T15:42:21.968401+00:00"
+  },
+  {
+    "slug": "hospital-santo-ant-nio-de-tenente-portela-abre-sele-o-para-resid-ncia-m-dica-202",
+    "nome": "Hospital Santo Antônio de Tenente Portela abre seleção para residência médica 2026; confira o edital",
+    "display_title": "Hospital Santo Antônio de Tenente Portela",
+    "instituicao": "HSA",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-santo-antonio-de-tenente-portela-abre-selecao-para-residencia-medica-2026-confira-o-edital/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Capas-Portal-Estrategia-MED.psd-56.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "6 (AD) + 2 (PR)"
+      },
+      {
+        "etapa": "Período de inscrições",
+        "data": "18/11/2025 a 18/01/2026"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$350,00"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Objetiva (90 pontos) + Análise curricular e entrevista (10 pontos)"
+      },
+      {
+        "etapa": "Prova objetiva e Entrevista",
+        "data": "25/01/2026"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "25/01/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "04/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital HSA – Tenente Portela 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "6 (AD) + 2 (PR)"
+          ],
+          [
+            "Período de inscrições",
+            "18/11/2025 a 18/01/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$350,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva (90 pontos) + Análise curricular e entrevista (10 pontos)"
+          ],
+          [
+            "Prova objetiva e Entrevista",
+            "25/01/2026"
+          ],
+          [
+            "Gabarito preliminar",
+            "25/01/2026"
+          ],
+          [
+            "Resultado Final",
+            "04/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "6 (AD) + 2 (PR)"
+          },
+          {
+            "etapa": "Período de inscrições",
+            "data": "18/11/2025 a 18/01/2026"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$350,00"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Objetiva (90 pontos) + Análise curricular e entrevista (10 pontos)"
+          },
+          {
+            "etapa": "Prova objetiva e Entrevista",
+            "data": "25/01/2026"
+          },
+          {
+            "etapa": "Gabarito preliminar",
+            "data": "25/01/2026"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "04/02/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Vagas HSA – Tenente Portela 2026",
+        "headers": [
+          "ESPECIALIDADE",
+          "VAGAS"
+        ],
+        "rows": [
+          [
+            "Cirurgia Geral",
+            "2"
+          ],
+          [
+            "Clínica Médica",
+            "2"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "2"
+          ],
+          [
+            "Cirurgia Bariátrica",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "2"
+          },
+          {
+            "etapa": "Clínica Médica",
+            "data": "2"
+          },
+          {
+            "etapa": "Ortopedia e Traumatologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Cirurgia Bariátrica",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://hospitalsantoantoniotp.com.br/residencia-medica/2",
+    "posted_at": "2025-11-06T14:55:23+00:00",
+    "captured_at": "2025-11-06T15:42:23.432710+00:00"
+  },
+  {
     "slug": "cvv-francisca-j-lia-divulga-edital-2026-para-resid-ncia-m-dica-em-psiquiatria",
     "nome": "CVV Francisca Júlia divulga edital 2026 para residência médica em Psiquiatria",
     "display_title": "Centro de Valorização da Vida Francisca Júlia",
@@ -117,7 +535,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/26/",
     "posted_at": "2025-11-06T12:51:02+00:00",
-    "captured_at": "2025-11-06T14:43:08.878444+00:00"
+    "captured_at": "2025-11-06T15:42:24.923372+00:00"
   },
   {
     "slug": "scmsjc-divulga-edital-com-18-vagas-para-resid-ncia-m-dica-com-ingresso-em-2026",
@@ -285,7 +703,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/25/",
     "posted_at": "2025-11-04T16:39:59+00:00",
-    "captured_at": "2025-11-06T14:43:13.391771+00:00"
+    "captured_at": "2025-11-06T15:42:29.072356+00:00"
   },
   {
     "slug": "hospital-dilson-godinho-2026-confira-o-edital-do-seletivo-para-resid-ncia-m-dica",
@@ -393,7 +811,7 @@
     ],
     "link_banca": "https://www.hospitaldilsongodinho.org.br/page/editais",
     "posted_at": "2025-11-03T16:30:06+00:00",
-    "captured_at": "2025-11-06T14:43:16.248985+00:00"
+    "captured_at": "2025-11-06T15:42:32.045732+00:00"
   },
   {
     "slug": "pax-cl-nica-psiqui-trica-divulga-edital-de-resid-ncia-m-dica-2026",
