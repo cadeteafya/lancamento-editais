@@ -1,5 +1,125 @@
 [
   {
+    "slug": "cvv-francisca-j-lia-divulga-edital-2026-para-resid-ncia-m-dica-em-psiquiatria",
+    "nome": "CVV Francisca Júlia divulga edital 2026 para residência médica em Psiquiatria",
+    "display_title": "Centro de Valorização da Vida Francisca Júlia",
+    "instituicao": "CVV",
+    "link": "https://med.estrategia.com/portal/noticias/cvv-francisca-julia-divulga-edital-2026-para-residencia-medica-em-psiquiatria/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Capas-Portal-Estrategia-MED.psd-55.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "5 em Psiquiatria (AD)"
+      },
+      {
+        "etapa": "Período de inscrições",
+        "data": "03/11 a 22/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$700,00"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Objetiva (peso 90%) + Arguição e Análise de Curriculum Vitae (peso 10%)"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "17/01/2026"
+      },
+      {
+        "etapa": "Gabarito preliminar",
+        "data": "18/01/2026"
+      },
+      {
+        "etapa": "Realização da segunda etapa",
+        "data": "07/02/2026"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "13/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital CVV Francisca Júlia 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "5 em Psiquiatria (AD)"
+          ],
+          [
+            "Período de inscrições",
+            "03/11 a 22/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$700,00"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva (peso 90%) + Arguição e Análise de Curriculum Vitae (peso 10%)"
+          ],
+          [
+            "Prova Objetiva",
+            "17/01/2026"
+          ],
+          [
+            "Gabarito preliminar",
+            "18/01/2026"
+          ],
+          [
+            "Realização da segunda etapa",
+            "07/02/2026"
+          ],
+          [
+            "Resultado Final",
+            "13/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "5 em Psiquiatria (AD)"
+          },
+          {
+            "etapa": "Período de inscrições",
+            "data": "03/11 a 22/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$700,00"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Objetiva (peso 90%) + Arguição e Análise de Curriculum Vitae (peso 10%)"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "17/01/2026"
+          },
+          {
+            "etapa": "Gabarito preliminar",
+            "data": "18/01/2026"
+          },
+          {
+            "etapa": "Realização da segunda etapa",
+            "data": "07/02/2026"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "13/02/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://selecao.institutopensato.org.br/informacoes/26/",
+    "posted_at": "2025-11-06T12:51:02+00:00",
+    "captured_at": "2025-11-06T13:43:13.751683+00:00"
+  },
+  {
     "slug": "scmsjc-divulga-edital-com-18-vagas-para-resid-ncia-m-dica-com-ingresso-em-2026",
     "nome": "SCMSJC divulga edital com 18 vagas para residência médica com ingresso em 2026",
     "display_title": "Irmandade da Santa Casa de São José dos Campos (SCMSJC)",
@@ -165,7 +285,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/25/",
     "posted_at": "2025-11-04T16:39:59+00:00",
-    "captured_at": "2025-11-06T11:45:15.400253+00:00"
+    "captured_at": "2025-11-06T13:43:18.570723+00:00"
   },
   {
     "slug": "hospital-dilson-godinho-2026-confira-o-edital-do-seletivo-para-resid-ncia-m-dica",
@@ -273,7 +393,7 @@
     ],
     "link_banca": "https://www.hospitaldilsongodinho.org.br/page/editais",
     "posted_at": "2025-11-03T16:30:06+00:00",
-    "captured_at": "2025-11-06T11:45:18.418318+00:00"
+    "captured_at": "2025-11-06T13:43:21.450277+00:00"
   },
   {
     "slug": "pax-cl-nica-psiqui-trica-divulga-edital-de-resid-ncia-m-dica-2026",
