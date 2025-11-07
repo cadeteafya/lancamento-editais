@@ -1,5 +1,101 @@
 [
   {
+    "slug": "unifacef-e-prefeitura-de-morro-agudo-divulgam-edital-para-resid-ncia-m-dica-2026",
+    "nome": "UNIFACEF e Prefeitura de Morro Agudo divulgam edital para residência médica 2026",
+    "display_title": "Prefeitura de Morro Agudo em parceria com o Centro Universitário Municipal de Franca (UNIFACEF)",
+    "instituicao": "UNIFACEF",
+    "link": "https://med.estrategia.com/portal/noticias/unifacef-e-prefeitura-de-morro-agudo-divulgam-edital-para-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Capas-Portal-Estrategia-MED.psd-57.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas ofertadas",
+        "data": "4 em MFC (AD)"
+      },
+      {
+        "etapa": "Período de inscrições",
+        "data": "14/11/2025 a 14/12/2025"
+      },
+      {
+        "etapa": "Composição do processo seletivo",
+        "data": "Prova Objetiva (peso 90%) + Currículo (peso 10%)"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "20/12/2025"
+      },
+      {
+        "etapa": "Gabarito preliminar e resultado parcial da prova objetiva e currículo",
+        "data": "22/12/2025"
+      },
+      {
+        "etapa": "Resultado Final",
+        "data": "30/12/2025"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital UNIFACEF 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas ofertadas",
+            "4 em MFC (AD)"
+          ],
+          [
+            "Período de inscrições",
+            "14/11/2025 a 14/12/2025"
+          ],
+          [
+            "Composição do processo seletivo",
+            "Prova Objetiva (peso 90%) + Currículo (peso 10%)"
+          ],
+          [
+            "Prova Objetiva",
+            "20/12/2025"
+          ],
+          [
+            "Gabarito preliminar e resultado parcial da prova objetiva e currículo",
+            "22/12/2025"
+          ],
+          [
+            "Resultado Final",
+            "30/12/2025"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas ofertadas",
+            "data": "4 em MFC (AD)"
+          },
+          {
+            "etapa": "Período de inscrições",
+            "data": "14/11/2025 a 14/12/2025"
+          },
+          {
+            "etapa": "Composição do processo seletivo",
+            "data": "Prova Objetiva (peso 90%) + Currículo (peso 10%)"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "20/12/2025"
+          },
+          {
+            "etapa": "Gabarito preliminar e resultado parcial da prova objetiva e currículo",
+            "data": "22/12/2025"
+          },
+          {
+            "etapa": "Resultado Final",
+            "data": "30/12/2025"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.morroagudo.sp.gov.br/residenciamedica",
+    "posted_at": "2025-11-07T15:17:11+00:00",
+    "captured_at": "2025-11-07T15:34:29.909418+00:00"
+  },
+  {
     "slug": "emescam-divulga-editais-para-o-processo-seletivo-de-resid-ncia-m-dica-2026",
     "nome": "EMESCAM divulga editais para o processo seletivo de residência médica 2026",
     "display_title": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória (EMESCAM)",
@@ -263,7 +359,7 @@
     ],
     "link_banca": "https://emescam.br/candidato/residencia-medica/",
     "posted_at": "2025-11-06T15:36:01+00:00",
-    "captured_at": "2025-11-07T15:14:43.279099+00:00"
+    "captured_at": "2025-11-07T15:34:32.350797+00:00"
   },
   {
     "slug": "hospital-santo-ant-nio-de-tenente-portela-abre-sele-o-para-resid-ncia-m-dica-202",
@@ -415,7 +511,7 @@
     ],
     "link_banca": "https://hospitalsantoantoniotp.com.br/residencia-medica/2",
     "posted_at": "2025-11-06T14:55:23+00:00",
-    "captured_at": "2025-11-07T15:14:44.592739+00:00"
+    "captured_at": "2025-11-07T15:34:33.542989+00:00"
   },
   {
     "slug": "cvv-francisca-j-lia-divulga-edital-2026-para-resid-ncia-m-dica-em-psiquiatria",
@@ -535,7 +631,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/26/",
     "posted_at": "2025-11-06T12:51:02+00:00",
-    "captured_at": "2025-11-07T15:14:45.748719+00:00"
+    "captured_at": "2025-11-07T15:34:34.710951+00:00"
   },
   {
     "slug": "scmsjc-divulga-edital-com-18-vagas-para-resid-ncia-m-dica-com-ingresso-em-2026",
@@ -703,7 +799,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/25/",
     "posted_at": "2025-11-04T16:39:59+00:00",
-    "captured_at": "2025-11-07T15:14:49.825680+00:00"
+    "captured_at": "2025-11-07T15:34:38.847302+00:00"
   },
   {
     "slug": "hospital-dilson-godinho-2026-confira-o-edital-do-seletivo-para-resid-ncia-m-dica",
