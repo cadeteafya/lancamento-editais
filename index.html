@@ -17,88 +17,69 @@
     <nav id="pager" class="pager-compact" aria-label="Paginação"></nav>
   </div>
 
-  <script>
-  const PER_PAGE = 9;
+<script>
+(async function () {
+  // ============== CONFIG ==============
+  const PAGE_SIZE = 9;                                // 3x3
+  const COLORS = ["c-rose","c-blue","c-lilac","c-green"]; // classes de borda
 
-  function getPageFromURL() {
-    const p = parseInt(new URLSearchParams(location.search).get('p') || '1', 10);
-    return Number.isFinite(p) && p > 0 ? p : 1;
+  // ============== CARDS (3) ==============
+  function cardHTML(item, idx){
+    const c = COLORS[idx % COLORS.length];
+    const url = `edital.html?slug=${encodeURIComponent(item.slug)}`;
+    return `
+      <a class="card ${c}" href="${url}" aria-label="Ver detalhes de ${item.nome}">
+        <h2 class="title">${item.nome}</h2>
+        <span class="micro">ver detalhes</span>
+        <span class="icon" aria-hidden="true">🔎</span>
+      </a>
+    `;
   }
 
-  function onlyName(item) {
-    // Preferimos 'instituicao' (sigla/nome curto). Se não existir, usa display_title (sem nada extra),
-    // e por fim o 'nome' (título do post).
-    if (item.instituicao) return item.instituicao;
-    if (item.display_title) return item.display_title;
-    return item.nome || 'Edital';
+  // ============== PAGINAÇÃO (4) ==============
+  function renderPager({page, totalPages}){
+    const p = document.getElementById('pager');
+    const btn = (label, go, isActive=false, disabled=false, cls='pg') =>
+      `<a class="${cls} ${isActive?'active':''}"
+          href="?page=${go}"
+          ${disabled?'aria-disabled="true" tabindex="-1"':''}>${label}</a>`;
+
+    const prev = btn('‹', Math.max(1, page-1), false, page===1, 'pg-nav');
+    const next = btn('›', Math.min(totalPages, page+1), false, page===totalPages, 'pg-nav');
+
+    // mostra no máximo 5 páginas visíveis
+    const vis = 5;
+    let start = Math.max(1, page - Math.floor(vis/2));
+    let end = Math.min(totalPages, start + vis - 1);
+    if (end - start + 1 < vis) start = Math.max(1, end - vis + 1);
+
+    let nums = '';
+    for (let i = start; i <= end; i++) nums += btn(String(i), i, i===page);
+
+    p.innerHTML = `${prev}${nums}${next}`;
   }
 
-  function sortByDate(items) {
-    return [...items].sort((a, b) => {
-      const da = a.posted_at || a.captured_at || '';
-      const db = b.posted_at || b.captured_at || '';
-      return db.localeCompare(da); // desc
-    });
-  }
+  // ============== BOOT ==============
+  const grid = document.getElementById('grid');
+  const params = new URLSearchParams(location.search);
+  const page = Math.max(1, parseInt(params.get('page') || '1', 10));
 
-  function renderCards(items) {
-    const grid = document.getElementById('grid');
-    grid.innerHTML = items.map(it => {
-      const titulo = onlyName(it);
-      const href = 'edital.html?slug=' + encodeURIComponent(it.slug);
-      return `
-        <a class="card-min-link" href="${href}">
-          <div class="card card-min">
-            <div class="title">${titulo}</div>
-            <div class="cta"><em>Ver detalhes</em></div>
-          </div>
-        </a>
-      `;
-    }).join('');
-  }
+  // carrega seus dados
+  const data = await (await fetch('data/editais.json', {cache:'no-store'})).json();
 
-  function renderPager(page, totalPages) {
-    const el = document.getElementById('pager');
-    if (totalPages <= 1) { el.innerHTML = ''; return; }
+  // ordena por captured_at desc se existir; senão mantém ordem
+  const sorted = [...data].sort((a,b) => String(b.captured_at || '').localeCompare(String(a.captured_at || '')));
 
-    const go = (p) => `?p=${p}`;
-    const btn = (label, href, cls='pg') => `<a class="${cls}" href="${href}">${label}</a>`;
+  const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+  const start = (page - 1) * PAGE_SIZE;
+  const pageItems = sorted.slice(start, start + PAGE_SIZE);
 
-    // janela de 5 páginas
-    const windowSize = 5;
-    let start = Math.max(1, page - Math.floor(windowSize/2));
-    let end = Math.min(totalPages, start + windowSize - 1);
-    start = Math.max(1, end - windowSize + 1);
+  grid.innerHTML = pageItems.map((item, i) => cardHTML(item, start + i)).join('');
+  renderPager({page, totalPages});
+})();
+</script>
 
-    let html = '';
-    html += btn('‹', page > 1 ? go(page-1) : '#', 'pg' + (page>1?'':' disabled'));
-
-    for (let p = start; p <= end; p++) {
-      html += btn(p, go(p), 'pg' + (p===page?' active':'')); 
-    }
-
-    html += btn('›', page < totalPages ? go(page+1) : '#', 'pg' + (page<totalPages?'':' disabled'));
-
-    el.innerHTML = html;
-  }
-
-  async function main(){
-    const data = await (await fetch('data/editais.json', {cache:'no-store'})).json();
-    const items = sortByDate(Array.isArray(data) ? data : []);
-
-    const total = items.length;
-    const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
-    const page = Math.min(getPageFromURL(), totalPages);
-
-    const start = (page - 1) * PER_PAGE;
-    const slice = items.slice(start, start + PER_PAGE);
-
-    renderCards(slice);
-    renderPager(page, totalPages);
-  }
-
-  main().catch(console.error);
-  </script>
 </body>
 </html>
+
 
