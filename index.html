@@ -1,85 +1,95 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lançamento de editais</title>
+  <!-- Mantém os estilos no arquivo que você já tem -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="container">
-    <div class="hero-compact">
-      <h1>Últimos lançamentos de editais em residência médica:</h1>
-    </div>
-  
-    <div id="grid" class="grid cards-compact"></div>
-  
-    <nav id="pager" class="pager-compact" aria-label="Paginação"></nav>
+    <!-- Faixa do topo centralizada -->
+    <div class="hero">Últimos lançamentos de editais em residência médica:</div>
+
+    <!-- Grade 3×3 -->
+    <div id="grid" class="grid"></div>
+
+    <!-- Paginação -->
+    <nav id="pager" class="pager" aria-label="Paginação"></nav>
   </div>
 
-<script>
-(async function () {
-  // ============== CONFIG ==============
-  const PAGE_SIZE = 9;                                // 3x3
-  const COLORS = ["c-rose","c-blue","c-lilac","c-green"]; // classes de borda
+  <script>
+  (async function () {
+    // ====== CONFIG ======
+    const PAGE_SIZE = 9; // 3 x 3
+    // Variações suaves de borda dos cards (definidas no style.css)
+    const COLOR_CLASSES = ['c-pink','c-blue','c-purple','c-green'];
 
-  // ============== CARDS (3) ==============
-  function cardHTML(item, idx){
-    const c = COLORS[idx % COLORS.length];
-    const url = `edital.html?slug=${encodeURIComponent(item.slug)}`;
-    return `
-      <a class="card ${c}" href="${url}" aria-label="Ver detalhes de ${item.nome}">
-        <h2 class="title">${item.nome}</h2>
-        <span class="micro">ver detalhes</span>
-        <span class="icon" aria-hidden="true">🔎</span>
-      </a>
-    `;
-  }
+    // ====== HELPERS ======
+    function getTitulo(item){
+      // Apenas o nome curto da instituição no card
+      return (item.instituicao || item.display_title || item.nome || '').trim();
+    }
 
-  // ============== PAGINAÇÃO (4) ==============
-  function renderPager({page, totalPages}){
-    const p = document.getElementById('pager');
-    const btn = (label, go, isActive=false, disabled=false, cls='pg') =>
-      `<a class="${cls} ${isActive?'active':''}"
-          href="?page=${go}"
-          ${disabled?'aria-disabled="true" tabindex="-1"':''}>${label}</a>`;
+    function renderCard(item, idx){
+      const color = COLOR_CLASSES[idx % COLOR_CLASSES.length];
+      const href  = `edital.html?slug=${encodeURIComponent(item.slug)}`;
+      const titulo = getTitulo(item);
 
-    const prev = btn('‹', Math.max(1, page-1), false, page===1, 'pg-nav');
-    const next = btn('›', Math.min(totalPages, page+1), false, page===totalPages, 'pg-nav');
+      return `
+        <a class="card card-min ${color}" href="${href}" aria-label="Ver detalhes de ${titulo}">
+          <div class="title">${titulo}</div>
+          <div class="cta">ver detalhes</div>
+        </a>
+      `;
+    }
 
-    // mostra no máximo 5 páginas visíveis
-    const vis = 5;
-    let start = Math.max(1, page - Math.floor(vis/2));
-    let end = Math.min(totalPages, start + vis - 1);
-    if (end - start + 1 < vis) start = Math.max(1, end - vis + 1);
+    function renderPager({ page, totalPages }){
+      const p = document.getElementById('pager');
+      const btn = (label, go, active=false, disabled=false, cls='pg') => `
+        <a class="${cls} ${active ? 'active' : ''}" href="?page=${go}"
+           ${disabled ? 'aria-disabled="true" tabindex="-1"' : ''}>${label}</a>`;
 
-    let nums = '';
-    for (let i = start; i <= end; i++) nums += btn(String(i), i, i===page);
+      const prev = btn('‹', Math.max(1, page-1), false, page===1, 'pg');
+      const next = btn('›', Math.min(totalPages, page+1), false, page===totalPages, 'pg');
 
-    p.innerHTML = `${prev}${nums}${next}`;
-  }
+      // Mostrar no máx. 5 páginas visíveis
+      const VIS = 5;
+      let start = Math.max(1, page - Math.floor(VIS/2));
+      let end   = Math.min(totalPages, start + VIS - 1);
+      if (end - start + 1 < VIS) start = Math.max(1, end - VIS + 1);
 
-  // ============== BOOT ==============
-  const grid = document.getElementById('grid');
-  const params = new URLSearchParams(location.search);
-  const page = Math.max(1, parseInt(params.get('page') || '1', 10));
+      let nums = '';
+      for (let i = start; i <= end; i++){
+        nums += btn(String(i), i, i === page);
+      }
+      p.innerHTML = `${prev}${nums}${next}`;
+    }
 
-  // carrega seus dados
-  const data = await (await fetch('data/editais.json', {cache:'no-store'})).json();
+    // ====== BOOT ======
+    const grid   = document.getElementById('grid');
+    const params = new URLSearchParams(location.search);
+    const page   = Math.max(1, parseInt(params.get('page') || '1', 10));
 
-  // ordena por captured_at desc se existir; senão mantém ordem
-  const sorted = [...data].sort((a,b) => String(b.captured_at || '').localeCompare(String(a.captured_at || '')));
+    // Carrega dados
+    const data = await (await fetch('data/editais.json', { cache: 'no-store' })).json();
 
-  const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
-  const start = (page - 1) * PAGE_SIZE;
-  const pageItems = sorted.slice(start, start + PAGE_SIZE);
+    // Ordena pelos mais recentes (se tiver captured_at)
+    const sorted = [...data].sort((a, b) => {
+      const A = String(a.captured_at || '');
+      const B = String(b.captured_at || '');
+      // Desc: mais novo primeiro
+      return B.localeCompare(A);
+    });
 
-  grid.innerHTML = pageItems.map((item, i) => cardHTML(item, start + i)).join('');
-  renderPager({page, totalPages});
-})();
-</script>
+    const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+    const start = (page - 1) * PAGE_SIZE;
+    const pageItems = sorted.slice(start, start + PAGE_SIZE);
 
+    grid.innerHTML = pageItems.map((item, i) => renderCard(item, start + i)).join('');
+    renderPager({ page, totalPages });
+  })();
+  </script>
 </body>
 </html>
-
-
