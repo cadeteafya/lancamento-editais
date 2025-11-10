@@ -1,205 +1,209 @@
-/* ===== Tema ===== */
+/* =========================
+   Tema base
+========================= */
 :root{
-  /* fundo neutro off-white/cinza-azulado */
-  --bg: #f5f7fb;                 /* página */
-  --text: #1c1f27;               /* texto padrão */
-  --muted: #6b7280;              /* secundário */
+  --bg: #f6f7f9;         /* off-white/cinza claro */
+  --ink: #11141a;        /* texto principal */
+  --muted: #6b7280;      /* texto secundário */
+  --card-bg: #ffffff;    /* cards brancos */
+  --shadow: 0 10px 22px rgba(30, 41, 59, .10);
+  --radius: 18px;
 
-  /* cartão */
-  --card-bg: #ffffff;
-  --card-shadow: 0 8px 18px rgba(25, 40, 80, .08);
-  --card-shadow-hover: 0 14px 28px rgba(25, 40, 80, .13);
+  /* paleta das bordas dos cards */
+  --c-pink:   #ff7aa9;
+  --c-blue:   #8ab7ff;
+  --c-purple: #c8a9ff;
+  --c-green:  #8fe1cf;
 
-  /* bordas suaves */
-  --rose:   #ff5aa5;
-  --blue:   #4f7cff;
-  --lilac:  #b387ff;
-  --green:  #3bd0b2;
-
-  /* paginação */
-  --pg-border: #d4d9e3;
-  --pg-active-bg: #ffe6f3;       /* rosa claro */
-  --pg-active-text: #1f2937;
+  /* paginação ativa */
+  --active-bg: #ffd4e4;  /* rosa clarinho */
+  --active-ink:#1f2937;  /* texto escuro no ativo */
 }
 
-/* ===== Base ===== */
-*{ box-sizing: border-box }
-html,body{ height:100% }
-body{
+*{ box-sizing: border-box; }
+html, body{
   margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding:0;
 }
-.container{ max-width:1200px; margin:0 auto; padding:28px 20px }
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-/* ===== Faixa de título ===== */
-/* ===== topo ===== */
+/* =========================
+   Container e hero (título)
+========================= */
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 24px 20px 32px;
+}
+
 .hero{
-  background:#fff;
-  color:#2b2b2b;
-  text-align:center;            /* centralizado */
-  font-weight:600;
-  font-size:1.35rem;
-  padding:16px 18px;
-  border-radius:14px;
-  margin:0 auto 20px;           /* centraliza o bloco */
-  box-shadow:0 6px 20px rgba(0,0,0,.08);
+  background: #fff;
+  color: var(--ink);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 16px 18px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  margin: 4px auto 22px;
 }
 
-/* ===== Grid 3×3 ===== */
+/* =========================
+   Grid 3×3 responsivo
+========================= */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:18px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
 }
-@media (min-width: 820px){
-  .grid{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+@media (min-width: 720px){
+  .grid{ grid-template-columns: repeat(2, 1fr); }
 }
-@media (min-width: 1060px){
-  .grid{ grid-template-columns: repeat(3, minmax(0,1fr)) }
+@media (min-width: 1024px){
+  .grid{ grid-template-columns: repeat(3, 1fr); }
 }
 
-/* ===== Cards ===== */
-.cards-compact .card{
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  min-height:140px;
-  padding:22px 18px;
-  ackground:#fff;     
-  border-radius:18px;
-  border:2px solid #ffe4f1;        /* recebe cor pela classe */
-  box-shadow:0 12px 28px rgba(0,0,0,.08);
-  transition: box-shadow .18s ease, transform .18s ease;
-  text-decoration:none;
-  color:inherit;
+/* =========================
+   Card minimalista
+========================= */
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px 18px 16px;
+  text-decoration: none;
+  color: inherit;
+
+  /* borda suave + sombra */
+  border: 2px solid transparent;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.cards-compact .card:hover{
+
+/* título do card (apenas o nome da instituição) */
+.card .title{
+  text-align: center;
+  font-weight: 600;      /* menos “grosso” que bold */
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin: 6px 6px 0;
+}
+
+/* “ver detalhes” sempre no rodapé */
+.card .cta{
+  margin-top: auto;
+  text-align: center;
+  font-style: italic;
+  color: var(--muted);
+  padding-top: 14px;
+}
+
+/* micro-interações */
+.card:hover{
   transform: translateY(-2px);
-  box-shadow: var(--card-shadow-hover);
+  box-shadow: 0 14px 26px rgba(30,41,59,.14);
 }
 
+/* variações de borda colorida */
+.c-pink  { border-color: var(--c-pink); }
+.c-blue  { border-color: var(--c-blue); }
+.c-purple{ border-color: var(--c-purple); }
+.c-green { border-color: var(--c-green); }
 
+/* realce sutil no hover combinando a borda */
+.c-pink:hover   { border-color: color-mix(in srgb, var(--c-pink) 80%, #fff); }
+.c-blue:hover   { border-color: color-mix(in srgb, var(--c-blue) 80%, #fff); }
+.c-purple:hover { border-color: color-mix(in srgb, var(--c-purple) 80%, #fff); }
+.c-green:hover  { border-color: color-mix(in srgb, var(--c-green) 80%, #fff); }
 
-
-.card-min .cta{
-  margin-top:auto;     /* empurra para baixo */
-  font-style:italic;
-  font-weight:400;
-  color:#4b4b4b;
-}
-
-/* bordas coloridas sutis (aplique via JS em loop) */
-.cards-compact .c-rose { border-color: color-mix(in oklab, var(--rose) 45%, white); }
-.cards-compact .c-blue { border-color: color-mix(in oklab, var(--blue) 45%, white); }
-.cards-compact .c-lilac{ border-color: color-mix(in oklab, var(--lilac)45%, white); }
-.cards-compact .c-green{ border-color: color-mix(in oklab, var(--green)45%, white); }
-
-/* título: sem “bold pesado” */
-.card-min .title{
-  font-weight:600;     /* sem bold 700 */
-  font-size:1.35rem;
-  line-height:1.25;
-  color:#151515;
-}
-.card .micro{
-  position:absolute;
-  left:18px; bottom:14px;
-  font-size:.95rem;
-  color:var(--muted);
-  font-style:normal;
-}
-
-/* ícone (lupa/seta) no canto inferior direito do card */
-.card .icon{
-  position:absolute;
-  right:14px; bottom:12px;
-  width:32px; height:32px;
-  border-radius:10px;
-  display:grid; place-items:center;
-  border:1px solid #e6e9f1;
-  color:#5b6475;
-  transition: transform .18s ease, background .18s ease;
-}
-.card:hover .icon{
-  background:#f7f8fc;
-  transform: translateY(-1px);
-}
-
-/* ===== Paginação ===== */
+/* =========================
+   Paginação
+========================= */
 .pager{
-  display:flex; gap:10px;
-  justify-content:center; align-items:center;
-  margin:26px auto 6px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 22px auto 4px;
 }
-
-.pager-compact .pg,
-.pager-compact .pg-nav{
-  min-width:38px;
-  height:38px;
-  padding:0 12px;
-  border-radius:12px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  background:#fff;
-  color:var(--text);
-  border:1px solid var(--pg-border);
-  text-decoration:none;
-  font-weight:700;
-  box-shadow: var(--card-shadow);
-}
-.pager-compact .pg.active{
-  background:var(--pg-active-bg);
-  color:var(--pg-active-text);
-  border-color:transparent;
-}
-.pager-compact .pg-nav{ font-weight:800 }
-.pager-compact .pg[aria-disabled="true"],
-.pager-compact .pg-nav[aria-disabled="true"]{
-  opacity:.45; pointer-events:none;
-}
-
 .pg{
-  display:inline-flex; align-items:center; justify-content:center;
-  min-width:36px; height:36px; padding:0 10px;
-  border-radius:12px;
-  border:1px solid #e3e3e3;
-  background:transparent;
-  color:#222; text-decoration:none; font-weight:600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  border: 2px solid rgba(31,41,55,.18);
+  background: transparent;
+  font-weight: 600;
+}
+.pg:hover{
+  border-color: rgba(31,41,55,.35);
 }
 .pg.active{
-  background:#ffd3e7;     /* rosa claro */
-  color:#1b1b1b;
-  border-color:#ffd3e7;
+  background: var(--active-bg);
+  color: var(--active-ink);
+  border-color: transparent;
 }
-.pg.disabled{ opacity:.45; pointer-events:none; }
+.pg[aria-disabled="true"]{
+  opacity: .45;
+  pointer-events: none;
+}
 
-/* ===== Tabelas (página edital) — tudo branco com cabeçalho destacado ===== */
-.table-2col, .table-n{
-  width:100%;
-  border-collapse:separate;
-  border-spacing:0 8px;
+/* =========================
+   (Detalhe do edital) Tabelas
+   — mantém tudo branco/preto
+========================= */
+.table-2col,
+.table-n{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
 }
-.table-2col td,
-.table-n th, .table-n td{
-  background:#ffffff;
-  color:#000;
-  padding:12px 14px;
-  border-radius:8px;
+
+/* primeira tabela (2 colunas, sem cabeçalho) */
+.table-2col td{
+  background: #fff;
+  color: #000;
+  padding: 12px 14px;
+  border-radius: 8px;
 }
-.table-2col td:first-child{ width:40%; color:#222 }
+.table-2col td:first-child{
+  width: 42%;
+  color: #222;
+}
+
+/* tabelas com N colunas e cabeçalho */
+.table-n th,
+.table-n td{
+  background: #fff;
+  color: #000;
+  padding: 12px 14px;
+  border-radius: 8px;
+  text-align: center; /* conteúdo centralizado */
+}
 .table-n thead th{
-  font-weight:800;
-  text-align:center;
-  color:#0f172a;                 /* título do cabeçalho mais escuro */
+  font-weight: 700;    /* cabeçalho em negrito */
 }
-.table-n tbody td{ text-align:center }
-.table-2col tr + tr td, .table-n tr + tr td{ border-top:8px solid transparent }
 
-/* link oficial (edital) */
-.link-oficial a{ color:#111; text-decoration: underline }
+/* “respiro” entre linhas */
+.table-2col tr + tr td,
+.table-n tr + tr td{
+  border-top: 8px solid transparent;
+}
 
+/* link para o site oficial (se usado no detalhe) */
+.link-oficial a{
+  color: #0b5fff;              /* azul legível em fundo claro */
+  text-decoration: underline;
+}
