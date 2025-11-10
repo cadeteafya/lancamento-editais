@@ -34,23 +34,23 @@ body{
 .container{ max-width:1200px; margin:0 auto; padding:28px 20px }
 
 /* ===== Faixa de título ===== */
-.hero-compact{
+/* ===== topo ===== */
+.hero{
   background:#fff;
+  color:#2b2b2b;
+  text-align:center;            /* centralizado */
+  font-weight:600;
+  font-size:1.35rem;
+  padding:16px 18px;
   border-radius:14px;
-  box-shadow: var(--card-shadow);
-  padding:18px 22px;
-  margin-bottom:22px;
-}
-.hero-compact h1{
-  margin:0;
-  font-size:1.55rem;
-  font-weight:800;
-  letter-spacing:.1px;
+  margin:0 auto 20px;           /* centraliza o bloco */
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
 }
 
 /* ===== Grid 3×3 ===== */
 .grid{
   display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:18px;
 }
 @media (min-width: 820px){
@@ -68,11 +68,11 @@ body{
   justify-content:center;
   align-items:center;
   min-height:140px;
-  padding:24px 22px 18px;
-  background:var(--card-bg);
+  padding:22px 18px;
+  ackground:#fff;     
   border-radius:18px;
-  border:2px solid transparent;          /* recebe cor pela classe */
-  box-shadow: var(--card-shadow);
+  border:2px solid #ffe4f1;        /* recebe cor pela classe */
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
   transition: box-shadow .18s ease, transform .18s ease;
   text-decoration:none;
   color:inherit;
@@ -82,19 +82,28 @@ body{
   box-shadow: var(--card-shadow-hover);
 }
 
+
+
+
+.card-min .cta{
+  margin-top:auto;     /* empurra para baixo */
+  font-style:italic;
+  font-weight:400;
+  color:#4b4b4b;
+}
+
 /* bordas coloridas sutis (aplique via JS em loop) */
 .cards-compact .c-rose { border-color: color-mix(in oklab, var(--rose) 45%, white); }
 .cards-compact .c-blue { border-color: color-mix(in oklab, var(--blue) 45%, white); }
 .cards-compact .c-lilac{ border-color: color-mix(in oklab, var(--lilac)45%, white); }
 .cards-compact .c-green{ border-color: color-mix(in oklab, var(--green)45%, white); }
 
-/* título + microtexto */
-.card .title{
-  font-weight:900;
-  font-size:1.55rem;
-  letter-spacing:.5px;
-  text-align:center;
-  margin:0 0 18px;
+/* título: sem “bold pesado” */
+.card-min .title{
+  font-weight:600;     /* sem bold 700 */
+  font-size:1.35rem;
+  line-height:1.25;
+  color:#151515;
 }
 .card .micro{
   position:absolute;
@@ -121,13 +130,12 @@ body{
 }
 
 /* ===== Paginação ===== */
-.pager-compact{
-  display:flex;
-  gap:10px;
-  justify-content:center;
-  align-items:center;
+.pager{
+  display:flex; gap:10px;
+  justify-content:center; align-items:center;
   margin:26px auto 6px;
 }
+
 .pager-compact .pg,
 .pager-compact .pg-nav{
   min-width:38px;
@@ -155,6 +163,21 @@ body{
   opacity:.45; pointer-events:none;
 }
 
+.pg{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:36px; height:36px; padding:0 10px;
+  border-radius:12px;
+  border:1px solid #e3e3e3;
+  background:transparent;
+  color:#222; text-decoration:none; font-weight:600;
+}
+.pg.active{
+  background:#ffd3e7;     /* rosa claro */
+  color:#1b1b1b;
+  border-color:#ffd3e7;
+}
+.pg.disabled{ opacity:.45; pointer-events:none; }
+
 /* ===== Tabelas (página edital) — tudo branco com cabeçalho destacado ===== */
 .table-2col, .table-n{
   width:100%;
@@ -179,3 +202,4 @@ body{
 
 /* link oficial (edital) */
 .link-oficial a{ color:#111; text-decoration: underline }
+
