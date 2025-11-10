@@ -1,5 +1,503 @@
 [
   {
+    "slug": "hospital-ruy-azeredo-2026-confira-o-edital-do-seletivo-de-resid-ncia-m-dica",
+    "nome": "Hospital Ruy Azeredo 2026: confira o edital do seletivo de Residência Médica",
+    "display_title": "Hospital Ruy Azeredo Centro Universitário Alfredo Nasser (UNIFAN)",
+    "instituicao": "UNIFAN",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-ruy-azeredo-2026-confira-o-edital-do-seletivo-de-residencia-medica/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-hospital-ruy-azeredo-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "18/11/2025 a 21/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 300,00 (PIX dividido entre HRA e AGRM)"
+      },
+      {
+        "etapa": "Prova objetiva",
+        "data": "11/01/2026 – 08h30 às 12h30"
+      },
+      {
+        "etapa": "Divulgação do gabarito",
+        "data": "12/01/2026 – a partir das 15h00"
+      },
+      {
+        "etapa": "Recursos ao gabarito",
+        "data": "12/01/2026 a 14/01/2026"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "15/01/2026 – a partir das 15h00"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "16/01/2026 a 30/01/2026 – 08h30 às 16h00"
+      },
+      {
+        "etapa": "Início das atividades",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Hospital Ruy Azeredo 2026",
+        "headers": [
+          "Etapa",
+          "Data / Período"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "18/11/2025 a 21/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 300,00 (PIX dividido entre HRA e AGRM)"
+          ],
+          [
+            "Prova objetiva",
+            "11/01/2026 – 08h30 às 12h30"
+          ],
+          [
+            "Divulgação do gabarito",
+            "12/01/2026 – a partir das 15h00"
+          ],
+          [
+            "Recursos ao gabarito",
+            "12/01/2026 a 14/01/2026"
+          ],
+          [
+            "Resultado final",
+            "15/01/2026 – a partir das 15h00"
+          ],
+          [
+            "Matrículas",
+            "16/01/2026 a 30/01/2026 – 08h30 às 16h00"
+          ],
+          [
+            "Início das atividades",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrições",
+            "data": "18/11/2025 a 21/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 300,00 (PIX dividido entre HRA e AGRM)"
+          },
+          {
+            "etapa": "Prova objetiva",
+            "data": "11/01/2026 – 08h30 às 12h30"
+          },
+          {
+            "etapa": "Divulgação do gabarito",
+            "data": "12/01/2026 – a partir das 15h00"
+          },
+          {
+            "etapa": "Recursos ao gabarito",
+            "data": "12/01/2026 a 14/01/2026"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "15/01/2026 – a partir das 15h00"
+          },
+          {
+            "etapa": "Matrículas",
+            "data": "16/01/2026 a 30/01/2026 – 08h30 às 16h00"
+          },
+          {
+            "etapa": "Início das atividades",
+            "data": "01/03/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Programa",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Clínica Médica",
+            "3"
+          ],
+          [
+            "Cardiologia",
+            "2"
+          ],
+          [
+            "Cirurgia Cardiovascular",
+            "1"
+          ],
+          [
+            "Medicina Intensiva",
+            "2"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Clínica Médica",
+            "data": "3"
+          },
+          {
+            "etapa": "Cardiologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Cirurgia Cardiovascular",
+            "data": "1"
+          },
+          {
+            "etapa": "Medicina Intensiva",
+            "data": "2"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.hospitalruyazeredo.com/residenciamedica",
+    "posted_at": "2025-11-07T21:29:46+00:00",
+    "captured_at": "2025-11-10T06:55:28.214634+00:00"
+  },
+  {
+    "slug": "hospital-edmundo-vasconcelos-divulga-edital-de-resid-ncia-m-dica-2026",
+    "nome": "Hospital Edmundo Vasconcelos divulga edital de Residência Médica 2026",
+    "display_title": "Hospital Edmundo Vasconcelos processo seletivo de Residência Médica 2026 São Paulo (SP)",
+    "instituicao": "SP",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-edmundo-vasconcelos-divulga-edital-de-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-hospital-edmundo-vasconcelos-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "07/11/2025 a 01/12/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 750,00"
+      },
+      {
+        "etapa": "Prova objetiva",
+        "data": "09/12/2025 – 08h"
+      },
+      {
+        "etapa": "Divulgação do gabarito preliminar",
+        "data": "09/12/2025"
+      },
+      {
+        "etapa": "Recursos ao gabarito",
+        "data": "10/12 a 11/12/2025"
+      },
+      {
+        "etapa": "Resultado da 1ª fase",
+        "data": "17/12/2025"
+      },
+      {
+        "etapa": "Prova prática e análise curricular",
+        "data": "12/01 a 16/01/2026"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "19/01/2026"
+      },
+      {
+        "etapa": "Matrículas – 1ª chamada",
+        "data": "26/01 a 28/01/2026"
+      },
+      {
+        "etapa": "Início das atividades",
+        "data": "01/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital Edmundo Vasconcelos 2026",
+        "headers": [
+          "Etapa",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "07/11/2025 a 01/12/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 750,00"
+          ],
+          [
+            "Prova objetiva",
+            "09/12/2025 – 08h"
+          ],
+          [
+            "Divulgação do gabarito preliminar",
+            "09/12/2025"
+          ],
+          [
+            "Recursos ao gabarito",
+            "10/12 a 11/12/2025"
+          ],
+          [
+            "Resultado da 1ª fase",
+            "17/12/2025"
+          ],
+          [
+            "Prova prática e análise curricular",
+            "12/01 a 16/01/2026"
+          ],
+          [
+            "Resultado final",
+            "19/01/2026"
+          ],
+          [
+            "Matrículas – 1ª chamada",
+            "26/01 a 28/01/2026"
+          ],
+          [
+            "Início das atividades",
+            "01/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrições",
+            "data": "07/11/2025 a 01/12/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 750,00"
+          },
+          {
+            "etapa": "Prova objetiva",
+            "data": "09/12/2025 – 08h"
+          },
+          {
+            "etapa": "Divulgação do gabarito preliminar",
+            "data": "09/12/2025"
+          },
+          {
+            "etapa": "Recursos ao gabarito",
+            "data": "10/12 a 11/12/2025"
+          },
+          {
+            "etapa": "Resultado da 1ª fase",
+            "data": "17/12/2025"
+          },
+          {
+            "etapa": "Prova prática e análise curricular",
+            "data": "12/01 a 16/01/2026"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "19/01/2026"
+          },
+          {
+            "etapa": "Matrículas – 1ª chamada",
+            "data": "26/01 a 28/01/2026"
+          },
+          {
+            "etapa": "Início das atividades",
+            "data": "01/03/2026"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Programa",
+          "Vagas"
+        ],
+        "rows": [
+          [
+            "Clínica Médica",
+            "4"
+          ],
+          [
+            "Pediatria",
+            "3"
+          ],
+          [
+            "Cirurgia Geral",
+            "2"
+          ],
+          [
+            "Otorrinolaringologia",
+            "2"
+          ],
+          [
+            "Urologia",
+            "1"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Clínica Médica",
+            "data": "4"
+          },
+          {
+            "etapa": "Pediatria",
+            "data": "3"
+          },
+          {
+            "etapa": "Cirurgia Geral",
+            "data": "2"
+          },
+          {
+            "etapa": "Otorrinolaringologia",
+            "data": "2"
+          },
+          {
+            "etapa": "Urologia",
+            "data": "1"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://www.hospitaledmundovasconcelos.com.br/conteudo/residencia/residencia.aspx",
+    "posted_at": "2025-11-07T20:19:59+00:00",
+    "captured_at": "2025-11-10T06:55:29.534328+00:00"
+  },
+  {
+    "slug": "hospital-infantil-gonzaga-2026-confira-o-edital-para-resid-ncia-m-dica-em-pediat",
+    "nome": "Hospital Infantil Gonzaga 2026: confira o edital para residência médica em Pediatria",
+    "display_title": "Hospital Infantil Gonzaga",
+    "instituicao": "INFANTIL",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-infantil-gonzaga-2026-confira-o-edital-para-residencia-medica-em-pediatria/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Capas-Portal-Estrategia-MED.psd-58.jpg",
+    "dados": [
+      {
+        "etapa": "Vagas Ofertadas",
+        "data": "3 em Pediatria (AD)"
+      },
+      {
+        "etapa": "Composição do Processo Seletivo",
+        "data": "Prova Objetiva + Avaliação da Prática Profissional + Análise Curricular e Entrevista"
+      },
+      {
+        "etapa": "Taxa de Inscrição",
+        "data": "R$500,00"
+      },
+      {
+        "etapa": "Período de Inscrições",
+        "data": "05/11/2025 a 29/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva (1ª etapa)",
+        "data": "11/01/2026"
+      },
+      {
+        "etapa": "Gabarito Preliminar",
+        "data": "12/01/2026"
+      },
+      {
+        "etapa": "Prova Prática",
+        "data": "14/01/2026"
+      },
+      {
+        "etapa": "Avaliação Curricular",
+        "data": "30/01/2026"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "06/02/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Hospital Infantil Gonzaga 2026",
+        "headers": [],
+        "rows": [
+          [
+            "Vagas Ofertadas",
+            "3 em Pediatria (AD)"
+          ],
+          [
+            "Composição do Processo Seletivo",
+            "Prova Objetiva + Avaliação da Prática Profissional + Análise Curricular e Entrevista"
+          ],
+          [
+            "Taxa de Inscrição",
+            "R$500,00"
+          ],
+          [
+            "Período de Inscrições",
+            "05/11/2025 a 29/12/2025"
+          ],
+          [
+            "Prova Objetiva (1ª etapa)",
+            "11/01/2026"
+          ],
+          [
+            "Gabarito Preliminar",
+            "12/01/2026"
+          ],
+          [
+            "Prova Prática",
+            "14/01/2026"
+          ],
+          [
+            "Avaliação Curricular",
+            "30/01/2026"
+          ],
+          [
+            "Resultado final",
+            "06/02/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Vagas Ofertadas",
+            "data": "3 em Pediatria (AD)"
+          },
+          {
+            "etapa": "Composição do Processo Seletivo",
+            "data": "Prova Objetiva + Avaliação da Prática Profissional + Análise Curricular e Entrevista"
+          },
+          {
+            "etapa": "Taxa de Inscrição",
+            "data": "R$500,00"
+          },
+          {
+            "etapa": "Período de Inscrições",
+            "data": "05/11/2025 a 29/12/2025"
+          },
+          {
+            "etapa": "Prova Objetiva (1ª etapa)",
+            "data": "11/01/2026"
+          },
+          {
+            "etapa": "Gabarito Preliminar",
+            "data": "12/01/2026"
+          },
+          {
+            "etapa": "Prova Prática",
+            "data": "14/01/2026"
+          },
+          {
+            "etapa": "Avaliação Curricular",
+            "data": "30/01/2026"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "06/02/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://hospitalinfantilgonzaga.com.br/",
+    "posted_at": "2025-11-07T18:32:09+00:00",
+    "captured_at": "2025-11-10T06:55:30.800781+00:00"
+  },
+  {
     "slug": "unifacef-e-prefeitura-de-morro-agudo-divulgam-edital-para-resid-ncia-m-dica-2026",
     "nome": "UNIFACEF e Prefeitura de Morro Agudo divulgam edital para residência médica 2026",
     "display_title": "Prefeitura de Morro Agudo em parceria com o Centro Universitário Municipal de Franca (UNIFACEF)",
@@ -93,7 +591,7 @@
     ],
     "link_banca": "https://www.morroagudo.sp.gov.br/residenciamedica",
     "posted_at": "2025-11-07T15:17:11+00:00",
-    "captured_at": "2025-11-07T18:20:41.901747+00:00"
+    "captured_at": "2025-11-10T06:55:32.620590+00:00"
   },
   {
     "slug": "emescam-divulga-editais-para-o-processo-seletivo-de-resid-ncia-m-dica-2026",
@@ -359,7 +857,7 @@
     ],
     "link_banca": "https://emescam.br/candidato/residencia-medica/",
     "posted_at": "2025-11-06T15:36:01+00:00",
-    "captured_at": "2025-11-07T18:20:44.519658+00:00"
+    "captured_at": "2025-11-10T06:55:35.111817+00:00"
   },
   {
     "slug": "hospital-santo-ant-nio-de-tenente-portela-abre-sele-o-para-resid-ncia-m-dica-202",
@@ -511,7 +1009,7 @@
     ],
     "link_banca": "https://hospitalsantoantoniotp.com.br/residencia-medica/2",
     "posted_at": "2025-11-06T14:55:23+00:00",
-    "captured_at": "2025-11-07T18:20:45.773877+00:00"
+    "captured_at": "2025-11-10T06:55:36.341945+00:00"
   },
   {
     "slug": "cvv-francisca-j-lia-divulga-edital-2026-para-resid-ncia-m-dica-em-psiquiatria",
@@ -631,7 +1129,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/26/",
     "posted_at": "2025-11-06T12:51:02+00:00",
-    "captured_at": "2025-11-07T18:20:47.079299+00:00"
+    "captured_at": "2025-11-10T06:55:39.745967+00:00"
   },
   {
     "slug": "scmsjc-divulga-edital-com-18-vagas-para-resid-ncia-m-dica-com-ingresso-em-2026",
