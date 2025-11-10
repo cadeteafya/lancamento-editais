@@ -1,195 +1,181 @@
-/* === Base / Tema === */
+/* ===== Tema ===== */
 :root{
-  --bg: #44474B;        /* fundo cinza escuro (para contraste) */
-  --card: #ff3399;      /* rosa vibrante (fúcsia) */
-  --text: #ffffff;      /* texto do card branco puro (alto contraste) */
-  --muted: #687674;     /* textos suaves, se precisar */
-  --acc: #ff3399;       /* rosa de ação/paginação ativa */
+  /* fundo neutro off-white/cinza-azulado */
+  --bg: #f5f7fb;                 /* página */
+  --text: #1c1f27;               /* texto padrão */
+  --muted: #6b7280;              /* secundário */
+
+  /* cartão */
+  --card-bg: #ffffff;
+  --card-shadow: 0 8px 18px rgba(25, 40, 80, .08);
+  --card-shadow-hover: 0 14px 28px rgba(25, 40, 80, .13);
+
+  /* bordas suaves */
+  --rose:   #ff5aa5;
+  --blue:   #4f7cff;
+  --lilac:  #b387ff;
+  --green:  #3bd0b2;
+
+  /* paginação */
+  --pg-border: #d4d9e3;
+  --pg-active-bg: #ffe6f3;       /* rosa claro */
+  --pg-active-text: #1f2937;
 }
 
-*{ box-sizing: border-box; }
+/* ===== Base ===== */
+*{ box-sizing: border-box }
+html,body{ height:100% }
 body{
   margin:0;
   background:var(--bg);
+  color:var(--text);
   font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color:#e9eef9; /* cor de textos gerais fora do card */
+}
+.container{ max-width:1200px; margin:0 auto; padding:28px 20px }
+
+/* ===== Faixa de título ===== */
+.hero-compact{
+  background:#fff;
+  border-radius:14px;
+  box-shadow: var(--card-shadow);
+  padding:18px 22px;
+  margin-bottom:22px;
+}
+.hero-compact h1{
+  margin:0;
+  font-size:1.55rem;
+  font-weight:800;
+  letter-spacing:.1px;
 }
 
-.container{ max-width:1100px; margin:0 auto; padding:24px; }
-.header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
-h1{ font-size:22px; margin:0; }
-
-/* === Faixa (hero) do topo === */
-.hero{
-  background:var(--card);        /* usa o rosa do card */
-  color:#fff;
-  text-align:center;
-  font-weight:700;
-  font-size:1.25rem;
-  padding:14px 16px;
-  border-radius:10px;
-  margin-bottom:18px;
-  box-shadow:0 4px 12px rgba(0, 0, 0, 0.4); /* sombra mais suave */
-}
-
-/* === Grid 3×3 fixo === */
+/* ===== Grid 3×3 ===== */
 .grid{
   display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-auto-flow: row;
   gap:18px;
 }
-
-/* === Card minimalista (mantém sombra e cantos) === */
-.card{
-  background:var(--card);
-  border-radius:16px;
-  box-shadow:
-    0 12px 28px rgba(0,0,0,.22),  /* Sombra externa existente */
-    inset 0 0 10px rgba(255, 255, 255, 0.2); /* NOVA: Sombra interna branca sutil */
-    /* ou uma sombra interna com a cor do card, se preferir: */
-    /* inset 0 0 10px var(--card); */
+@media (min-width: 820px){
+  .grid{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+}
+@media (min-width: 1060px){
+  .grid{ grid-template-columns: repeat(3, minmax(0,1fr)) }
 }
 
-/* card “limpo”: título + CTA centralizados */
-.card-min{
-  /* color:#fff; <-- Removida */
+/* ===== Cards ===== */
+.cards-compact .card{
+  position:relative;
   display:flex;
   flex-direction:column;
+  justify-content:center;
   align-items:center;
-  justify-content:space-around; /* Nova: distribui o espaço verticalmente */
-  text-align:center;
-  min-height:130px;
-  padding:22px 18px;
-  color:var(--text); /* #ffffff */
-}
-.card-min-link{
-  display:block;               /* o card todo é clicável */
+  min-height:140px;
+  padding:24px 22px 18px;
+  background:var(--card-bg);
+  border-radius:18px;
+  border:2px solid transparent;          /* recebe cor pela classe */
+  box-shadow: var(--card-shadow);
+  transition: box-shadow .18s ease, transform .18s ease;
   text-decoration:none;
   color:inherit;
 }
-.card-min .title{
-  font-weight:800;
-  font-size:1.35rem;
-  line-height:1.2;
-}
-.card-min .cta{
-  margin-top:auto;
-  font-style:italic;
-  font-weight:550;
-  color:#ffffff; /* Branco puro para alto contraste */
+.cards-compact .card:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
 }
 
-/* (Suporte legado se ainda houver .p/.badge/.btn em outras páginas) */
-.card .p{ padding:14px; color:var(--text); }
-.badge{
-  display:inline-block;
-  background:rgba(65,184,131,.1);
-  color:#147a4e;
-  border:1px solid rgba(65,184,131,.3);
-  padding:2px 8px;
-  border-radius:999px;
-  font-size:12px;
-  margin-bottom:8px;
+/* bordas coloridas sutis (aplique via JS em loop) */
+.cards-compact .c-rose { border-color: color-mix(in oklab, var(--rose) 45%, white); }
+.cards-compact .c-blue { border-color: color-mix(in oklab, var(--blue) 45%, white); }
+.cards-compact .c-lilac{ border-color: color-mix(in oklab, var(--lilac)45%, white); }
+.cards-compact .c-green{ border-color: color-mix(in oklab, var(--green)45%, white); }
+
+/* título + microtexto */
+.card .title{
+  font-weight:900;
+  font-size:1.55rem;
+  letter-spacing:.5px;
+  text-align:center;
+  margin:0 0 18px;
 }
-a.btn{
-  display:inline-block;
-  margin-top:8px;
-  padding:8px 12px;
-  background:var(--acc);
-  color:#031;
+.card .micro{
+  position:absolute;
+  left:18px; bottom:14px;
+  font-size:.95rem;
+  color:var(--muted);
+  font-style:normal;
+}
+
+/* ícone (lupa/seta) no canto inferior direito do card */
+.card .icon{
+  position:absolute;
+  right:14px; bottom:12px;
+  width:32px; height:32px;
   border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
+  display:grid; place-items:center;
+  border:1px solid #e6e9f1;
+  color:#5b6475;
+  transition: transform .18s ease, background .18s ease;
 }
-.meta{ color:#9fb0d1; font-size:13px; }
-
-.table-2col,
-.table-n {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 8px;
-}
-.table-2col td,
-.table-n th, .table-n td {
-  background: #ffffff;      /* branco */
-  color: #000000;           /* preto */
-  padding: 12px 14px;
-  border-radius: 6px;
+.card:hover .icon{
+  background:#f7f8fc;
+  transform: translateY(-1px);
 }
 
-/* primeira tabela (sempre 2 colunas sem cabeçalho):
-   apenas conteúdo em preto, alinhamento padrão (esquerda) */
-.table-2col td:first-child {
-  width: 40%;
-  color: #2b2b2b;           /* rótulo levemente mais escuro, se quiser */
-}
-
-/* tabelas que têm cabeçalho (N colunas):
-   cabeçalho em negrito e centralizado, linhas centralizadas */
-.table-n thead th {
-  font-weight: 700;
-  text-align: center;
-  color: #000000 !important;         /* cabeçalho preto */
-}
-.table-n tbody td {
-  text-align: center;       /* centraliza o conteúdo das células */
-}
-
-/* separador visual entre linhas (com fundo escuro do site continua visível) */
-.table-2col tr + tr td,
-.table-n tr + tr td {
-  border-top: 8px solid transparent;
-}
-
-/* Tabelas das páginas de detalhe (se usadas) 
-.table{ width:100%; border-collapse:separate; border-spacing:0 8px; }
-tr{ background:#f5f7f9; }
-td{ padding:12px 14px; color:#0b1a13; }
-td:first-child{ color:#5a6b69; width:40%; } */
-
-/* link oficial: branco para boa leitura no fundo escuro */
-.link-oficial a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-/* === Paginação: transparente, centralizada, números brancos === */
-.pager{
+/* ===== Paginação ===== */
+.pager-compact{
   display:flex;
   gap:10px;
   justify-content:center;
   align-items:center;
-  margin:26px auto 6px;   /* dá espaço dos cards */
+  margin:26px auto 6px;
 }
-.pg{
+.pager-compact .pg,
+.pager-compact .pg-nav{
+  min-width:38px;
+  height:38px;
+  padding:0 12px;
+  border-radius:12px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:36px;
-  height:36px;
-  padding:0 10px;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,.25);
-  background:transparent;
-  color:#fff;             /* números brancos */
+  background:#fff;
+  color:var(--text);
+  border:1px solid var(--pg-border);
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
+  box-shadow: var(--card-shadow);
 }
-.pg.active{
-  background:var(--acc);
-  color:#031;
+.pager-compact .pg.active{
+  background:var(--pg-active-bg);
+  color:var(--pg-active-text);
   border-color:transparent;
 }
-.pg.disabled{ opacity:.45; pointer-events:none; }
-.pg.dots{ border:none; padding:0 4px; color:#bdbdbd; }
+.pager-compact .pg-nav{ font-weight:800 }
+.pager-compact .pg[aria-disabled="true"],
+.pager-compact .pg-nav[aria-disabled="true"]{
+  opacity:.45; pointer-events:none;
+}
 
-/* (Se em alguma página antiga existirem imagens dentro do card) */
-.card img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+/* ===== Tabelas (página edital) — tudo branco com cabeçalho destacado ===== */
+.table-2col, .table-n{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0 8px;
+}
+.table-2col td,
+.table-n th, .table-n td{
+  background:#ffffff;
+  color:#000;
+  padding:12px 14px;
+  border-radius:8px;
+}
+.table-2col td:first-child{ width:40%; color:#222 }
+.table-n thead th{
+  font-weight:800;
+  text-align:center;
+  color:#0f172a;                 /* título do cabeçalho mais escuro */
+}
+.table-n tbody td{ text-align:center }
+.table-2col tr + tr td, .table-n tr + tr td{ border-top:8px solid transparent }
 
-
-
-
-
-
-
+/* link oficial (edital) */
+.link-oficial a{ color:#111; text-decoration: underline }
