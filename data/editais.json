@@ -1,5 +1,282 @@
 [
   {
+    "slug": "sms-maca-2026-seletivo-de-resid-ncia-m-dica-est-com-as-inscri-es-abertas",
+    "nome": "SMS-Macaé 2026: seletivo de Residência Médica está com as inscrições abertas",
+    "display_title": "Secretaria Municipal de Saúde de Macaé",
+    "instituicao": "MACA",
+    "link": "https://med.estrategia.com/portal/noticias/sms-macae-2026-seletivo-de-residencia-medica-esta-com-as-inscricoes-abertas/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-sms-macae-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrição",
+        "data": "10/11 a 21/11/2025"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 400,00"
+      },
+      {
+        "etapa": "Período para pagamento da taxa de inscrição",
+        "data": "10/11 a 24/11/2025"
+      },
+      {
+        "etapa": "Pedidos de isenção da taxa de inscrição",
+        "data": "11/11/2025 (8h às 12h)"
+      },
+      {
+        "etapa": "Confirmação de Inscrição / Cartão de Confirmação – Local de Provas",
+        "data": "02/12/2025"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "07/12/2025 (8h às 12h)"
+      },
+      {
+        "etapa": "Divulgação do Gabarito Preliminar da Prova Objetiva",
+        "data": "07/12/2025"
+      },
+      {
+        "etapa": "Interposição de recursos contra o gabarito da Prova Objetiva",
+        "data": "08/12/2025 (8h às 12h)"
+      },
+      {
+        "etapa": "Divulgação do resultado do julgamento dos recursos interpostos contra o Gabarito da Prova Objetiva",
+        "data": "10/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Resultado Geral da Prova Objetiva",
+        "data": "11/12/2025"
+      },
+      {
+        "etapa": "Entrada de Recurso do Resultado Geral da Prova Objetiva",
+        "data": "12/12/2025"
+      },
+      {
+        "etapa": "Resultado do Recurso",
+        "data": "17/12/2025"
+      },
+      {
+        "etapa": "Divulgação do Resultado Final",
+        "data": "22/12/2025"
+      },
+      {
+        "etapa": "Realização das matrículas",
+        "data": "02/02 e 03/02/2026 (9h às 16h)"
+      },
+      {
+        "etapa": "Reclassificação",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Matrícula da 1ª Reclassificação",
+        "data": "09/02/2026 (9h às 16h)"
+      },
+      {
+        "etapa": "Início das atividades",
+        "data": "01/03/2026 (8h)"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital SMS-Macaé 2026",
+        "headers": [
+          "Evento",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrição",
+            "10/11 a 21/11/2025"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 400,00"
+          ],
+          [
+            "Período para pagamento da taxa de inscrição",
+            "10/11 a 24/11/2025"
+          ],
+          [
+            "Pedidos de isenção da taxa de inscrição",
+            "11/11/2025 (8h às 12h)"
+          ],
+          [
+            "Confirmação de Inscrição / Cartão de Confirmação – Local de Provas",
+            "02/12/2025"
+          ],
+          [
+            "Prova Objetiva",
+            "07/12/2025 (8h às 12h)"
+          ],
+          [
+            "Divulgação do Gabarito Preliminar da Prova Objetiva",
+            "07/12/2025"
+          ],
+          [
+            "Interposição de recursos contra o gabarito da Prova Objetiva",
+            "08/12/2025 (8h às 12h)"
+          ],
+          [
+            "Divulgação do resultado do julgamento dos recursos interpostos contra o Gabarito da Prova Objetiva",
+            "10/12/2025"
+          ],
+          [
+            "Divulgação do Resultado Geral da Prova Objetiva",
+            "11/12/2025"
+          ],
+          [
+            "Entrada de Recurso do Resultado Geral da Prova Objetiva",
+            "12/12/2025"
+          ],
+          [
+            "Resultado do Recurso",
+            "17/12/2025"
+          ],
+          [
+            "Divulgação do Resultado Final",
+            "22/12/2025"
+          ],
+          [
+            "Realização das matrículas",
+            "02/02 e 03/02/2026 (9h às 16h)"
+          ],
+          [
+            "Reclassificação",
+            "05/02/2026"
+          ],
+          [
+            "Matrícula da 1ª Reclassificação",
+            "09/02/2026 (9h às 16h)"
+          ],
+          [
+            "Início das atividades",
+            "01/03/2026 (8h)"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrição",
+            "data": "10/11 a 21/11/2025"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 400,00"
+          },
+          {
+            "etapa": "Período para pagamento da taxa de inscrição",
+            "data": "10/11 a 24/11/2025"
+          },
+          {
+            "etapa": "Pedidos de isenção da taxa de inscrição",
+            "data": "11/11/2025 (8h às 12h)"
+          },
+          {
+            "etapa": "Confirmação de Inscrição / Cartão de Confirmação – Local de Provas",
+            "data": "02/12/2025"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "07/12/2025 (8h às 12h)"
+          },
+          {
+            "etapa": "Divulgação do Gabarito Preliminar da Prova Objetiva",
+            "data": "07/12/2025"
+          },
+          {
+            "etapa": "Interposição de recursos contra o gabarito da Prova Objetiva",
+            "data": "08/12/2025 (8h às 12h)"
+          },
+          {
+            "etapa": "Divulgação do resultado do julgamento dos recursos interpostos contra o Gabarito da Prova Objetiva",
+            "data": "10/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Resultado Geral da Prova Objetiva",
+            "data": "11/12/2025"
+          },
+          {
+            "etapa": "Entrada de Recurso do Resultado Geral da Prova Objetiva",
+            "data": "12/12/2025"
+          },
+          {
+            "etapa": "Resultado do Recurso",
+            "data": "17/12/2025"
+          },
+          {
+            "etapa": "Divulgação do Resultado Final",
+            "data": "22/12/2025"
+          },
+          {
+            "etapa": "Realização das matrículas",
+            "data": "02/02 e 03/02/2026 (9h às 16h)"
+          },
+          {
+            "etapa": "Reclassificação",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Matrícula da 1ª Reclassificação",
+            "data": "09/02/2026 (9h às 16h)"
+          },
+          {
+            "etapa": "Início das atividades",
+            "data": "01/03/2026 (8h)"
+          }
+        ]
+      },
+      {
+        "titulo": "Especialidades e vagas",
+        "headers": [
+          "Programas",
+          "Vagas totais",
+          "Vagas reservadas"
+        ],
+        "rows": [
+          [
+            "Clínica Médica",
+            "8",
+            "2"
+          ],
+          [
+            "Pediatria",
+            "5",
+            "1"
+          ],
+          [
+            "Cirurgia Geral",
+            "4",
+            "1"
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "3",
+            "1"
+          ],
+          [
+            "Medicina de Família e Comunidade",
+            "4",
+            "1"
+          ],
+          [
+            "Ortopedia e Traumatologia",
+            "2",
+            "–"
+          ],
+          [
+            "Anestesiologia",
+            "3",
+            "1"
+          ]
+        ],
+        "cols": 3
+      }
+    ],
+    "link_banca": "https://macae.rj.gov.br/saude/conteudo/titulo/programa-de-residencia-medica",
+    "posted_at": "2025-11-10T14:41:48+00:00",
+    "captured_at": "2025-11-10T14:51:59.458499+00:00"
+  },
+  {
     "slug": "hospital-ruy-azeredo-2026-confira-o-edital-do-seletivo-de-resid-ncia-m-dica",
     "nome": "Hospital Ruy Azeredo 2026: confira o edital do seletivo de Residência Médica",
     "display_title": "Hospital Ruy Azeredo Centro Universitário Alfredo Nasser (UNIFAN)",
@@ -164,7 +441,7 @@
     ],
     "link_banca": "https://www.hospitalruyazeredo.com/residenciamedica",
     "posted_at": "2025-11-07T21:29:46+00:00",
-    "captured_at": "2025-11-10T14:38:58.393749+00:00"
+    "captured_at": "2025-11-10T14:52:01.305265+00:00"
   },
   {
     "slug": "hospital-edmundo-vasconcelos-divulga-edital-de-resid-ncia-m-dica-2026",
@@ -363,7 +640,7 @@
     ],
     "link_banca": "https://www.hospitaledmundovasconcelos.com.br/conteudo/residencia/residencia.aspx",
     "posted_at": "2025-11-07T20:19:59+00:00",
-    "captured_at": "2025-11-10T14:38:59.663756+00:00"
+    "captured_at": "2025-11-10T14:52:02.709508+00:00"
   },
   {
     "slug": "hospital-infantil-gonzaga-2026-confira-o-edital-para-resid-ncia-m-dica-em-pediat",
@@ -495,7 +772,7 @@
     ],
     "link_banca": "https://hospitalinfantilgonzaga.com.br/",
     "posted_at": "2025-11-07T18:32:09+00:00",
-    "captured_at": "2025-11-10T14:39:00.861580+00:00"
+    "captured_at": "2025-11-10T14:52:03.923695+00:00"
   },
   {
     "slug": "unifacef-e-prefeitura-de-morro-agudo-divulgam-edital-para-resid-ncia-m-dica-2026",
@@ -591,7 +868,7 @@
     ],
     "link_banca": "https://www.morroagudo.sp.gov.br/residenciamedica",
     "posted_at": "2025-11-07T15:17:11+00:00",
-    "captured_at": "2025-11-10T14:39:02.603704+00:00"
+    "captured_at": "2025-11-10T14:52:05.719427+00:00"
   },
   {
     "slug": "emescam-divulga-editais-para-o-processo-seletivo-de-resid-ncia-m-dica-2026",
@@ -857,7 +1134,7 @@
     ],
     "link_banca": "https://emescam.br/candidato/residencia-medica/",
     "posted_at": "2025-11-06T15:36:01+00:00",
-    "captured_at": "2025-11-10T14:39:05.015849+00:00"
+    "captured_at": "2025-11-10T14:52:08.250740+00:00"
   },
   {
     "slug": "hospital-santo-ant-nio-de-tenente-portela-abre-sele-o-para-resid-ncia-m-dica-202",
@@ -1009,7 +1286,7 @@
     ],
     "link_banca": "https://hospitalsantoantoniotp.com.br/residencia-medica/2",
     "posted_at": "2025-11-06T14:55:23+00:00",
-    "captured_at": "2025-11-10T14:39:06.185256+00:00"
+    "captured_at": "2025-11-10T14:52:09.429224+00:00"
   },
   {
     "slug": "cvv-francisca-j-lia-divulga-edital-2026-para-resid-ncia-m-dica-em-psiquiatria",
@@ -1129,7 +1406,7 @@
     ],
     "link_banca": "https://selecao.institutopensato.org.br/informacoes/26/",
     "posted_at": "2025-11-06T12:51:02+00:00",
-    "captured_at": "2025-11-10T14:39:07.391926+00:00"
+    "captured_at": "2025-11-10T14:52:10.607592+00:00"
   },
   {
     "slug": "scmsjc-divulga-edital-com-18-vagas-para-resid-ncia-m-dica-com-ingresso-em-2026",
