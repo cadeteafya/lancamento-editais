@@ -124,8 +124,31 @@ body{
 .c-green:hover  { border-color: color-mix(in srgb, var(--c-green) 80%, #fff); }
 
 /* =========================
+   pesquisa
+========================= */
+
+.searchbar{
+  margin:16px 0 6px;
+  display:flex;
+  justify-content:center;
+}
+.searchbar input{
+  width:100%;
+  max-width:520px;
+  padding:12px 14px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:12px;
+  background:#fff;
+  color:#222;
+  outline:none;
+  box-shadow:0 2px 10px rgba(0,0,0,.04) inset;
+}
+.searchbar input::placeholder{ color:#888; }
+
+/* =========================
    Paginação
 ========================= */
+
 .pager{
   display: flex;
   gap: 10px;
@@ -207,3 +230,4 @@ body{
   color: #0b5fff;              /* azul legível em fundo claro */
   text-decoration: underline;
 }
+
