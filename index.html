@@ -26,11 +26,12 @@
     // Variações suaves de borda dos cards (definidas no style.css)
     const COLOR_CLASSES = ['c-pink','c-blue','c-purple','c-green'];
 
-    // ====== HELPERS ======
+        // ====== HELPERS ======
     function getTitulo(item){
-      // Apenas o nome curto da instituição no card
-      return (item.instituicao || item.display_title || item.nome || '').trim();
+      // Prioriza o nome limpo vindo do "Resumo Edital …"
+      return (item.display_title || item.instituicao || item.nome || '').trim();
     }
+
 
     function renderCard(item, idx){
       const color = COLOR_CLASSES[idx % COLOR_CLASSES.length];
@@ -93,3 +94,4 @@
   </script>
 </body>
 </html>
+
