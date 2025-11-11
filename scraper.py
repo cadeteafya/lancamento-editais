@@ -16,6 +16,26 @@ try:
 except Exception:
     OCR_AVAILABLE = False
 
+# --- util: gera um display_title a partir de "Resumo Edital <NOME> 20xx" ---
+import re
+
+def build_display_title(first_section_title: str, instituicao_full: str = "", nome_fallback: str = "") -> str:
+    """
+    Extrai o nome entre 'Resumo Edital' e o ano final, ex.:
+      'Resumo Edital Hospital Edmundo Vasconcelos 2026' -> 'Hospital Edmundo Vasconcelos'
+    Se não casar, volta para instituicao_full ou nome_fallback.
+    """
+    t = (first_section_title or "").strip()
+    if t:
+        m = re.search(r"(?i)^\s*Resumo\s+Edital\s+(.+?)(?:\s+(?:19|20)\d{2})?\s*$", t, flags=re.I)
+        if m:
+            return " ".join(m.group(1).split())
+    # fallbacks
+    if instituicao_full:
+        return " ".join(instituicao_full.split())
+    return " ".join((nome_fallback or "").split())
+
+
 LIST_URL = "https://med.estrategia.com/portal/noticias/"
 OUT_PATH = Path("data/editais.json")
 UA = "ResidMedBot/2.0 (+contato: seu-email)"
@@ -218,7 +238,10 @@ def parse_post(url:str):
     # OCR + Nome(SIGLA) + fallback de título por <strong>
     instituicao=ocr_instituicao_from_image(image)
     pairs=find_nome_sigla_pairs(soup)
-    display_title=None
+
+    display_title=None          # título provisório (de pares/strong)
+    instituicao_full=None       # "Nome Completo (SIGLA)" para fallback do display_title
+
     if pairs:
         ocr_sig=instituicao.upper() if looks_like_sigla(instituicao) else None
         picked=None
@@ -227,11 +250,22 @@ def parse_post(url:str):
                 if pr["sigla_up"]==ocr_sig: picked=pr; break
         if not picked: picked=pairs[0]
         display_title=f'{picked["nome"]} ({picked["sigla"]})'
+        instituicao_full=display_title
         instituicao=picked["sigla"]
     else:
         # sem Nome(SIGLA): usa primeiro <strong>/<b> após cabeçalho
         fb=first_bold_after_header(soup)
-        if fb: display_title=fb
+        if fb:
+            display_title=fb
+            instituicao_full=fb
+
+    # ---- NOVO: força o display_title a vir do padrão "Resumo Edital <NOME> 20xx" ----
+    first_section_title = secoes[0].get("titulo") or ""
+    display_title = build_display_title(
+        first_section_title,
+        instituicao_full=instituicao_full or "",
+        nome_fallback=display_title or title
+    )
 
     captured_at=datetime.now(timezone.utc).isoformat()
     print(f"  ✓ {title} | tabelas={len(secoes)} | banca=OK")
