@@ -19,79 +19,133 @@
     <nav id="pager" class="pager" aria-label="Paginação"></nav>
   </div>
 
-  <script>
-  (async function () {
-    // ====== CONFIG ======
-    const PAGE_SIZE = 9; // 3 x 3
-    // Variações suaves de borda dos cards (definidas no style.css)
-    const COLOR_CLASSES = ['c-pink','c-blue','c-purple','c-green'];
+<script>
+(async function () {
+  // ====== CONFIG ======
+  const PAGE_SIZE = 9; // 3 x 3
+  const COLOR_CLASSES = ['c-pink','c-blue','c-purple','c-green'];
 
-        // ====== HELPERS ======
-    function getTitulo(item){
-      // Prioriza o nome limpo vindo do "Resumo Edital …"
-      return (item.display_title || item.instituicao || item.nome || '').trim();
+  // ====== HELPERS ======
+  function getTitulo(item){
+    return (item.display_title || item.instituicao || item.nome || '').trim();
+  }
+  // normaliza para busca (remove acentos e põe minúsculas)
+  function norm(s){
+    return (s || '')
+      .normalize('NFD').replace(/\p{Diacritic}/gu,'')
+      .toLowerCase().trim();
+  }
+
+  function renderCard(item, idx){
+    const color = COLOR_CLASSES[idx % COLOR_CLASSES.length];
+    const href  = `edital.html?slug=${encodeURIComponent(item.slug)}`;
+    const titulo = getTitulo(item);
+    return `
+      <a class="card card-min ${color}" href="${href}" aria-label="Ver detalhes de ${titulo}">
+        <div class="title">${titulo}</div>
+        <div class="cta">ver detalhes</div>
+      </a>
+    `;
+  }
+
+  function renderPager({ page, totalPages }){
+    const p = document.getElementById('pager');
+    const btn = (label, go, active=false, disabled=false, cls='pg') => `
+      <a class="${cls} ${active ? 'active' : ''}" href="?page=${go}${queryParam()}"
+         ${disabled ? 'aria-disabled="true" tabindex="-1"' : ''}>${label}</a>`;
+
+    const prev = btn('‹', Math.max(1, page-1), false, page===1, 'pg');
+    const next = btn('›', Math.min(totalPages, page+1), false, page===totalPages, 'pg');
+
+    const VIS = 5;
+    let start = Math.max(1, page - Math.floor(VIS/2));
+    let end   = Math.min(totalPages, start + VIS - 1);
+    if (end - start + 1 < VIS) start = Math.max(1, end - VIS + 1);
+
+    let nums = '';
+    for (let i = start; i <= end; i++){
+      nums += btn(String(i), i, i === page);
     }
+    p.innerHTML = `${prev}${nums}${next}`;
+  }
 
+  // mantém ?q=... na URL quando trocar de página
+  function queryParam(){
+    const q = document.getElementById('search')?.value || '';
+    return q ? `&q=${encodeURIComponent(q)}` : '';
+  }
 
-    function renderCard(item, idx){
-      const color = COLOR_CLASSES[idx % COLOR_CLASSES.length];
-      const href  = `edital.html?slug=${encodeURIComponent(item.slug)}`;
-      const titulo = getTitulo(item);
+  // ====== BOOT ======
+  const grid   = document.getElementById('grid');
+  const input  = document.getElementById('search');
+  const params = new URLSearchParams(location.search);
+  const initialPage = Math.max(1, parseInt(params.get('page') || '1', 10));
+  const initialQuery = params.get('q') || '';
 
-      return `
-        <a class="card card-min ${color}" href="${href}" aria-label="Ver detalhes de ${titulo}">
-          <div class="title">${titulo}</div>
-          <div class="cta">ver detalhes</div>
-        </a>
-      `;
-    }
+  // Carrega dados
+  const data = await (await fetch('data/editais.json', { cache: 'no-store' })).json();
 
-    function renderPager({ page, totalPages }){
-      const p = document.getElementById('pager');
-      const btn = (label, go, active=false, disabled=false, cls='pg') => `
-        <a class="${cls} ${active ? 'active' : ''}" href="?page=${go}"
-           ${disabled ? 'aria-disabled="true" tabindex="-1"' : ''}>${label}</a>`;
+  // Ordena pelos mais recentes (se tiver captured_at)
+  const all = [...data].sort((a, b) => String(b.captured_at||'').localeCompare(String(a.captured_at||'')));
 
-      const prev = btn('‹', Math.max(1, page-1), false, page===1, 'pg');
-      const next = btn('›', Math.min(totalPages, page+1), false, page===totalPages, 'pg');
+  // estado
+  let page = initialPage;
+  if (input) input.value = initialQuery;
 
-      // Mostrar no máx. 5 páginas visíveis
-      const VIS = 5;
-      let start = Math.max(1, page - Math.floor(VIS/2));
-      let end   = Math.min(totalPages, start + VIS - 1);
-      if (end - start + 1 < VIS) start = Math.max(1, end - VIS + 1);
-
-      let nums = '';
-      for (let i = start; i <= end; i++){
-        nums += btn(String(i), i, i === page);
-      }
-      p.innerHTML = `${prev}${nums}${next}`;
-    }
-
-    // ====== BOOT ======
-    const grid   = document.getElementById('grid');
-    const params = new URLSearchParams(location.search);
-    const page   = Math.max(1, parseInt(params.get('page') || '1', 10));
-
-    // Carrega dados
-    const data = await (await fetch('data/editais.json', { cache: 'no-store' })).json();
-
-    // Ordena pelos mais recentes (se tiver captured_at)
-    const sorted = [...data].sort((a, b) => {
-      const A = String(a.captured_at || '');
-      const B = String(b.captured_at || '');
-      // Desc: mais novo primeiro
-      return B.localeCompare(A);
+  function applyFilter(list, q){
+    if (!q) return list;
+    const nq = norm(q);
+    return list.filter(it => {
+      const hay = norm(getTitulo(it)) + ' ' + norm(it.slug || '') + ' ' + norm(it.instituicao || '');
+      return hay.includes(nq);
     });
+  }
 
-    const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+  function render(){
+    const filtered = applyFilter(all, input?.value || '');
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    // corrige página se filtro reduzir o total
+    if (page > totalPages) page = totalPages;
+
     const start = (page - 1) * PAGE_SIZE;
-    const pageItems = sorted.slice(start, start + PAGE_SIZE);
+    const pageItems = filtered.slice(start, start + PAGE_SIZE);
 
     grid.innerHTML = pageItems.map((item, i) => renderCard(item, start + i)).join('');
     renderPager({ page, totalPages });
-  })();
-  </script>
+
+    // atualiza URL (sem recarregar) com ?page e ?q
+    const qp = new URLSearchParams();
+    qp.set('page', String(page));
+    const qVal = (input?.value || '').trim();
+    if (qVal) qp.set('q', qVal);
+    history.replaceState(null, '', `?${qp.toString()}`);
+  }
+
+  // eventos
+  if (input){
+    // debounce leve
+    let t;
+    input.addEventListener('input', () => {
+      clearTimeout(t);
+      t = setTimeout(() => { page = 1; render(); }, 150);
+    });
+  }
+
+  // render inicial
+  page = initialPage;
+  render();
+
+  // navegação por back/forward mantém lista correta
+  window.addEventListener('popstate', () => {
+    const p2 = new URLSearchParams(location.search);
+    page = Math.max(1, parseInt(p2.get('page') || '1', 10));
+    if (input) input.value = p2.get('q') || '';
+    render();
+  });
+})();
+</script>
+
 </body>
 </html>
+
 
