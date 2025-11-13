@@ -1,5 +1,169 @@
 [
   {
+    "slug": "s-rio-liban-s-convoca-candidatos-para-a-prova-objetiva-veja-a-concorr-ncia-para-",
+    "nome": "Sírio-Libanês convoca candidatos para a prova objetiva; veja a concorrência para a residência médica em 2026",
+    "display_title": "Hospital Sírio-Libanês",
+    "instituicao": "SRIO-LIBANS",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-sirio-libanes-concorrencia-residencia-medica-2026/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/04/sirio-atualizacao.jpg",
+    "dados": [],
+    "secoes": [
+      {
+        "titulo": "padrão de divulgação adotado pelas principais instituições e bancas",
+        "headers": [
+          "PROGRAMA",
+          "VAGAS DISPONÍVEIS",
+          "INSCRITOS",
+          "CONCORRÊNCIA"
+        ],
+        "rows": [
+          [
+            "Admnistração em Saúde",
+            "4",
+            "16",
+            "4"
+          ],
+          [
+            "Anestesiologia*",
+            "9",
+            "498",
+            "55,33"
+          ],
+          [
+            "Cardiologia",
+            "6",
+            "137",
+            "22,83"
+          ],
+          [
+            "Cirurgia Geral",
+            "2",
+            "270",
+            "135"
+          ],
+          [
+            "Clínica Médica",
+            "6",
+            "380",
+            "63,33"
+          ],
+          [
+            "Dermatologia",
+            "3",
+            "387",
+            "129"
+          ],
+          [
+            "Dor",
+            "2",
+            "17",
+            "8,5"
+          ],
+          [
+            "Endoscopia",
+            "5",
+            "55",
+            "11"
+          ],
+          [
+            "Ergometria",
+            "2",
+            "10",
+            "5"
+          ],
+          [
+            "Ginecologia e Obstetrícia",
+            "4",
+            "271",
+            "67,75"
+          ],
+          [
+            "Mastologia",
+            "1",
+            "7",
+            "7"
+          ],
+          [
+            "Medicina de Família e Comunidade",
+            "2",
+            "40",
+            "20"
+          ],
+          [
+            "Medicina Intensiva",
+            "6",
+            "80",
+            "13,33"
+          ],
+          [
+            "Neurologia",
+            "3",
+            "187",
+            "62,33"
+          ],
+          [
+            "Oncologia Clínica – Brasília",
+            "2",
+            "29",
+            "14,5"
+          ],
+          [
+            "Oncologia Clínica – São Paulo",
+            "4",
+            "97",
+            "24,25"
+          ],
+          [
+            "Pediatria",
+            "6",
+            "218",
+            "36,33"
+          ],
+          [
+            "Radiologia e Diagnóstico por Imagem",
+            "6",
+            "270",
+            "45"
+          ],
+          [
+            "Radioterapia – Brasília",
+            "1",
+            "11",
+            "11"
+          ],
+          [
+            "Radioterapia – São Paulo",
+            "2",
+            "19",
+            "9,5"
+          ],
+          [
+            "Transplante de Medula Óssea – Brasília",
+            "1",
+            "3",
+            "3"
+          ],
+          [
+            "Transplante de Medula Óssea – São Paulo",
+            "2",
+            "24",
+            "12"
+          ],
+          [
+            "Treineiro",
+            "–",
+            "7",
+            ""
+          ]
+        ],
+        "cols": 4
+      }
+    ],
+    "link_banca": "https://www.vunesp.com.br/HSLI2502",
+    "posted_at": "2025-11-13T15:35:49+00:00",
+    "captured_at": "2025-11-13T16:18:11.934870+00:00"
+  },
+  {
     "slug": "hospital-dia-2026-seletivo-de-resid-ncia-m-dica-oferta-2-vagas-em-oftalmologia",
     "nome": "Hospital Dia 2026: seletivo de Residência Médica oferta 2 vagas em Oftalmologia",
     "display_title": "Centro Oftalmológico Hospital Dia",
@@ -216,7 +380,7 @@
     ],
     "link_banca": "https://cocmt.com.br/residenciamedica/",
     "posted_at": "2025-11-13T13:54:36+00:00",
-    "captured_at": "2025-11-13T15:34:52.430045+00:00"
+    "captured_at": "2025-11-13T16:18:15.295144+00:00"
   },
   {
     "slug": "ipepo-divulga-edital-para-resid-ncia-m-dica-em-oftalmologia-com-ingresso-em-2026",
@@ -324,7 +488,7 @@
     ],
     "link_banca": "https://www.institutodavisao.org.br/area-do-medico/ensino/residencia-medica/",
     "posted_at": "2025-11-12T15:25:02+00:00",
-    "captured_at": "2025-11-13T15:34:55.048111+00:00"
+    "captured_at": "2025-11-13T16:18:17.864934+00:00"
   },
   {
     "slug": "sos-otorrino-confira-o-edital-para-resid-ncia-m-dica-2026",
@@ -441,7 +605,7 @@
     ],
     "link_banca": "https://www.sosotorrino.com.br/residencia",
     "posted_at": "2025-11-12T14:30:10+00:00",
-    "captured_at": "2025-11-13T15:34:56.394580+00:00"
+    "captured_at": "2025-11-13T16:18:20.685169+00:00"
   },
   {
     "slug": "grupo-med-imagem-publica-edital-para-resid-ncia-m-dica-com-in-cio-em-2026",
@@ -597,7 +761,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/34?_gl=1*1umtwq*_ga*MTkyMDE1NzE5My4xNzU2MTM1Mzgy*_ga_C8WLKDKMRY*czE3NjI5MDM1NjIkbzIkZzAkdDE3NjI5MDM1NjIkajYwJGwwJGgw",
     "posted_at": "2025-11-12T13:41:16+00:00",
-    "captured_at": "2025-11-13T15:34:57.693159+00:00"
+    "captured_at": "2025-11-13T16:18:21.936527+00:00"
   },
   {
     "slug": "sms-maring-2026-edital-de-resid-ncia-m-dica-oferta-12-vagas-para-mfc",
@@ -744,7 +908,7 @@
     ],
     "link_banca": "https://www.maringa.pr.gov.br/publicacoes-oficiais/44",
     "posted_at": "2025-11-11T14:19:46+00:00",
-    "captured_at": "2025-11-13T15:35:00.254362+00:00"
+    "captured_at": "2025-11-13T16:18:26.308162+00:00"
   },
   {
     "slug": "hospital-vida-de-londrina-divulga-edital-para-resid-ncia-m-dica-em-psiquiatria-2",
