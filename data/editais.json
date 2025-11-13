@@ -1,5 +1,224 @@
 [
   {
+    "slug": "hospital-dia-2026-seletivo-de-resid-ncia-m-dica-oferta-2-vagas-em-oftalmologia",
+    "nome": "Hospital Dia 2026: seletivo de Residência Médica oferta 2 vagas em Oftalmologia",
+    "display_title": "Centro Oftalmológico Hospital Dia",
+    "instituicao": "CENEPE",
+    "link": "https://med.estrategia.com/portal/noticias/hospital-dia-2026-seletivo-de-residencia-medica-oferta-2-vagas-em-oftalmologia/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-centro-oftalmologico-hospital-dia-residencia-medica.jpg",
+    "dados": [
+      {
+        "etapa": "Inscrições gerais",
+        "data": "22/11/2025 a 02/02/2026"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 1.150,00"
+      },
+      {
+        "etapa": "Solicitação de isenção da taxa de inscrição",
+        "data": "22/11/2025 a 07/12/2025"
+      },
+      {
+        "etapa": "Prazo final para pagamento da taxa (não isentos)",
+        "data": "02/02/2026"
+      },
+      {
+        "etapa": "Confirmação de inscrição",
+        "data": "05/02/2026"
+      },
+      {
+        "etapa": "Divulgação relação candidato x vaga",
+        "data": "05/02/2026 – 18h"
+      },
+      {
+        "etapa": "Prova objetiva e avaliação curricular",
+        "data": "08/02/2026 – 08h às 10h30"
+      },
+      {
+        "etapa": "Gabarito preliminar e nota curricular",
+        "data": "08/02/2026 – 12h"
+      },
+      {
+        "etapa": "Entrevista presencial",
+        "data": "08/02/2026 – 13h"
+      },
+      {
+        "etapa": "Recursos contra gabarito e avaliação curricular",
+        "data": "09/02/2026 a 10/02/2026"
+      },
+      {
+        "etapa": "Resultado após recursos",
+        "data": "10/02/2026 – 18h"
+      },
+      {
+        "etapa": "Resultado final",
+        "data": "11/02/2026 – 08h"
+      },
+      {
+        "etapa": "Recursos contra resultado final",
+        "data": "11/02/2026 a 12/02/2026"
+      },
+      {
+        "etapa": "Resultado definitivo",
+        "data": "13/02/2026 – 08h"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "19/02/2026 e 20/02/2026 – 08h às 11h / 14h às 17h"
+      },
+      {
+        "etapa": "Início do programa",
+        "data": "01/03/2026 – 07h"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital Centro Oftalmológico Hospital Dia 2026",
+        "headers": [
+          "Evento",
+          "Data"
+        ],
+        "rows": [
+          [
+            "Inscrições gerais",
+            "22/11/2025 a 02/02/2026"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 1.150,00"
+          ],
+          [
+            "Solicitação de isenção da taxa de inscrição",
+            "22/11/2025 a 07/12/2025"
+          ],
+          [
+            "Prazo final para pagamento da taxa (não isentos)",
+            "02/02/2026"
+          ],
+          [
+            "Confirmação de inscrição",
+            "05/02/2026"
+          ],
+          [
+            "Divulgação relação candidato x vaga",
+            "05/02/2026 – 18h"
+          ],
+          [
+            "Prova objetiva e avaliação curricular",
+            "08/02/2026 – 08h às 10h30"
+          ],
+          [
+            "Gabarito preliminar e nota curricular",
+            "08/02/2026 – 12h"
+          ],
+          [
+            "Entrevista presencial",
+            "08/02/2026 – 13h"
+          ],
+          [
+            "Recursos contra gabarito e avaliação curricular",
+            "09/02/2026 a 10/02/2026"
+          ],
+          [
+            "Resultado após recursos",
+            "10/02/2026 – 18h"
+          ],
+          [
+            "Resultado final",
+            "11/02/2026 – 08h"
+          ],
+          [
+            "Recursos contra resultado final",
+            "11/02/2026 a 12/02/2026"
+          ],
+          [
+            "Resultado definitivo",
+            "13/02/2026 – 08h"
+          ],
+          [
+            "Matrículas",
+            "19/02/2026 e 20/02/2026 – 08h às 11h / 14h às 17h"
+          ],
+          [
+            "Início do programa",
+            "01/03/2026 – 07h"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Inscrições gerais",
+            "data": "22/11/2025 a 02/02/2026"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 1.150,00"
+          },
+          {
+            "etapa": "Solicitação de isenção da taxa de inscrição",
+            "data": "22/11/2025 a 07/12/2025"
+          },
+          {
+            "etapa": "Prazo final para pagamento da taxa (não isentos)",
+            "data": "02/02/2026"
+          },
+          {
+            "etapa": "Confirmação de inscrição",
+            "data": "05/02/2026"
+          },
+          {
+            "etapa": "Divulgação relação candidato x vaga",
+            "data": "05/02/2026 – 18h"
+          },
+          {
+            "etapa": "Prova objetiva e avaliação curricular",
+            "data": "08/02/2026 – 08h às 10h30"
+          },
+          {
+            "etapa": "Gabarito preliminar e nota curricular",
+            "data": "08/02/2026 – 12h"
+          },
+          {
+            "etapa": "Entrevista presencial",
+            "data": "08/02/2026 – 13h"
+          },
+          {
+            "etapa": "Recursos contra gabarito e avaliação curricular",
+            "data": "09/02/2026 a 10/02/2026"
+          },
+          {
+            "etapa": "Resultado após recursos",
+            "data": "10/02/2026 – 18h"
+          },
+          {
+            "etapa": "Resultado final",
+            "data": "11/02/2026 – 08h"
+          },
+          {
+            "etapa": "Recursos contra resultado final",
+            "data": "11/02/2026 a 12/02/2026"
+          },
+          {
+            "etapa": "Resultado definitivo",
+            "data": "13/02/2026 – 08h"
+          },
+          {
+            "etapa": "Matrículas",
+            "data": "19/02/2026 e 20/02/2026 – 08h às 11h / 14h às 17h"
+          },
+          {
+            "etapa": "Início do programa",
+            "data": "01/03/2026 – 07h"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://cocmt.com.br/residenciamedica/",
+    "posted_at": "2025-11-13T13:54:36+00:00",
+    "captured_at": "2025-11-13T14:14:25.010372+00:00"
+  },
+  {
     "slug": "ipepo-divulga-edital-para-resid-ncia-m-dica-em-oftalmologia-com-ingresso-em-2026",
     "nome": "IPEPO divulga edital para residência médica em Oftalmologia com ingresso em 2026; confira",
     "display_title": "IPEPO",
@@ -105,7 +324,7 @@
     ],
     "link_banca": "https://www.institutodavisao.org.br/area-do-medico/ensino/residencia-medica/",
     "posted_at": "2025-11-12T15:25:02+00:00",
-    "captured_at": "2025-11-13T13:47:17.930879+00:00"
+    "captured_at": "2025-11-13T14:14:27.471596+00:00"
   },
   {
     "slug": "sos-otorrino-confira-o-edital-para-resid-ncia-m-dica-2026",
@@ -222,7 +441,7 @@
     ],
     "link_banca": "https://www.sosotorrino.com.br/residencia",
     "posted_at": "2025-11-12T14:30:10+00:00",
-    "captured_at": "2025-11-13T13:47:19.176084+00:00"
+    "captured_at": "2025-11-13T14:14:28.689863+00:00"
   },
   {
     "slug": "grupo-med-imagem-publica-edital-para-resid-ncia-m-dica-com-in-cio-em-2026",
@@ -378,7 +597,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/34?_gl=1*1umtwq*_ga*MTkyMDE1NzE5My4xNzU2MTM1Mzgy*_ga_C8WLKDKMRY*czE3NjI5MDM1NjIkbzIkZzAkdDE3NjI5MDM1NjIkajYwJGwwJGgw",
     "posted_at": "2025-11-12T13:41:16+00:00",
-    "captured_at": "2025-11-13T13:47:21.780538+00:00"
+    "captured_at": "2025-11-13T14:14:29.849858+00:00"
   },
   {
     "slug": "sms-maring-2026-edital-de-resid-ncia-m-dica-oferta-12-vagas-para-mfc",
@@ -525,7 +744,7 @@
     ],
     "link_banca": "https://www.maringa.pr.gov.br/publicacoes-oficiais/44",
     "posted_at": "2025-11-11T14:19:46+00:00",
-    "captured_at": "2025-11-13T13:47:24.223274+00:00"
+    "captured_at": "2025-11-13T14:14:32.224650+00:00"
   },
   {
     "slug": "hospital-vida-de-londrina-divulga-edital-para-resid-ncia-m-dica-em-psiquiatria-2",
@@ -708,7 +927,7 @@
     ],
     "link_banca": "https://hospitalvida.org.br/inscricao-v03/",
     "posted_at": "2025-11-10T16:05:06+00:00",
-    "captured_at": "2025-11-13T13:47:28.030418+00:00"
+    "captured_at": "2025-11-13T14:14:35.987722+00:00"
   },
   {
     "slug": "sms-maca-2026-seletivo-de-resid-ncia-m-dica-est-com-as-inscri-es-abertas",
@@ -985,7 +1204,7 @@
     ],
     "link_banca": "https://macae.rj.gov.br/saude/conteudo/titulo/programa-de-residencia-medica",
     "posted_at": "2025-11-10T14:41:48+00:00",
-    "captured_at": "2025-11-13T13:47:30.615325+00:00"
+    "captured_at": "2025-11-13T14:14:37.187018+00:00"
   },
   {
     "slug": "hospital-ruy-azeredo-2026-confira-o-edital-do-seletivo-de-resid-ncia-m-dica",
