@@ -1,5 +1,176 @@
 [
   {
+    "slug": "hov-2026-confira-o-edital-de-resid-ncia-m-dica-em-oftalmologia",
+    "nome": "HOV 2026: confira o edital de Residência Médica em Oftalmologia",
+    "display_title": "HOV",
+    "instituicao": "HOV",
+    "link": "https://med.estrategia.com/portal/noticias/hov-2026-confira-o-edital-de-residencia-medica-em-oftalmologia/",
+    "imagem": "https://med.estrategia.com/portal/wp-content/uploads/2025/11/Edital-HOV-residencia-medica-oftalmologia.jpg",
+    "dados": [
+      {
+        "etapa": "Período de inscrições",
+        "data": "10/11/2025 a 12/01/2026 (até 17h, horário de Rio Branco)"
+      },
+      {
+        "etapa": "Taxa de inscrição",
+        "data": "R$ 800,00"
+      },
+      {
+        "etapa": "Prazo final para pagamento da taxa",
+        "data": "12/01/2026 (até 19h59, horário local)"
+      },
+      {
+        "etapa": "Prova Objetiva",
+        "data": "18/01/2026 – 08h00"
+      },
+      {
+        "etapa": "Entrevista",
+        "data": "18/01/2026 – 13h00"
+      },
+      {
+        "etapa": "Divulgação do gabarito",
+        "data": "19/01/2026 (após as 16h)"
+      },
+      {
+        "etapa": "Divulgação do resultado das provas",
+        "data": "26/01/2026 (a partir das 9h)"
+      },
+      {
+        "etapa": "Período para recursos",
+        "data": "27/01/2026 (8h às 17h)"
+      },
+      {
+        "etapa": "Divulgação da análise dos recursos",
+        "data": "02/02/2026 (após as 16h)"
+      },
+      {
+        "etapa": "Divulgação do resultado final",
+        "data": "09/02/2026"
+      },
+      {
+        "etapa": "Matrículas",
+        "data": "16/02/2026 a 18/02/2026"
+      },
+      {
+        "etapa": "Início das atividades",
+        "data": "02/03/2026"
+      }
+    ],
+    "secoes": [
+      {
+        "titulo": "Resumo Edital HOV 2026",
+        "headers": [
+          "Etapa",
+          "Data / Horário"
+        ],
+        "rows": [
+          [
+            "Período de inscrições",
+            "10/11/2025 a 12/01/2026 (até 17h, horário de Rio Branco)"
+          ],
+          [
+            "Taxa de inscrição",
+            "R$ 800,00"
+          ],
+          [
+            "Prazo final para pagamento da taxa",
+            "12/01/2026 (até 19h59, horário local)"
+          ],
+          [
+            "Prova Objetiva",
+            "18/01/2026 – 08h00"
+          ],
+          [
+            "Entrevista",
+            "18/01/2026 – 13h00"
+          ],
+          [
+            "Divulgação do gabarito",
+            "19/01/2026 (após as 16h)"
+          ],
+          [
+            "Divulgação do resultado das provas",
+            "26/01/2026 (a partir das 9h)"
+          ],
+          [
+            "Período para recursos",
+            "27/01/2026 (8h às 17h)"
+          ],
+          [
+            "Divulgação da análise dos recursos",
+            "02/02/2026 (após as 16h)"
+          ],
+          [
+            "Divulgação do resultado final",
+            "09/02/2026"
+          ],
+          [
+            "Matrículas",
+            "16/02/2026 a 18/02/2026"
+          ],
+          [
+            "Início das atividades",
+            "02/03/2026"
+          ]
+        ],
+        "cols": 2,
+        "linhas": [
+          {
+            "etapa": "Período de inscrições",
+            "data": "10/11/2025 a 12/01/2026 (até 17h, horário de Rio Branco)"
+          },
+          {
+            "etapa": "Taxa de inscrição",
+            "data": "R$ 800,00"
+          },
+          {
+            "etapa": "Prazo final para pagamento da taxa",
+            "data": "12/01/2026 (até 19h59, horário local)"
+          },
+          {
+            "etapa": "Prova Objetiva",
+            "data": "18/01/2026 – 08h00"
+          },
+          {
+            "etapa": "Entrevista",
+            "data": "18/01/2026 – 13h00"
+          },
+          {
+            "etapa": "Divulgação do gabarito",
+            "data": "19/01/2026 (após as 16h)"
+          },
+          {
+            "etapa": "Divulgação do resultado das provas",
+            "data": "26/01/2026 (a partir das 9h)"
+          },
+          {
+            "etapa": "Período para recursos",
+            "data": "27/01/2026 (8h às 17h)"
+          },
+          {
+            "etapa": "Divulgação da análise dos recursos",
+            "data": "02/02/2026 (após as 16h)"
+          },
+          {
+            "etapa": "Divulgação do resultado final",
+            "data": "09/02/2026"
+          },
+          {
+            "etapa": "Matrículas",
+            "data": "16/02/2026 a 18/02/2026"
+          },
+          {
+            "etapa": "Início das atividades",
+            "data": "02/03/2026"
+          }
+        ]
+      }
+    ],
+    "link_banca": "https://hovelloso.com.br/blog/edital-2025-26-programa-de-residencia-medica-em-oftalmologia",
+    "posted_at": "2025-11-14T15:58:03+00:00",
+    "captured_at": "2025-11-14T16:18:05.354096+00:00"
+  },
+  {
     "slug": "unip-divulga-edital-para-processo-seletivo-de-resid-ncia-m-dica-2026",
     "nome": "UNIPÊ divulga edital para processo seletivo de Residência Médica 2026",
     "display_title": "UNIPÊ",
@@ -192,7 +363,7 @@
     ],
     "link_banca": "https://siaa.cruzeirodosul.edu.br/eventos/index.jsp?emp=38&gru=2&eve=25",
     "posted_at": "2025-11-14T13:47:57+00:00",
-    "captured_at": "2025-11-14T15:45:58.204920+00:00"
+    "captured_at": "2025-11-14T16:18:06.529875+00:00"
   },
   {
     "slug": "s-rio-liban-s-convoca-candidatos-para-a-prova-objetiva-veja-a-concorr-ncia-para-",
@@ -356,7 +527,7 @@
     ],
     "link_banca": "https://www.vunesp.com.br/HSLI2502",
     "posted_at": "2025-11-13T15:35:49+00:00",
-    "captured_at": "2025-11-14T15:46:01.743447+00:00"
+    "captured_at": "2025-11-14T16:18:10.250021+00:00"
   },
   {
     "slug": "hospital-dia-2026-seletivo-de-resid-ncia-m-dica-oferta-2-vagas-em-oftalmologia",
@@ -575,7 +746,7 @@
     ],
     "link_banca": "https://cocmt.com.br/residenciamedica/",
     "posted_at": "2025-11-13T13:54:36+00:00",
-    "captured_at": "2025-11-14T15:46:03.473905+00:00"
+    "captured_at": "2025-11-14T16:18:11.974070+00:00"
   },
   {
     "slug": "ipepo-divulga-edital-para-resid-ncia-m-dica-em-oftalmologia-com-ingresso-em-2026",
@@ -683,7 +854,7 @@
     ],
     "link_banca": "https://www.institutodavisao.org.br/area-do-medico/ensino/residencia-medica/",
     "posted_at": "2025-11-12T15:25:02+00:00",
-    "captured_at": "2025-11-14T15:46:05.885143+00:00"
+    "captured_at": "2025-11-14T16:18:14.424370+00:00"
   },
   {
     "slug": "sos-otorrino-confira-o-edital-para-resid-ncia-m-dica-2026",
@@ -800,7 +971,7 @@
     ],
     "link_banca": "https://www.sosotorrino.com.br/residencia",
     "posted_at": "2025-11-12T14:30:10+00:00",
-    "captured_at": "2025-11-14T15:46:07.051918+00:00"
+    "captured_at": "2025-11-14T16:18:15.621322+00:00"
   },
   {
     "slug": "grupo-med-imagem-publica-edital-para-resid-ncia-m-dica-com-in-cio-em-2026",
@@ -956,7 +1127,7 @@
     ],
     "link_banca": "https://portal.concursos.selecting.com.br/edital/ver/34?_gl=1*1umtwq*_ga*MTkyMDE1NzE5My4xNzU2MTM1Mzgy*_ga_C8WLKDKMRY*czE3NjI5MDM1NjIkbzIkZzAkdDE3NjI5MDM1NjIkajYwJGwwJGgw",
     "posted_at": "2025-11-12T13:41:16+00:00",
-    "captured_at": "2025-11-14T15:46:08.206873+00:00"
+    "captured_at": "2025-11-14T16:18:16.833573+00:00"
   },
   {
     "slug": "sms-maring-2026-edital-de-resid-ncia-m-dica-oferta-12-vagas-para-mfc",
